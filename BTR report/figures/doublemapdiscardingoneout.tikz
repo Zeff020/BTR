@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ASYM BOX] (0) at (0, 0) {\reflectbox{$\hat{f}$}};
+		\node [style=none] (1) at (0.25, 1.5) {};
+		\node [style=none] (2) at (0.25, 0) {};
+		\node [style=none] (6) at (-0.5, 1) {};
+		\node [style=none] (7) at (-0.5, 0) {};
+		\node [style=none] (8) at (-0.175, 0) {};
+		\node [style=none] (9) at (-0.175, -1.5) {};
+		\node [style=none] (10) at (-1, 1) {};
+		\node [style=none] (11) at (0, 1) {};
+		\node [style=none] (12) at (-0.75, 1.25) {};
+		\node [style=none] (13) at (-0.25, 1.25) {};
+		\node [style=none] (14) at (-0.625, 1.5) {};
+		\node [style=none] (15) at (-0.375, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (1.center) to (2.center);
+		\draw [style=WIRE] (6.center) to (7.center);
+		\draw [style=WIRE] (8.center) to (9.center);
+		\draw [style=WIRE] (10.center) to (11.center);
+		\draw [style=WIRE] (12.center) to (13.center);
+		\draw [style=WIRE] (14.center) to (15.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

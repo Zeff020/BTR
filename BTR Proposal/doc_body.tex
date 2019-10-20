@@ -1,0 +1,170 @@
+% ======================================================================
+% doc_body.tex -- the main document content.
+%
+%
+% Using this requires BibTeX. Overleaf handles this automatically,
+% **if** you have the right files in your project folder (*.bib),
+% and you recompile both this document and the *.bib document after
+% making changes to what's in *.bib.
+%
+% Note that the comment character "%" has been used to deactivate
+% certain lines below, but keep the code in the file in case you want
+% to reactivate them at some point.% to reactivate them at some point.
+
+
+%
+% ======================================================================
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage[bottom]{footmisc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% enables hyperlinks in the PDF
+\usepackage{physics}
+\usepackage{booktabs} % For prettier tables
+\usepackage{tikzit}
+\input{zef1.tikzstyles}
+
+\renewcommand{\thefootnote}{\roman{footnote}}
+
+\begin{document}
+
+\title{A Diagrammatic Method for Quantum Cryptographic Protocols}% Force line breaks with \\
+
+\author{Zef Wolffs} 
+\affiliation{%
+ Faculty of Science and Engineering\\
+ Maastricht University
+}%
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+
+\maketitle
+% ========================================================================
+
+\section{Introduction}
+
+The field of Quantum cryptography is concerned with the exploitation of the laws of quantum mechanics in order to derive secure methods of communication. In this field, classical cryptographic primitives are interwoven with quantum physics in order to make protocols for tasks such as sending a message securely in the presence of an adversary. Due to the comparatively high levels of security often achieved in these protocols the field has gained a lot of traction both in- and outside of academia. Numerous protocols have been proposed \cite{Broadbent2016} and even some private companies, among which ABN AMRO, have started investing in quantum cryptographic methods \cite{abnamro}. 
+
+Quantum Key Distribution (QKD), the protocol that the Dutch bank is aiming to realise, is perhaps the most well known quantum cryptographic method. There are a multitude of versions of QKD. However, each relies on the fact that measurement of a quantum state disturbs it \cite{Lindblad1999}. As a result of this, any eavesdropper will always introduce some anomaly in the quantum state that is transmitted between two parties. Another less known quantum cryptographic method is called Quantum Key Recycling (QKR). Although it relies on the same quantum mechanical principles as QKD, it is more efficient in the number of times the two parties need to communicate classically. 
+
+An important property of any quantum cryptographic protocol is its equivalence to other protocols. There are multiple ways in which these equivalences can be exploited, for example to prove security. Shor and Preskill employ this method in a publication \cite{Shor2000} where they prove security for one protocol that is equivalent to another, indirectly proving security of the latter.
+
+
+Quantum cryptographic protocols and their respective equivalences are usually given in the formalism of Hilbert spaces. Although experienced quantum physicists will have no problem understanding protocols in this formalism, it fails to expose many of the features of quantum theory in a clear and intuitive way, especially those features that involve the interaction of multiple systems across time and space. Coecke and Kissinger \cite{Coecke2017} propose a new - strictly diagrammatic - formalism for quantum theory in an aim to address this problem. As their book was released only recently, this diagrammatic notation has yet to be appreciated by many quantum physicists. Given this fact, and the rise in complexity and necessity of cryptographic methods, we propose to build upon the work of Coecke and Kissinger, and apply it to the field of quantum cryptography. The aim is to work out the recently introduced protocols diagrammatically, together with various equivalences, among which those given in \cite{cryptoeprint:2019:875}. If successful, this research could not only serve as an opportunity for researchers to view their research from a new, potentially refreshing, perspective, but also provide an intuitive security proof for QKR.
+
+% Appendix A gives an example of the strength of this diagrammatic notation.
+
+% Given the rising popularity, necessity, and complexity of quantum cryptographic methods, we propose to build upon the work of Coecke and Kissinger and apply it to 
+
+
+% Potentially turn QKD and QKR into seperate sections and discuss them more in depth here already
+%Potentially add another example here
+
+\section{Literature Research}
+
+S. Wiesner was the first to describe the encoding of information into quantum states \cite{WeisnerConjugateCoding}. In 1983 he published a scheme for "quantum money" that is impossible to counterfeit by storing each piece of money with a number of 2-state quantum systems, nowadays called qubits. Wiesner offers two options for the realisation of these qubits, spin-$\frac{1}{2} $ particles and photons. The paper includes a somewhat extensive explanation of the protocol. However, since it is not relevant to the present research it will not be discussed here. In principle, security of his scheme relied on the fact that whenever an adversary would try to measure the qubits linked with the money she would disturb the quantum state to such an extent that the bank could detect it. Wiesner's paper was ahead of its time, it was written over a decade before it was published \cite{Brassard2005}. With that being said, judging the paper from a current perspective, it has some obvious drawbacks. For example, storing a quantum state would require quantum memory of an efficiency currently not available \cite{Wang2019, lvovsky2009optical}. 
+
+The earliest paper on QKD was published in 1984 \cite{BB84, bennett2014quantum}. The protocol described in this paper is subsequently referred to as BB84 after its inventors Bennett and Brassard. As opposed to the scheme on quantum money, the purpose of QKD is to send messages safely between two parties, often referred to as Alice and Bob. Alice starts by preparing a string of random qubits similar to how it was done in \cite{WeisnerConjugateCoding}. She uses two orthonormal bases and encodes photons in these bases. The chosen bases are diagonal (D) and rectilinear (R). In the rectilinear basis she can encode a 0 and a 1 as a photon polarized to 0 and 90 degrees respectively. In the diagonal basis she can do the same for 45 and 135 degrees. Her set of bases is then $b_A \in \{R, D\}^n$. The random bitstring she wants to send to Bob is $k \in \{0,1\}^n $. She creates n qubit states with each $k_i$ encoded as a photon of a certain polarization in basis $b_i$ to give $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{k_i}^{b_i}} $. She sends $\ket{\Psi}$ to Bob who measures in a random basis $b_B \in \{R, D\}^n$. On a public channel, Bob sends $b_B$ to Alice who compares it with $b_A$. Alice then tells Bob where he measured in the correct basis, after which he can reveal some of his correctly measured bits to Alice. Since Eve's measurement disturbs the quantum states, Alice knows (up to a certain degree) that if Bob's bits are correct no eavesdropper (Eve) has attempted the measurement of any of the quantum bits. The contrary is also true. In the case where there was no Eve, Alice and Bob can safely use the bitstring k as a one-time pad \cite{shannon1949communication} for a future message over a classical channel, otherwise they will have to start the procedure again. This publication \cite{BB84} lacks a rigorous security analysis, it doesn't consider the option of a noisy quantum channel or an eavesdropper who can measure at different angles other than the previously mentioned bases. With that being said, it sparked great interest for QKD in the scientific community. 
+
+At around the same time, Bennett, Brassard, and Breidbart wrote the earliest QKR scheme \cite{Bennett2014}. In their proposed protocol, Alice and Bob both share knowledge beforehand about some set of bases $b \in \mathcal{B}^n$  and some one-time pad $j \in \{0,1\}^n$. Before Alice encodes her message $M \in \{0,1\}^m$ into a quantum state to be sent to Bob, she applies some error-correcting code $M \rightarrow E(M) \in \{0,1\}^n$ to it and xor's $E(M)$ with $j$ to produce the payload $x \in \{0,1\}^n$. The error-correcting code allows Bob to determine and correct errors that may arise as a result of a noisy communication channel in the received payload at the cost of added redundancy \cite{Knill1997}. The one-time pad is used to mask the message. After the payload is ready Alice prepares $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{x_i}^{b_i}}$ and sends it to Bob. In the case where there is no Eve detected he can use the same k and b to safely send a new payload back to Alice, who can then send one back to Bob, and so forth. However, if one of the two detects Eve's interference, both parties have to decide on a new key, which they can generate from previously uncompromised transmissions. In \cite{Bennett2014}, Bennett, Brassard, and Breidbart lay the groundwork for future QKR protocols. However, it is lacking a rigorous security analysis. It also puts no constraints on the amount of classical communication needed between Alice and Bob. Another paper on the topic was published in 2005 which significantly modified the protocol and contained a security analysis \cite{Damgard2006}. It also introduced a scheme where Alice prepares n EPR \cite{einstein1935can} pairs, of which she measures one side, and sends the other to Bob. She xor's her measurement result with her payload and sends the results to Bob over a classical channel, after which Bob can xor his measurement result with the payload received over the classical channel to extract the message. The EPR version of the scheme then proceeds as usual. Note that most protocols have an EPR variant, and that they are provably equivalent to the original, often called 'prepare and measure' \cite{Shor2000, PhysRevLett.68.557}. The disadvantage of the schemes presented in \cite{Damgard2006} is that they require a quantum computer for encryption and decryption, a technology that is currently not scalable \cite{preskill2018quantum}. In 2016, a paper was published \cite{Fehr2016} that removed the need for a quantum computer and contained a security proof for the ideal case where the quantum communication channels introduce no noise. Noiseless quantum communication is an unrealistic assumption though, since noise in quantum channels is largely recognized as one of the main practical challenges for the implementation of quantum cryptographic protocols \cite{Diamanti2016}. In 2018, Leermakers and Skoric proposed a security proof for QKR with significant noise \cite{QKRwithnoise}. The current state of the art QKR minimizes the classical communication to only a single accept/reject message sent back from Bob to Alice \cite{cryptoeprint:2019:875}. This is different from previous work where Alice would send classical information to Bob along with the quantum state.
+
+Due to the novelty of the diagrammatic method, literature on it is very scarce. A textbook was published in 2017 \cite{Coecke2017}, after which one paper was published on the notation of diagrams applied to quantum cryptography \cite{Kissinger2017}. The book contains an extensive overview of the diagrammatic notation, and aims to introduce quantum mechanics by means of this notation. The paper gives a security proof for BB84 \cite{Coecke2017}, using only diagrammatic notation. Security in this notation means that Eve's part of the diagram separates from Alice and Bob's.\footnote{Appendix A gives an example of this diagrammatic separation in an elementary form of QKD, both to give the reader a preview of what is about to come in the final report, and to give an example of the elegance of this notation.} First, Coecke and Kissinger prove security where Eve's measurement bases are the same two bases as the ones the qubits were encoded in.  Afterwards, noting that this too strong of an assumption, they prove security for the case where Eve has quantum memory, can measure in any basis of her choice, and the channel of Alice and Bob is noisy.
+
+\section{Research objectives \& expected outcomes}
+
+As was briefly mentioned before, the aim of this report is to rewrite an EPR version of QKD and state of the art QKR protocols and both of their respective equivalences into the new diagrammatic notation. Writing out the protocols' diagrams is a prerequisite to proving their respective equivalences diagrammatically. Some basic protocols and their equivalences will be written out as well, as a means of introducing the notation to the reader by examples and as a set up to the more advanced equivalences involving QKD and QKR. Finally, a security proof for the QKR protocol in \cite{cryptoeprint:2019:875} will be given diagrammatically. 
+
+It is expected that all the proposed research objectives can be achieved. Furthermore, if the project is successful, and the intuitiveness of this methodology is clear, the final document could be a compelling argument for quantum cryptographers to employ the diagrammatic method in their own work.
+
+
+\section{Methodological approach}
+
+\subsection{Methods}
+
+In order to successfully execute the proposed objectives, I must gain a thorough understanding of QKD and QKR. This requires understanding the main principles of quantum information theory. Furthermore, I must acquire an in depth understanding of the diagrammatic method proposed in \cite{Coecke2017}. In order to achieve this, a section will be written introducing the fundamental diagrammatic concepts and their respective form in Hilbert spaces. This section will also be included in the final report.
+
+After these concepts have been understood, all of the individual protocols will be written out diagrammatically. Equivalences will then be derived with the aforementioned protocols as a starting point.
+
+Drawing the protocols will mostly be done by hand as this allows for the most time efficient diagrammatic manipulation. For the diagrams included in the final thesis report a program called TikZit will be used \cite{TikZit}.
+
+To keep track of the steps that were mentioned in this section, a Kanban board will be used that can also be accessed online \cite{wolffs_2019}. 
+
+\subsection{Time Planning}
+
+Table \ref{table} contains an indication of the expected research schedule.
+
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{ c | c }
+\toprule
+ \textbf{Weeks} & \textbf{Goals}  \\ \midrule
+ 1 \& 2 & \shortstack{Start revision diagrammatic concepts & Literature review QKR, QKD}\\ \midrule
+ 3 \& 4 & \shortstack{Finish revision diagrammatic concepts & Write and finish proposal} \\ \midrule
+ 5 - 8 & \shortstack{Write section on diagrams vs. Dirac notation & Draw\footnote{Note that "draw" in this context should be interpreted as "to write out diagrammatically"} QKR, QKD (both incl. EPR) & Draw elementary protocols} \\ \midrule
+ 9 - 15 & \shortstack{Draw QKR and QKD equivalences & Draw elementary protocols' equivalences & Prove security QKR diagrammatically & Start writing final report: & Introduction, Theory and Methodology}  \\ \midrule
+16 \& 17 & \shortstack{Finalize report: & Results, Discussion and Conclusion} \\ \bottomrule
+\end{tabular}
+\caption{Expected research schedule. It should be taken into account that this is only an estimation of the time the proposed tasks should take.}
+\label{table}
+\end{table}
+\end{center}
+
+\section{Impact}
+
+The successful implementation of the proposed work will allow researchers in the field of quantum cryptography to look at their work from a new perspective. It can also provide a gateway for researchers hesitant to dedicate too much time to learning the diagrammatic method. Furthermore, showing the intuitiveness and simplicity of equivalences in diagrams may encourage researchers to try to apply it to their own work. The proposed work is supposed to make early steps towards adding the diagrammatic method to the toolbox of quantum cryptographers. 
+
+\clearpage
+\bibliographystyle{plain}
+\bibliography{bibfile}% Produces the bibliography via BibTeX.
+
+
+%TC:ignore
+\appendix
+\section{\\Example of diagrammatic separation in elementary QKD}
+\label{appendix:diagram}
+
+Note that it is not expected of the reader to understand the diagrams in this section, and that it is simply meant to show the elegance of the diagrammatic notation. For further information, see \cite{Coecke2017} chapter 9.2.6.
+
+The first diagram equation displayed below has Eve, Bob an Alice all connected. No diagrammatic separation occurs and Eve successfully measures the state sent from Alice to Bob without disturbing it.
+
+\ctikzfig{fig1}
+
+In this next diagram, Eve tries to use a gray circle for measuring. This fails, and the diagram separates. Neither Eve, Bob, nor Alice are now connected and there is no information sent between them.
+
+\ctikzfig{fig2}
+
+\textit{Wordcount: 1998}
+%TC:endignore
+
+\clearpage
+\end{document}
+
+%%%%%% End of file doc_body.tex %%%%%%
+
+% ========================================================================

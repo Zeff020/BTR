@@ -1,0 +1,98 @@
+% =======================
+% = PARALLELAGRAM BOXES =
+% =======================
+
+\makeatletter
+\newcommand{\boxshape}[5]{%
+\pgfdeclareshape{#1}{
+\inheritsavedanchors[from=rectangle] % this is nearly a rectangle
+\inheritanchorborder[from=rectangle]
+\inheritanchor[from=rectangle]{center}
+\inheritanchor[from=rectangle]{north}
+\inheritanchor[from=rectangle]{south}
+\inheritanchor[from=rectangle]{west}
+\inheritanchor[from=rectangle]{east}
+% ... and possibly more
+\backgroundpath{% this is new
+% store lower right in xa/ya and upper right in xb/yb
+\southwest \pgf@xa=\pgf@x \pgf@ya=\pgf@y
+\northeast \pgf@xb=\pgf@x \pgf@yb=\pgf@y
+
+\pgfpathmoveto{\pgfpoint{#2}{\pgf@ya}}
+\pgfpathlineto{\pgfpoint{#3}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{#4}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{#5}{\pgf@ya}}
+%\pgfpathlineto{\pgfpoint{\pgf@xa - 5pt + \@tempdima}{\pgf@ya}}
+\pgfpathclose
+}
+}}
+
+\newcommand{\downtrishape}[4]{%
+\pgfdeclareshape{#1}{
+\inheritsavedanchors[from=rectangle] % this is nearly a rectangle
+\inheritanchorborder[from=rectangle]
+\inheritanchor[from=rectangle]{center}
+\inheritanchor[from=rectangle]{north}
+\inheritanchor[from=rectangle]{south}
+\inheritanchor[from=rectangle]{west}
+\inheritanchor[from=rectangle]{east}
+% ... and possibly more
+\backgroundpath{% this is new
+% store lower right in xa/ya and upper right in xb/yb
+\southwest \pgf@xa=\pgf@x \pgf@ya=\pgf@y
+\northeast \pgf@xb=\pgf@x \pgf@yb=\pgf@y
+
+\pgfpathmoveto{\pgfpoint{#2}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{#3}{\pgf@yb}}
+\pgfpathlineto{\pgfpoint{#4}{\pgf@ya}}
+\pgfpathclose
+}
+}}
+
+\newcommand{\uptrishape}[4]{%
+\pgfdeclareshape{#1}{
+\inheritsavedanchors[from=rectangle] % this is nearly a rectangle
+\inheritanchorborder[from=rectangle]
+\inheritanchor[from=rectangle]{center}
+\inheritanchor[from=rectangle]{north}
+\inheritanchor[from=rectangle]{south}
+\inheritanchor[from=rectangle]{west}
+\inheritanchor[from=rectangle]{east}
+% ... and possibly more
+\backgroundpath{% this is new
+% store lower right in xa/ya and upper right in xb/yb
+\southwest \pgf@xa=\pgf@x \pgf@ya=\pgf@y
+\northeast \pgf@xb=\pgf@x \pgf@yb=\pgf@y
+
+\pgfpathmoveto{\pgfpoint{#2}{\pgf@ya + 0.1cm}}
+\pgfpathlineto{\pgfpoint{#3}{\pgf@ya + 0.1cm}}
+\pgfpathlineto{\pgfpoint{#4}{\pgf@yb + 0.1cm}}
+\pgfpathclose
+}
+}}
+
+% \boxshape : give the shape a name, and X-offsets for SW, NW, NE, and SE corners
+
+% boxes that "point" NE, SE, SW, NW
+\boxshape{NEbox}{\pgf@xa - 0.3cm}{\pgf@xa - 0.3cm}{\pgf@xb + 0.6cm}{\pgf@xb}
+\boxshape{SEbox}{\pgf@xa - 0.3cm}{\pgf@xa - 0.3cm}{\pgf@xb}{\pgf@xb + 0.6cm}
+\boxshape{NWbox}{\pgf@xa}{\pgf@xa - 0.6cm}{\pgf@xb + 0.3cm}{\pgf@xb + 0.3cm}
+\boxshape{SWbox}{\pgf@xa - 0.6cm}{\pgf@xa}{\pgf@xb + 0.3cm}{\pgf@xb + 0.3cm}
+
+% a parallelogram that leans "west"
+\boxshape{Wpara}{\pgf@xa + 0.3cm}{\pgf@xa - 0.3cm}{\pgf@xb - 0.3cm}{\pgf@xb + 0.3cm}
+\boxshape{Epara}{\pgf@xa - 0.3cm}{\pgf@xa + 0.3cm}{\pgf@xb + 0.3cm}{\pgf@xb - 0.3cm}
+
+% \downtrishape : gave the shape a name, and X-offsets for NW, NE, and bottom corners
+
+% flags that "point" NE and NW
+\downtrishape{NEflag}{\pgf@xa + 0.15cm}{\pgf@xb + 0.15cm}{\pgf@xa + 0.15cm}
+\downtrishape{NWflag}{\pgf@xa - 0.15cm}{\pgf@xb - 0.15cm}{\pgf@xb - 0.15cm}
+
+% \uptrishape : gave the shape a name, and X-offsets for SW, SE, and top corners
+
+% flags that "point" SE and SW
+\uptrishape{SEflag}{\pgf@xa + 0.15cm}{\pgf@xb + 0.15cm}{\pgf@xa + 0.15cm}
+\uptrishape{SWflag}{\pgf@xa - 0.15cm}{\pgf@xb - 0.15cm}{\pgf@xb - 0.15cm}
+
+\makeatother

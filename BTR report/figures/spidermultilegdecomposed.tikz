@@ -1,0 +1,37 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-4, 0) {$\sum\limits_{i}$};
+		\node [style=none] (7) at (-3, 2.5) {};
+		\node [style=none] (8) at (-3, -2.5) {};
+		\node [style=none] (9) at (-3, 1) {};
+		\node [style=none] (10) at (-3, -1) {};
+		\node [style=StateMidi] (11) at (-3, 1.25) {};
+		\node [style=EffectMidi] (13) at (-3, -1.25) {};
+		\node [style=none] (14) at (-1, 2.5) {};
+		\node [style=none] (15) at (-1, -2.5) {};
+		\node [style=none] (16) at (-1, 1) {};
+		\node [style=none] (17) at (-1, -1) {};
+		\node [style=StateMidi] (18) at (-1, 1.25) {};
+		\node [style=EffectMidi] (19) at (-1, -1.25) {};
+		\node [style=none] (26) at (2, 2.5) {};
+		\node [style=none] (27) at (2, -2.5) {};
+		\node [style=none] (28) at (2, 1) {};
+		\node [style=none] (29) at (2, -1) {};
+		\node [style=StateMidi] (30) at (2, 1.25) {};
+		\node [style=EffectMidi] (31) at (2, -1.25) {};
+		\node [style=none] (32) at (0, 2) {};
+		\node [style=none] (33) at (1, 2) {};
+		\node [style=none] (34) at (0, -2) {};
+		\node [style=none] (35) at (1, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (7.center) to (9.center);
+		\draw (8.center) to (10.center);
+		\draw (14.center) to (16.center);
+		\draw (15.center) to (17.center);
+		\draw (26.center) to (28.center);
+		\draw (27.center) to (29.center);
+		\draw [style=new edge style 0] (32.center) to (33.center);
+		\draw [style=new edge style 0] (34.center) to (35.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

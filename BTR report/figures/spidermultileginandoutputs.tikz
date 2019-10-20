@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (0, 0) {};
+		\node [style=none] (1) at (-1, 1) {};
+		\node [style=none] (3) at (1, 1) {};
+		\node [style=none] (4) at (-1, -1.25) {};
+		\node [style=none] (6) at (1, -1.25) {};
+		\node [style=none] (7) at (-1, 1) {};
+		\node [style=StateMidl] (8) at (-1, -1.5) {};
+		\node [style=StateMidm] (9) at (1, -1.5) {};
+		\node [style=EffectMidk] (11) at (1, 1.25) {};
+		\node [style=EffectMidj] (12) at (-1, 1.25) {};
+		\node [style=none] (13) at (-1, -1.75) {};
+		\node [style=none] (14) at (1, -1.75) {};
+		\node [style=none] (15) at (1, 1.5) {};
+		\node [style=none] (16) at (-1, 1.5) {};
+		\node [style=none] (17) at (1, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (0) to (7.center);
+		\draw [bend right] (0) to (3.center);
+		\draw [bend right] (0) to (4.center);
+		\draw [bend left] (0) to (6.center);
+		\draw (15.center) to (17.center);
+		\draw (14.center) to (6.center);
+		\draw (13.center) to (4.center);
+		\draw (16.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

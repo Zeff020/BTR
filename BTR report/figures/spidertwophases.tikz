@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (1) at (0, 0) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=WhiteSpider] (3) at (-0.5, -1) {\small\\{\raisebox{.75pt}{-}}$\alpha$};
+		\node [style=WhiteSpider] (4) at (0.5, -1) {\small$\alpha$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+		\draw [in=210, out=90] (3) to (1);
+		\draw [bend left] (1) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

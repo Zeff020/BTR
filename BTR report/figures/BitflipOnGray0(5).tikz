@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, 0.5) {};
+		\node [style=WHITESPIDER] (3) at (0, -0.5) {$\pi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (2.center) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}

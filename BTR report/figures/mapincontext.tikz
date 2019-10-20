@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=asym box] (0) at (0, 0) {\reflectbox{$f$}};
+		\node [style=none] (1) at (0, 2.25) {};
+		\node [style=none] (2) at (0, -2.25) {};
+		\node [style=EffectLeft] (3) at (0, 2) {\rotatebox{270}{$\psi$}};
+		\node [style=StateLeft] (4) at (0, -2) {\rotatebox{180}{$\psi$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1.center) to (0);
+		\draw (0) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

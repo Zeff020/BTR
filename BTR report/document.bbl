@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{Coecke2017}
+Bob Coecke and Aleks Kissinger.
+\newblock {\em {Picturing Quantum Processes}}.
+\newblock Cambridge University Press, Cambridge, 2017.
+
+\bibitem{DeVries2016}
+Manon de~Vries and Boris Skoric.
+\newblock {Quantum Key Recycling with Eight-State Encoding}.
+\newblock {\em Cryptology ePrint Archive}, 2016.
+
+\bibitem{DJORDJEVIC2012227}
+Ivan Djordjevic.
+\newblock Chapter 7 - quantum error correction.
+\newblock In Ivan Djordjevic, editor, {\em Quantum Information Processing and
+  Quantum Error Correction}, pages 227 -- 276. Academic Press, Oxford, 2012.
+
+\bibitem{Markoff2011}
+John Markoff.
+\newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}, 2011.
+
+\bibitem{Shannon1949}
+C.~E. Shannon.
+\newblock {Communication Theory of Secrecy Systems}.
+\newblock {\em Bell System Technical Journal}, 1949.
+
+\end{thebibliography}

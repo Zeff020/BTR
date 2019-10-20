@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (1) at (0, 0) {\small$\alpha {\raisebox{.75pt}{-}} \alpha$};
+		\node [style=none] (2) at (0, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

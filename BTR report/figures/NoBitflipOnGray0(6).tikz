@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, 0.5) {};
+		\node [style=STATEMIDGRAY] (3) at (0, -0.5) {\rotatebox{-45}{0}};
+		\node [style=none] (4) at (0, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (2.center) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
