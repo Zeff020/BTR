@@ -1,5 +1,5 @@
 # BTR
-Organisational stuff for the Bachelor Thesis Research.
+Stuff for the Bachelor Thesis Research.
 
 
-Will mostly be used for a Kanban board
+Will mostly be used for a Kanban board and LaTex
