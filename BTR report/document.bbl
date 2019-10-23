@@ -20,6 +20,17 @@ Ivan Djordjevic.
 John Markoff.
 \newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}, 2011.
 
+\bibitem{nielsen2011}
+Michael~a. Nielsen and Isaac~L. Chuang.
+\newblock {\em {Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}}.
+\newblock 2011.
+
+\bibitem{articleCNOT}
+Mehdi Saeedi and Igor Markov.
+\newblock Synthesis and optimization of reversible circuits - a survey.
+\newblock {\em ACM Computing Surveys}, 45, 10 2011.
+
 \bibitem{Shannon1949}
 C.~E. Shannon.
 \newblock {Communication Theory of Secrecy Systems}.

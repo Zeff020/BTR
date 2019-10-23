@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=STATERIGHT] (0) at (-0.75, 0) {\tiny \rotatebox{90}{$\hat{\psi}_{_1}$}};
+		\node [style=STATERIGHT] (1) at (0.75, 0) {\tiny \rotatebox{90}{$\hat{\psi}_{_2}$}};
+		\node [style=none] (2) at (0.75, -0.5) {};
+		\node [style=none] (3) at (-0.75, -0.5) {};
+		\node [style=none] (4) at (-0.75, 1) {};
+		\node [style=none] (5) at (0.75, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (4.center);
+		\draw [style=WIRE] (5.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

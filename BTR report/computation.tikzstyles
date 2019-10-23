@@ -14,6 +14,7 @@
 \tikzstyle{EffectRight}=[fill=white, draw=black, shape=SEflag, rotate=0, tikzit shape=rectangle, tikzit fill={rgb,255: red,255; green,191; blue,191}, minimum height=0.6cm, minimum width=0.6cm]
 \tikzstyle{StateRight}=[shape=SEflag, tikzit shape=rectangle, tikzit fill={rgb,255: red,0; green,128; blue,128}, fill=white, draw=black, font={\footnotesize}, rotate=270, minimum width=0.6cm, minimum height=0.6cm]
 \tikzstyle{STATERIGHT}=[shape=SEflag, tikzit shape=rectangle, tikzit fill={rgb,255: red,0; green,128; blue,128}, fill=white, draw=black, font={\footnotesize}, rotate=270, minimum width=0.6cm, line width=1, minimum height=0.6cm]
+\tikzstyle{WIDESTATERIGHT}=[shape=SEflag, tikzit shape=rectangle, tikzit fill={rgb,255: red,0; green,128; blue,128}, fill=white, draw=black, font={\footnotesize}, rotate=270, minimum width=0.6cm, line width=1, minimum height=1.2cm]
 \tikzstyle{StateMidi}=[shape=SEflag, minimum width=0.6cm, tikzit shape=rectangle, tikzit fill=white, fill=white, draw=black, minimum height=0.6cm, font={\footnotesize}, rotate=45, left=-0.1285cm, label={[shift={(0.45,-0.45)}]${i}$}, yshift=-0.1285cm, tikzit category=mid]
 \tikzstyle{EffectMidi}=[shape=SEflag, minimum width=0.6cm, tikzit shape=rectangle, tikzit fill=white, fill=white, draw=black, minimum height=0.6cm, font={\footnotesize}, rotate=225, left=-0.1285cm, label={[shift={(-0.45,0.5)}]${i}$}, yshift=-0.1285cm, tikzit category=mid]
 \tikzstyle{EffectLeft}=[fill=white, draw=black, shape=SEflag, rotate=90, tikzit shape=rectangle, tikzit fill=yellow, minimum height=0.6cm, minimum width=0.6cm]

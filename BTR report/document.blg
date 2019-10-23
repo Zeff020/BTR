@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: document.aux
 The style file: plain.bst
 Database file #1: library.bib
-You've used 5 entries,
+Warning--empty publisher in nielsen2011
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            532 strings with 4680 characters,
-and the built_in function-call counts, 1402 in all, are:
-= -- 135
-> -- 51
+            541 strings with 4918 characters,
+and the built_in function-call counts, 1900 in all, are:
+= -- 180
+> -- 77
 < -- 1
-+ -- 20
-- -- 15
-* -- 67
-:= -- 239
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 21
++ -- 30
+- -- 23
+* -- 96
+:= -- 328
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 65
-empty$ -- 124
-format.name$ -- 15
-if$ -- 305
+cite$ -- 8
+duplicate$ -- 87
+empty$ -- 163
+format.name$ -- 23
+if$ -- 406
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 27
-num.names$ -- 12
-pop$ -- 32
+int.to.str$ -- 7
+missing$ -- 8
+newline$ -- 37
+num.names$ -- 16
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 25
 quote$ -- 0
-skip$ -- 51
+skip$ -- 67
 stack$ -- 0
-substring$ -- 61
-swap$ -- 16
+substring$ -- 71
+swap$ -- 18
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
-warning$ -- 0
-while$ -- 13
-width$ -- 6
-write$ -- 54
+type$ -- 24
+warning$ -- 1
+while$ -- 17
+width$ -- 8
+write$ -- 74
+(There was 1 warning)

@@ -19,10 +19,6 @@
 		\node [style=WhiteSpider] (20) at (-1.5, 1) {};
 		\node [style=WhiteSpider] (21) at (-3, -2.75) {};
 		\node [style=STATERIGHT] (22) at (0, -3.25) {\rotatebox{90}{$\rho$}};
-		\node [style=none] (27) at (1.5, 0.7) {\small Bob};
-		\node [style=none] (30) at (2.5, 0.25) {};
-		\node [style=none] (31) at (-4, 0.25) {};
-		\node [style=none] (32) at (1.625, -0.2) {\small Alice};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend right=45] (1) to (0);
@@ -36,6 +32,5 @@
 		\draw [style=WIRE, bend right=45] (19) to (20);
 		\draw (20) to (21);
 		\draw (11) to (5);
-		\draw [style=new edge style 0] (31.center) to (30.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -25,7 +25,205 @@
 
 \end{abstract}
 
+Ask Boris onecolumn or two column (One column better for explanation on every step, twocolumn better for large equations at once)
+
 \section{Introduction}
+
+Here I will put the proposal with some adjustments to make it fit in the context of this document.
+
+\section{Preliminaries}
+
+This section serves as a concise introduction to the diagrammatic method for a reader who is familiar with quantum mechanics and Dirac notation. Appendix \ref{Keywords} contains all of the concepts discussed in this section as keywords with hyperrefs.
+
+\subsection{From Dirac to Diagrams}
+
+\subsection{States, Effects, and Hermitian Operations}
+
+\label{braandket}
+The \textbf{ket} is defined as a triangle with its sharp edge down in diagrammatic notation. It can be interpreted as the preparation of a state, in this case $\psi$. It is referred to as \textbf{state} throughout the thesis.
+
+\begin{equation}
+\ket{\psi} =  \tikzfig{state}
+\end{equation}
+
+The \textbf{bra} in diagrammatic notation is the flipped state, and is referred to as \textbf{effect}. 
+
+\begin{equation}
+\bra{\psi} =  \tikzfig{effect}
+\end{equation}
+
+Triangles are the smallest building blocks in the diagrammatic notation. Most diagrams can be reduced to just triangles. This makes them a powerful tool for translating complicated diagrams to Dirac notation and vice versa.
+
+From the fact that the \textbf{Hermitian adjoint} of a bra gives a ket and reversedly it follows that the operation of flipping a diagram around its horizontal axis corresponds to taking the Hermitian adjoint. Flipping a diagram around its vertical axis is also a legal operation and this corresponds to taking the \textbf{Hermitian conjugate}. Both of these operation applied together takes the \textbf{transpose}. All of these diagram operations can be summarized as follows:
+
+\begin{equation}
+\tikzfig{operationssummary}
+\end{equation}
+
+Note that there are also triangles that are not on their side. These are representations of objects that are not affected by conjugate transformations, such as integers.
+\subsection{Wires}
+\label{identity}
+The identity map in the diagrammatic notation is given by the following diagram, referred to as a \textbf{wire}.
+
+\begin{equation}
+\tikzfig{wire}
+\end{equation}
+
+A wire can be reduced to triangles (and subsequently to a ket and a bra) as follows: 
+
+\begin{equation}
+\tikzfig{wire} = \tikzfig{wiretriangles} = \sum_{i}\ket{i}\bra{i}
+\end{equation}
+
+Every wire has an associated \textbf{system type}, the space of the information that it carries. In the context of this report, the system types are Hilbert spaces or the tensor product of Hilbert Spaces. 
+
+\subsection{Maps}
+\label{maps}
+
+A \textbf{linear map} is given by the following diagram:
+
+\begin{equation}
+\tikzfig{map}
+\end{equation}
+
+We can find the equivalent form in Dirac notation as follows:
+
+\begin{equation}
+\tikzfig{map} = \tikzfig{mapdecomposition} = \sum_{ij}r_{ij}\ket{i}\bra{j}
+\end{equation}
+
+In the context of a bra and a ket, we can translate the diagrammatic linear map to Dirac notation as such:
+
+\begin{equation}
+\tikzfig{mapincontext} = \bra{\psi}f\ket{\psi}
+\end{equation}
+
+\subsection{Spiders}
+\label{spiders}
+
+A \textbf{spider} is a special map which functions as a Kronecker delta. It forces the inputs to be the same as the outputs. In the case where we have one input and output this gives a trivial result:
+
+\begin{equation}
+\tikzfig{spider} = \tikzfig{wiretriangles} = \tikzfig{wire}
+\end{equation}
+
+In the case where there are multiple outputs and inputs it forces all to be the same:
+
+\begin{equation}
+\tikzfig{spidermultileg} = \tikzfig{spidermultilegdecomposed}
+\end{equation}
+
+By applying arbitrary in- and outputs we can see how the \textbf{Kronecker delta} arises from Dirac notation. The following example is for two two inputs and two outputs but the same principle extends to an arbitrary amount of in- and outputs.
+
+\begin{equation}
+\begin{split}
+\tikzfig{spidermultileginandoutputs} = \tikzfig{spidermultilegdecomposedinandoutputs} = \\ \sum_{i} \bra{i}\ket{j}\bra{i}\ket{k}\bra{l}\ket{i}\bra{m}\ket{i} = \delta_{jk} \delta_{lm}  \delta_{jl}
+\end{split}
+\end{equation}
+
+Spiders with single in- or outputs also exist. A spider with a single output is the creation of a random variable and a spider with a single input is the deletion of any variable.
+
+\subsection{Colours and Bases}
+\label{coloursandbases}
+
+In the diagrammatic notation, the \textbf{colour} of an object such as a spider or a triangle determines its basis. In the context of this paper it is sufficient to define two orthonormal \textbf{bases}, the Z and X bases. The Z basis has white diagrammatic elements, for the X basis they are gray. The following is an example of how to translate between bases in this notation:
+
+\begin{equation}
+\tikzfig{gray0} =\frac{1}{\sqrt(2)}( \tikzfig{white0} + \tikzfig{white1})
+\end{equation}
+
+This equation is of course entirely analogous to its Dirac notation counterpart, with $\ket{-}$ and $\ket{+}$ being the orthonormal basis states in the X basis and $\ket{0}$ and $\ket{1}$ the orthonormal basis states in the Z basis:
+
+\begin{equation}
+\ket{-} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
+\end{equation}
+
+\subsection{Doubling}
+\label{doubling}
+
+\textbf{Doubling} is the operation of taking the \textbf{tensor product} of a diagram with itself. In the usual case, where the system type of a single wire is a Hilbert space ($\mathcal{H}$), the doubled wire has the set of density matrices on that Hilbert space as system type.:
+
+\begin{equation}
+\mathcal{H} \oplus \mathcal{H} = \mathcal{D}(\mathcal{H})
+\end{equation}
+\textit{Where $\mathcal{D}(\mathcal{H})$ is the set of density matrices on $\mathcal{H}$. $\oplus$ is the tensor product.}
+
+Doubled maps and and states represent \textbf{pure} maps and states. Single maps and states represent their \textbf{mixed} counterparts. The most intuitive interpretation, and how it is mostly used in this report, is that the single wires represent classical data and thick wires represent data encoded into a quantum state.
+
+Doubling in diagrammatic notation is nothing more than placing a second conjugate diagram next to the original diagram. In doubled diagrams lines are drawn thick, for example:
+
+\begin{equation}
+\tikzfig{conjugatemaps} = \tikzfig{doublemap}
+\end{equation}
+\textit{The notation of a map with a hat, such as $\hat{f}$, means that that map is pure.}
+
+
+\subsection{Discarding}
+\label{discarding}
+
+\textbf{Discarding} is the process of removing part of a diagram from the whole, or removing the whole diagram altogether. For doubled diagrams it is defined as follows:
+
+\begin{equation}
+\label{discarding}
+\tikzfig{Discarding} = \tikzfig{thickwhiteieffect} = \tikzfig{thinwirediscardingdecomposed} = \tikzfig{discardingsinglewires} = tikzfig
+\end{equation}
+
+It is trivial to see that applying discarding to any arbitrary (normalized) state always results in the number 1. In fact, discarding a state or map is equivalent to taking its \textbf{trace}. As an example, we discard an arbitrary normalized \textbf{density matrix}, $\rho$:
+
+\begin{equation}
+\begin{split}
+\tikzfig{discardingdensitymatrx} = \tikzfig{discradingdensitymatrixsinglewires} = \sum\limits_{ij} \rho_{ij} \bra{j}\ket{i} \\ = \sum\limits_{ii} \rho_{ii} = Tr(\rho) = 1
+\end{split}
+\end{equation}
+
+Discarding is not a pure map. It connects the two counterparts of a doubled state by a single wire. This allows discarding to be used to purify any arbitrary state or map. For the case of a map $\Phi$, \textbf{purification} is as follows:
+
+\begin{equation}
+\tikzfig{doublemapnotpure} = \tikzfig{doublemapdiscardingoneout} = \tikzfig{conjugatemapsdiscardingoneout}
+\end{equation}
+
+
+
+\subsection{Phase Spiders}
+\label{phasespiders}
+
+\textbf{Phase spiders} follow the same rules as normal spiders. However, perhaps unsurprisingly, they carry a \textbf{phase}. This phase is subject to a new set of rules which is evident from the definition of the phase spider. 
+
+\begin{equation}
+\label{phasespider}
+\tikzfig{phasespider} = \tikzfig{wiretriangle}~e^{i\alpha_i} = \sum\limits_i e^{i\alpha_i} \bra{i}
+\end{equation}
+
+An example of the principle that underlies these rules is given below, which shows how the phase gets eliminated in the process of \textbf{decoding} a quantum state to classical information.
+
+
+\begin{equation}
+\label{eq:20}
+\tikzfig{decodingphase} = \tikzfig{spidertwophases} = \tikzfig{spidertwophaseswrittenout} = \tikzfig{spideronephasefromtwo} = \tikzfig{spideronephasefromtwoinspider} =
+\tikzfig{uniformprobstate}
+\end{equation}
+
+Equation \eqref{eq:20} exemplifies how phases behave when spiders fuse, they add. Furthermore, it shows how the phase gets eliminated when one tries to extract classical information, also known as measure, a quantum state.
+
+\subsection{Entanglement}
+\label{entanglement}
+Pure entangled states are those states that are not horizontally separable: 
+
+\begin{equation}
+\tikzfig{WideStateTwoOutputs} \neq \tikzfig{TwoStates}
+\end{equation}
+
+Since horizontally composed states is the \hyperref[doubling]{tensor product} of those states diagrammatically, this definition is in line with theory, where entangled states are defined as those states that can not be written as the tensor product of two states \cite{nielsen2011}. 
+
+An example of such a state is the following:
+
+\begin{equation}
+\tikzfig{DoubleCup} = \sum\limits_{i} \tikzfig{DoubleCupSeperate} = \ket{00} + \ket{11}
+\end{equation}
+
+Which is up to a number the first Bell matrix, $B_0$. Although it may seem like this state separates since it is made up of two triangles, it does not. Both triangles are correlated through the same index. Indeed, if the indices were different for each of the triangles this would not be an entangled state.
+
+\section{Protocols}
 
 
 \subsection{One Time Pad}
@@ -43,7 +241,7 @@ In the Quantum One Time Pad (QOTP) Alice and Bob again both share a uniformly ra
 	\rho' = \sum\limits_0^3 \frac{1}{4} \sigma_\alpha \rho \sigma_\alpha^\dagger = \frac{1}{2}\mathbb{I}
 \end{equation}
 
-In principle, the QOTP is similar to the OTP. By means of encrypting a piece of information with a random key which is unknown to Eve but shared by Alice and Bob the latter can achieve secure communication. As a communication protocol, QOTP is not very efficient. Alice and Bob need use two bits as a key per bit of communicated information. However, as a scheme for the encryption of qubits it is actually applicable to various protocols as it allows for the eight-state encoding of qubits \cite{DeVries2016}. *See if need some more information here* *Ask question about combining dense coding with QOTP*
+In principle, the QOTP is similar to the OTP. By means of encrypting a piece of information with a random key which is unknown to Eve but shared by Alice and Bob the latter can achieve secure communication. As a communication protocol, QOTP is not very efficient. Alice and Bob need use two bits as a key per bit of communicated information. However, as a scheme for the encryption of qubits it is actually applicable to various protocols as it allows for the eight-state encoding of qubits \cite{DeVries2016}. *See if need some more information here* ***Ask question about combining dense coding with QOTP***
 
 \subsubsection{Diagrammatic Implementation}
 
@@ -200,27 +398,102 @@ Let's see what happens when we look at this situation from Eve's perspective and
 
 The third diagram in equation \ref{equation:QOTPEveEvePerspective} is up until Eve's map $\Phi$ the same as equation \ref{equation:AliceWithBell}. We therefore see that from Eve's perspective Alice gives her the fully mixed state due to the Bell map that she applies to her original state. So even as a communication protocol, the Bell map is responsible for encrypting the state such that Eve can extract no information from it. 
 
-Finally, we can check that whenever we trace out (discard) the state of Eve, Alice and Bob can communicate. **But this does not always have to be true!!! Eve can just completely jam the state of Alice, ask this!!!**
+Finally, we can check that whenever we trace out (discard) the state of Eve, Alice and Bob can communicate.
 
 \subsection{Quantum Teleportation}
 
-In quantum teleportation Alice and Bob want to communicate a qubit, $\rho_1$, using the fact that they share an EPR pair, $\rho_{23}$, and a classical communication channel. Note that the subscripts in this paragraph help keep track of the different particles present. Subscript 1 refers to Alice's particle, 2 to her side of the EPR pair and 3 to Bob's side of the EPR pair. Alice measures $\rho_1$ together with $\rho_{2}$ in a Bell measurement, entangling these two states to give the total entangled state of $\rho_{123}$. This projects $\rho_{3}$ to one of four possible pure states dependent on the result of the Bell measurement done by Alice. Using the classical communication channel, Alice can send this measurement outcome to Bob in two classical bits. In order for Bob to extract  $\rho_1$ from his part of the EPR state, $\rho_{3}$, he needs to apply to it the Bell map that corresponds to the measurement outcome of Alice's Bell measurement.
+In quantum teleportation, Alice and Bob want to communicate a qubit, $\rho_1$, using the fact that they share an EPR pair, $\rho_{23}$, and a classical communication channel. Note that the subscripts in this paragraph help keep track of the different particles present. Subscript 1 refers to Alice's particle, 2 to her side of the EPR pair and 3 to Bob's side of the EPR pair. Alice measures $\rho_1$ together with $\rho_{2}$ in a Bell measurement, entangling these two states to give the total entangled state of $\rho_{123}$. This projects $\rho_{3}$ to one of four possible pure states dependent on the result of the Bell measurement done by Alice. Using the classical communication channel, Alice can send this measurement outcome to Bob in two classical bits. In order for Bob to extract  $\rho_1$ from his part of the entangled state, $\rho_{3}$, he needs to apply to it the Bell map that corresponds to the measurement outcome of Alice's Bell measurement.
 
 
-The name "Quantum Teleportation" might lead one to think that it includes the teleportation of information. However, this is not the case. This protocol does not achieve faster than light communication. Although the projection of $\rho_{3}$ onto a pure state happens simultaneously with Alice making the Bell measurement, in order for Bob to receive any information on $\rho_1$ from $\rho_{3}$ he must apply the Bell map that corresponds to the measurement result of Alice's Bell measurement. Alice thus has to communicate classically to Bob the result of her Bell measurement.
+The name of this protocol might lead one to think that it includes the teleportation of information. However, this is not the case. This protocol does not achieve faster than light communication. Although the projection of $\rho_{3}$ onto a pure state happens simultaneously with Alice making the Bell measurement, in order for Bob to receive any information on $\rho_1$ from $\rho_{3}$ he must apply the Bell map that corresponds to the measurement result of Alice's Bell measurement. Alice thus has to communicate classically to Bob the result of her Bell measurement.
+
+Quantum teleportation carries some similarity to QOTP. In both protocols, Alice and Bob communicate two classical bits of information in order to communicate one qubit. Also, in both cases, Bob applies a Bell map. These similarities might give some intuition for the equivalence of these protocols. In section \ref{Equivalences} we will see this equivalence diagrammatically.
+
+\subsubsection{Diagrammatic Implementation}
+
+The only component of this protocol that we have not worked out diagrammatically yet is the Bell measurement. We know that the Bell measurement is the adjoint of the Bell state. Therefore it suffices to create this Bell state and take its adjoint to make a Bell measurement.
+
+Let's see if we can take the Bell state apart and construct its smaller constituents diagrammatically. The Bell state is actually a composition of a Hadamard (H) and a CNOT gate. The Hadamard gate is applied first to one of the qubits. It transforms $\ket{0}$ to  $(\ket{0} + \ket{1})/\sqrt{2}$ and $\ket{1}$ to $(\ket{0} - \ket{1})/\sqrt{2}$. These superposition states actually form the basis states in a different basis. Therefore, the Hadamard gate can be seen as a basis transformation. For example, a Hadamard gate applied to basis states in the z basis will transform those states to the x basis. The CNOT gate is then applied to the two qubits. In the CNOT gate, one input qubit controls whether or not the other is negated. If the former is $\ket{0}$ the latter undergoes the identity and if the former is $\ket{1}$ the latter is negated. The control qubit in the CNOT gate is in this case the output of the Hadamard gate. The result of these operations entangles the two input qubits and puts them in one of four possible Bell states. Let's test this construction on input state $\ket{00}$ to see if it indeed behaves as expected:
+
+1. The Hadamard gate puts the first qubit in superposition: $\ket{00} \Rightarrow \frac{(\ket{0} + \ket{1})\ket{0}}{\sqrt{2}}$
+
+2. The CNOT negates the second qubit if the first is $\ket{1}$: $\frac{(\ket{0} + \ket{1})\ket{0}}{\sqrt{2}} \Rightarrow \frac{(\ket{00} + \ket{11})}{\sqrt{2}}$
+
+The result is thus indeed one of the Bell states, namely $B_0$.
+
+Diagrammatically, we do not have to construct the whole Hadamard gate to put one of the qubits into the required superposition. In fact, all we have to do is encode one qubit into a different basis than the other and choose one of the two bases to read the results in. The first part of our diagrammatic version of the Bell state thus becomes:
+
+\begin{equation}
+	\label{equation:BellState(1)}
+	\tikzfig{BellState(1)}
+\end{equation}
+\textit{Where i and j are test inputs.}
+
+The CNOT gate itself is composed by a copy map and an XOR map. The first qubit is copied after which the second is XOR'd with the copied qubit \cite{articleCNOT}. Diagrammatically:
+
+\begin{equation}
+	\label{equation:CNOT}
+	\tikzfig{CNOT}
+\end{equation}
+
+Applying test states:
+
+\begin{equation}
+	\tikzfig{CNOTWithTestInput} = \tikzfig{CNOTWithTestInput(1)} = \ket{i} \otimes \ket{i \oplus j}
+\end{equation}
+
+Which is indeed the behavior of the CNOT gate.
+
+Composing equations \ref{equation:BellState(1)} and \ref{equation:CNOT} then gives the Bell state:
+
+\begin{equation}
+	\tikzfig{BellState}
+\end{equation}
+
+Let's again apply the state $\ket{00}$ to test the functionality of this Bell state preparation map:
+
+\begin{equation}
+\label{BellStateTestInput}
+	\begin{split}
+	\tikzfig{BellStateTestInput} = \tikzfig{BellStateTestInput(1)} = \tikzfig{BellStateTestInput(2)} = \frac{1}{2}(\tikzfig{BellStateTestInput(3)}) + \frac{1}{2}(\tikzfig{BellStateTestInput(4)}) \\ = \frac{1}{2}(\tikzfig{BellStateTestInput(5)}) +
+	\frac{1}{2}(\tikzfig{BellStateTestInput(6)}) 
+	= \frac{1}{2}(\tikzfig{BellStateTestInput(7)}) + \frac{1}{2}(\tikzfig{BellStateTestInput(8)}) \\ = \frac{1}{2}(\tikzfig{BellStateTestInput(9)}) +
+	 \frac{1}{2}(\tikzfig{BellStateTestInput(10)}) = \frac{1}{2}(\tikzfig{BellStateTestInput(11)}) +
+	\frac{1}{2}(\tikzfig{BellStateTestInput(12)})
+	\end{split}
+\end{equation}
+
+The result is thus indeed the expected Bell state. Note that whereas usually the constants in the Bell states are $1/\sqrt{2}$ here they are $1/2$ since the final state is doubled.
+
+ Let's choose the entangled state of \ref{entanglement} for state $\rho_{23}$. We can then compose the Bell measurement that Alice applies on the left of this entangled state and the Bell map that Bob applies to the right. Alice also inputs $\rho_1$ to the Bell measurement. Finally, we need to make sure to connect the outputs of Alice's Bell measurement to Bob's Bell map. The protocol for teleportation then becomes: 
+ 
+ \begin{equation}
+ 	\tikzfig{QuantumTeleportation}
+ \end{equation}
+ 
+ It is redundant to see what happens to Eve or to show that this protocol allows for communication. In section \ref{Equivalences} we will see that this protocol is equivalent to the OTP, for which we have shown these things already. 
+ 
+ \section{Equivalences}
+\label{Equivalences}
+
+The equivalence of QOTP and quantum teleportation is rather trivial. Simply putting them side by side and making a small adjustment to QOTP, drawing it a bit more suggestively, is enough to see the equivalence:
+
+\begin{equation}
+\tikzfig{QOTPNoEveNoLine} = \tikzfig{QOTPNoEveNoLine(1)}~~~~~ \Leftrightarrow ~~~~~\tikzfig{QuantumTeleportationNoLine}
+\end{equation}
+
+This is a strikingly simple equivalence. Bending the U-shaped curve in the quantum teleportation protocol such that it becomes a straight line already does the trick. In a sense, quantum teleportation could thus be seen as the EPR variant of the QOTP. 
+
+Due to their equivalence, whatever we can prove with the one diagram we can state as fact for the other without needing to prove it for the other. This can be very convenient in security proofs.
 
 \bibliographystyle{plain}
 \bibliography{library}
 
 \appendix
-\newgeometry{left=1.5cm,right=1.5cm}
-\twocolumn
 
-\section{Diagrammatic Overview}
 
-This section serves as a concise introduction to the diagrammatic method for a reader who is familiar with quantum mechanics and Dirac notation. It also functions as a section supplementary to the report which can be used to look up diagrammatic concepts.
-
-\subsection{Keywords}
+\section{Keywords}
+\label{Keywords}
 
 
 ~~~~\hyperref[coloursandbases]{Base: E, page 2}
@@ -263,6 +536,8 @@ This section serves as a concise introduction to the diagrammatic method for a r
 
 \hyperref[identity]{System type: B, page 1}
 
+\hyperref[doubling]{Tensor product: F, page 3}
+
 \hyperref[discarding]{Trace: G, page 3}
 
 \hyperref[maps]{Map: C, page 1}
@@ -272,175 +547,5 @@ This section serves as a concise introduction to the diagrammatic method for a r
 \hyperref[braandket]{Transpose: A, page 1}
 
 \hyperref[identity]{Wire: B, page 1}
-
-\subsection{States, Effects, and Hermitian Operations}
-
-\label{braandket}
-The \textbf{ket} in Dirac notation is defined as a triangle with its sharp edge down in diagrammatic notation. It can be interpreted as the preparation of a state, in this case $\psi$. It is referred to as \textbf{state} throughout the thesis.
-
-\begin{equation}
-\ket{\psi} =  \tikzfig{state}
-\end{equation}
-
-The \textbf{bra} in diagrammatic notation is the flipped state, and is referred to as \textbf{effect}. 
-
-\begin{equation}
-\bra{\psi} =  \tikzfig{effect}
-\end{equation}
-
-Triangles are the smallest building blocks in the diagrammatic notation. Most diagrams can be reduced to just triangles. This makes them a powerful tool for translating complicated diagrams to Dirac notation and vice versa.
-
-From the fact that the \textbf{Hermitian adjoint} of a bra gives a ket and reversedly it follows that the operation of flipping a diagram around its horizontal axis corresponds to taking the Hermitian adjoint. Flipping a diagram around its vertical axis is also a legal operation and this corresponds to taking the \textbf{Hermitian conjugate}. Both of these operation applied together takes the \textbf{transpose}. All of these diagram operations can be summarized as follows:
-
-\begin{equation}
-\tikzfig{operationssummary}
-\end{equation}
-
-Note that there are also triangles that are not on their side. These are representations of objects that are not affected by conjugate transformations, such as integers.
-\subsection{Wires}
-\label{identity}
-The identity map in the diagrammatic notation is given by the following diagram, referred to as a \textbf{wire}.
-
-\begin{equation}
-\tikzfig{wire}
-\end{equation}
-
-A wire can be reduced to triangles (and subsequently to a ket and a bra) as follows: 
-
-\begin{equation}
-\tikzfig{wire} = \tikzfig{wiretriangles} = \sum_{i}\ket{i}\bra{i}
-\end{equation}
-
-Every wire has an associated \textbf{system type}, the space of the information that it carries. In the context of this report, the system types are Hilbert spaces or the tensor product of Hilbert Spaces. 
-
-\subsection{Maps}
-\label{maps}
-
-A \textbf{linear map} is given by the following diagram:
-
-\begin{equation}
-\tikzfig{map}
-\end{equation}
-
-We can find the equivalent form in Dirac notation as follows:
-
-\begin{equation}
-\tikzfig{map} = \tikzfig{mapdecomposition} = \sum_{ij}r_{ij}\ket{i}\bra{j}
-\end{equation}
-
-In the context of a bra and a ket, we can translate the diagrammatic linear map to Dirac notation as such:
-
-\begin{equation}
-\tikzfig{mapincontext} = \bra{\psi}f\ket{\psi}
-\end{equation}
-
-\subsection{Spiders}
-\label{spiders}
-
-A \textbf{spider} is a special map which functions as a Kronecker delta. It forces the inputs to be the same as the outputs. In the case where we have one input and output this gives a trivial result:
-
-\begin{equation}
-\tikzfig{spider} = \tikzfig{wiretriangles} = \tikzfig{wire}
-\end{equation}
-
-In the case where there are multiple outputs and inputs it forces all to be the same:
-
-\begin{equation}
-\tikzfig{spidermultileg} = \tikzfig{spidermultilegdecomposed}
-\end{equation}
-
-By applying arbitrary in- and outputs we can see how the \textbf{Kronecker delta} arises from Dirac notation. The following example is for two two inputs and two outputs but the same principle extends to an arbitrary amount of in- and outputs.
-
-\begin{equation}
-\begin{split}
-\tikzfig{spidermultileginandoutputs} = \tikzfig{spidermultilegdecomposedinandoutputs} = \\ \sum_{i} \bra{i}\ket{j}\bra{i}\ket{k}\bra{l}\ket{i}\bra{m}\ket{i} = \delta_{jk} \delta_{lm}  \delta_{jl}
-\end{split}
-\end{equation}
-
-Spiders with single in- or outputs also exist. A spider with a single output is the creation of a random variable and a spider with a single input is the deletion of any variable.
-
-\subsection{Colours and Bases}
-\label{coloursandbases}
-
-In the diagrammatic notation, the \textbf{colour} of an object such as a spider or a triangle determines its base. In the context of this paper it is sufficient to define two orthonormal \textbf{bases}, the Z and X bases. The Z basis has white diagrammatic elements, for the X basis they are gray. The following is an example of how to translate between bases in this notation:
-
-\begin{equation}
-\tikzfig{gray0} =\frac{1}{\sqrt(2)}( \tikzfig{white0} + \tikzfig{white1})
-\end{equation}
-
-This equation is of course entirely analogous to its Dirac notation counterpart, with $\ket{-}$ and $\ket{+}$ being the orthonormal basis states in the X basis and $\ket{0}$ and $\ket{1}$ the orthonormal basis states in the Z basis:
-
-\begin{equation}
-\ket{-} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
-\end{equation}
-
-\subsection{Doubling}
-\label{doubling}
-
-\textbf{Doubling} is the operation of taking the tensor product of a diagram with itself. In the usual case, where the system type of a single wire is a Hilbert space ($\mathcal{H}$), the doubled wire has the set of density matrices on that Hilbert space as system type.:
-
-\begin{equation}
-\mathcal{H} \oplus \mathcal{H} = \mathcal{D}(\mathcal{H})
-\end{equation}
-\textit{Where $\mathcal{D}(\mathcal{H})$ is the set of density matrices on $\mathcal{H}$. $\oplus$ is the tensor product.}
-
-Doubled maps and and states represent \textbf{pure} maps and states. Single maps and states represent their \textbf{mixed} counterparts. The most intuitive interpretation, and how it is mostly used in this report, is that the single wires represent classical data and thick wires represent data encoded into a quantum state.
-
-Doubling in diagrammatic notation is nothing more than placing a second conjugate diagram next to the original diagram. In doubled diagrams lines are drawn thick, for example:
-
-\begin{equation}
-\tikzfig{conjugatemaps} = \tikzfig{doublemap}
-\end{equation}
-\textit{The notation of a map with a hat, such as $\hat{f}$, means that that map is pure.}
-
-
-\subsection{Discarding}
-\label{discarding}
-
-\textbf{Discarding} is the process of removing part of a diagram from the whole, or removing the whole diagram altogether. For doubled diagrams it is defined as follows:
-
-\begin{equation}
-\label{discarding}
-\tikzfig{Discarding} = \tikzfig{thickwhiteieffect} = \tikzfig{thinwirediscardingdecomposed} = \tikzfig{discardingsinglewires} = tikzfig
-\end{equation}
-
-It is trivial to see that applying discarding to any arbitrary (normalized) state always results in the number 1. In fact, discarding a state or map is equivalent to taking its \textbf{trace}. As an example, we discard an arbitrary normalized \textbf{density matrix}, $\rho$:
-
-\begin{equation}
-\begin{split}
-\tikzfig{discardingdensitymatrx} = \tikzfig{discradingdensitymatrixsinglewires} = \sum\limits_{ij} \rho_{ij} \bra{j}\ket{i} \\ = \sum\limits_{ii} \rho_{ii} = Tr(\rho) = 1
-\end{split}
-\end{equation}
-
-Discarding is not a pure map. It connects the two counterparts of a doubled state by a single wire. This allows discarding to be used to purify any arbitrary state or map. For the case of a map $\Phi$ \textbf{purification} is as follows:
-
-\begin{equation}
-\tikzfig{doublemapnotpure} = \tikzfig{doublemapdiscardingoneout} = \tikzfig{conjugatemapsdiscardingoneout}
-\end{equation}
-
-
-
-\subsection{Phase Spiders}
-\label{phasespiders}
-
-\textbf{Phases spiders} follow the same rules as normal spiders. However, perhaps unsurprisingly, they carry a \textbf{phase}. This phase is subject to a new set of rules which is evident from the definition of the phase spider. 
-
-\begin{equation}
-\label{phasespider}
-\tikzfig{phasespider} = \tikzfig{wiretriangle}~e^{i\alpha_i}
-\end{equation}
-
-An example of the principle that underlies these rules is given below, which shows how the phase gets eliminated in the process of \textbf{decoding} a quantum state to classical information.
-
-
-\begin{equation}
-\label{eq:20}
-\tikzfig{decodingphase} = \tikzfig{spidertwophases} = \tikzfig{spidertwophaseswrittenout} = \tikzfig{spideronephasefromtwo} = \tikzfig{spideronephasefromtwoinspider} =
-\tikzfig{uniformprobstate}
-\end{equation}
-
-Equation \eqref{eq:20} exemplifies how phases behave when spiders fuse, they add. Furthermore, it shows how the phase gets eliminated when one tries to extract classical information, also known as measure, a quantum state.
-
-\onecolumn
 
 \end{document}

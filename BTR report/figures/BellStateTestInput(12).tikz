@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 0.5) {};
+		\node [style=none] (5) at (1, 1.5) {};
+		\node [style=none] (6) at (-1, 1.5) {};
+		\node [style=none] (15) at (-1, 0) {};
+		\node [style=STATEMID] (16) at (-1, 0.5) {\rotatebox{-45}{1}};
+		\node [style=none] (17) at (1, 0.5) {};
+		\node [style=none] (18) at (1, 1.5) {};
+		\node [style=none] (19) at (1, 0) {};
+		\node [style=STATEMID] (20) at (1, 0.5) {\rotatebox{-45}{1}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (6.center) to (15.center);
+		\draw [style=WIRE] (18.center) to (19.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

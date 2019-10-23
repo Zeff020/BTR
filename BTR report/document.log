@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  20 OCT 2019 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  23 OCT 2019 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,97 +918,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+(./figures/state.tikz) (./figures/effect.tikz) [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./figures/NoBitflipOnGray0(1).tikz)
-
-LaTeX Warning: Reference `coloursbases' on page 2 undefined on input line 68.
-
-(./figures/NoBitflipOnGray0(2).tikz) (./figures/NoBitflipOnGray0(3).tikz)
-(./figures/NoBitflipOnGray0(4).tikz) (./figures/NoBitflipOnGray0(5).tikz)
-
-LaTeX Warning: Reference `coloursbases' on page 2 undefined on input line 75.
-
-(./figures/NoBitflipOnGray0(6).tikz) (./figures/BitflipOnGray0(1).tikz)
-(./figures/BitflipOnGray0(2).tikz) (./figures/BitflipOnGray0(3).tikz)
-(./figures/BitflipOnGray0(4).tikz) (./figures/BitflipOnGray0(5).tikz)
-(./figures/BitflipOnGray0(6).tikz) [2] (./figures/spideroneoutput.tikz)
-(./figures/wiretriangle.tikz) (./figures/encodingrandombit.tikz)
-(./figures/encodingrandombit2.tikz) (./figures/IMID.tikz)
-(./figures/RandomXBitFlip.tikz) (./figures/RandomZBitFlip.tikz)
-(./figures/RandomXBitFlip.tikz) (./figures/RandomXBitFlipProof(1).tikz)
-(./figures/RandomXBitFlipProof(2).tikz) (./figures/RandomXBitFlipProof(3).tikz)
-(./figures/RandomXBitFlipProof(4).tikz) (./figures/RandomXBitFlipProof(5).tikz)
-(./figures/RandomXBitFlipProof(6).tikz) (./figures/RandomXBitFlipProof(7).tikz)
-(./figures/RandomXBitFlipProof(8).tikz) (./figures/BellMap.tikz) [3]
-(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveFinal.tikz)
-(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveProof(1).tikz)
-(./figures/QOTPNoEveProof(2).tikz) (./figures/QOTPNoEveProof(3).tikz)
-(./figures/QOTPNoEveProof(4).tikz) (./figures/QOTPNoEveProof(5).tikz)
-(./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
-(./figures/QOTPNoEveFinal.tikz) (./figures/QOTPNoEve.tikz)
-(./figures/QOTPNoEveProof(1).tikz) (./figures/QOTPNoEveProof(2).tikz)
-(./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
-(./figures/QOTPNoEveProof(5).tikz) (./figures/QOTPNoEveProof(6).tikz)
-(./figures/QOTPNoEveProof(7).tikz) (./figures/QOTPNoEveFinal.tikz) [4]
-(./figures/encodingrandombit.tikz) (./figures/FullyMixed.tikz)
-(./figures/encodingrandombitgray.tikz) (./figures/AliceWithBell.tikz)
-(./figures/AliceWithBell(1).tikz) (./figures/AliceWithBell(2).tikz)
-(./figures/AliceWithBell(3).tikz) (./figures/AliceWithBell(4).tikz)
-(./figures/AliceWithBell(5).tikz) (./figures/QOTPEve.tikz)
-(./figures/QOTPEveEvePerspective(1).tikz)
-(./figures/QOTPEveEvePerspective(2).tikz)
-(./figures/QOTPEveEvePerspective(3).tikz)
-(./figures/QOTPEveEvePerspective(4).tikz)
-(./figures/QOTPEveEvePerspective(5).tikz) [5] (./document.bbl) [6]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=528.93675pt
-* \textheight=556.47656pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-13.87262pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-(./figures/state.tikz) (./figures/effect.tikz)
-(./figures/operationssummary.tikz) (./figures/wire.tikz) (./figures/wire.tikz)
-(./figures/wiretriangles.tikz) [7
-
-
-] (./figures/map.tikz) (./figures/map.tikz)
-(./figures/mapdecomposition.tikz) (./figures/mapincontext.tikz)
-(./figures/spider.tikz) (./figures/wiretriangles.tikz) (./figures/wire.tikz)
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./figu
+res/operationssummary.tikz)
+(./figures/wire.tikz) (./figures/wire.tikz) (./figures/wiretriangles.tikz)
+(./figures/map.tikz) (./figures/map.tikz) (./figures/mapdecomposition.tikz)
+[2] (./figures/mapincontext.tikz) (./figures/spider.tikz)
+(./figures/wiretriangles.tikz) (./figures/wire.tikz)
 (./figures/spidermultileg.tikz) (./figures/spidermultilegdecomposed.tikz)
 (./figures/spidermultileginandoutputs.tikz)
 (./figures/spidermultilegdecomposedinandoutputs.tikz)
 (./figures/spidermultileginandoutputs.tikz)
-(./figures/spidermultilegdecomposedinandoutputs.tikz) (./figures/gray0.tikz)
-[8] (./figures/conjugatemaps.tikz) (./figures/doublemap.tikz)
+(./figures/spidermultilegdecomposedinandoutputs.tikz) [3] (./figures/gray0.tikz
+) (./figures/conjugatemaps.tikz) (./figures/doublemap.tikz) [4]
 (./figures/Discarding.tikz) (./figures/thickwhiteieffect.tikz)
 (./figures/thinwirediscardingdecomposed.tikz)
 (./figures/discardingsinglewires.tikz) (./figures/discardingdensitymatrx.tikz)
@@ -1021,16 +945,74 @@ LaTeX Warning: Reference `coloursbases' on page 2 undefined on input line 75.
 (./figures/spidertwophases.tikz) (./figures/spidertwophaseswrittenout.tikz)
 (./figures/spideronephasefromtwo.tikz)
 (./figures/spideronephasefromtwoinspider.tikz) (./figures/uniformprobstate.tikz
-) [9] [10
+) [5] (./figures/WideStateTwoOutputs.tikz) (./figures/TwoStates.tikz)
+(./figures/DoubleCup.tikz) (./figures/DoubleCupSeperate.tikz) [6]
+(./figures/NoBitflipOnGray0(1).tikz)
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+LaTeX Warning: Reference `coloursbases' on page 7 undefined on input line 266.
+
+(./figures/NoBitflipOnGray0(2).tikz) (./figures/NoBitflipOnGray0(3).tikz)
+(./figures/NoBitflipOnGray0(4).tikz) (./figures/NoBitflipOnGray0(5).tikz)
+
+LaTeX Warning: Reference `coloursbases' on page 7 undefined on input line 273.
+
+(./figures/NoBitflipOnGray0(6).tikz) [7] (./figures/BitflipOnGray0(1).tikz)
+(./figures/BitflipOnGray0(2).tikz) (./figures/BitflipOnGray0(3).tikz)
+(./figures/BitflipOnGray0(4).tikz) (./figures/BitflipOnGray0(5).tikz)
+(./figures/BitflipOnGray0(6).tikz) (./figures/spideroneoutput.tikz)
+(./figures/wiretriangle.tikz) (./figures/encodingrandombit.tikz)
+(./figures/encodingrandombit2.tikz) (./figures/IMID.tikz)
+(./figures/RandomXBitFlip.tikz) (./figures/RandomZBitFlip.tikz)
+(./figures/RandomXBitFlip.tikz) (./figures/RandomXBitFlipProof(1).tikz)
+(./figures/RandomXBitFlipProof(2).tikz) (./figures/RandomXBitFlipProof(3).tikz)
+(./figures/RandomXBitFlipProof(4).tikz) (./figures/RandomXBitFlipProof(5).tikz)
+(./figures/RandomXBitFlipProof(6).tikz) (./figures/RandomXBitFlipProof(7).tikz)
+(./figures/RandomXBitFlipProof(8).tikz) [8] (./figures/BellMap.tikz)
+(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveFinal.tikz)
+(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveProof(1).tikz)
+(./figures/QOTPNoEveProof(2).tikz) (./figures/QOTPNoEveProof(3).tikz)
+(./figures/QOTPNoEveProof(4).tikz) (./figures/QOTPNoEveProof(5).tikz)
+(./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
+(./figures/QOTPNoEveFinal.tikz) (./figures/QOTPNoEve.tikz)
+(./figures/QOTPNoEveProof(1).tikz) (./figures/QOTPNoEveProof(2).tikz)
+(./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
+(./figures/QOTPNoEveProof(5).tikz) (./figures/QOTPNoEveProof(6).tikz)
+(./figures/QOTPNoEveProof(7).tikz) (./figures/QOTPNoEveFinal.tikz) [9]
+(./figures/encodingrandombit.tikz) (./figures/FullyMixed.tikz)
+(./figures/encodingrandombitgray.tikz) (./figures/AliceWithBell.tikz)
+(./figures/AliceWithBell(1).tikz) (./figures/AliceWithBell(2).tikz)
+(./figures/AliceWithBell(3).tikz) (./figures/AliceWithBell(4).tikz)
+(./figures/AliceWithBell(5).tikz) (./figures/QOTPEve.tikz) [10]
+(./figures/QOTPEveEvePerspective(1).tikz)
+(./figures/QOTPEveEvePerspective(2).tikz)
+(./figures/QOTPEveEvePerspective(3).tikz)
+(./figures/QOTPEveEvePerspective(4).tikz)
+(./figures/QOTPEveEvePerspective(5).tikz) [11] (./figures/BellState(1).tikz)
+(./figures/CNOT.tikz) (./figures/CNOTWithTestInput.tikz)
+(./figures/CNOTWithTestInput(1).tikz) [12] (./figures/BellState.tikz)
+(./figures/BellStateTestInput.tikz) (./figures/BellStateTestInput(1).tikz)
+(./figures/BellStateTestInput(2).tikz) (./figures/BellStateTestInput(3).tikz)
+(./figures/BellStateTestInput(4).tikz) (./figures/BellStateTestInput(5).tikz)
+(./figures/BellStateTestInput(6).tikz) (./figures/BellStateTestInput(7).tikz)
+(./figures/BellStateTestInput(8).tikz) (./figures/BellStateTestInput(9).tikz)
+(./figures/BellStateTestInput(10).tikz) (./figures/BellStateTestInput(11).tikz)
+(./figures/BellStateTestInput(12).tikz) (./figures/BellStateTestInput.tikz)
+(./figures/BellStateTestInput(1).tikz) (./figures/BellStateTestInput(2).tikz)
+(./figures/BellStateTestInput(3).tikz) (./figures/BellStateTestInput(4).tikz)
+(./figures/BellStateTestInput(5).tikz) (./figures/BellStateTestInput(6).tikz)
+(./figures/BellStateTestInput(7).tikz) (./figures/BellStateTestInput(8).tikz)
+(./figures/BellStateTestInput(9).tikz) (./figures/BellStateTestInput(10).tikz)
+(./figures/BellStateTestInput(11).tikz) (./figures/BellStateTestInput(12).tikz)
+(./figures/QuantumTeleportation.tikz) [13] (./figures/QOTPNoEveNoLine.tikz)
+(./figures/QOTPNoEveNoLine(1).tikz) (./figures/QuantumTeleportationNoLine.tikz)
+(./document.bbl) [14] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 551.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 551.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 066BF3C303E35B1D61203790567159F0;959.
+(rerunfilecheck)             Checksum: FB46EB00292FEE9B4D41BDF75168E223;1243.
 
 
 LaTeX Warning: There were undefined references.
@@ -1038,16 +1020,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 551.
  ) 
 Here is how much of TeX's memory you used:
- 31441 strings out of 492167
- 621344 string characters out of 6125373
- 781920 words of memory out of 5000000
- 35065 multiletter control sequences out of 15000+600000
+ 31653 strings out of 492167
+ 626871 string characters out of 6125373
+ 792021 words of memory out of 5000000
+ 35152 multiletter control sequences out of 15000+600000
  543019 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,22n,75p,970b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,22n,75p,1155b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -1072,10 +1054,10 @@ nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (10 pages, 295140 bytes).
+Output written on document.pdf (15 pages, 319256 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 346 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WIDESTATERIGHT] (0) at (0, 0) {\footnotesize \rotatebox{90}{$\hat{\psi}$}};
+		\node [style=none] (1) at (-0.5, -0.25) {};
+		\node [style=none] (2) at (0.5, -0.15) {};
+		\node [style=none] (3) at (0.5, 1) {};
+		\node [style=none] (4) at (-0.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (2.center);
+		\draw [style=WIRE] (4.center) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
