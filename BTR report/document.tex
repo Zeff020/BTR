@@ -465,15 +465,70 @@ Let's again apply the state $\ket{00}$ to test the functionality of this Bell st
 
 The result is thus indeed the expected Bell state. Note that whereas usually the constants in the Bell states are $1/\sqrt{2}$ here they are $1/2$ since the final state is doubled.
 
- Let's choose the entangled state of \ref{entanglement} for state $\rho_{23}$. We can then compose the Bell measurement that Alice applies on the left of this entangled state and the Bell map that Bob applies to the right. Alice also inputs $\rho_1$ to the Bell measurement. Finally, we need to make sure to connect the outputs of Alice's Bell measurement to Bob's Bell map. The protocol for teleportation then becomes: 
+Let's choose the entangled state of \ref{entanglement} for state $\rho_{23}$. We can then compose the Bell measurement that Alice applies on the left of this entangled state and the Bell map that Bob applies to the right. Alice also inputs $\rho_1$ to the Bell measurement. Finally, we need to make sure to connect the outputs of Alice's Bell measurement to Bob's Bell map. The protocol for teleportation then becomes: 
  
- \begin{equation}
- 	\tikzfig{QuantumTeleportation}
- \end{equation}
+\begin{equation}
+	\tikzfig{QuantumTeleportation}
+\end{equation}
  
- It is redundant to see what happens to Eve or to show that this protocol allows for communication. In section \ref{Equivalences} we will see that this protocol is equivalent to the OTP, for which we have shown these things already. 
+It is redundant to see what happens to Eve or to show that this protocol allows for communication. In section \ref{Equivalences} we will see that this protocol is equivalent to the OTP, for which we have shown these things already. 
  
- \section{Equivalences}
+\subsection{Quantum Key Distribution}
+
+QKD is the only protocol that has been diagrammatically (somewhat) thoroughly discussed in literature \cite{kissinger2017}. Therefore, we will not go over the full security proof here. This section is meant to get the reader to understand the diagrammatic version of QKD, such that we can use it later on in the context of equivalences.
+
+The QKD protocol BB84 was already described in the introduction. To write it out diagrammatically we need to generalize it to a protocol that is not dependent on the physical realization of the qubits. In the new protocol, we therefore say that Alice and Bob have the choice to encode their qubit in two mutually unbiased bases, which we choose to be the z and x bases. Not considering Eve, if Alice and Bob then measure in the same basis, their quantum state is sent through just fine:
+
+\begin{equation}
+	\tikzfig{QKDSameBasis} = \tikzfig{wire} ~~~~~~~~~~~~~~~~~~~ \tikzfig{QKDSameBasis2} = \tikzfig{wire}
+\end{equation}
+
+However, due to the fact that the bases are mutually unbiased we get the following situation when Alice and Bob's measurement bases do not agree:
+
+\begin{equation}
+\tikzfig{QKDDifferentBasis} = \tikzfig{QKDDifferentBasis2}
+\end{equation}
+
+Now if we limit Eve's interference to only a measurement in either the z or x bases she will have a 50\% chance of measuring in the correct basis. In the case where Alice and Bob both use the x basis Eve can do two things. Either she also measures in the x basis and receives Alice's state:
+
+\begin{equation}
+	\tikzfig{QKDSameBasisEveNoFuckUp} = \tikzfig{QKDSameBasisEveNoFuckUp2} 
+\end{equation}
+
+Or she measures in the z basis and both her and Bob receive a random bit:
+
+\begin{equation}
+	\tikzfig{QKDSameBasisEveFucksUp} = \tikzfig{QKDSameBasisEveFucksUp2}
+\end{equation}
+
+This puts heavy constraints on Eve. Realistically, she could measure in different bases, or find even different ways to extract information from Alice's qubits. Therefore, it is more general to state that Eve can apply some map $\Phi$, on which we can put constraints as needed:
+
+\begin{equation}
+	\tikzfig{EveNewMap}
+\end{equation}
+
+This is exactly how Kissinger et al. approach this problem in \cite{Kissinger2017}. To prove security for noiseless communication they go on to claim that for Eve's intervention to be undetected whenever Alice and Bob's measurement results are the same, Eve's channel must exhibit the following property:
+
+\begin{equation}
+	\label{QKDProofSetup}
+	\tikzfig{QKDProofSetup1} = \tikzfig{wire} ~~~~~~~~~~~ \tikzfig{QKDProofSetup2} = \tikzfig{wire}
+\end{equation}
+
+From here on Kissinger et al. in \cite{Kissinger2017} include an extensive (fully diagrammatic) security proof which finally reaches the conclusion that for any $\Phi$ that satisfies \ref{QKDProofSetup} we have:
+
+\begin{equation}
+\tikzfig{EveNewMap} = \tikzfig{thickWIRE} ~~~ \tikzfig{SmallRho}
+\end{equation}
+
+In words: Eve's channel has no connection to Alice and Bob's and she thus learns nothing about the state Alice sent to Bob.
+
+
+\subsection{Quantum Key Recycling}
+
+
+
+
+\section{Equivalences}
 \label{Equivalences}
 
 The equivalence of QOTP and quantum teleportation is rather trivial. Simply putting them side by side and making a small adjustment to QOTP, drawing it a bit more suggestively, is enough to see the equivalence:
@@ -484,7 +539,9 @@ The equivalence of QOTP and quantum teleportation is rather trivial. Simply putt
 
 This is a strikingly simple equivalence. Bending the U-shaped curve in the quantum teleportation protocol such that it becomes a straight line already does the trick. In a sense, quantum teleportation could thus be seen as the EPR variant of the QOTP. 
 
-Due to their equivalence, whatever we can prove with the one diagram we can state as fact for the other without needing to prove it for the other. This can be very convenient in security proofs.
+Due to their equivalence, whatever we can prove with the one diagram we can state as fact for the other without needing to prove it. This can be very convenient in security proofs.
+
+
 
 \bibliographystyle{plain}
 \bibliography{library}

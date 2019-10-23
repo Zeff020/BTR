@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  23 OCT 2019 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  23 OCT 2019 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,16 +1003,30 @@ LaTeX Warning: Reference `coloursbases' on page 7 undefined on input line 273.
 (./figures/BellStateTestInput(7).tikz) (./figures/BellStateTestInput(8).tikz)
 (./figures/BellStateTestInput(9).tikz) (./figures/BellStateTestInput(10).tikz)
 (./figures/BellStateTestInput(11).tikz) (./figures/BellStateTestInput(12).tikz)
-(./figures/QuantumTeleportation.tikz) [13] (./figures/QOTPNoEveNoLine.tikz)
+(./figures/QuantumTeleportation.tikz)
+
+LaTeX Warning: Citation `kissinger2017' on page 13 undefined on input line 478.
+
+
+[13] (./figures/QKDSameBasis.tikz) (./figures/wire.tikz)
+(./figures/QKDSameBasis2.tikz) (./figures/wire.tikz)
+(./figures/QKDDifferentBasis.tikz) (./figures/QKDDifferentBasis2.tikz)
+(./figures/QKDSameBasisEveNoFuckUp.tikz)
+(./figures/QKDSameBasisEveNoFuckUp2.tikz)
+(./figures/QKDSameBasisEveFucksup.tikz) (./figures/QKDSameBasisEveFucksup2.tikz
+) (./figures/EveNewMap.tikz) (./figures/QKDProofSetup1.tikz)
+(./figures/wire.tikz) (./figures/QKDProofSetup2.tikz) (./figures/wire.tikz)
+[14] (./figures/EveNewMap.tikz) (./figures/thickWIRE.tikz)
+(./figures/SmallRho.tikz) (./figures/QOTPNoEveNoLine.tikz)
 (./figures/QOTPNoEveNoLine(1).tikz) (./figures/QuantumTeleportationNoLine.tikz)
-(./document.bbl) [14] [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 551.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
+(./document.bbl [15]) [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 607.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 607.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 551.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 607.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 607.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: FB46EB00292FEE9B4D41BDF75168E223;1243.
+(rerunfilecheck)             Checksum: 88C4BD04CE1B59802C8338F83B098C57;1388.
 
 
 LaTeX Warning: There were undefined references.
@@ -1020,13 +1034,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 551.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 607.
  ) 
 Here is how much of TeX's memory you used:
- 31653 strings out of 492167
- 626871 string characters out of 6125373
- 792021 words of memory out of 5000000
- 35152 multiletter control sequences out of 15000+600000
+ 31748 strings out of 492167
+ 629075 string characters out of 6125373
+ 792109 words of memory out of 5000000
+ 35185 multiletter control sequences out of 15000+600000
  543019 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,22n,75p,1155b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1054,10 +1068,10 @@ nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (15 pages, 319256 bytes).
+Output written on document.pdf (16 pages, 326532 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
