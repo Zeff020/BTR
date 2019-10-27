@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=GraySpider] (0) at (0, 0) {};
+		\node [style=none] (1) at (1, -1.5) {};
+		\node [style=none] (2) at (-1, -1.5) {};
+		\node [style=none] (3) at (0, 1) {};
+		\node [style=StateMid] (4) at (1, -1.25) {\rotatebox{-45}{j}};
+		\node [style=StateMid] (5) at (-1, -1.25) {\rotatebox{-45}{i}};
+		\node [style=EffectMid] (6) at (0, 0.75) {\rotatebox{135}{k}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left=15] (0) to (1.center);
+		\draw [bend right=15] (0) to (2.center);
+		\draw (0) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (1, -0.5) {};
+		\node [style=StateMid] (1) at (-1, -0.5) {\rotatebox{-45}{m}};
+		\node [style=GraySpider] (2) at (0.25, 1.75) {};
+		\node [style=none] (3) at (-1, -0.75) {};
+		\node [style=none] (4) at (3, 3.5) {};
+		\node [style=none] (5) at (1.75, 3.5) {};
+		\node [style=none] (6) at (-2, 3) {};
+		\node [style=none] (7) at (4, 3) {};
+		\node [style=none] (8) at (-1.25, 3.5) {\tiny Bob};
+		\node [style=none] (9) at (-1.25, 2.5) {\tiny Alice};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (3.center) to (2);
+		\draw [bend left=15] (0) to (2);
+		\draw [bend right] (0) to (4.center);
+		\draw (2) to (5.center);
+		\draw [style=new edge style 0] (6.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

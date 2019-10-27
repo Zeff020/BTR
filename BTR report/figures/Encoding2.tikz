@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateRight] (0) at (0, -1.75) {\rotatebox{90}{$\rho$}};
+		\node [style=none] (2) at (0, -2.25) {};
+		\node [style=none] (3) at (0, 0.75) {};
+		\node [style=STATEMID] (4) at (0, 1.25) {\rotatebox{-45}{$i$}};
+		\node [style=EffectMid] (5) at (0, -1) {\rotatebox{135}{$i$}};
+		\node [style=none] (6) at (0, 2.25) {};
+		\node [style=none] (7) at (0, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (6.center);
+		\draw (7.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

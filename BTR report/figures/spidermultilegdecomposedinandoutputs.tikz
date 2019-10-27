@@ -13,10 +13,10 @@
 		\node [style=none] (17) at (1, -1) {};
 		\node [style=StateMidi] (18) at (1, 1.25) {};
 		\node [style=EffectMidi] (19) at (1, -1.25) {};
-		\node [style=StateMidl] (20) at (-1, -2.25) {};
-		\node [style=StateMidm] (21) at (1, -2.25) {};
-		\node [style=EffectMidj] (22) at (-1, 2.25) {};
-		\node [style=EffectMidk] (23) at (1, 2.25) {};
+		\node [style=StateMid] (20) at (1, -2.25) {\rotatebox{-45}{$m$}};
+		\node [style=StateMid] (21) at (-1, -2.25) {\rotatebox{-45}{$l$}};
+		\node [style=EffectMid] (22) at (-1, 2.25) {\rotatebox{135}{$j$}};
+		\node [style=EffectMid] (23) at (1, 2.25) {\rotatebox{135}{$k$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (7.center) to (9.center);
