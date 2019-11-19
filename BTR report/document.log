@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  24 OCT 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  19 NOV 2019 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,6 +492,39 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2855.
 LaTeX Info: Redefining \] on input line 2856.
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen165
+\calc@Bdimen=\dimen166
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count123
+\calc@Cskip=\skip48
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count124
+\l_MT_multwidth_dim=\dimen167
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen168
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen169
+\l_MT_above_intertext_sep=\dimen170
+\l_MT_below_intertext_sep=\dimen171
+\l_MT_above_shortintertext_sep=\dimen172
+\l_MT_below_shortintertext_sep=\dimen173
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -555,16 +588,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen165
-\Hy@linkcounter=\count121
-\Hy@pagecounter=\count122
+\@linkdim=\dimen174
+\Hy@linkcounter=\count125
+\Hy@pagecounter=\count126
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count123
+\Hy@SavedSpaceFactor=\count127
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -576,17 +609,17 @@ Package hyperref Info: Plain pages OFF on input line 4555.
 Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4793.
-\c@Hy@tempcnt=\count124
+\c@Hy@tempcnt=\count128
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5152.
-\XeTeXLinkMargin=\dimen166
-\Fld@menulength=\count125
-\Field@Width=\dimen167
-\Fld@charsize=\dimen168
+\XeTeXLinkMargin=\dimen175
+\Fld@menulength=\count129
+\Field@Width=\dimen176
+\Fld@charsize=\dimen177
 Package hyperref Info: Hyper figures OFF on input line 6423.
 Package hyperref Info: Link nesting OFF on input line 6428.
 Package hyperref Info: Hyper index ON on input line 6431.
@@ -596,23 +629,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6448.
 Package hyperref Info: PDF/A mode OFF on input line 6453.
 LaTeX Info: Redefining \ref on input line 6493.
 LaTeX Info: Redefining \pageref on input line 6497.
-\Hy@abspage=\count126
-\c@Item=\count127
-\c@Hfootnote=\count128
+\Hy@abspage=\count130
+\c@Item=\count131
+\c@Hfootnote=\count132
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
-\Fld@listcount=\count129
-\c@bookmark@seq@number=\count130
+\Fld@listcount=\count133
+\c@bookmark@seq@number=\count134
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip50
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
@@ -623,134 +656,134 @@ Package: expl3 2019-10-11 L3 programming layer (loader)
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2019-10-11 L3 programming layer (code)
-\c_max_int=\count131
-\l_tmpa_int=\count132
-\l_tmpb_int=\count133
-\g_tmpa_int=\count134
-\g_tmpb_int=\count135
-\l__seq_internal_a_int=\count136
-\l__seq_internal_b_int=\count137
-\g__kernel_prg_map_int=\count138
-\c__ior_term_noprompt_ior=\count139
-\c_log_iow=\count140
-\l_iow_line_count_int=\count141
-\l__iow_line_target_int=\count142
-\l__iow_one_indent_int=\count143
-\l__iow_indent_int=\count144
-\c_zero_dim=\dimen169
-\c_max_dim=\dimen170
-\l_tmpa_dim=\dimen171
-\l_tmpb_dim=\dimen172
-\g_tmpa_dim=\dimen173
-\g_tmpb_dim=\dimen174
-\c_zero_skip=\skip47
-\c_max_skip=\skip48
-\l_tmpa_skip=\skip49
-\l_tmpb_skip=\skip50
-\g_tmpa_skip=\skip51
-\g_tmpb_skip=\skip52
+\c_max_int=\count135
+\l_tmpa_int=\count136
+\l_tmpb_int=\count137
+\g_tmpa_int=\count138
+\g_tmpb_int=\count139
+\l__seq_internal_a_int=\count140
+\l__seq_internal_b_int=\count141
+\g__kernel_prg_map_int=\count142
+\c__ior_term_noprompt_ior=\count143
+\c_log_iow=\count144
+\l_iow_line_count_int=\count145
+\l__iow_line_target_int=\count146
+\l__iow_one_indent_int=\count147
+\l__iow_indent_int=\count148
+\c_zero_dim=\dimen178
+\c_max_dim=\dimen179
+\l_tmpa_dim=\dimen180
+\l_tmpb_dim=\dimen181
+\g_tmpa_dim=\dimen182
+\g_tmpb_dim=\dimen183
+\c_zero_skip=\skip51
+\c_max_skip=\skip52
+\l_tmpa_skip=\skip53
+\l_tmpb_skip=\skip54
+\g_tmpa_skip=\skip55
+\g_tmpb_skip=\skip56
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count145
-\l__intarray_loop_int=\count146
-\c__intarray_sp_dim=\dimen175
-\g__intarray_font_int=\count147
-\c__fp_leading_shift_int=\count148
-\c__fp_middle_shift_int=\count149
-\c__fp_trailing_shift_int=\count150
-\c__fp_big_leading_shift_int=\count151
-\c__fp_big_middle_shift_int=\count152
-\c__fp_big_trailing_shift_int=\count153
-\c__fp_Bigg_leading_shift_int=\count154
-\c__fp_Bigg_middle_shift_int=\count155
-\c__fp_Bigg_trailing_shift_int=\count156
-\c__kernel_randint_max_int=\count157
-\g__fp_array_int=\count158
-\l__fp_array_loop_int=\count159
-\l__sort_length_int=\count160
-\l__sort_min_int=\count161
-\l__sort_top_int=\count162
-\l__sort_max_int=\count163
-\l__sort_true_max_int=\count164
-\l__sort_block_int=\count165
-\l__sort_begin_int=\count166
-\l__sort_end_int=\count167
-\l__sort_A_int=\count168
-\l__sort_B_int=\count169
-\l__sort_C_int=\count170
-\l__str_internal_int=\count171
-\c__str_replacement_char_int=\count172
-\l__tl_analysis_normal_int=\count173
-\l__tl_analysis_index_int=\count174
-\l__tl_analysis_nesting_int=\count175
-\l__tl_analysis_type_int=\count176
-\l__regex_internal_a_int=\count177
-\l__regex_internal_b_int=\count178
-\l__regex_internal_c_int=\count179
-\l__regex_balance_int=\count180
-\l__regex_group_level_int=\count181
-\l__regex_mode_int=\count182
-\c__regex_cs_in_class_mode_int=\count183
-\c__regex_cs_mode_int=\count184
-\l__regex_catcodes_int=\count185
-\l__regex_default_catcodes_int=\count186
-\c__regex_catcode_D_int=\count187
-\c__regex_catcode_S_int=\count188
-\c__regex_catcode_L_int=\count189
-\c__regex_catcode_O_int=\count190
-\c__regex_catcode_A_int=\count191
-\c__regex_all_catcodes_int=\count192
-\l__regex_show_lines_int=\count193
-\l__regex_min_state_int=\count194
-\l__regex_max_state_int=\count195
-\l__regex_left_state_int=\count196
-\l__regex_right_state_int=\count197
-\l__regex_capturing_group_int=\count198
-\l__regex_min_pos_int=\count199
-\l__regex_max_pos_int=\count266
-\l__regex_curr_pos_int=\count267
-\l__regex_start_pos_int=\count268
-\l__regex_success_pos_int=\count269
-\l__regex_curr_char_int=\count270
-\l__regex_curr_catcode_int=\count271
-\l__regex_last_char_int=\count272
-\l__regex_case_changed_char_int=\count273
-\l__regex_curr_state_int=\count274
-\l__regex_step_int=\count275
-\l__regex_min_active_int=\count276
-\l__regex_max_active_int=\count277
-\l__regex_replacement_csnames_int=\count278
-\l__regex_match_count_int=\count279
-\l__regex_min_submatch_int=\count280
-\l__regex_submatch_int=\count281
-\l__regex_zeroth_submatch_int=\count282
-\g__regex_trace_regex_int=\count283
+\l_keys_choice_int=\count149
+\l__intarray_loop_int=\count150
+\c__intarray_sp_dim=\dimen184
+\g__intarray_font_int=\count151
+\c__fp_leading_shift_int=\count152
+\c__fp_middle_shift_int=\count153
+\c__fp_trailing_shift_int=\count154
+\c__fp_big_leading_shift_int=\count155
+\c__fp_big_middle_shift_int=\count156
+\c__fp_big_trailing_shift_int=\count157
+\c__fp_Bigg_leading_shift_int=\count158
+\c__fp_Bigg_middle_shift_int=\count159
+\c__fp_Bigg_trailing_shift_int=\count160
+\c__kernel_randint_max_int=\count161
+\g__fp_array_int=\count162
+\l__fp_array_loop_int=\count163
+\l__sort_length_int=\count164
+\l__sort_min_int=\count165
+\l__sort_top_int=\count166
+\l__sort_max_int=\count167
+\l__sort_true_max_int=\count168
+\l__sort_block_int=\count169
+\l__sort_begin_int=\count170
+\l__sort_end_int=\count171
+\l__sort_A_int=\count172
+\l__sort_B_int=\count173
+\l__sort_C_int=\count174
+\l__str_internal_int=\count175
+\c__str_replacement_char_int=\count176
+\l__tl_analysis_normal_int=\count177
+\l__tl_analysis_index_int=\count178
+\l__tl_analysis_nesting_int=\count179
+\l__tl_analysis_type_int=\count180
+\l__regex_internal_a_int=\count181
+\l__regex_internal_b_int=\count182
+\l__regex_internal_c_int=\count183
+\l__regex_balance_int=\count184
+\l__regex_group_level_int=\count185
+\l__regex_mode_int=\count186
+\c__regex_cs_in_class_mode_int=\count187
+\c__regex_cs_mode_int=\count188
+\l__regex_catcodes_int=\count189
+\l__regex_default_catcodes_int=\count190
+\c__regex_catcode_D_int=\count191
+\c__regex_catcode_S_int=\count192
+\c__regex_catcode_L_int=\count193
+\c__regex_catcode_O_int=\count194
+\c__regex_catcode_A_int=\count195
+\c__regex_all_catcodes_int=\count196
+\l__regex_show_lines_int=\count197
+\l__regex_min_state_int=\count198
+\l__regex_max_state_int=\count199
+\l__regex_left_state_int=\count266
+\l__regex_right_state_int=\count267
+\l__regex_capturing_group_int=\count268
+\l__regex_min_pos_int=\count269
+\l__regex_max_pos_int=\count270
+\l__regex_curr_pos_int=\count271
+\l__regex_start_pos_int=\count272
+\l__regex_success_pos_int=\count273
+\l__regex_curr_char_int=\count274
+\l__regex_curr_catcode_int=\count275
+\l__regex_last_char_int=\count276
+\l__regex_case_changed_char_int=\count277
+\l__regex_curr_state_int=\count278
+\l__regex_step_int=\count279
+\l__regex_min_active_int=\count280
+\l__regex_max_active_int=\count281
+\l__regex_replacement_csnames_int=\count282
+\l__regex_match_count_int=\count283
+\l__regex_min_submatch_int=\count284
+\l__regex_submatch_int=\count285
+\l__regex_zeroth_submatch_int=\count286
+\g__regex_trace_regex_int=\count287
 \c_empty_box=\box66
 \l_tmpa_box=\box67
 \l_tmpb_box=\box68
 \g_tmpa_box=\box69
 \g_tmpb_box=\box70
-\l__box_top_dim=\dimen176
-\l__box_bottom_dim=\dimen177
-\l__box_left_dim=\dimen178
-\l__box_right_dim=\dimen179
-\l__box_top_new_dim=\dimen180
-\l__box_bottom_new_dim=\dimen181
-\l__box_left_new_dim=\dimen182
-\l__box_right_new_dim=\dimen183
+\l__box_top_dim=\dimen185
+\l__box_bottom_dim=\dimen186
+\l__box_left_dim=\dimen187
+\l__box_right_dim=\dimen188
+\l__box_top_new_dim=\dimen189
+\l__box_bottom_new_dim=\dimen190
+\l__box_left_new_dim=\dimen191
+\l__box_right_new_dim=\dimen192
 \l__box_internal_box=\box71
 \l__coffin_internal_box=\box72
-\l__coffin_internal_dim=\dimen184
-\l__coffin_offset_x_dim=\dimen185
-\l__coffin_offset_y_dim=\dimen186
-\l__coffin_x_dim=\dimen187
-\l__coffin_y_dim=\dimen188
-\l__coffin_x_prime_dim=\dimen189
-\l__coffin_y_prime_dim=\dimen190
+\l__coffin_internal_dim=\dimen193
+\l__coffin_offset_x_dim=\dimen194
+\l__coffin_offset_y_dim=\dimen195
+\l__coffin_x_dim=\dimen196
+\l__coffin_y_dim=\dimen197
+\l__coffin_x_prime_dim=\dimen198
+\l__coffin_y_prime_dim=\dimen199
 \c_empty_coffin=\box73
 \l__coffin_aligned_coffin=\box74
 \l__coffin_aligned_internal_coffin=\box75
@@ -758,20 +791,20 @@ Package: expl3 2019-10-11 L3 programming layer (code)
 \l_tmpb_coffin=\box77
 \g_tmpa_coffin=\box78
 \g_tmpb_coffin=\box79
-\l__coffin_bounding_shift_dim=\dimen191
-\l__coffin_left_corner_dim=\dimen192
-\l__coffin_right_corner_dim=\dimen193
-\l__coffin_bottom_corner_dim=\dimen194
-\l__coffin_top_corner_dim=\dimen195
-\l__coffin_scaled_total_height_dim=\dimen196
-\l__coffin_scaled_width_dim=\dimen197
+\l__coffin_bounding_shift_dim=\dimen256
+\l__coffin_left_corner_dim=\dimen257
+\l__coffin_right_corner_dim=\dimen258
+\l__coffin_bottom_corner_dim=\dimen259
+\l__coffin_top_corner_dim=\dimen260
+\l__coffin_scaled_total_height_dim=\dimen261
+\l__coffin_scaled_width_dim=\dimen262
 \c__coffin_empty_coffin=\box80
 \l__coffin_display_coffin=\box81
 \l__coffin_display_coord_coffin=\box82
 \l__coffin_display_pole_coffin=\box83
-\l__coffin_display_offset_dim=\dimen198
-\l__coffin_display_x_dim=\dimen199
-\l__coffin_display_y_dim=\dimen256
+\l__coffin_display_offset_dim=\dimen263
+\l__coffin_display_x_dim=\dimen264
+\l__coffin_display_y_dim=\dimen265
 \g__char_data_ior=\read2
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
@@ -779,63 +812,115 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count284
+\l__kernel_color_stack_int=\count288
 \l__pdf_internal_box=\box84
 ))
 Package: xparse 2019-10-11 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count285
-\g__xparse_grabber_int=\count286
-\l__xparse_m_args_int=\count287
-\l__xparse_v_nesting_int=\count288
+\l__xparse_current_arg_int=\count289
+\g__xparse_grabber_int=\count290
+\l__xparse_m_args_int=\count291
+\l__xparse_v_nesting_int=\count292
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count289
-\Gm@cntv=\count290
-\c@Gm@tempcnt=\count291
-\Gm@bindingoffset=\dimen257
-\Gm@wd@mp=\dimen258
-\Gm@odd@mp=\dimen259
-\Gm@even@mp=\dimen260
-\Gm@layoutwidth=\dimen261
-\Gm@layoutheight=\dimen262
-\Gm@layouthoffset=\dimen263
-\Gm@layoutvoffset=\dimen264
+\Gm@cnth=\count293
+\Gm@cntv=\count294
+\c@Gm@tempcnt=\count295
+\Gm@bindingoffset=\dimen266
+\Gm@wd@mp=\dimen267
+\Gm@odd@mp=\dimen268
+\Gm@even@mp=\dimen269
+\Gm@layoutwidth=\dimen270
+\Gm@layoutheight=\dimen271
+\Gm@layouthoffset=\dimen272
+\Gm@layoutvoffset=\dimen273
 \Gm@dimlist=\toks32
 )
-(./computation.tikzdefs) (./computation.tikzstyles) (./document.aux
+(/usr/local/texlive/2019/texmf-dist/tex/latex/blochsphere/blochsphere.sty
+Package: blochsphere 2015/09/15 v1.1 blochsphere drawing package
+Package: blochsphere 2015/08/17
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count296
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen274
+\pgfdecoratedremainingdistance=\dimen275
+\pgfdecoratedinputsegmentcompleteddistance=\dimen276
+\pgfdecoratedinputsegmentremainingdistance=\dimen277
+\pgf@decorate@distancetomove=\dimen278
+\pgf@decorate@repeatstate=\count297
+\pgfdecorationsegmentamplitude=\dimen279
+\pgfdecorationsegmentlength=\dimen280
+)
+\tikz@lib@dec@box=\box85
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.markings.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.markings.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))) (./computation.tikzdefs) (./computation.tikzstyles)
+(./document.aux
 
 LaTeX Warning: Label `discarding' multiply defined.
 
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen265
-\scratchbox=\box85
-\nofMPsegments=\count293
-\nofMParguments=\count294
+\scratchcounter=\count298
+\scratchdimen=\dimen281
+\scratchbox=\box86
+\nofMPsegments=\count299
+\nofMParguments=\count300
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen266
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen282
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -854,8 +939,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box86
-Package hyperref Info: Link coloring OFF on input line 20.
+\AtBeginShipoutBox=\box87
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -863,11 +948,11 @@ Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count298
+\c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (./document.out) (./document.out)
 \@outlinefile=\write4
@@ -908,12 +993,12 @@ LaTeX Info: Redefining \nameref on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -923,41 +1008,1130 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (./figures/operationssummary.tikz) [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./figu
-res/wire.tikz) (./figures/wire.tikz)
-(./figures/wiretriangles.tikz) (./figures/map.tikz) (./figures/map.tikz)
-(./figures/mapdecomposition.tikz) [2] (./figures/mapincontext.tikz)
+res/state.tikz)
+(./figures/wiretrianglenosum.tikz) (./figures/wire.tikz) (./figures/wire.tikz)
+(./figures/wiretriangles.tikz) (./figures/map.tikz) [2] (./figures/map.tikz)
+(./figures/mapdecomposition.tikz) (./figures/mapincontext.tikz)
 (./figures/spider.tikz) (./figures/wiretriangles.tikz) (./figures/wire.tikz)
 (./figures/spidermultileg.tikz) (./figures/spidermultilegdecomposed.tikz)
-(./figures/spidermultileginandoutputs.tikz)
+[3] (./figures/spidermultileginandoutputs.tikz)
 (./figures/spidermultilegdecomposedinandoutputs.tikz)
 (./figures/spidermultileginandoutputs.tikz)
 (./figures/spidermultilegdecomposedinandoutputs.tikz)
-(./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz) [3]
+(./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
 (./figures/spidermultileg2.tikz) (./figures/spidermultileg1.1.tikz)
-(./figures/gray0.tikz) (./figures/conjugatemaps.tikz) (./figures/doublemap.tikz
-) [4] (./figures/Discarding.tikz) (./figures/thickwhiteieffect.tikz)
-(./figures/thinwirediscardingdecomposed.tikz)
-(./figures/discardingsinglewires.tikz) (./figures/discardingdensitymatrx.tikz)
-(./figures/discradingdensitymatrixsinglewires.tikz)
+(./figures/gray0.tikz) (./figures/white0.tikz) (./figures/white1.tikz) [4]
+(./figures/gray1.tikz) (./figures/white0.tikz) (./figures/white1.tikz)
+(./figures/DoubleStateDecomposed.tikz) (./figures/DoubleStateDecomposed1.tikz)
+(./figures/wiretrianglenosum.tikz) (./figures/wiretrianglenosumj.tikz)
+(./figures/DensityState.tikz) (./figures/conjugatemaps.tikz)
+(./figures/doublemap.tikz) [5] (./figures/BastardSpiderFusion.tikz)
+(./figures/BastardSpiderFusion2.tikz) (./figures/Discarding.tikz)
+(./figures/thickwhiteieffect.tikz) (./figures/thinwirediscardingdecomposed.tikz
+) (./figures/discardingsinglewires.tikz) (./figures/discardingdensitymatrx.tikz
+) (./figures/discradingdensitymatrixsinglewires.tikz)
 (./figures/discardingdensitymatrx.tikz)
 (./figures/discradingdensitymatrixsinglewires.tikz)
 (./figures/doublemapnotpure.tikz) (./figures/doublemapdiscardingoneout.tikz)
-(./figures/conjugatemapsdiscardingoneout.tikz) (./figures/phasespider.tikz)
-(./figures/wiretriangle.tikz) (./figures/decodingphase.tikz)
+(./figures/conjugatemapsdiscardingoneout.tikz) (./figures/FullyMixed.tikz)
+(./figures/Encoding3.tikz) [6] (./figures/spidermultilegphase.tikz)
+(./figures/spidermultilegdecomposedphase.tikz) (./figures/ConjugateSpider.tikz)
+(./figures/ConjugateSpider1.tikz) (./figures/decodingphase.tikz)
 (./figures/spidertwophases.tikz) (./figures/spidertwophaseswrittenout.tikz)
 (./figures/spideronephasefromtwo.tikz)
 (./figures/spideronephasefromtwoinspider.tikz) (./figures/uniformprobstate.tikz
-) [5] (./figures/WideStateTwoOutputs.tikz) (./figures/TwoStates.tikz)
-(./figures/DoubleCup.tikz) (./figures/DoubleCupSeperate.tikz)
-(./figures/Encoding.tikz) (./figures/Encoding2.tikz) (./figures/Encoding3.tikz)
-(./figures/QOTPNoEveFinal.tikz) [6] (./figures/ComplementarySpiders.tikz)
+) (./figures/WideStateTwoOutputs.tikz) (./figures/TwoStates.tikz)
+(./figures/DoubleCup.tikz) (./figures/DoubleCupSeperate.tikz) [7]
+(./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
+(./figures/white0.tikz) (./figures/white1.tikz) (./figures/white0.tikz)
+(./figures/white1.tikz) (./figures/gray0.tikz)
+(./figures/spideroneoutputpiphase.tikz) (./figures/wiretrianglenosum.tikz)
+(./figures/white0.tikz) (./figures/white1.tikz) (./figures/white0.tikz)
+(./figures/white1.tikz) (./figures/gray1.tikz)
+\pgf@layerbox@back=\box88
+\pgf@layerboxsaved@back=\box89
+\pgf@layerbox@front=\box90
+\pgf@layerboxsaved@front=\box91
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ [8] (./figures/Encoding.tikz)
+(./figures/Encoding2.tikz) (./figures/Encoding3.tikz)
+(./figures/DensityState.tikz) (./figures/ComplementarySpiders.tikz)
 (./figures/ComplementarySpiders2.tikz) (./figures/XORProof1.tikz)
 (./figures/XORProof2.tikz) (./figures/XORTestInAndOutputs.tikz)
 (./figures/XORTestInAndOutputs1.tikz) (./figures/XORTestInAndOutputs2.tikz)
-[7] (./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz)
-(./figures/OTPProof2.tikz) (./figures/OTPProof3.tikz) [8]
+[9] (./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz)
+(./figures/OTPProof2.tikz) [10] (./figures/OTPProof3.tikz)
 (./figures/OTPProof2.tikz) (./figures/OTPProof4.tikz) (./figures/OTPProof5.tikz
-) (./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz) [9]
+) (./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz) [11]
 (./figures/NoBitflipOnGray0(1).tikz) (./figures/NoBitflipOnGray0(2).tikz)
 (./figures/NoBitflipOnGray0(3).tikz) (./figures/NoBitflipOnGray0(4).tikz)
 (./figures/NoBitflipOnGray0(5).tikz) (./figures/NoBitflipOnGray0(6).tikz)
@@ -966,34 +2140,56 @@ res/wire.tikz) (./figures/wire.tikz)
 (./figures/BitflipOnGray0(5).tikz) (./figures/BitflipOnGray0(6).tikz)
 (./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
 (./figures/encodingrandombit.tikz) (./figures/encodingrandombit2.tikz)
-(./figures/IMID.tikz) (./figures/RandomXBitFlip.tikz)
-(./figures/RandomZBitFlip.tikz) [10] (./figures/RandomXBitFlip.tikz)
+(./figures/IMID.tikz) [12] (./figures/RandomXBitFlip.tikz)
+(./figures/RandomZBitFlip.tikz) (./figures/RandomXBitFlip.tikz)
 (./figures/RandomXBitFlipProof(1).tikz) (./figures/RandomXBitFlipProof(2).tikz)
 (./figures/RandomXBitFlipProof(3).tikz) (./figures/RandomXBitFlipProof(4).tikz)
 (./figures/RandomXBitFlipProof(5).tikz) (./figures/RandomXBitFlipProof(6).tikz)
 (./figures/RandomXBitFlipProof(7).tikz) (./figures/RandomXBitFlipProof(8).tikz)
-(./figures/BellMap.tikz) (./figures/QOTPNoEve.tikz)
+(./figures/BellMap.tikz) (./figures/QOTPEve.tikz) [13]
+(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveFinal.tikz)
+(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveProof(1).tikz)
+(./figures/QOTPNoEveProof(2).tikz)
+
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
+input line 581.
+
+(./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
+(./figures/QOTPNoEveProof(5).tikz)
+
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
+input line 581.
+
+(./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
 (./figures/QOTPNoEveFinal.tikz) (./figures/QOTPNoEve.tikz)
 (./figures/QOTPNoEveProof(1).tikz) (./figures/QOTPNoEveProof(2).tikz)
+
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
+input line 581.
+
 (./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
-(./figures/QOTPNoEveProof(5).tikz) (./figures/QOTPNoEveProof(6).tikz)
-(./figures/QOTPNoEveProof(7).tikz) (./figures/QOTPNoEveFinal.tikz)
-(./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveProof(1).tikz)
-(./figures/QOTPNoEveProof(2).tikz) (./figures/QOTPNoEveProof(3).tikz)
-(./figures/QOTPNoEveProof(4).tikz) (./figures/QOTPNoEveProof(5).tikz)
+(./figures/QOTPNoEveProof(5).tikz)
+
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
+input line 581.
+
 (./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
-(./figures/QOTPNoEveFinal.tikz) [11] (./figures/encodingrandombit.tikz)
+(./figures/QOTPNoEveFinal.tikz) [14] (./figures/encodingrandombit.tikz)
 (./figures/FullyMixed.tikz) (./figures/encodingrandombitgray.tikz)
 (./figures/AliceWithBell.tikz) (./figures/AliceWithBell(1).tikz)
-(./figures/AliceWithBell(2).tikz) (./figures/AliceWithBell(3).tikz)
-(./figures/AliceWithBell(4).tikz) (./figures/AliceWithBell(5).tikz)
-(./figures/QOTPEve.tikz) [12] (./figures/QOTPEveEvePerspective(1).tikz)
+(./figures/AliceWithBell(2).tikz)
+
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
+input line 595.
+
+(./figures/AliceWithBell(3).tikz) (./figures/AliceWithBell(4).tikz)
+(./figures/AliceWithBell(5).tikz) (./figures/QOTPEve.tikz) [15]
+(./figures/QOTPEveEvePerspective(1).tikz)
 (./figures/QOTPEveEvePerspective(2).tikz)
 (./figures/QOTPEveEvePerspective(3).tikz)
-(./figures/QOTPEveEvePerspective(4).tikz)
-(./figures/QOTPEveEvePerspective(5).tikz) [13] (./figures/BellState(1).tikz)
-(./figures/CNOT.tikz) [14] (./figures/CNOTWithTestInput.tikz)
-(./figures/CNOTWithTestInput(1).tikz) (./figures/BellState.tikz)
+(./figures/QOTPEveEvePerspective(4).tikz) [16] (./figures/BellState(1).tikz)
+(./figures/CNOT.tikz) (./figures/CNOTWithTestInput.tikz)
+(./figures/CNOTWithTestInput(1).tikz) [17] (./figures/BellState.tikz)
 (./figures/BellStateTestInput.tikz) (./figures/BellStateTestInput(1).tikz)
 (./figures/BellStateTestInput(2).tikz) (./figures/BellStateTestInput(3).tikz)
 (./figures/BellStateTestInput(4).tikz) (./figures/BellStateTestInput(5).tikz)
@@ -1007,66 +2203,118 @@ res/wire.tikz) (./figures/wire.tikz)
 (./figures/BellStateTestInput(7).tikz) (./figures/BellStateTestInput(8).tikz)
 (./figures/BellStateTestInput(10).tikz) (./figures/BellStateTestInput(9).tikz)
 (./figures/BellStateTestInput(11).tikz) (./figures/BellStateTestInput(12).tikz)
-(./figures/QuantumTeleportation.tikz) [15] (./figures/QKDSameBasis.tikz)
-(./figures/wire.tikz) (./figures/QKDSameBasis2.tikz) (./figures/wire.tikz)
+(./figures/QuantumTeleportation.tikz) (./figures/QOTPNoEveNoLine.tikz)
+(./figures/QOTPNoEveNoLine(1).tikz) (./figures/QuantumTeleportationNoLine.tikz)
+[18] (./figures/QKDSameBasis.tikz) (./figures/wire.tikz)
+(./figures/QKDSameBasis2.tikz) (./figures/wire.tikz)
 (./figures/QKDDifferentBasis.tikz) (./figures/QKDDifferentBasis2.tikz)
 (./figures/QKDSameBasisEveNoFuckUp.tikz)
 (./figures/QKDSameBasisEveNoFuckUp2.tikz)
 (./figures/QKDSameBasisEveFucksup.tikz) (./figures/QKDSameBasisEveFucksup2.tikz
-) (./figures/EveNewMap.tikz) [16] (./figures/QKDProofSetup1.tikz)
+) [19] (./figures/EveNewMap.tikz) (./figures/QKDProofSetup1.tikz)
 (./figures/wire.tikz) (./figures/QKDProofSetup2.tikz) (./figures/wire.tikz)
 (./figures/EveNewMap.tikz) (./figures/thickWIRE.tikz) (./figures/SmallRho.tikz)
-(./figures/QOTPNoEveNoLine.tikz) (./figures/QOTPNoEveNoLine(1).tikz)
-(./figures/QuantumTeleportationNoLine.tikz) (./document.bbl [17]) [18] [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
+[20]
+<Eightstatecube.png, id=637, 159.7167pt x 121.6545pt>
+File: Eightstatecube.png Graphic file (type png)
+<use Eightstatecube.png>
+Package pdftex.def Info: Eightstatecube.png  used on input line 770.
+(pdftex.def)             Requested size: 215.0023pt x 163.77724pt.
+ (./figures/RedStatePrep.tikz) (./figures/RedEffect.tikz)
+(./figures/PrepAndMeasureRed.tikz) [21 <./Eightstatecube.png>]
+(./figures/spidermultilegred.tikz) (./figures/spidermultilegdecomposedred.tikz)
+(./figures/EightStateEncodingInFull.tikz) (./figures/RedEncoding.tikz)
+(./figures/YellowEncoding.tikz) (./figures/GreenEncoding.tikz)
+(./figures/BlueEncoding.tikz) (./figures/RedTriangle0Decomposed.tikz)
+(./figures/RedTriangle0Decomposed2.tikz) (./figures/RedTriangle0.tikz) [22]
+(./figures/QKRProofSetup.tikz) (./figures/wire.tikz)
+(./figures/QKRProofSetupGreen.tikz) (./figures/wire.tikz)
+(./figures/QKRProofSetupYellow.tikz) (./figures/wire.tikz)
+(./figures/QKRProofSetupBlue.tikz) (./figures/wire.tikz)
+(./figures/QKDProof1.tikz) (./figures/QKDProof2.tikz) (./figures/QKRProof4.tikz
+) (./figures/QKRProof4A.tikz) (./figures/QKRProof5.tikz)
+(./figures/QKRProof6.tikz) (./figures/QKRProof7.tikz)
+(./figures/QKRProof6A.tikz) (./figures/QKRProof6B.tikz) [23]
+(./figures/QKRProof6B.tikz) (./figures/QKRProof9.tikz)
+(./figures/QKRProof10.tikz) (./figures/QKRProof11.tikz)
+(./figures/QKRProof12.tikz) (./figures/QKRProof13.tikz)
+(./figures/QKRSeperationProof1.tikz) (./figures/QKRSeperationProof2.tikz)
+(./figures/QKRSeperationProof3.tikz) (./figures/QKRSeperationProof4.tikz)
+[24] (./figures/QKRSeperationProof5.tikz) (./figures/QKRSeperationProof6.tikz)
 
-(./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 724.
+LaTeX Warning: Reference `(equation:RedSpiderRandomPauli)' on page 25 undefined
+ on input line 918.
+
+(./figures/QKRSeperationProof7.tikz) (./figures/QKRSeperationProof7B.tikz)
+(./figures/QKRSeperationProof7C.tikz) (./figures/QKRSeperationProof7D.tikz)
+(./figures/QKRSeperationProof8.tikz) (./figures/QKRSeperationProof9A.tikz)
+(./figures/QKRSeperationProof9B.tikz) (./figures/QKRSeperationProof9C.tikz)
+(./figures/QKRSeperationProof9D.tikz) (./figures/QKRSeperationProof9BA.tikz)
+(./figures/QKRSeperationProof9BB.tikz) (./figures/QKRSeperationProof9BC.tikz)
+(./figures/QKRSeperationProof9BD.tikz) (./figures/QKRSeperationProof10A.tikz)
+(./figures/QKRSeperationProof10B.tikz) (./figures/QKRSeperationProof10C.tikz)
+(./figures/QKRSeperationProof10D.tikz) (./figures/QKRSeperationProof11.tikz)
+[25] (./figures/QKRSeperationProof4.tikz) (./figures/QKRSeperationProof12.tikz)
+(./figures/QKRSeperationProof13.tikz) (./figures/QKRSeperationProof14.tikz)
+(./figures/QKRSeperationProof15.tikz) (./figures/QKRSeperationProof16.tikz)
+(./figures/QOTPNoEveNoLine.tikz) (./figures/QOTPNoEveNoLine(1).tikz)
+(./figures/QuantumTeleportationNoLine.tikz) [26] (./figures/BrownSpider.tikz)
+(./figures/RedSpider.tikz) (./figures/GreenSpider.tikz)
+(./figures/OrangeSpider.tikz) (./figures/BlueSpider.tikz)
+(./figures/QKRGeneral.tikz) [27] (./document.bbl) [28] [29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1058.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1058.
+ (./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1058.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1058.
+
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: CB7D014F18532F84BEBC4AEE9422272A;2080.
+(rerunfilecheck)             Checksum: CB4ADF6DCAA11A1ED7347B0E71EE40E2;2399.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 724.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1058.
  ) 
 Here is how much of TeX's memory you used:
- 31906 strings out of 492167
- 632628 string characters out of 6125373
- 797844 words of memory out of 5000000
- 35257 multiletter control sequences out of 15000+600000
- 542400 words of font info for 63 fonts, out of 8000000 for 9000
+ 35082 strings out of 492167
+ 705640 string characters out of 6125373
+ 904502 words of memory out of 5000000
+ 38025 multiletter control sequences out of 15000+600000
+ 543019 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,22n,75p,1155b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,22n,76p,1175b,1946s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2019/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (19 pages, 338046 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on document.pdf (29 pages, 465095 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

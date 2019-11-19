@@ -3,8 +3,7 @@
 		\node [style=none] (2) at (0, -1.75) {};
 		\node [style=none] (3) at (0, 1.425) {};
 		\node [style=none] (7) at (0, 2.25) {};
-		\node [style=STATERIGHT] (11) at (0, -1.75) {\rotatebox{90}{$\rho$}};
-		\node [style=none] (14) at (0, -2.25) {};
+		\node [style=none] (14) at (0, -2.5) {};
 		\node [style=none] (15) at (-0.625, 1.425) {};
 		\node [style=none] (16) at (0.625, 1.425) {};
 		\node [style=none] (17) at (-0.375, 1.175) {};
@@ -27,6 +26,7 @@
 		\draw [style=WIRE] (22.center) to (23.center);
 		\draw [style=WIRE] (24.center) to (25.center);
 		\draw [style=WIRE] (26.center) to (27.center);
-		\draw [style=WIRE] (21.center) to (14.center);
+		\draw [style=WIRE] (21.center) to (2.center);
+		\draw [style=DOTTED] (2.center) to (14.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

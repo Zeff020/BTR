@@ -6,9 +6,9 @@
 		\node [style=none] (3) at (-1, 0) {};
 		\node [style=none] (4) at (0, 1) {};
 		\node [style=none] (5) at (0, 1) {};
-		\node [style=StateMidi] (6) at (-1, -0.75) {};
-		\node [style=StateMidj] (7) at (1, -0.75) {};
 		\node [style=none] (8) at (-2.75, -1) {$\sum\limits_{ij}\rho_{ij}$};
+		\node [style=StateMid] (9) at (-1, -0.75) {\rotatebox{-45}{i}};
+		\node [style=StateMid] (10) at (1, -0.75) {\rotatebox{-45}{j}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (2.center) to (1.center);

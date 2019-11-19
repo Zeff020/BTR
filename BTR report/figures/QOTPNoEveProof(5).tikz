@@ -2,14 +2,13 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=GraySpider] (0) at (-2.75, 0.25) {};
 		\node [style=WHITESPIDER] (1) at (0, 0.25) {};
-		\node [style=none] (2) at (0, -3.25) {};
+		\node [style=none] (2) at (0, -2.5) {};
 		\node [style=none] (3) at (0, -0.25) {};
 		\node [style=none] (6) at (0, -1.25) {};
 		\node [style=none] (7) at (0, 0.25) {};
 		\node [style=GraySpider] (11) at (-2.75, 0.25) {};
 		\node [style=WHITESPIDER] (12) at (0, 0.25) {};
 		\node [style=none] (13) at (0, 3.25) {};
-		\node [style=STATERIGHT] (22) at (0, -3.25) {\rotatebox{90}{$\rho$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left, looseness=0.75] (1) to (0);
@@ -17,5 +16,6 @@
 		\draw [style=WIRE] (7.center) to (6.center);
 		\draw [style=WIRE, bend right] (12) to (11);
 		\draw [style=WIRE] (13.center) to (7.center);
+		\draw [style=DOTTED] (2.center) to (33.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

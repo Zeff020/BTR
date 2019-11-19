@@ -11,7 +11,7 @@
 		\node [style=GRAYSPIDER] (8) at (0, 1.25) {};
 		\node [style=WhiteSpider] (9) at (-1.75, 0.25) {};
 		\node [style=WhiteSpider] (10) at (-1.75, -0.75) {};
-		\node [style=STATERIGHT] (11) at (0, -1.75) {\rotatebox{90}{$\rho$}};
+		\node [style=none] (11) at (0, -2.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend right=45] (1) to (0);
@@ -20,5 +20,6 @@
 		\draw [style=WIRE] (7.center) to (6.center);
 		\draw [style=WIRE, bend right=45] (8) to (9);
 		\draw (9) to (10);
+		\draw [style=DOTTED] (2.center) to (11.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

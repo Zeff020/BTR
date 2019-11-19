@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=EFFECTMIDI] (0) at (0, 0) {};
 		\node [style=none] (1) at (0, -1) {};
 		\node [style=none] (2) at (0, 0.25) {};
 		\node [style=none] (3) at (-1.5, 0) {$\sum\limits_{i}$};
+		\node [style=EFFECTMID] (4) at (0, 0) {\rotatebox{135}{i}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (2.center) to (1.center);

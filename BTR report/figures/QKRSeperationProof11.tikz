@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=RedSpider] (0) at (0, -1.5) {};
+		\node [style=RedSpider] (1) at (0, 0.75) {};
+		\node [style=GraySpider] (3) at (-1.5, -0.75) {};
+		\node [style=WHITESPIDER] (4) at (0, -0.75) {};
+		\node [style=none] (5) at (0, -1.5) {};
+		\node [style=GraySpider] (6) at (-1.5, -1.5) {};
+		\node [style=none] (7) at (0, 0.75) {};
+		\node [style=GRAYSPIDER] (8) at (0, 0) {};
+		\node [style=WhiteSpider] (9) at (-2, -0.75) {};
+		\node [style=WhiteSpider] (10) at (-2, -1.5) {};
+		\node [style=none] (11) at (0, 3) {};
+		\node [style=none] (12) at (0, -2.5) {};
+		\node [style=none] (14) at (0, -2.5) {};
+		\node [style=asym box] (15) at (0, 2) {\reflectbox{V}};
+		\node [style=none] (16) at (0.75, 2) {};
+		\node [style=none] (17) at (0.75, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE, bend right=45] (4) to (3);
+		\draw (3) to (6);
+		\draw [style=WIRE, bend right=45] (8) to (9);
+		\draw (9) to (10);
+		\draw [style=WIRE] (7.center) to (8);
+		\draw [style=WIRE] (8) to (4);
+		\draw [style=WIRE] (4) to (5.center);
+		\draw (5.center) to (12.center);
+		\draw (11.center) to (7.center);
+		\draw (15) to (14.center);
+		\draw (17.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

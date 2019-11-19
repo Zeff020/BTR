@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=GraySpider] (0) at (-2.075, -1.25) {};
 		\node [style=WHITESPIDER] (1) at (0, -2.25) {};
-		\node [style=none] (2) at (0, -3.25) {};
+		\node [style=none] (2) at (0, -3) {};
 		\node [style=none] (3) at (0, -1.25) {};
 		\node [style=none] (6) at (0, -3) {};
 		\node [style=none] (7) at (0, 1) {};
@@ -11,7 +11,6 @@
 		\node [style=none] (13) at (0, 1.75) {};
 		\node [style=none] (14) at (0, -0.5) {};
 		\node [style=none] (18) at (0, -2) {};
-		\node [style=STATERIGHT] (22) at (0, -3.25) {\rotatebox{90}{$\rho$}};
 		\node [style=ASYM BOX] (23) at (0, 0.1) {$\Phi$};
 		\node [style=none] (24) at (0.5, 0.25) {};
 		\node [style=none] (25) at (2, 1.75) {};
@@ -22,6 +21,7 @@
 		\node [style=none] (30) at (-0.125, 2.275) {};
 		\node [style=none] (31) at (0.125, 2.275) {};
 		\node [style=none] (32) at (0, 1.775) {};
+		\node [style=none] (33) at (0, -3.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left=45] (1) to (0);
@@ -33,5 +33,6 @@
 		\draw [style=WIRE] (26.center) to (27.center);
 		\draw [style=WIRE] (28.center) to (29.center);
 		\draw [style=WIRE] (30.center) to (31.center);
+		\draw [style=DOTTED] (6.center) to (33.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

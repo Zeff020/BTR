@@ -1,0 +1,5 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (0, 0) {\small \raisebox{.75pt}{-}$\alpha$};
+	\end{pgfonlayer}
+\end{tikzpicture}
