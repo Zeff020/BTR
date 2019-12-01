@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=RedSpider] (1) at (0, 1.125) {};
+		\node [style=BrownSpider] (1) at (0, 1.125) {};
 		\node [style=none] (2) at (0, 2.125) {};
 		\node [style=none] (5) at (0, -1.125) {};
 		\node [style=RedSpider] (6) at (0, -1.125) {};

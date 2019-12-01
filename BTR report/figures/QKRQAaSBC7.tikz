@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (1, 0.25) {};
+		\node [style=none] (1) at (0, -0.25) {};
+		\node [style=none] (2) at (-2, -1) {};
+		\node [style=WIDESTATERIGHT] (3) at (0, 0) {\rotatebox{90}{$\Phi_1$}};
+		\node [style=none] (4) at (-1.325, 0.75) {};
+		\node [style=none] (5) at (-0.75, 0.25) {};
+		\node [style=none] (6) at (-2, 0.25) {};
+		\node [style=none] (11) at (0, 1) {};
+		\node [style=none] (12) at (1, 1) {};
+		\node [style=none] (13) at (1, 2) {};
+		\node [style=none] (14) at (0, 2) {};
+		\node [style=none] (15) at (-2, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (6.center) to (2.center);
+		\draw [style=WIRE, bend left=45] (6.center) to (4.center);
+		\draw [style=WIRE, bend left=45] (4.center) to (5.center);
+		\draw [style=WIRE] (12.center) to (0.center);
+		\draw [style=DOTTED] (2.center) to (15.center);
+		\draw [style=DOTTED] (14.center) to (11.center);
+		\draw [style=DOTTED] (13.center) to (12.center);
+		\draw [style=WIRE] (11.center) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

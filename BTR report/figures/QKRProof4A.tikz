@@ -3,7 +3,7 @@
 		\node [style=RedSpider] (0) at (0, 0) {};
 		\node [style=none] (1) at (0, -1.25) {};
 		\node [style=none] (2) at (0, 1) {};
-		\node [style=REDSPIDER] (3) at (0, 0) {};
+		\node [style=BROWNSPIDER] (3) at (0, 0) {};
 		\node [style=none] (4) at (1.25, 0.75) {};
 		\node [style=none] (5) at (0.75, 0.75) {};
 		\node [style=none] (6) at (1.75, 0.75) {};

@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ASYM BOX] (0) at (0, 0) {\reflectbox{$\Phi_1$}};
+		\node [style=none] (1) at (0.5, 0) {};
+		\node [style=none] (2) at (-0.5, 0) {};
+		\node [style=none] (3) at (1, 1.25) {};
+		\node [style=none] (4) at (-0.5, 1.25) {};
+		\node [style=none] (5) at (-0.5, -1.25) {};
+		\node [style=none] (11) at (-0.5, 2) {};
+		\node [style=none] (12) at (-0.5, -2) {};
+		\node [style=BrownSpider] (20) at (-0.5, 1.25) {};
+		\node [style=BrownSpider] (21) at (-0.5, -1.25) {};
+		\node [style=asym box] (22) at (2.25, 3.5) {\reflectbox{$\Phi_2$}};
+		\node [style=none] (23) at (1.5, 2.5) {};
+		\node [style=WhiteSpider] (24) at (1.5, 2.5) {};
+		\node [style=none] (25) at (1.5, 3) {};
+		\node [style=small brown box] (26) at (-0.5, -2) {8};
+		\node [style=small brown box] (27) at (-0.5, 2) {8};
+		\node [style=none] (28) at (-0.5, 4.75) {};
+		\node [style=WhiteSpider] (30) at (-1.5, -4) {};
+		\node [style=none] (31) at (-0.5, -4.75) {};
+		\node [style=WhiteSpider] (32) at (-0.5, -2.75) {};
+		\node [style=WhiteSpider] (33) at (-0.5, 2.75) {};
+		\node [style=none] (34) at (2.5, 3) {};
+		\node [style=none] (35) at (2.25, 4.75) {};
+		\node [style=none] (36) at (-2.25, -4) {$a$};
+		\node [style=GraySpider] (37) at (-0.5, 2.75) {};
+		\node [style=GraySpider] (38) at (-0.5, -2.75) {};
+		\node [style=WhiteSpider] (39) at (2.25, 4.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE, bend right] (3.center) to (1.center);
+		\draw [style=WIRE] (4.center) to (2.center);
+		\draw [style=WIRE] (2.center) to (5.center);
+		\draw (5.center) to (12.center);
+		\draw (11.center) to (4.center);
+		\draw [style=WIRE, bend right, looseness=0.75] (3.center) to (23.center);
+		\draw (25.center) to (24);
+		\draw (28.center) to (27);
+		\draw (26) to (31.center);
+		\draw [bend right=15, looseness=0.75] (32) to (30);
+		\draw [bend right=45, looseness=1.25] (33) to (30);
+		\draw [bend right=60, looseness=0.50] (30) to (34.center);
+		\draw (35.center) to (22);
+	\end{pgfonlayer}
+\end{tikzpicture}

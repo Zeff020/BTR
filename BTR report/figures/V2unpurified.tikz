@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=asym box] (0) at (0, 0) {\reflectbox{$V_2$}};
+		\node [style=none] (1) at (-0.75, 0) {};
+		\node [style=none] (2) at (0.75, 0) {};
+		\node [style=none] (3) at (0.75, 1.75) {};
+		\node [style=none] (4) at (-0.75, 3) {};
+		\node [style=none] (5) at (0, -1.5) {};
+		\node [style=medium box] (6) at (0.75, 1.75) {U};
+		\node [style=none] (7) at (0.75, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=90, out=-90] (3.center) to (2.center);
+		\draw (4.center) to (1.center);
+		\draw (0) to (5.center);
+		\draw (7.center) to (6);
+	\end{pgfonlayer}
+\end{tikzpicture}

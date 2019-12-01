@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.5, 0.5) {};
+		\node [style=none] (1) at (-0.5, 0.5) {};
+		\node [style=none] (11) at (-0.5, 1.5) {};
+		\node [style=none] (12) at (0.5, 1.5) {};
+		\node [style=none] (13) at (0.5, 2.5) {};
+		\node [style=none] (14) at (-0.5, 2.5) {};
+		\node [style=ASYM BOX] (19) at (0, 0) {\reflectbox{$\Phi_1$}};
+		\node [style=none] (22) at (0, -0.25) {};
+		\node [style=none] (23) at (0, -1.5) {};
+		\node [style=none] (24) at (0, -2.5) {};
+		\node [style=none] (25) at (0, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (12.center) to (0.center);
+		\draw [style=DOTTED] (14.center) to (11.center);
+		\draw [style=DOTTED] (13.center) to (12.center);
+		\draw [style=WIRE] (11.center) to (1.center);
+		\draw [style=WIRE] (23.center) to (22.center);
+		\draw [style=DOTTED] (25.center) to (24.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

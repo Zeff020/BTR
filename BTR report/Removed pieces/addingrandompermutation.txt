@@ -1,0 +1,31 @@
+Whether this protocol works or not for them is independent on the choice of states that Alice and Bob receive, as long as they are entangled. Thus looking from the perspective of Alice and Bob and discarding Eve's output, all they need is any diagram that has the following property:
+
+\begin{equation}
+\label{equation:QKRQAaSBC2}
+\tikzfig{QKRQAaSBC2}
+\end{equation}
+
+If Eve were to prepare a perfectly entangled EPR state, what Alice and Bob would have in equation (\ref{equation:QKRQAaSBC1}) is:
+
+\begin{equation}
+\label{equation:QKRQAaSBC3}
+\tikzfig{QKRQAaSBC3}
+\end{equation}
+
+But since the $\pi$'s preserve entanglement we can push them down below the dotted line. In other words, equation (\ref{equation:QKRQAaSBC3}) is a member of the set of diagrams given in equation (\ref{equation:QKRQAaSBC2}).
+
+Remembering that Eve represents the environment, she controls everything that happens below the dotted line in equation \ref{equation:QKRQAaSBC3}. What we could thus do from Alice and Bob's perspective is to just push the two $\pi$'s into Eve's map $\Phi_1$ and give this map a new name, $\Phi_3$. We can do this without loss of generality. Before she could do anything in her map and now she can do anything with only the outside layer being the random permutations, $\pi$. However, since these permutations are reversible she could in principle first cancel them and still have the freedom to do any operation after.
+
+\begin{equation}
+\label{equation:QKRQAaSBC4}
+\tikzfig{QKRQAaSBC4} = \tikzfig{QKRQAaSBC5}
+\end{equation}
+
+To prove security of this protocol we could state that in order for Alice and Bob to notice no noise from their perspective in the case whenever they measure in the same basis we have that:
+
+\begin{equation}
+\label{equation:QKRQAaSBCSecurity}
+ \tikzfig{QKRQAaSBC5} = \tikzfig{longwire}
+\end{equation}
+
+Then exploiting the equivalence between the normal and EPR versions for the LHS we reach the starting point for the security proof from section \ref{section:maskingqubitpubrand}, equation (\ref{equation:QAaSBProofSetupReal}). This directly implies that (\ref{equation:QKRQAaSBC1}) is security-wise equivalent to (\ref{equation:QKRQAaSBA1}).

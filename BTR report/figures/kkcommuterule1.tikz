@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WHITESPIDER] (0) at (0, -0.75) {$k$};
+		\node [style=GRAYSPIDER] (1) at (0, 0.75) {$k'$};
+		\node [style=none] (2) at (0, 1.5) {};
+		\node [style=none] (3) at (0, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (2.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

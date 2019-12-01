@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  19 NOV 2019 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  1 DEC 2019 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,6 +891,9 @@ File: pgflibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 
 LaTeX Warning: Label `discarding' multiply defined.
 
+
+LaTeX Warning: Label `equation:kkcommuterule' multiply defined.
+
 )
 \openout1 = `document.aux'.
 
@@ -1042,9 +1045,12 @@ res/state.tikz)
 (./figures/spideronephasefromtwoinspider.tikz) (./figures/uniformprobstate.tikz
 ) (./figures/WideStateTwoOutputs.tikz) (./figures/TwoStates.tikz)
 (./figures/DoubleCup.tikz) (./figures/DoubleCupSeperate.tikz) [7]
-(./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
-(./figures/white0.tikz) (./figures/white1.tikz) (./figures/white0.tikz)
-(./figures/white1.tikz) (./figures/gray0.tikz)
+(./figures/YankingEquations1.tikz) (./figures/wire.tikz)
+(./figures/YankingEquations1.tikz) (./figures/YankingEquations2.tikz)
+(./figures/YankingEquations3.tikz) (./figures/wiretriangles1.tikz)
+(./figures/wire.tikz) (./figures/spideroneoutput.tikz)
+(./figures/wiretriangle.tikz) (./figures/white0.tikz) (./figures/white1.tikz)
+(./figures/white0.tikz) (./figures/white1.tikz) (./figures/gray0.tikz)
 (./figures/spideroneoutputpiphase.tikz) (./figures/wiretrianglenosum.tikz)
 (./figures/white0.tikz) (./figures/white1.tikz) (./figures/white0.tikz)
 (./figures/white1.tikz) (./figures/gray1.tikz)
@@ -2122,74 +2128,187 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
  [8] (./figures/Encoding.tikz)
 (./figures/Encoding2.tikz) (./figures/Encoding3.tikz)
 (./figures/DensityState.tikz) (./figures/ComplementarySpiders.tikz)
-(./figures/ComplementarySpiders2.tikz) (./figures/XORProof1.tikz)
+(./figures/ComplementarySpiders2.tikz) [9] (./figures/XORProof1.tikz)
 (./figures/XORProof2.tikz) (./figures/XORTestInAndOutputs.tikz)
 (./figures/XORTestInAndOutputs1.tikz) (./figures/XORTestInAndOutputs2.tikz)
-[9] (./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz)
-(./figures/OTPProof2.tikz) [10] (./figures/OTPProof3.tikz)
-(./figures/OTPProof2.tikz) (./figures/OTPProof4.tikz) (./figures/OTPProof5.tikz
-) (./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz) [11]
+(./figures/Vhat1Purified.tikz) (./figures/Vhat2Purified.tikz)
+(./figures/Vunpurified.tikz) (./figures/V2unpurified.tikz)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 440.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 440.
+
+[10] (./figures/kkcommuterule.tikz) (./figures/kkcommuterule1.tikz)
+(./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz) [11]
+(./figures/OTPProof2.tikz) (./figures/OTPProof3.tikz) (./figures/OTPProof2.tikz
+) (./figures/OTPProof4.tikz) (./figures/OTPProof5.tikz)
+(./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz) [12]
 (./figures/NoBitflipOnGray0(1).tikz) (./figures/NoBitflipOnGray0(2).tikz)
 (./figures/NoBitflipOnGray0(3).tikz) (./figures/NoBitflipOnGray0(4).tikz)
 (./figures/NoBitflipOnGray0(5).tikz) (./figures/NoBitflipOnGray0(6).tikz)
 (./figures/BitflipOnGray0(1).tikz) (./figures/BitflipOnGray0(2).tikz)
 (./figures/BitflipOnGray0(3).tikz) (./figures/BitflipOnGray0(4).tikz)
-(./figures/BitflipOnGray0(5).tikz) (./figures/BitflipOnGray0(6).tikz)
+(./figures/BitflipOnGray0(5).tikz) (./figures/BitflipOnGray0(6).tikz) [13]
 (./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
 (./figures/encodingrandombit.tikz) (./figures/encodingrandombit2.tikz)
-(./figures/IMID.tikz) [12] (./figures/RandomXBitFlip.tikz)
+(./figures/IMID.tikz) (./figures/RandomXBitFlip.tikz)
 (./figures/RandomZBitFlip.tikz) (./figures/RandomXBitFlip.tikz)
 (./figures/RandomXBitFlipProof(1).tikz) (./figures/RandomXBitFlipProof(2).tikz)
 (./figures/RandomXBitFlipProof(3).tikz) (./figures/RandomXBitFlipProof(4).tikz)
 (./figures/RandomXBitFlipProof(5).tikz) (./figures/RandomXBitFlipProof(6).tikz)
 (./figures/RandomXBitFlipProof(7).tikz) (./figures/RandomXBitFlipProof(8).tikz)
-(./figures/BellMap.tikz) (./figures/QOTPEve.tikz) [13]
+(./figures/BellMap.tikz) [14] (./figures/QOTPEve.tikz)
 (./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveFinal.tikz)
 (./figures/QOTPNoEve.tikz) (./figures/QOTPNoEveProof(1).tikz)
 (./figures/QOTPNoEveProof(2).tikz)
 
-LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
-input line 581.
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
+input line 636.
 
 (./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
 (./figures/QOTPNoEveProof(5).tikz)
 
-LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
-input line 581.
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
+input line 636.
 
 (./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
 (./figures/QOTPNoEveFinal.tikz) (./figures/QOTPNoEve.tikz)
 (./figures/QOTPNoEveProof(1).tikz) (./figures/QOTPNoEveProof(2).tikz)
 
-LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
-input line 581.
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
+input line 636.
 
 (./figures/QOTPNoEveProof(3).tikz) (./figures/QOTPNoEveProof(4).tikz)
 (./figures/QOTPNoEveProof(5).tikz)
 
-LaTeX Warning: Reference `singleanddoublespiderfusion' on page 14 undefined on 
-input line 581.
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
+input line 636.
 
 (./figures/QOTPNoEveProof(6).tikz) (./figures/QOTPNoEveProof(7).tikz)
-(./figures/QOTPNoEveFinal.tikz) [14] (./figures/encodingrandombit.tikz)
+(./figures/QOTPNoEveFinal.tikz) [15] (./figures/encodingrandombit.tikz)
 (./figures/FullyMixed.tikz) (./figures/encodingrandombitgray.tikz)
 (./figures/AliceWithBell.tikz) (./figures/AliceWithBell(1).tikz)
 (./figures/AliceWithBell(2).tikz)
 
-LaTeX Warning: Reference `singleanddoublespiderfusion' on page 15 undefined on 
-input line 595.
+LaTeX Warning: Reference `singleanddoublespiderfusion' on page 16 undefined on 
+input line 650.
 
 (./figures/AliceWithBell(3).tikz) (./figures/AliceWithBell(4).tikz)
-(./figures/AliceWithBell(5).tikz) (./figures/QOTPEve.tikz) [15]
+(./figures/AliceWithBell(5).tikz) (./figures/QOTPEve.tikz) [16]
 (./figures/QOTPEveEvePerspective(1).tikz)
 (./figures/QOTPEveEvePerspective(2).tikz)
 (./figures/QOTPEveEvePerspective(3).tikz)
-(./figures/QOTPEveEvePerspective(4).tikz) [16] (./figures/BellState(1).tikz)
+(./figures/QOTPEveEvePerspective(4).tikz) [17] (./figures/BellState(1).tikz)
 (./figures/CNOT.tikz) (./figures/CNOTWithTestInput.tikz)
-(./figures/CNOTWithTestInput(1).tikz) [17] (./figures/BellState.tikz)
+(./figures/CNOTWithTestInput(1).tikz) [18] (./figures/BellState.tikz)
 (./figures/BellStateTestInput.tikz) (./figures/BellStateTestInput(1).tikz)
 (./figures/BellStateTestInput(2).tikz) (./figures/BellStateTestInput(3).tikz)
 (./figures/BellStateTestInput(4).tikz) (./figures/BellStateTestInput(5).tikz)
@@ -2205,45 +2324,88 @@ input line 595.
 (./figures/BellStateTestInput(11).tikz) (./figures/BellStateTestInput(12).tikz)
 (./figures/QuantumTeleportation.tikz) (./figures/QOTPNoEveNoLine.tikz)
 (./figures/QOTPNoEveNoLine(1).tikz) (./figures/QuantumTeleportationNoLine.tikz)
-[18] (./figures/QKDSameBasis.tikz) (./figures/wire.tikz)
+[19] (./figures/QKDSameBasis.tikz) (./figures/wire.tikz)
 (./figures/QKDSameBasis2.tikz) (./figures/wire.tikz)
 (./figures/QKDDifferentBasis.tikz) (./figures/QKDDifferentBasis2.tikz)
 (./figures/QKDSameBasisEveNoFuckUp.tikz)
 (./figures/QKDSameBasisEveNoFuckUp2.tikz)
 (./figures/QKDSameBasisEveFucksup.tikz) (./figures/QKDSameBasisEveFucksup2.tikz
-) [19] (./figures/EveNewMap.tikz) (./figures/QKDProofSetup1.tikz)
+) [20] (./figures/EveNewMap.tikz) (./figures/QKDProofSetup1.tikz)
 (./figures/wire.tikz) (./figures/QKDProofSetup2.tikz) (./figures/wire.tikz)
 (./figures/EveNewMap.tikz) (./figures/thickWIRE.tikz) (./figures/SmallRho.tikz)
-[20]
-<Eightstatecube.png, id=637, 159.7167pt x 121.6545pt>
+[21]
+<Eightstatecube.png, id=685, 159.7167pt x 121.6545pt>
 File: Eightstatecube.png Graphic file (type png)
 <use Eightstatecube.png>
-Package pdftex.def Info: Eightstatecube.png  used on input line 770.
+Package pdftex.def Info: Eightstatecube.png  used on input line 826.
 (pdftex.def)             Requested size: 215.0023pt x 163.77724pt.
  (./figures/RedStatePrep.tikz) (./figures/RedEffect.tikz)
-(./figures/PrepAndMeasureRed.tikz) [21 <./Eightstatecube.png>]
+(./figures/PrepAndMeasureRed.tikz) [22 <./Eightstatecube.png>]
 (./figures/spidermultilegred.tikz) (./figures/spidermultilegdecomposedred.tikz)
 (./figures/EightStateEncodingInFull.tikz) (./figures/RedEncoding.tikz)
 (./figures/YellowEncoding.tikz) (./figures/GreenEncoding.tikz)
-(./figures/BlueEncoding.tikz) (./figures/RedTriangle0Decomposed.tikz)
-(./figures/RedTriangle0Decomposed2.tikz) (./figures/RedTriangle0.tikz) [22]
+(./figures/BlueEncoding.tikz) (./figures/BrownSpider.tikz)
+(./figures/RedSpider.tikz) (./figures/GreenSpider.tikz)
+(./figures/OrangeSpider.tikz) (./figures/BlueSpider.tikz) [23]
 (./figures/QKRProofSetup.tikz) (./figures/wire.tikz)
 (./figures/QKRProofSetupGreen.tikz) (./figures/wire.tikz)
 (./figures/QKRProofSetupYellow.tikz) (./figures/wire.tikz)
 (./figures/QKRProofSetupBlue.tikz) (./figures/wire.tikz)
+(./figures/QAaSBProofSetupReal1.tikz) (./figures/wire.tikz)
 (./figures/QKDProof1.tikz) (./figures/QKDProof2.tikz) (./figures/QKRProof4.tikz
 ) (./figures/QKRProof4A.tikz) (./figures/QKRProof5.tikz)
-(./figures/QKRProof6.tikz) (./figures/QKRProof7.tikz)
-(./figures/QKRProof6A.tikz) (./figures/QKRProof6B.tikz) [23]
+(./figures/QKRProof6.tikz) (./figures/QKRProof7.tikz) [24]
+(./figures/QKRProof6A.tikz) (./figures/QKRProof6B.tikz)
 (./figures/QKRProof6B.tikz) (./figures/QKRProof9.tikz)
 (./figures/QKRProof10.tikz) (./figures/QKRProof11.tikz)
 (./figures/QKRProof12.tikz) (./figures/QKRProof13.tikz)
 (./figures/QKRSeperationProof1.tikz) (./figures/QKRSeperationProof2.tikz)
-(./figures/QKRSeperationProof3.tikz) (./figures/QKRSeperationProof4.tikz)
-[24] (./figures/QKRSeperationProof5.tikz) (./figures/QKRSeperationProof6.tikz)
+[25] (./figures/QKRSeperationProof3.tikz) (./figures/QKRSeperationProof4.tikz)
+(./figures/QKRSeperationProof5.tikz) (./figures/ComposingTwoPauli's.tikz)
+[26] (./figures/CommutingPauli's.tikz) (./figures/CommutingPauli's1.tikz)
+(./figures/commutingPauli's3.tikz) (./figures/CommutingPauli's4.tikz)
 
-LaTeX Warning: Reference `(equation:RedSpiderRandomPauli)' on page 25 undefined
- on input line 918.
+LaTeX Warning: Reference `equation:composingtwopaulis' on page 27 undefined on 
+input line 979.
+
+! Missing { inserted.
+<to be read again> 
+                   \limits 
+l.979 ...ation:composingtwopaulis}) = \sum_\limits
+                                                  _{nm}\tikzfig{ComposingTwo...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Limit controls must follow a math operator.
+<recently read> \limits 
+                        
+l.979 ...ation:composingtwopaulis}) = \sum_\limits
+                                                  _{nm}\tikzfig{ComposingTwo...
+I'm ignoring this misplaced \limits or \nolimits command.
+
+(./figures/ComposingTwoPauli's2.tikz)
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.980 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.980 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 (./figures/QKRSeperationProof7.tikz) (./figures/QKRSeperationProof7B.tikz)
 (./figures/QKRSeperationProof7C.tikz) (./figures/QKRSeperationProof7D.tikz)
@@ -2254,22 +2416,56 @@ LaTeX Warning: Reference `(equation:RedSpiderRandomPauli)' on page 25 undefined
 (./figures/QKRSeperationProof9BD.tikz) (./figures/QKRSeperationProof10A.tikz)
 (./figures/QKRSeperationProof10B.tikz) (./figures/QKRSeperationProof10C.tikz)
 (./figures/QKRSeperationProof10D.tikz) (./figures/QKRSeperationProof11.tikz)
-[25] (./figures/QKRSeperationProof4.tikz) (./figures/QKRSeperationProof12.tikz)
+[27] (./figures/QKRSeperationProof4.tikz) (./figures/QKRSeperationProof12.tikz)
 (./figures/QKRSeperationProof13.tikz) (./figures/QKRSeperationProof14.tikz)
 (./figures/QKRSeperationProof15.tikz) (./figures/QKRSeperationProof16.tikz)
 (./figures/QOTPNoEveNoLine.tikz) (./figures/QOTPNoEveNoLine(1).tikz)
-(./figures/QuantumTeleportationNoLine.tikz) [26] (./figures/BrownSpider.tikz)
-(./figures/RedSpider.tikz) (./figures/GreenSpider.tikz)
-(./figures/OrangeSpider.tikz) (./figures/BlueSpider.tikz)
-(./figures/QKRGeneral.tikz) [27] (./document.bbl) [28] [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1058.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1058.
+(./figures/QuantumTeleportationNoLine.tikz) [28] (./figures/QKRGeneral.tikz)
+[29] (./figures/EightStateSpider.tikz) (./figures/EightStateSpiderGreen.tikz)
+(./figures/EightStateSpiderOrange.tikz) (./figures/EightStateSpiderBlue.tikz)
+(./figures/EightStateSpiderBrown.tikz) (./figures/EightStateSpider.tikz)
+(./figures/EightStateSpiderGreen.tikz) (./figures/EightStateSpiderOrange.tikz)
+(./figures/EightStateSpiderBlue.tikz) (./figures/QKRQAaSBA1.tikz)
+(./figures/QKRQAaSBA1DiscardingEve.tikz) (./figures/longwire.tikz) [30]
+(./figures/QKRQAaSBA1DiscardingEve1.tikz) (./figures/longwire.tikz)
+(./figures/QKRQAaSBA1DiscardingEve2.tikz) (./figures/longwire.tikz)
+(./figures/QKRQAaSBA1DiscardingEve3.tikz) (./figures/longwire1.tikz)
+(./figures/QKRQAaSBA1DiscardingEve4.tikz) (./figures/longwire2.tikz)
+(./figures/QKRQAaSBA1DiscardingEve5.tikz) (./figures/longwire3.tikz) [31]
+(./figures/QKRQAaSBA1DiscardingEve6.tikz) (./figures/longwire4.tikz)
+(./figures/longwire.tikz) (./figures/QKRQAaSBA1DiscardingEve8.tikz)
+(./figures/longwire5.tikz) (./figures/QKRQAaSBA1DiscardingEve9.tikz)
+(./figures/wire.tikz) (./figures/QKRGeneralQAaSBNoMeasuring.tikz)
+(./figures/QKRGeneralQAaSBSeparated.tikz) [32] (./figures/QKRQAaSBA1.tikz)
+(./figures/QKRQAaSBA2.tikz) (./figures/QKRQAaSBA3.tikz)
+(./figures/QKRQAaSBA4.tikz) (./figures/QKRQAaSBA5.tikz)
+(./figures/QKRQAaSBA6.tikz) (./figures/QKRQAaSBA7.tikz)
+(./figures/QKRQAaSBA8.tikz) [33]
+
+LaTeX Warning: Reference `quantumteleportation' on page 34 undefined on input l
+ine 1165.
+
+(./figures/QKRQAaSBA1.tikz) (./figures/QKRQAaSBB1.tikz)
+(./figures/QKRQAaSBB2.tikz) (./figures/QKRQAaSBB3.tikz)
+(./figures/QKRQAaSBB4.tikz) [34] (./figures/QKRQAaSBC1.tikz)
+(./figures/QKRQAaSBC1.tikz) (./figures/QKRQAaSBC6.tikz) [35]
+(./figures/QKRQAaSBC7.tikz) (./figures/QKRQAaSBC8.tikz)
+(./figures/QKRQAaSBC9.tikz) (./figures/QKRQAaSBC10.tikz)
+(./figures/QKRQAaSBC11.tikz) (./figures/QKRQAaSBC12.tikz) [36]
+(./figures/QKRQAaSBC13.tikz) (./figures/QKRQAaSBD1.tikz)
+(./figures/QKRQAaSBD2.tikz) [37] (./document.bbl) [38]
+(./figures/kkcommuterule.tikz) (./figures/kkcommuterule1.tikz)
+(./figures/CommutingPauli's.tikz) (./figures/CommutingPauli's1.tikz)
+(./figures/commutingPauli's3.tikz) (./figures/CommutingPauli's4.tikz) [39]
+[40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1331.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1058.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1058.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1331.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: CB4ADF6DCAA11A1ED7347B0E71EE40E2;2399.
+(rerunfilecheck)             Checksum: DAF0B7779A6C5AC6F02D89B3E80772C5;2978.
 
 
 LaTeX Warning: There were undefined references.
@@ -2277,16 +2473,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1058.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1331.
  ) 
 Here is how much of TeX's memory you used:
- 35082 strings out of 492167
- 705640 string characters out of 6125373
- 904502 words of memory out of 5000000
- 38025 multiletter control sequences out of 15000+600000
- 543019 words of font info for 65 fonts, out of 8000000 for 9000
+ 35892 strings out of 492167
+ 723181 string characters out of 6125373
+ 923959 words of memory out of 5000000
+ 38563 multiletter control sequences out of 15000+600000
+ 543640 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,22n,76p,1175b,1946s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,22n,76p,1222b,1946s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -2311,10 +2507,10 @@ nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (29 pages, 465095 bytes).
+Output written on document.pdf (40 pages, 529667 bytes).
 PDF statistics:
- 960 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 179 named destinations out of 1000 (max. 500000)
- 384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1186 PDF objects out of 1200 (max. 8388607)
+ 807 compressed objects within 9 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

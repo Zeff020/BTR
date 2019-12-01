@@ -12,7 +12,7 @@
 		\node [style=none] (13) at (-3, -1.25) {};
 		\node [style=RedSpider] (14) at (0, -0.75) {};
 		\node [style=none] (15) at (0, -2) {};
-		\node [style=StateMid] (16) at (0, -1.5) {\rotatebox{-45}{g}};
+		\node [style=StateMidRed] (16) at (0, -1.5) {\rotatebox{-45}{g}};
 		\node [style=none] (17) at (0, 2.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

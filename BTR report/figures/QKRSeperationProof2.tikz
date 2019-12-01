@@ -6,11 +6,11 @@
 		\node [style=none] (3) at (-0.5, 0) {};
 		\node [style=none] (4) at (-0.5, -2.5) {};
 		\node [style=none] (5) at (1.5, 1) {};
-		\node [style=RedSpider] (6) at (-0.5, 0) {};
-		\node [style=RedSpider] (7) at (0, 0.75) {};
+		\node [style=BrownSpider] (6) at (-0.5, 0) {};
+		\node [style=BrownSpider] (7) at (0, 0.75) {};
 		\node [style=none] (8) at (-1.5, 1.75) {};
-		\node [style=RedSpider] (9) at (0, 1.75) {};
-		\node [style=RedSpider] (10) at (0, 2.75) {};
+		\node [style=BrownSpider] (9) at (0, 1.75) {};
+		\node [style=BrownSpider] (10) at (0, 2.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (3.center) to (4.center);

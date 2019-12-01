@@ -87,6 +87,7 @@ The identity map in the diagrammatic notation is given by the following diagram,
 A wire can be reduced to triangles (and subsequently to a ket and a bra) as follows: 
 
 \begin{equation}
+\label{equation:wiredecomposed}
 \tikzfig{wire} = \tikzfig{wiretriangles} = \sum_{i}\ket{i}\bra{i}
 \end{equation}
 
@@ -125,6 +126,7 @@ A \textbf{spider} is a special map which functions as a Kronecker delta. It forc
 In the case where there are multiple outputs and inputs it forces all to be the same \footnote{Note that this is the first time we have placed diagrammatic components side by side. This can be interpreted as taking the tensor product over those components. We will work this out further in section \ref{doubling}}:
 
 \begin{equation}
+\label{equation:spidermultilegdecomposed}
 \tikzfig{spidermultileg} = \tikzfig{spidermultilegdecomposed}
 \end{equation}
 
@@ -290,6 +292,21 @@ Which is up to a number the first Bell state, $B_0$. Although it may seem like t
 
 \subsection{Advanced diagrammatic concepts}
 
+\subsubsection{The yanking equations}
+
+In \cite{Coecke2017} the authors introduce a couple of equations for bending around wires called the yanking equations. One of them will be used later on in this report, so it will be introduced here:
+
+\begin{equation}
+	\label{equation:yankingequation}
+	\tikzfig{YankingEquations1} = \tikzfig{wire}
+\end{equation}
+
+We can easily check that this is true by decomposing the wires to triangles as follows:
+
+\begin{equation}
+	\tikzfig{YankingEquations1} \equaltext{\ref{equation:wiredecomposed}} \sum\limits_{ij} \tikzfig{YankingEquations2} = \sum\limits_{ij} \delta_{ij} \tikzfig{YankingEquations3} = \sum\limits_{i} \tikzfig{wiretriangles1} \equaltext{\ref{equation:wiredecomposed}} \tikzfig{wire}
+\end{equation}
+
 \subsubsection{Basis and phase translations on the Bloch sphere}
 
 In section \ref{coloursandbases} we already saw how to translate between different bases diagrammatically. The approach was to translate Dirac bra's and kets directly to the appropriate triangles. Using phase spiders, we can employ a more purely diagrammatic method. This stems from the fact that applying a phase to a state corresponds to a rotation on the Bloch sphere. Let's see where a spider without a phase lies on the Bloch sphere:
@@ -323,12 +340,19 @@ The gray spiders and white basis have a similar relationship and these are inclu
 
 	\labelLatLon{up}{90}{0};
 	\drawStateLatLon[tilt=0.1]{up}{0}{0}
-	\labelLatLon{down}{-90}{90};
+	%\labelLatLon{down}{-90}{90};
 	
+	\labelLatLon{up}{-90}{90};
+	\drawStateLatLon[tilt=0.1]{up}{-10}{100}
+	
+	\labelLatLon{up}{90}{-90};
 	\drawStateLatLon[tilt=0.1]{down}{90}{90}
 	
+	\draw (4, 1.0) node[anchor=north west] {$\mathbf {\hat{x}}$};
 	%\drawStateLatLon[tilt=90]{up}{30}{45}
-	
+	\draw (-0.8,4.5) node[anchor=north west] {$\mathbf {\hat{z}}$};
+	% Above node
+	\draw (-1.8,0.2) node[anchor=north west] {$\mathbf {-\hat{y}}$};
 	% Above node
 	\node[above] at (0,5.5cm) { $\approx$ };
 	\node [style=StateMid] (0) at (-1.3,6.5cm) {\rotatebox{135}{0}};
@@ -362,7 +386,7 @@ Diagrammatically, the encoding map is a single spider with one doubled wire as o
 	\tikzfig{Encoding} = \sum\limits_{i} \tikzfig{Encoding2} = \sum\limits_{i} \bra{p}\ket{i} \tikzfig{Encoding3} = \tikzfig{DensityState}
 \end{equation}
 
-The decoding map is the adjoint of the encoding map. Its behavior follows directly from \ref{equation:Encoding}.
+The decoding map is the adjoint of the encoding map. Its behavior follows directly from (\ref{equation:Encoding}).
 
 \subsubsection{Complementary spiders}
 \label{complementarity}
@@ -374,13 +398,13 @@ Alice encoding a classical state into a qubit in a certain basis and then Bob me
 	\tikzfig{ComplementarySpiders} = \tikzfig{ComplementarySpiders2}
 \end{equation}
 
-\subsubsection{The xor gate}
+\subsubsection{The xor map}
 
 \label{xorgate}
 
-The Exclusive OR (xor) gate takes two inputs and gives an output of 0 when the inputs are the same and 1 when they are different. Mathematically, if we take $x, y \in \{0,1\} $ as inputs the output of the xor gate is $(x + y)~mod~2$. We could just define a diagrammatic map and give it this property. However, there is another way of creating the xor gate diagrammatically which only uses spiders. This has the advantage of allowing us to use spider rules to move xor gates around in diagrams.
+The Exclusive OR (xor) map takes two inputs and gives an output of 0 when the inputs are the same and 1 when they are different. Mathematically, if we take $x, y \in \{0,1\} $ as inputs the output of the xor gate is $(x + y)~mod~2$. We could just define a diagrammatic map and give it this property. However, there is another way of creating the xor map diagrammatically which only uses spiders. This has the advantage of allowing us to use spider rules to move xor maps around in diagrams.
 
-If we enter two outputs of a certain basis into a spider that is of another basis orthonormal to the inputs this gives the xor gate. To see how this works, let's use a gray spider and apply white test in- and outputs. First, recall that:
+If we enter two outputs of a certain basis into a spider that is of another basis orthonormal to the inputs this gives the xor map. To see how this works, let's use a gray spider and apply white test in- and outputs. First, recall that:
 
 \begin{equation}
 	\tikzfig{XORProof1} \equaltext{\ref{coloursandbases}} 1/\sqrt{2} ~~~~~~~~~~~~~~~~~ \tikzfig{XORProof2} = (-1)^i/\sqrt{2}
@@ -393,6 +417,36 @@ Now applying the test in- and outputs to the proposed xor map \cite{Coecke2017}:
 \end{equation}
 
 This equation results in 0 whenever the sum $i+j+k$ is uneven and 1/$\sqrt{2}$ when it is even. Now $i+j+k$ is only even whenever $i \oplus j = k$. This thus, up to a factor of $\sqrt{2}$, gives the xor map.
+
+\subsubsection{The essential uniqueness of purification}
+\label{section:essentialuniqueness}
+
+The essential uniqueness of purification is a theorem that states the following: Given two pure maps $\hat{V}_1$ and $\hat{V}_2$ that satisfy $V_1$, $V_2$: $\mathcal{H}$ $\rightarrow$ $\mathcal{K}$ $\otimes$ $\mathcal{L}$ and:
+
+\begin{equation}
+	\label{equation:uniquenesspurification}
+	\tikzfig{Vhat1purified} = \tikzfig{Vhat2purified}
+\end{equation}
+
+Then there exists some unitary $U$: $\mathcal{L}$ $\rightarrow$ $\mathcal{L}$ such that:
+
+\begin{equation}
+	\tikzfig{Vunpurified} = \tikzfig{V2unpurified}
+\end{equation}
+
+Intuitively, this theorem states that if $\hat{V}_1$ and $\hat{V}_2$ are similar to the extent that they satisfy equation (\ref{equation:uniquenesspurification}), then the linear maps $V_1$ and $V_2$ can only differ by some unitary U. It is an adaptation of the theorem given by Kissinger and Westerbaan in section 2.1 of \cite{Kissinger2017} that is better suited for this report.
+
+
+\subsubsection{The $k-k'$ commute rule}
+
+In this report we will on multiple occasions want to move certain phase spiders past one another. This does, however, require some more advanced diagrammatic derivations that are too extensive for the scope of this report. Therefore we show the result here, and refer to the relevant literature. In \cite{Coecke2017} on page 771, Coecke and Kissinger introduce the $k-k'$ commute rule and give the full diagrammatic derivation to arrive to this rule. As we will later see, this rule is the main ingredient for pushing Pauli's past one another diagrammatically. It states that for $k, k' \in \{0, \pi\}$: 
+
+\begin{equation}
+\label{equation:kkcommuterule}
+\tikzfig{kkcommuterule} = \tikzfig{kkcommuterule1}
+\end{equation}
+
+This rule shows us how we can move phase spiders of a different color with either a $\pi$ or no phase past one another.
 
 \section{Protocols}
 
@@ -519,6 +573,7 @@ The previous two equations are entirely analogous for the gray (x) basis.\footno
 We now have the necessary ingredients to make a map that applies a random bitflip or not in x and another map that makes a random bitflip or not in z. The results are as follows:
 
 \begin{equation}
+	\label{equation:twodiagrammaticpauli's}
 	X^w ~~  \Leftrightarrow ~~ \tikzfig{RandomXBitFlip} ~~~~~~~~~~~~~~~~~~~~~~~~ Z^u ~~ \Leftrightarrow ~~ \tikzfig{RandomZBitFlip}
 \end{equation}
 \textit{Where the gray spider in the $X^w$ map determines the random choice of $w$ and the white spider in $Z^u$ determines the random choice of $u$.}
@@ -616,13 +671,13 @@ Let's see what happens when we look at this situation from Eve's perspective and
 The third diagram in equation (\ref{equation:QOTPEveEvePerspective}) is up until Eve's map $\Phi$ the same as equation (\ref{equation:AliceWithBell}). We therefore see that from Eve's perspective Alice gives her the fully mixed state due to the Bell map that she applies to her original state. So even in the full protocol, the Bell map is responsible for encrypting the state such that Eve can extract no information from it. 
 
 \subsection{Quantum Teleportation}
-
+\label{subsection:QuantumTeleportation}
 In quantum teleportation, Alice and Bob want to communicate a qubit, $\rho_1$, using the fact that they share an EPR pair, $\rho_{23}$, and a classical communication channel. Note that the subscripts in this section help keep track of the different particles present. Subscript 1 refers to Alice's particle, 2 to her side of the EPR pair and 3 to Bob's side of the EPR pair. Alice measures $\rho_1$ together with $\rho_{2}$ in a Bell measurement, entangling these two states to give the total entangled state of $\rho_{123}$. This projects $\rho_{3}$ to one of four possible pure states dependent on the result of the Bell measurement done by Alice. Using the classical communication channel, Alice can send this measurement outcome to Bob in two classical bits. In order for Bob to extract  $\rho_1$ from his part of the entangled state, $\rho_{3}$, he needs to apply to it the Bell map that corresponds to the measurement outcome of Alice's Bell measurement.
 
 
 The name of this protocol might lead one to think that it includes the teleportation of information. However, this is not the case. This protocol does not achieve faster than light communication. Although the projection of $\rho_{3}$ onto a pure state happens simultaneously with Alice making the Bell measurement, in order for Bob to receive any information on $\rho_1$ from $\rho_{3}$ he must apply the Bell map that corresponds to the measurement result of Alice's Bell measurement. Alice thus has to communicate classically to Bob the result of her Bell measurement.
 
-Quantum teleportation carries some similarity to QOTP. In both protocols, Alice and Bob communicate two classical bits of information in order to communicate one qubit. Also, in both cases, Bob applies a Bell map. These similarities might give some intuition for the equivalence of these protocols. In section \ref{Equivalences} we will see this equivalence diagrammatically.
+Quantum teleportation carries some similarity to QOTP. In both protocols, Alice and Bob communicate two classical bits of information in order to communicate one qubit. Also, in both cases, Bob applies a Bell map. These similarities might give some intuition for the equivalence of these protocols. In the end of this section we will see this equivalence diagrammatically.
 
 \subsubsection{Diagrammatic Representation}
 
@@ -685,6 +740,7 @@ The result is thus indeed the expected Bell state. Note that whereas usually the
 Let's choose the entangled state of \ref{entanglement} for state $\rho_{23}$. We can then compose the Bell measurement that Alice applies on the left of this entangled state and the Bell map that Bob applies to the right. Alice also inputs $\rho_1$ to the Bell measurement. Using a similar approach to the one we took in \ref{DiagramRepresentationQOTP}, we can generalize this to say that this state can in fact be any quantum state. Again, we can represent this by a dotted line which enters the diagram where $\rho_1$ would go. Finally, we need to make sure to connect the outputs of Alice's Bell measurement to Bob's Bell map. The protocol for teleportation then becomes: 
  
 \begin{equation}
+	\label{equation:quantumteleportation}
 	\tikzfig{QuantumTeleportation}
 \end{equation}
  
@@ -755,11 +811,11 @@ In words: Eve's channel has no connection to Alice and Bob's and she thus learns
 
 Quantum key recycling was already discussed in the introduction. The part of this protocol in which Alice and Bob actually communicate a quantum state is very similar to the previously discussed protocols QKD and QOTP. The main differences between them are in the classical processing part and the encoding of the quantum states. Essentially, the security of QKR and QKD is dependent on Alice and Bob both using the same basis for measuring and encoding and Eve not knowing this basis. The difference between the protocols from this perspective is that in QKR Bob and Alice know their choice of bases beforehand and in QKD they discuss their choice of bases only after Bob has received and measured the quantum state sent by Alice.
 
-Recently, it was proposed to use eight-state encoding in QKR protocols \cite{DeVries2016}. This method of encoding quantum states does not rely on the two mutually unbiased bases discussed before, it essentially encodes bits into four different non mutually unbiased bases. Allowing each basis two states then results in the characteristic total of eight different states, hence the name of this encryption. In the paper in which this was originally brought forward \cite{DeVries2016}, the authors suggest to place each of these states at equidistant locations on the Bloch sphere, corresponding to the eight corners of a cube if it were placed perfectly inside of the Bloch sphere. One of the bases is defined as having a 0 state $\ket{\psi_{000}}$ at $(1,1,1)^T$/$\sqrt{3}$ and a 1 state $\ket{\psi_{001}}$ at $(-1,-1,-1)^T$/$\sqrt{3}$. The others are defined as two Pauli transforms with respect to this basis, giving the following eight states:
+Recently, it was proposed to use eight-state encoding in QKR protocols \cite{DeVries2016}. This method of encoding quantum states does not rely on the two mutually unbiased bases discussed before, it essentially encodes bits into four different non mutually unbiased bases. Allowing each basis two states then results in the characteristic total of eight different states, hence the name of this encryption. In the paper in which this was originally brought forward \cite{DeVries2016}, the authors suggest to place each of these states at equidistant locations on the Bloch sphere, corresponding to the eight corners of a cube if it were placed perfectly inside of the Bloch sphere. One of the bases is defined as having a 0 state $\ket{\psi_{0}}$ at $(1,1,1)^T$/$\sqrt{3}$ and a 1 state $\ket{\psi_{1}}$ at $(-1,-1,-1)^T$/$\sqrt{3}$. The others are defined as two Pauli transforms with respect to this basis, giving the following eight states:
 
 \begin{equation}
 	\label{equation:EightStatePaulis}
-	\ket{\psi_{uwg}} \equiv X^w Z^u\ket{\psi_{00g}}~where~ u,~ w,~ g~ \in~ \{0,1\}
+	\ket{\psi_{uwg}} \equiv X^w Z^u\ket{\psi_{g}}~where~ u,~ w,~ g~ \in~ \{0,1\}
 \end{equation}
 
 More compactly, we can define $E_{uw} \equiv X^u Z^u$ and have $E_{uw}$ be our encryption operator. This gives rise to the representation of these eight states as given in figure \ref{fig:eightstatecube}.
@@ -774,7 +830,7 @@ More compactly, we can define $E_{uw} \equiv X^u Z^u$ and have $E_{uw}$ be our e
 \end{figure}
 \end{center}
 
-We do not need to introduce much new notation or formalism for eight state encoding since we have essentially seen most of it already. The quantum one time pad is actually an eight state encryption protocol. The main difference is that in the protocol introduced for QKR, the eight states are distributed differently over the Bloch sphere. Diagrammatically, we can exploit these similarities by borrowing the notation that was previously introduced for the Pauli's in QOTP. According to equation \ref{equation:EightStatePaulis}, we only need to define one of the bases of eight state encoding and get the others for free by applying Pauli's to the states of this original basis. We choose the color red for this new basis. The red basis has the two states that we saw before: $\ket{\psi_{000}}$ and $\ket{\psi_{001}}$. We should first define triangles that represent classical information on these states, similarly to how we have classical triangles for the gray and white bases. We use the color red for this as well. This gives us the following diagrammatic components for the preparation of a state and the effect in this basis:
+We do not need to introduce much new notation or formalism for eight state encoding since we have essentially seen most of it already. The quantum one time pad is actually an eight state encryption protocol. The main difference is that in the protocol introduced for QKR, the eight states are distributed differently over the Bloch sphere. Diagrammatically, we can exploit the similarities by borrowing the notation that was previously introduced for the Pauli's in the QOTP. According to equation (\ref{equation:EightStatePaulis}), we only need to define one of the bases of eight state encoding and get the others for free by applying Pauli's to the states of this original basis. We choose the color red for this new basis. The red basis has the following two basis states: $E_{00}\ket{\psi_{0}} = \ket{\psi_{000}}$ and $E_{00}\ket{\psi_{1}} = \ket{\psi_{001}}$. We should first define triangles that represent classical information on these states, similarly to how we have classical triangles for the gray and white bases. We use the color red for this as well. This gives us the following diagrammatic components for the preparation of a state and the effect in this basis:
 
 \begin{equation}
 	\ket{\psi_{00g}} \equiv \tikzfig{RedStatePrep} ~~~~~~ \bra{\psi_{00g}} \equiv \tikzfig{RedEffect}
@@ -784,63 +840,67 @@ Note that we have as well that:
 
 \begin{equation}
 \label{equation:RedMeasureAndEffect}
-\tikzfig{PrepAndMeasureRed} = \delta_{ij}
+\tikzfig{PrepAndMeasureRed} \equiv \delta_{ij}
 \end{equation}
 
-Finally, we need to define a spider that encodes these $\ket{\psi_{000}}$ and $\ket{\psi_{001}}$ to the respective quantum states. This spider is defined in terms of the triangles as follows:
+Finally, we need to define a spider that encodes these $\ket{\psi_{000}}$ and $\ket{\psi_{001}}$ to the respective quantum states. In fact, since equation (\ref{equation:spidermultilegdecomposed}) is independent for the choice of basis, we can just copy it and exchange the white triangles for red ones:
 
 \begin{equation}
 	\label{equation:RedSpiderPrepareAndMeasure}
 \tikzfig{spidermultilegred} = \tikzfig{spidermultilegdecomposedred}
 \end{equation}
 
-By a combination of equations (\ref{equation:RedMeasureAndEffect}) and (\ref{equation:RedSpiderPrepareAndMeasure}) it is trivial to check that the red spider follows the spider rules as they are given in section \ref{spiders}. On the other hand, we have to be tread carefully regarding its interaction with differently colored spiders, since we cannot exploit mutual unbiasedness.
+By a combination of equations (\ref{equation:RedMeasureAndEffect}) and (\ref{equation:RedSpiderPrepareAndMeasure}) it is trivial to check that the red spider follows the spider rules as they are given in section \ref{spiders}. With that being said, we have to tread carefully regarding its interaction with differently colored spiders, since we cannot exploit mutual unbiasedness.
 
-We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Pauli's diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our bases by applying these Pauli's to the recently defined new basis. We can thus make all of our eight different cipherstates as follows:
+We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Pauli's diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our bases by applying these Pauli's to the recently defined new basis states $\ket{\psi_{00g}}$. We could thus encode all of our eight different cipherstates as follows:
 
 \begin{equation}
 	\label{equation:EightStateEncodingInFull}
-	E_{uw}\ket{\psi_{g}} \Leftrightarrow\tikzfig{EightStateEncodingInFull}
+	E_{uw}\ket{\psi_{00g}} \Leftrightarrow\tikzfig{EightStateEncodingInFull}
 \end{equation}
 
-However, since these will reappear quite often, we can save ourselves from unnecessarily complex diagrams by redefining equation (\ref{equation:EightStateEncodingInFull}) into four new spiders, each with a different color. These eight state encoding spiders represent the four bases of eight state encoding in much the same way the gray and white spider represent the two bases of four state encoding. 
+However, since the different bases will reappear quite often, we can save ourselves from unnecessarily complex diagrams by redefining each combination of $u$ and $w$ into a new spider, each with a different color. These eight state encoding spiders represent the four bases of eight state encoding in much the same way the gray and white spider represent the two bases of four state encoding.
+
+%\footnote{Note that all four of these spiders accept red colored triangles because we defined all of them as Pauli's with respect to states in the red basis. The red basis has thus been given a privileged position among the four colors. This is in line with \cite{DeVries2016}, where the authors suggest to encode a classical '0' as $\ket{\psi_{000}}$ and a '1' as $\ket{\psi_{001}}$, and define the other states as Pauli's with respect to these.} 
 
 \begin{equation}
 	\label{equation:EncryptionOperators}
-	E_{00} \Leftrightarrow \tikzfig{RedEncoding} ~~~~~~ E_{01} \Leftrightarrow \tikzfig{YellowEncoding}~~~~~~ E_{10} \Leftrightarrow \tikzfig{GreenEncoding}~~~~~~ E_{11} \Leftrightarrow \tikzfig{BlueEncoding}
+	\{u,w\} = \{0, 0\} \Leftrightarrow \tikzfig{RedEncoding} ~~~~~~ \{u,w\} = \{0, 1\} \Leftrightarrow \tikzfig{YellowEncoding}~~~~~~ \{u,w\} = \{1, 0\} \Leftrightarrow \tikzfig{GreenEncoding}~~~~~~ \{1, 1\} \Leftrightarrow \tikzfig{BlueEncoding}
 \end{equation}
 
-Let's test if this works by encoding the $\ket{\psi_{00g}}$ as a quantum state:
+Finally, to make our lives easier, we introduce one more spider. This spider is actually nothing new, it is the set of the four spiders introduced in \ref{equation:EncryptionOperators}. Having this spider may come in handy whenever we want to make a statement that counts for all four of the colored spiders. Instead of making the same statement for each of the different spiders, we can then make it once for this new spider. We choose the color brown for this:
 
 \begin{equation}
-	\label{equation:RedTriangleDecomposed}
-	\tikzfig{RedTriangle0Decomposed} \equaltext{(\ref{equation:EncryptionOperators})} \tikzfig{RedTriangle0Decomposed2} =
-	\tikzfig{RedTriangle0}
+\label{equation:brownspiderset}
+\tikzfig{BrownSpider} \equiv \{~\tikzfig{RedSpider},~ \tikzfig{GreenSpider},~ \tikzfig{OrangeSpider},~ \tikzfig{BlueSpider}\}
 \end{equation}
 
-With this all set up, we are ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Pauli's consistent of the gray and white spiders that we have seen before, we aim to extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Pauli's, which are a valid member of eight state encoding.
+ With this all set up, we are ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Pauli's consistent of the gray and white spiders that we have seen before, we aim to extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Pauli's, which are a valid member of eight state encoding.
 
-Putting in the property that the quantum channels and maps exhibit no noise according to Alice and Bob is equivalent to saying that Eve goes undetected whenever Alice and Bob measure in the same basis. After all, Eve represents the environment *** maybe I should have said this sometime before? ***. We have already briefly discussed the security proof of Kissinger and Westerbaan in section \ref{QuantumKeyDistribution}, where we made the same statement for Alice and Bob using the gray and white bases. Diagrammatically, we can implement this statement for our four new bases as follows:
+Putting in the property that the quantum channels and maps exhibit no noise according to Alice and Bob is equivalent to saying that Eve goes undetected whenever Alice and Bob measure in the same basis. Since Eve represents the environment this can also be interpreted as the quantum channels being noiseless. We have already briefly discussed the security proof of Kissinger and Westerbaan in section \ref{QuantumKeyDistribution}, where we made the same statement for Alice and Bob using the gray and white bases. Noting that brown represents the set of four colors introduced in equation (\ref{equation:brownspiderset}), we can implement this statement for our four new bases as follows:
 
 \begin{equation}
 	\label{equation:coloredspiders}
-	\tikzfig{QKRProofSetup} = \tikzfig{wire} ~~~~~~ \land ~~~~~~ \tikzfig{QKRProofSetupGreen} = \tikzfig{wire} ~~~~~~ \land ~~~~~~ \tikzfig{QKRProofSetupYellow} = \tikzfig{wire} ~~~~~~ \land ~~~~~~ \tikzfig{QKRProofSetupBlue} = \tikzfig{wire}
+	\tikzfig{QKRProofSetup} = \tikzfig{wire} ~~~~ \land ~~~~ \tikzfig{QKRProofSetupGreen} = \tikzfig{wire} ~~~~ \land ~~~~ \tikzfig{QKRProofSetupYellow} = \tikzfig{wire} ~~~~ \land ~~~~ \tikzfig{QKRProofSetupBlue} = \tikzfig{wire} ~~~~ \Leftrightarrow ~~~~ \tikzfig{QAaSBProofSetupReal1} = 
+\tikzfig{wire}
 \end{equation}
 
-With this as a starting point we can select one of these four and exploit the symmetry between them. Taking the first one and pre- and postcomposing measurement maps gives:
+With this as a starting point we can pre- and postcompose measurement maps as follows:
 
 \begin{equation}
 	\label{equation:QKDSetupRed}
 	\tikzfig{QKDProof1} = \tikzfig{QKDProof2}
 \end{equation}
 
-Now we can purify the red spiders in equation (\ref{equation:QKDSetupRed}) by doubling and discarding an extra output (see equation (\ref{equation:Purification})) *** Show by means of diagrams that this is a valid operation also for the colored spiders? ***. This gives rise to the following diagrams:
+Now we can purify the brown spiders in equation (\ref{equation:QKDSetupRed}) by doubling and discarding an extra output (see equation (\ref{equation:Purification})). Note that we can also, without loss of generality, state that $\Phi = \hat{V}$ since $\Phi$ already fits the definition of a purified state given in section \ref{discarding}.*** Show by means of diagrams that this is a valid operation also for the colored spiders? ***. This gives rise to the following diagrams:
 
 \begin{equation}
+	\label{equation:QKRProof4}
 	\tikzfig{QKRProof4} = \tikzfig{QKRProof4A} \equaltext{(\ref{equation:discarding})} \tikzfig{QKRProof5}
 \end{equation}
+\textit{Where $\hat{\psi}$ can be any normalized pure state.}
 
-Where $\hat{\psi}$ can be any normalized pure state. By essential uniqueness of purification *** Work this out more based on answer from Kissinger ***:
+By applying the essential uniqueness of purification from section \ref{section:essentialuniqueness} to equation \ref{equation:QKRProof4} we get:
 
 \begin{equation}
 	\label{equation:PurifiedQKR}
@@ -853,7 +913,7 @@ Deleting the second and fourth output of the LHS of equation (\ref{equation:Puri
 	\tikzfig{QKRProof6A} \equaltext{\ref{spiders}} \tikzfig{QKRProof6B}
 \end{equation}
 
-By doing the same to the RHS of equation (\ref{equation:PurifiedQKR}) we get:
+Doing the same to the RHS of equation (\ref{equation:PurifiedQKR}):
 
 \begin{equation}
 	\label{equation:passingvonthrough}
@@ -867,7 +927,7 @@ Note that this holds for spiders of all colors of equation (\ref{equation:colore
 	\tikzfig{QKRProof10} \equaltext{(\ref{equation:passingvonthrough}), \ref{spiders}} \tikzfig{QKRProof11} ~~~~~~~~~~~~~~~~~~ \tikzfig{QKRProof12} \equaltext{(\ref{equation:passingvonthrough}), \ref{spiders}} \tikzfig{QKRProof13}
 \end{equation}
 
-Using equation (\ref{equation:vrules}) for the four colors we can prove that V separates. Starting with V itself:
+Using equation (\ref{equation:vrules}) we can prove that V separates. Starting with V itself:
 
 \begin{equation}
 	\label{equation:v}
@@ -882,40 +942,47 @@ The strategy is to add something separated from the diagram in equation (\ref{eq
 	\tikzfig{QKRSeperationProof2}
 \end{equation}
 
-Now, we need some method to attach the separated part to the diagram temporarily such that we can move V through. It turns out that eight state encoding gives us a map that can do exactly this, the random Pauli's. Equation (\ref{equation:AliceWithBell}) already showed how a random Pauli can separate two parts of a diagram. We place it between the two diagrams in equation (\ref{equation:vwithpauli}):
+Now, we need some method to attach the separated part to the diagram temporarily such that we can move V through. It turns out that eight state encoding gives us a map that can do exactly this: the random Pauli's. Equation (\ref{equation:AliceWithBell}) already showed how a random Pauli can separate two parts of a diagram. We place it between the two diagrams in equation (\ref{equation:vwithpauli}):
 
 \begin{equation}
 (\ref{equation:vwithpauli}) \equaltext{(\ref{equation:AliceWithBell})} \tikzfig{QKRSeperationProof3} \equaltext{(\ref{equation:vrules})} \tikzfig{QKRSeperationProof4}
 \end{equation}
 
-What we need now is some way to pass V through this Pauli. Considering just the Pauli and the surrounding encoding and decoding maps and writing out the red spider on the bottom according to its definition in equation (\ref{equation:EightStateEncodingInFull}):
+What we need now is some way to pass V through this Pauli. Considering just the Pauli and the surrounding encoding and decoding maps:
 
 \begin{equation}
 	\label{equation:RedSpiderRandomPauli}
-	\tikzfig{QKRSeperationProof5} \equaltext{(\ref{equation:EightStateEncodingInFull})} \tikzfig{QKRSeperationProof6}
+	\tikzfig{QKRSeperationProof5}
 \end{equation}
 
-So what we have here is a certain Pauli, in this case $X^0Z^0$ followed by a random Pauli, $X^nZ^m$, for two random $n, m \in \{0,1\}$. But this is again a random Pauli:
+So what we have here is a random Pauli, precomposed by any of the four encoding maps and postcomposed by a decoding map of the same basis. Since each of the four bases are just Pauli's with respect to one another, combining the encoding and random Pauli maps actually selects one of the four bases to encode in at random. More explicitly, remember by equation (\ref{equation:EightStatePaulis}) that each of the cipherstates can be created by two Pauli's and the $\ket{\psi_g}$ basis states ($\ket{\psi_{uwg}} = X^w Z^u\ket{\psi_{g}}$). Then applying a random Pauli ($X^n Z^m~where~n~and~m~are~random$) to any of the cipherstates gives the following:
 
 \begin{equation}
-\label{equation:randompaulicomposition}
-X^0Z^0X^nZ^m = X^lZ^p
+\label{equation:EncodingInRandomCipherstate}
+X^nZ^mX^uZ^w\ket{\psi_{g}} = X^lZ^p\ket{\psi_{g}} \equaltext{\ref{equation:EightStatePaulis}} \ket{\psi_{lpg}}
 \end{equation}
-\textit{With $l, p \in \{0,1\}$ dependent on $n$ and $m$}
 
-In fact, we don't even need to encode in the red basis for this to be true. Encoding in different bases means using a different spider than red, which in turn corresponds to using another Pauli. For any u and w, and thus every color of spider, we have:
+Which, by randomness of $l$ and $p$, is a cipherstate encoded into a random one of the bases. Encoding a state into a cipherstate with a certain basis and then applying a random Pauli is thus equivalent to encoding this cipherstate into a random basis. We can show this diagrammatically too. Remember that equation (\ref{equation:EightStateEncodingInFull}) tells us how we can encode any state with respect to the red basis and two Pauli's diagrammatically. The brown spider that is used for encoding in equation (\ref{equation:RedSpiderRandomPauli}) can thus be replaced by a red spider and two Pauli's. Looking just at this encoding part and the random Pauli's that follow immediately after we thus get:
 
 \begin{equation}
-X^uZ^wX^nZ^m = X^lZ^p
+	\label{equation:composingtwopaulis}
+ \tikzfig{ComposingTwoPauli's}
 \end{equation}
 
-*** Should I work the previous two equations out in diagrams? Advantage: More consistency by using diagrams everywhere. Disadvantage: Very long and therefore potentially confusing equations, this way it is much more compact ***
+The only ingredient that we are missing is some way to move Pauli's past one another. Mathematically, the fact that we can do this is evident from the anticommutative property of Pauli's. Anticommutativity implies that any two Pauli's $\sigma_i$ and $\sigma_j$ satisfy $\sigma_i\sigma_j = - \sigma_j\sigma_i$. Diagrammatically we can commute Pauli's using the $k-k'$ commute rule as follows:
 
-This looks as follows diagrammatically:
+\begin{equation}
+\tikzfig{CommutingPauli's} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's1} \equaltext{\ref{equation:kkcommuterule}} \tikzfig{commutingPauli's3} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's4}
+\end{equation}
+
+\begin{equation}
+	(\ref{equation:composingtwopaulis}) = \sum_\limits_{nm}\tikzfig{ComposingTwoPauli's2}\end{equation}
+
+%Incorporating (\ref{equation:EncodingInRandomCipherstate}) into equation (\ref{equation:RedSpiderRandomPauli}) we get the following:
 
 \begin{equation}
 	\label{equation:fourcolourspiders}
-	\ref{(equation:RedSpiderRandomPauli)} \equaltext{\ref{equation:randompaulicomposition}} \frac{1}{4}\tikzfig{QKRSeperationProof7} + \frac{1}{4} \tikzfig{QKRSeperationProof7B} + \frac{1}{4} \tikzfig{QKRSeperationProof7C} + \frac{1}{4} \tikzfig{QKRSeperationProof7D}
+	(\ref{equation:RedSpiderRandomPauli}) \equaltext{\ref{equation:EncodingInRandomCipherstate}} \frac{1}{4}\tikzfig{QKRSeperationProof7} + \frac{1}{4} \tikzfig{QKRSeperationProof7B} + \frac{1}{4} \tikzfig{QKRSeperationProof7C} + \frac{1}{4} \tikzfig{QKRSeperationProof7D}
 \end{equation}
 
 By undoubling the wire in the middle and using equation (\ref{equation:vrules}) we can move V through all of these:
@@ -937,9 +1004,10 @@ Putting this back into the larger picture:
 	\tikzfig{QKRSeperationProof4} \equaltext{(\ref{equation:passingvthroughpauli})} \frac{1}{D}~ \tikzfig{QKRSeperationProof12} \equaltext{(\ref{equation:AliceWithBell})}	\frac{1}{D}~ \tikzfig{QKRSeperationProof13} \equaltext{\ref{spiders}} \frac{1}{D}~ \tikzfig{QKRSeperationProof14}
 \end{equation}
 
-And thus we see that V separates. Hence, $\Psi$ separates as well. In diagrams:
+And thus we see that V separates. Hence, if Alice and Bob measure and encode in the same four bases from equation (\ref{equation:brownspiderset}), $\Phi$ separates as well. In diagrams:
 
 \begin{equation}
+\label{equation:QKRSeparates}
 \tikzfig{QKRSeperationProof15} = \tikzfig{QKRSeperationProof16}
 \end{equation}
 
@@ -950,7 +1018,7 @@ And thus we see that V separates. Hence, $\Psi$ separates as well. In diagrams:
 
 *** Put this directly after quantum teleportation too! ***
 
-The equivalence of QOTP and quantum teleportation is rather trivial. In fact, we already say this equivalence back in equation (\ref{equation:QOTPQuantumTeleportationEquivalence})
+The equivalence of QOTP and quantum teleportation is rather trivial. In fact, we already saw this equivalence back in equation (\ref{equation:QOTPQuantumTeleportationEquivalence}):
 
 \begin{equation}
 \tikzfig{QOTPNoEveNoLine} \equaltext{\ref{spiders}} \tikzfig{QOTPNoEveNoLine(1)}~~~~~ \Leftrightarrow ~~~~~\tikzfig{QuantumTeleportationNoLine}
@@ -966,30 +1034,217 @@ In the introduction we discussed the
 
 \subsection{Quantum Alice and Silent Bob Equivalences}
 
-In a recent article \cite{Leermakers2019}, Skori$\check{\textrm{c}}$ and Leermakers propose a scheme for QKR that includes no classical communication from Alice to Bob and only one bit from Bob to Alice. To prove its security, the authors modify the proposed protocol to one that is better suited for this in a series of steps that preserve equivalence to the original. In this section, we will have a look at these equivalences diagrammatically using the eight state encoding QKR protocol as starting point. 
-
-We will also define one new spider for this section. This spider is simply defined as the set of the four colors of spiders from  equation (\ref{equation:EncryptionOperators}). Everything we can do for each of the four colors of spiders, the brown spider can do too. This is essentially an alternative to doing everything for one of the four spiders and then exploiting their symmetry to say that we can do it for each of them.
+In a recent article \cite{Leermakers2019}, Skori$\check{\textrm{c}}$ and Leermakers propose a scheme for QKR that includes no classical communication from Alice to Bob and only one bit from Bob to Alice. To prove its security, the authors modify the proposed protocol to one that is better suited for this in a series of steps that preserve security-wise equivalence to the original. In this section, we will have a look at these equivalences diagrammatically using the eight state encoding QKR protocol as starting point. 
 
 \begin{equation}
-	\tikzfig{BrownSpider} \equiv \{~\tikzfig{RedSpider},~ \tikzfig{GreenSpider},~ \tikzfig{OrangeSpider},~ \tikzfig{BlueSpider}\}
-\end{equation}
-
-Using this new spider, the starting point for the equivalences in this section becomes the following diagram:
-
-\begin{equation}
+\label{equation:QKRGeneral}
 	\tikzfig{QKRGeneral}
 \end{equation}
 
 
 \subsubsection{Masking the qubit payload with public randomness}
+\label{section:maskingqubitpubrand}
+In the first equivalent protocol Alice and Bob both apply the same bitstring $a \in \{0,1\}^n$ in the classical domain, before encoding and after decoding respectively. $a$ is public, implying that Eve also learns it. The rest of the protocol remains the same. To implement this diagrammatically, we give Eve another map with respect to (\ref{equation:EveNewMap}) to represent her doing classical post processing. In this map, she uses her knowledge on $a$ and what she learned from intercepting the quantum state from Alice to Bob.
 
-In the first equivalent protocol Alice and Bob both apply the same bitstring $a \in \{0,1\}^n$ in the classical domain, before encoding and after decoding respectively. $a$ is public, implying that Eve also learns it. The rest of the protocol remains the same. To implement this diagrammatically, we give Eve another map with respect to (\ref{equation:EveNewMap}) to represent her doing classical post processing. In this map, she uses her knowledge on a and what she learned from intercepting the quantum state from Alice to Bob.
+We need to create one more set of maps before we can implement this diagrammatically. Since we haven't fully worked out all of the properties of the colored spiders yet, it is more convenient to not use them whenever the protocol doesn't tell us to. Therefore, we propose a map that translates between the white and colored bases. This allows us to do all of the classical processing in terms of white and gray spiders which is necessary if we want to use for example mutual unbiasedness (\ref{complementarity}) or the xor map (\ref{xorgate}). The map that translates between the white and red bases is the following:
 
-We need to create one more map before we can implement this diagrammatically. Since we haven't fully worked out all of the properties of the colored spiders yet, it is more convenient to not use them whenever the protocol doesn't tell us to. Therefore, we propose a map that translates between the white and red basis. This allows us to do all of the classical processing in terms of white and gray spiders which in turn is necessary if we want to use for example mutual unbiasedness (\ref{complementarity}) or the xor map (\ref{xorgate}).
+\begin{equation}
+\label{equation:EightStateSpider}
+\tikzfig{EightStateSpider} \equiv \begin{cases}
+ \ket{\psi_{00g}} & \Rightarrow \ket{g}_z\\
+\ket{g}_z & \Rightarrow \ket{\psi_{00g}}
+\end{cases}
+\end{equation}
 
- Diagrammatically, this looks as follows:
+The other three colors then also have the respective boxes:
+
+\begin{equation}
+\label{equation:EightStateSpiderOtherColors}
+\tikzfig{EightStateSpiderGreen} \equiv \begin{cases}
+\ket{\psi_{10g}} & \Rightarrow \ket{g}_z\\
+\ket{g}_z & \Rightarrow \ket{\psi_{10g}}
+\end{cases} ~~~~
+\tikzfig{EightStateSpiderOrange} \equiv
+\begin{cases}
+\ket{\psi_{01g}} & \Rightarrow \ket{g}_z\\
+\ket{g}_z & \Rightarrow \ket{\psi_{01g}}
+\end{cases}  ~~~~
+\tikzfig{EightStateSpiderBlue} \equiv
+\begin{cases}
+\ket{\psi_{11g}} & \Rightarrow \ket{g}_z\\
+\ket{g}_z & \Rightarrow \ket{\psi_{11g}}
+\end{cases}\end{equation}
+
+And again, the brown box is the set of the four individual boxes:
+
+\begin{equation}
+	\label{brownbox}
+	\tikzfig{EightStateSpiderBrown} = \{ ~\tikzfig{EightStateSpider}, ~\tikzfig{EightStateSpiderGreen}, ~\tikzfig{EightStateSpiderOrange}, ~\tikzfig{EightStateSpiderBlue}\}
+\end{equation}
+
+Including this map, and the fact that Alice and Bob both xor with a public variable $a$ in their classical domain, we have the following diagram:
+
+\begin{equation}
+	\label{equation:QKRQAaSBA1}
+	\tikzfig{QKRQAaSBA1}
+\end{equation}
+\textit{With $\Phi_1$ the map that Eve's uses to intercept the communication and $\Phi_2$ the map that Eve uses to do classical processing on both this intercepted data and $a$.}
+
+%The central part of this diagram - Eve's map $\Phi_1$ and the %encoding and measuring operations by Alice and Bob - we have already %seen (\ref{equation:coloredspiders}). This is the QKR protocol which %we have proven secure in section \ref{section:qkr}.
+For a security proof of this protocol, we can state that Eve's operations introduce no noise from Alice and Bob's perspective whenever they measure in the same basis. This is the same statement that we made in section \ref{section:qkr} to prove the security of QKR, and in section \ref{QuantumKeyDistribution} to prove the security of QKD.For the diagram in equation (\ref{equation:QKRQAaSBA1}), this looks as follows:
+
+\begin{equation}
+\label{equation:QAaSBProofSetupReal}
+\tikzfig{QKRQAaSBA1DiscardingEve} = ~~ \tikzfig{longwire}
+\end{equation}
+
+By causality we then know that applying Eve's map $\Phi_2$ and then deleting the output is essentially the same as not having applied Eve's map altogether:
+
+\begin{equation}
+\label{equation:QKRQAaSBA1DiscardingEve1}
+\tikzfig{QKRQAaSBA1DiscardingEve1} = ~~ \tikzfig{longwire}
+~~\Leftrightarrow
+\tikzfig{QKRQAaSBA1DiscardingEve2} = ~~ \tikzfig{longwire}
+\end{equation}
+
+Then we can pre and postcompose another xor with $a$ on both sides of equation (\ref{equation:QKRQAaSBA1DiscardingEve1}):
+
+\begin{equation}\\
+\label{equation:QKRQAaSBA1DiscardingEve3}
+\tikzfig{QKRQAaSBA1DiscardingEve3} = ~~ \tikzfig{longwire1} ~
+\Leftrightarrow
+\tikzfig{QKRQAaSBA1DiscardingEve4} = ~~ \tikzfig{longwire2}
+\end{equation}
+
+According to the diagrammatic rules for mutual unbiasedness given in equation (\ref{equation:Complementarity}) this separates $a$ on both sides of equation (\ref{equation:QKRQAaSBA1DiscardingEve1}):
+
+\begin{equation}
+\label{QKRQAaSBA1DiscardingEve5}
+\tikzfig{QKRQAaSBA1DiscardingEve5} = ~~ \tikzfig{longwire3}
+\end{equation}
+
+Which is up to a constant factor equivalent to the same diagrams without a random $a$:
+
+\begin{equation}
+\tikzfig{QKRQAaSBA1DiscardingEve6} = ~~ \tikzfig{longwire4} ~~ = ~~ \tikzfig{longwire}
+\end{equation}
+
+Finally, by exploiting unitarity of the brown eight state encoding map we get the following:
+
+\begin{equation}
+\tikzfig{QKRQAaSBA1DiscardingEve8} = ~~ \tikzfig{longwire5} ~ \Leftrightarrow ~~ \tikzfig{QKRQAaSBA1DiscardingEve9} = ~~ \tikzfig{wire}
+\end{equation}
 
 
+This equation we have already seen, it is the starting point for the security proof of eight state encoding QKR (equation (\ref{equation:QKDSetupRed})).\footnote{There is of course a minor difference: In (\ref{equation:QKDSetupRed}) Eve has the map $\Phi$ and here Eve has the map $\Phi_1$. This is insignificant however. $\Phi_1$ was only introduced to distinguish between Eve's quantum map and Eve's classical map. We can just say that $\Phi$ = $\Phi_1$ without loss of generality since Eve's quantum map can be any (multitude of) unspecified operation(s) in both cases.} Therefore, we could just follow all the steps which we followed in section \ref{section:qkr} and get as a result that $\Phi_1$ separates as follows:\footnote{This is also why they are security-wise equivalent, they follow the same security proof. If it turns out that the security proof in section \ref{section:qkr} for the original QKR protocol only allows for security up to some factor, the protocol with public randomness from this section is also only secure up to that same factor.}
+
+\begin{equation}
+	\label{equation:QKRGeneralSeparation}
+	\tikzfig{QKRGeneralQAaSBNoMeasuring} = \tikzfig{QKRGeneralQAaSBSeparated}
+\end{equation}
+
+Putting this back into equation (\ref{equation:QKRQAaSBA1}) we get the following:
+
+\begin{equation}
+	\tikzfig{QKRQAaSBA1} \equaltext{\ref{equation:QKRGeneralSeparation}} \tikzfig{QKRQAaSBA2}
+\end{equation}
+
+In a series of steps following rules which we have seen before we can show that Eve's map again separates entirely from Alice and Bob's part of the diagram:
+
+\begin{equation}
+	\begin{aligned}
+	\tikzfig{QKRQAaSBA3} \equaltext{\ref{equation:EightStateSpider}} \tikzfig{QKRQAaSBA4} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QKRQAaSBA5} \\ \equaltext{\ref{doubling}} \tikzfig{QKRQAaSBA6} \equaltext{\ref{equation:Complementarity}} \tikzfig{QKRQaASBA7} = \tikzfig{QKRQAaSBA8}
+	\end{aligned}
+\end{equation}
+
+So we see that even though Eve gets $a$ and some quantum state, she is not attached to Alice and Bob's communication channel. Alice and Bob on the other hand achieve uninterrupted communication. This is what we would intuitively expect for the noiseless case.
+
+\subsubsection{EPR version of the protocol}
+
+The second equivalent protocol is an EPR version of the original. We have already seen a diagrammatic implementation of an EPR protocol in section \ref{subsection:QuantumTeleportation}, the diagram for quantum teleportation. The characteristic difference between an EPR version of a protocol and a normal version is that in the former Alice and Bob share some entangled qubit. In quantum teleportation this is the Bell state, given by the doubled wire shaped like a cup in equation (\ref{quantumteleportation}).
+
+Diagrammatically, it is rather trivial to go from the protocol introduced in the previous section (\ref{equation:QKRQAaSBA1}) to an EPR version. In fact, we only need to bend around some wires. We split this up in a few steps to show where all the parts go. First of all, considering that the map that Eve applies in the classical domain is self-conjugate
+
+\begin{equation}
+	\label{equation:QAaSBEPREquivalence}
+	\begin{aligned}
+	\tikzfig{QKRQAaSBA1} = \tikzfig{QKRQAaSBB1}
+	\end{aligned}
+\end{equation}
+
+Then, by bending around Alice's wire according to the yanking equation (\ref{equation:yankingequation}) and subsequently pulling her encoding and encryption operations through:
+
+\begin{equation}
+\label{equation:EPRQKR}
+	\begin{aligned}
+ (\ref{equation:QAaSBEPREquivalence}) \equaltext{\ref{equation:yankingequation}}\tikzfig{QKRQAaSBB2} = \tikzfig{QKRQAaSBB3} = \tikzfig{QKRQAaSBB4}
+\end{aligned}
+\end{equation}
+
+Which is indeed the EPR version of the protocol in equation (\ref{equation:QKRQAaSBA1}). Of course, if these protocols are equivalent, then by security-wise equivalence of (\ref{equation:QKRQAaSBA1}) and (\ref{equation:QKRGeneral}) we also have security-wise equivalence of the EPR version introduced in this section and (\ref{equation:QKRGeneral}). 
+
+\subsubsection{Adding a random permutation}
+
+In the next equivalent step, the authors propose that Alice and Bob both publicly decide on the same random permutation ($\pi$) to apply to their own set of qubit states before measuring, and forget it right after. Eve, however, can remember this $\pi$. Diagrammatically, this looks as follows:
+
+\begin{equation}
+	\label{equation:QKRQAaSBC1}
+	\tikzfig{QKRQAaSBC1}
+\end{equation}
+
+Intuitively, it is evident that this step preserves equivalence to the original from Alice and Bob's perspective due to the fact that this steps preserves the entanglement of the EPR states. Whether this protocol works or not for them is independent on the choice of states that they receive, as long as they are entangled. The states that Eve sends to Alice and Bob are entangled up to a certain degree dependent on the amount of noise Eve introduces, and the $\pi$'s completely preserve entanglement since the same operation is applied on both qubits. To make a diagrammatic proof from this intuition we have to first exploit the fact that we can turn Eve's map into a state. We can do this as follows:
+
+\begin{equation}
+\label{equation:QKRQAaSBC6}
+\tikzfig{QKRQAaSBC1} = \tikzfig{QKRQAaSBC6}
+\end{equation}
+\textit{Note that the dotted map in this diagram has no diagrammatic significance and is only intended for didactic purposes}
+
+We can show that this is a valid operation diagrammatically. Isolating just the state of Eve in the RHS of equation (\ref{equation:QKRQAaSBC6}) and realizing that Eve has the freedom to do whatever she wants in her state $\Phi_1$:
+
+\begin{equation}
+\label{equation:QKRQAaSBC7}
+\tikzfig{QKRQAaSBC7} = \tikzfig{QKRQAaSBC8}
+\end{equation}
+
+Then using the yanking equation (\ref{equation:yankingequation}):
+
+\begin{equation}
+\label{equation:QKRQAaSBC9}
+(\ref{equation:QKRQAaSBC7}) = \tikzfig{QKRQAaSBC9} \equaltext{\ref{equation:yankingequation}} \tikzfig{QKRQAaSBC10}
+\end{equation}
+
+We see that we can transform Eve's map into a state and reversedly. The operation from equation (\ref{equation:QKRQAaSBC6}) is therefore valid.
+
+Starting with the RHS of equation (\ref{equation:QKRQAaSBC6}) and using the yanking equation (\ref{equation:yankingequation}):
+
+\begin{equation}
+\begin{aligned}
+\label{equation:QKRQAaSBC11}
+ (\ref{equation:QKRQAaSBC6}) = \tikzfig{QKRQAaSBC11} \equaltext{\ref{equation:yankingequation}} \tikzfig{QKRQAaSBC12}
+\end{aligned}
+\end{equation}
+
+Now we are ready to put in the intuition that we had in the beginning of this section. From Alice and Bob's perspective, everything they need is for Eve to prepare and send them an (imperfect) EPR state. If Eve does this in her map $\Phi_1$ the two subsequent random permutations will potentially change the particular choice of EPR states that Alice and Bob receive, but they will remain entangled since the same operation is applied on both sides. 
+
+\begin{equation}
+	\label{equation:QKRQAaSBC13}
+	\tikzfig{QKRQAaSBC13}
+\end{equation}
+
+\subsubsection{Adding random Pauli transforms}
+
+In the final equivalent step, the authors propose that Alice and Bob both publicly decide on the same random Pauli to apply to their own qubit states before measuring. Afterwards they again forget the particular choice of Pauli. Diagrammatically, this looks as follows: 
+
+\begin{equation}
+\label{equation:QKRQAaSBD1}
+\tikzfig{QKRQAaSBD1}
+\end{equation}
+
+\begin{equation}
+\label{equation:QKRQAaSBD2}
+\tikzfig{QKRQAaSBD2}
+\end{equation}
 
 \bibliographystyle{plain}
 \bibliography{library}
@@ -1054,5 +1309,22 @@ We need to create one more map before we can implement this diagrammatically. Si
 \hyperref[identity]{Wire: B, page 1}
 
 \section{Bell Matrices}
+
+\section{Commuting Pauli's}
+\label{appendix:commutingpaulis}
+At multiple points in the report we commute Pauli's past one another. Mathematically, the fact that we can do this is evident from the anticommutative property of Pauli's. Anticommutativity implies that any two Pauli's $\sigma_i$ and $\sigma_j$ satisfy $\sigma_i\sigma_j = - \sigma_j\sigma_i$. Diagrammatically we can commute Pauli's too. However, this does require some more advanced diagrammatic derivations that are too extensive for the scope of this report. With that being said, in literature these derivations are fully worked out and can be found in \cite{Coecke2017} on page 771. We use the result of these derivations, a rule called the $k-k'$ commute rule. This rule is the main ingredient for pushing Pauli's past one another diagrammatically. It states that for $k, k' \in \{0, \pi\}$: 
+
+\begin{equation}
+	\label{equation:kkcommuterule}
+	\tikzfig{kkcommuterule} = \tikzfig{kkcommuterule1}
+\end{equation}
+
+This rule shows us how we can move phase spiders of a different color with either a $\pi$ or no phase past one another. From the definition of $X^w$ and $Z^u$ in equation (\ref{equation:twodiagrammaticpauli's}) we can infer that Pauli's are actually nothing more than a spider with a certain phase 0 or $\pi$. For $X$ this is worked out in (\ref{equation:RandomXBitFlipProof}) and the story is entirely analogous for $Z$, just with all the colors swapped. Commuting two Pauli's past one another is then just exploiting these properties:
+
+\begin{equation}
+	\tikzfig{CommutingPauli's} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's1} \equaltext{\ref{equation:kkcommuterule}} \tikzfig{commutingPauli's3} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's4}
+\end{equation}
+
+
 
 \end{document}

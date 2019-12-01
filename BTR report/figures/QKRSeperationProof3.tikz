@@ -6,11 +6,11 @@
 		\node [style=none] (3) at (-0.5, -1) {};
 		\node [style=none] (4) at (-0.5, -3.5) {};
 		\node [style=none] (5) at (1.5, 0) {};
-		\node [style=RedSpider] (6) at (-0.5, -1) {};
-		\node [style=RedSpider] (7) at (0, -0.25) {};
+		\node [style=BrownSpider] (6) at (-0.5, -1) {};
+		\node [style=BrownSpider] (7) at (0, -0.25) {};
 		\node [style=none] (8) at (-2, 0.5) {};
-		\node [style=RedSpider] (9) at (0, 3) {};
-		\node [style=RedSpider] (10) at (0, 4) {};
+		\node [style=BrownSpider] (9) at (0, 3) {};
+		\node [style=BrownSpider] (10) at (0, 4) {};
 		\node [style=GraySpider] (11) at (-0.75, 1) {};
 		\node [style=WHITESPIDER] (12) at (0, 1.5) {};
 		\node [style=none] (13) at (0, -0.25) {};

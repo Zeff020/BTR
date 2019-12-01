@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 2.25) {};
 		\node [style=none] (1) at (0, -1.75) {};
-		\node [style=RedSpider] (2) at (0, -0.75) {};
+		\node [style=BrownSpider] (2) at (0, -0.75) {};
 		\node [style=medium box] (3) at (2, 0.5) {U};
 		\node [style=StateMid] (4) at (2.425, -1.25) {\rotatebox{-45}{$\psi$}};
 		\node [style=none] (5) at (2.75, 0.5) {};

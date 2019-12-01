@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=RedSpider] (0) at (0, -1.5) {};
-		\node [style=RedSpider] (1) at (0, 0.75) {};
+		\node [style=BrownSpider] (0) at (0, -1.5) {};
+		\node [style=BrownSpider] (1) at (0, 0.75) {};
 		\node [style=GraySpider] (3) at (-1.5, -0.75) {};
 		\node [style=WHITESPIDER] (4) at (0, -0.75) {};
 		\node [style=none] (5) at (0, -1.5) {};

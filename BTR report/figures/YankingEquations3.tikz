@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0.75) {};
+		\node [style=none] (4) at (0, -0.75) {};
+		\node [style=none] (5) at (0, -2) {};
+		\node [style=none] (6) at (0, 2) {};
+		\node [style=StateMid] (10) at (0, 1) {\rotatebox{-45}{i}};
+		\node [style=EffectMid] (12) at (0, -1) {\rotatebox{135}{j}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (5.center) to (4.center);
+		\draw (0.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

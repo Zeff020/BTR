@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 2.5) {};
+		\node [style=none] (1) at (0, -3.5) {};
+		\node [style=WHITESPIDER] (4) at (0, -1.25) {};
+		\node [style=GRAYSPIDER] (5) at (1.75, -1.75) {};
+		\node [style=StateMidGray] (6) at (1.75, -2.5) {\rotatebox{-45}{u}};
+		\node [style=none] (7) at (1.75, -2.75) {};
+		\node [style=GRAYSPIDER] (8) at (0, 1.5) {};
+		\node [style=WHITESPIDER] (9) at (1.75, 1) {};
+		\node [style=StateMid] (10) at (1.75, 0.25) {\rotatebox{-45}{w}};
+		\node [style=none] (11) at (1.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (0.center) to (1.center);
+		\draw [style=WIRE, bend left=15] (4) to (5);
+		\draw (5) to (7.center);
+		\draw [style=WIRE, bend left=15] (8) to (9);
+		\draw (9) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

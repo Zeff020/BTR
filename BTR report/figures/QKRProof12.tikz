@@ -3,7 +3,7 @@
 		\node [style=none] (0) at (0, 1.25) {};
 		\node [style=none] (1) at (1, 2.25) {};
 		\node [style=none] (3) at (0, -1.75) {};
-		\node [style=RedSpider] (5) at (0, 1.25) {};
+		\node [style=BrownSpider] (5) at (0, 1.25) {};
 		\node [style=asym box] (9) at (0, -0.25) {\reflectbox{V}};
 		\node [style=none] (14) at (-1.1, 2.25) {};
 		\node [style=none] (15) at (0.75, -0.25) {};
