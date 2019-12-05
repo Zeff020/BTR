@@ -3,7 +3,7 @@
 		\node [style=none] (0) at (0, 3) {};
 		\node [style=none] (1) at (0, -3) {};
 		\node [style=small brown box] (2) at (0, 2) {8};
-		\node [style=small brown box] (3) at (0, -2) {8};
+		\node [style=Rsmall brown box] (3) at (0, -2) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (0.center) to (1.center);

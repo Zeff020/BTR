@@ -11,7 +11,7 @@
 		\node [style=BrownSpider] (20) at (-0.5, 1.25) {};
 		\node [style=BrownSpider] (21) at (-0.5, -1.25) {};
 		\node [style=small brown box] (26) at (-0.5, -2) {8};
-		\node [style=small brown box] (27) at (-0.5, 2) {8};
+		\node [style=Rsmall brown box] (27) at (-0.5, 2) {8};
 		\node [style=none] (28) at (-0.5, 4.75) {};
 		\node [style=none] (31) at (-0.5, -4.75) {};
 		\node [style=none] (39) at (0.5, 1.25) {};

@@ -10,8 +10,8 @@
 		\node [style=none] (23) at (2.75, 2.75) {};
 		\node [style=WhiteSpider] (24) at (2.75, 2.75) {};
 		\node [style=none] (25) at (2.75, 3.25) {};
-		\node [style=small brown box] (26) at (-2.75, -1.5) {8};
-		\node [style=small brown box] (27) at (1.25, 0.75) {8};
+		\node [style=Rsmall brown box] (26) at (-2.75, -1.5) {8};
+		\node [style=Rsmall brown box] (27) at (1.25, 0.75) {8};
 		\node [style=none] (28) at (1.25, 2.5) {};
 		\node [style=WhiteSpider] (30) at (-1, 1) {};
 		\node [style=WhiteSpider] (32) at (-2.75, -0.75) {};

@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=BrownSpider] (21) at (0, 0.9) {};
+		\node [style=Rsmall brown box] (26) at (0, 1.5) {8};
+		\node [style=none] (51) at (0, -2.75) {};
+		\node [style=WHITESPIDER] (52) at (0, 0) {};
+		\node [style=GRAYSPIDER] (53) at (0, -1.75) {};
+		\node [style=none] (58) at (4, 2.5) {};
+		\node [style=none] (59) at (2, 2.5) {};
+		\node [style=none] (60) at (0, 2.25) {};
+		\node [style=none] (63) at (2, 3) {};
+		\node [style=none] (65) at (4, 3) {};
+		\node [style=none] (67) at (0, 3) {};
+		\node [style=none] (68) at (0, -3.5) {};
+		\node [style=StateMidGray] (69) at (2, 1.75) {\rotatebox{-45}{n}};
+		\node [style=StateMid] (70) at (4, 1.75) {\rotatebox{-45}{m}};
+		\node [style=none] (71) at (4, 1.5) {};
+		\node [style=none] (72) at (2, 1.5) {};
+		\node [style=none] (73) at (1.5, -0.5) {};
+		\node [style=none] (74) at (1.5, -2.5) {};
+		\node [style=STATEMIDGRAY] (75) at (1.5, -0.25) {\rotatebox{-45}{n}};
+		\node [style=STATEMID] (76) at (1.5, -2.25) {\rotatebox{-45}{m}};
+		\node [style=none] (77) at (4, -0.5) {};
+		\node [style=STATEMIDGRAY] (78) at (4, -0.25) {\rotatebox{-45}{n}};
+		\node [style=none] (79) at (4, -2.5) {};
+		\node [style=STATEMID] (80) at (4, -2.25) {\rotatebox{-45}{m}};
+		\node [style=none] (81) at (5.5, 0) {};
+		\node [style=none] (82) at (5.5, -1.75) {};
+		\node [style=none] (83) at (6.25, 0) {};
+		\node [style=none] (84) at (6.25, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (51.center) to (21);
+		\draw (60.center) to (21);
+		\draw [style=new edge style 0] (58.center) to (65.center);
+		\draw [style=new edge style 0] (59.center) to (63.center);
+		\draw [style=new edge style 0] (67.center) to (60.center);
+		\draw [style=DOTTED] (51.center) to (68.center);
+		\draw (58.center) to (71.center);
+		\draw (59.center) to (72.center);
+		\draw [style=WIRE, bend left] (53) to (74.center);
+		\draw [style=WIRE, bend left=15] (52) to (73.center);
+		\draw [style=WIRE, bend right] (82.center) to (79.center);
+		\draw [style=WIRE, bend left=345] (81.center) to (77.center);
+		\draw [style=DOTTED] (81.center) to (83.center);
+		\draw [style=DOTTED] (82.center) to (84.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

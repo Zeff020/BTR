@@ -12,7 +12,7 @@
 		\node [style=none] (13) at (0, -4.5) {};
 		\node [style=none] (16) at (3, 3.5) {};
 		\node [style=none] (17) at (5.25, 3.5) {};
-		\node [style=none] (18) at (0, 4) {};
+		\node [style=none] (18) at (0, 5) {};
 		\node [style=none] (19) at (3, 4) {};
 		\node [style=none] (20) at (5.25, 4) {};
 		\node [style=STATEMID] (22) at (-1.5, -2.5) {\rotatebox{-45}{m}};
@@ -23,6 +23,7 @@
 		\node [style=none] (27) at (3, 2.75) {};
 		\node [style=StateMidGray] (28) at (3, 3) {\rotatebox{-45}{n}};
 		\node [style=StateMid] (29) at (5.25, 3) {\rotatebox{-45}{m}};
+		\node [style=Rsmall box] (30) at (0, 4) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left] (1) to (6.center);

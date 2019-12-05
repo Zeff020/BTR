@@ -10,18 +10,25 @@
 		\node [style=GRAYSPIDER] (8) at (0, -1.25) {};
 		\node [style=WhiteSpider] (9) at (-1.25, -2) {};
 		\node [style=WhiteSpider] (10) at (-3, -2.75) {};
-		\node [style=GraySpider] (11) at (-1.5, 2.25) {};
-		\node [style=WHITESPIDER] (12) at (0, 2.5) {};
-		\node [style=none] (13) at (0, 3.5) {};
+		\node [style=GraySpider] (11) at (-1.5, 3.5) {};
+		\node [style=WHITESPIDER] (12) at (0, 3.75) {};
+		\node [style=none] (13) at (0, 4.25) {};
 		\node [style=none] (14) at (0, -0.5) {};
 		\node [style=none] (18) at (0, -1.25) {};
-		\node [style=GRAYSPIDER] (19) at (0, 1.5) {};
-		\node [style=WhiteSpider] (20) at (-1.5, 1) {};
+		\node [style=GRAYSPIDER] (19) at (0, 2.75) {};
+		\node [style=WhiteSpider] (20) at (-1.5, 2.25) {};
 		\node [style=WhiteSpider] (21) at (-3, -2.75) {};
 		\node [style=ASYM BOX] (23) at (0, 0.1) {$\Phi$};
 		\node [style=none] (24) at (0.5, 0.25) {};
-		\node [style=none] (25) at (2, 1.75) {};
+		\node [style=none] (25) at (1.5, 1.5) {};
 		\node [style=none] (26) at (0, -3.75) {};
+		\node [style=none] (27) at (-4, 1.75) {};
+		\node [style=none] (28) at (3.25, 1.75) {};
+		\node [style=none] (29) at (3.25, -0.75) {};
+		\node [style=none] (30) at (-4, -0.75) {};
+		\node [style=none] (31) at (2.25, 2.2) {\small Bob};
+		\node [style=none] (32) at (2.375, -1.2) {\small Alice};
+		\node [style=none] (33) at (2.25, -0.35) {\small Eve};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend right=45] (1) to (0);
@@ -37,5 +44,7 @@
 		\draw (11) to (5);
 		\draw [style=WIRE, bend left] (24.center) to (25.center);
 		\draw [style=DOTTED] (2.center) to (26.center);
+		\draw [style=new edge style 0] (30.center) to (29.center);
+		\draw [style=new edge style 0] (28.center) to (27.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

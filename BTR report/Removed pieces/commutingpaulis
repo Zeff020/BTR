@@ -1,0 +1,14 @@
+\section{Commuting Pauli's}
+\label{appendix:commutingpaulis}
+At multiple points in the report we commute Pauli's past one another. Mathematically, the fact that we can do this is evident from the anticommutative property of Pauli's. Anticommutativity implies that any two Pauli's $\sigma_i$ and $\sigma_j$ satisfy $\sigma_i\sigma_j = - \sigma_j\sigma_i$. Diagrammatically we can commute Pauli's too. However, this does require some more advanced diagrammatic derivations that are too extensive for the scope of this report. With that being said, in literature these derivations are fully worked out and can be found in \cite{Coecke2017} on page 771. We use the result of these derivations, a rule called the $k-k'$ commute rule. This rule is the main ingredient for pushing Pauli's past one another diagrammatically. It states that for $k, k' \in \{0, \pi\}$: 
+
+\begin{equation}
+	\label{equation:kkcommuterule}
+	\tikzfig{kkcommuterule} = \tikzfig{kkcommuterule1}
+\end{equation}
+
+This rule shows us how we can move phase spiders of a different color with either a $\pi$ or no phase past one another. From the definition of $X^w$ and $Z^u$ in equation (\ref{equation:twodiagrammaticpauli's}) we can infer that Pauli's are actually nothing more than a spider with a certain phase 0 or $\pi$. For $X$ this is worked out in (\ref{equation:RandomXBitFlipProof}) and the story is entirely analogous for $Z$, just with all the colors swapped. Commuting two Pauli's past one another is then just exploiting these properties:
+
+\begin{equation}
+	\tikzfig{CommutingPauli's} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's1} \equaltext{\ref{equation:kkcommuterule}} \tikzfig{commutingPauli's3} \equaltext{\ref{equation:RandomXBitFlipProof}} \tikzfig{CommutingPauli's4}
+\end{equation}

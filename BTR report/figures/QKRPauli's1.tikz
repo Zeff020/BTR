@@ -48,6 +48,10 @@
 		\node [style=none] (61) at (3, 2.75) {};
 		\node [style=none] (62) at (3.25, 0.25) {};
 		\node [style=none] (63) at (2.75, 0.5) {};
+		\node [style=none] (64) at (-3, -1) {};
+		\node [style=none] (65) at (0.25, -1) {};
+		\node [style=none] (66) at (0.25, -5.5) {};
+		\node [style=none] (67) at (-3, -5.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left] (3.center) to (1.center);
@@ -86,5 +90,9 @@
 		\draw (62.center) to (61.center);
 		\draw [bend right] (59.center) to (63.center);
 		\draw (63.center) to (60.center);
+		\draw [style=DOTTED] (64.center) to (67.center);
+		\draw [style=DOTTED] (67.center) to (66.center);
+		\draw [style=DOTTED] (66.center) to (65.center);
+		\draw [style=DOTTED] (65.center) to (64.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
