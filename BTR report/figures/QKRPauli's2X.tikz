@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=BrownSpider] (21) at (0, 0.9) {};
+		\node [style=Rsmall brown box] (26) at (0, 1.5) {8};
+		\node [style=none] (51) at (0, -2.75) {};
+		\node [style=WHITESPIDER] (52) at (0, 0) {};
+		\node [style=GRAYSPIDER] (53) at (0, -1.25) {};
+		\node [style=WhiteSpider] (56) at (1.75, -2) {};
+		\node [style=GraySpider] (57) at (1.5, -0.5) {};
+		\node [style=none] (58) at (3, 2.25) {};
+		\node [style=none] (59) at (1.75, 2.25) {};
+		\node [style=none] (60) at (0, 2.25) {};
+		\node [style=none] (61) at (3.5, 1.5) {};
+		\node [style=none] (62) at (3.75, 0) {};
+		\node [style=none] (63) at (2, 3) {};
+		\node [style=none] (64) at (4, 1.75) {};
+		\node [style=none] (65) at (3, 3) {};
+		\node [style=none] (66) at (4.25, 0.25) {};
+		\node [style=none] (67) at (0, 3) {};
+		\node [style=none] (68) at (0, -3.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (51.center) to (21);
+		\draw [style=WIRE, bend right] (52) to (57);
+		\draw [style=WIRE, bend right=15] (53) to (56);
+		\draw [bend left=15] (58.center) to (56);
+		\draw [bend right=15, looseness=0.75] (59.center) to (57);
+		\draw (60.center) to (21);
+		\draw [style=WIRE, bend left=15] (57) to (61.center);
+		\draw [style=WIRE, bend left=15] (56) to (62.center);
+		\draw [style=DOTTED] (62.center) to (66.center);
+		\draw [style=DOTTED] (61.center) to (64.center);
+		\draw [style=new edge style 0] (58.center) to (65.center);
+		\draw [style=new edge style 0] (59.center) to (63.center);
+		\draw [style=new edge style 0] (67.center) to (60.center);
+		\draw [style=DOTTED] (51.center) to (68.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

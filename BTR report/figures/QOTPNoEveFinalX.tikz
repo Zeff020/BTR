@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (-2, -1.75) {};
+		\node [style=none] (23) at (-2, -2.75) {};
+		\node [style=none] (24) at (2.25, 2.25) {};
+		\node [style=none] (25) at (0, 0) {};
+		\node [style=none] (26) at (0, 2.25) {};
+		\node [style=none] (27) at (0, -2.75) {};
+		\node [style=none] (28) at (-0.9, -2.5) {\small Alice};
+		\node [style=none] (29) at (0.75, -2.5) {\small Bob};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=DOTTED] (2.center) to (23.center);
+		\draw [style=WIRE, bend left=45] (2.center) to (25.center);
+		\draw [style=WIRE, bend right=45] (25.center) to (24.center);
+		\draw [style=new edge style 0] (26.center) to (27.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

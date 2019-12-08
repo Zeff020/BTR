@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (1, 0) {};
+		\node [style=none] (3) at (-0.75, -0.75) {};
+		\node [style=none] (4) at (1, 0) {};
+		\node [style=none] (5) at (1, 0) {};
+		\node [style=none] (11) at (1, 0) {};
+		\node [style=none] (12) at (1, 0) {};
+		\node [style=asym box] (22) at (-1, 1.5) {\reflectbox{$\Phi_2$}};
+		\node [style=none] (23) at (-0.75, 0.5) {};
+		\node [style=WhiteSpider] (24) at (-0.75, 0.5) {};
+		\node [style=none] (25) at (-0.75, 1) {};
+		\node [style=none] (28) at (1, 2.75) {};
+		\node [style=WhiteSpider] (30) at (-1.75, 0) {};
+		\node [style=none] (31) at (1, -2.75) {};
+		\node [style=none] (34) at (-1.75, 1) {};
+		\node [style=none] (35) at (-1, 2.75) {};
+		\node [style=none] (36) at (-2.25, 0) {$a$};
+		\node [style=STATERIGHT] (39) at (-0.75, -0.75) {\rotatebox{90}{$\rho$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (4.center) to (2.center);
+		\draw [style=WIRE] (2.center) to (5.center);
+		\draw (5.center) to (12.center);
+		\draw (11.center) to (4.center);
+		\draw [style=WIRE] (3.center) to (23.center);
+		\draw (25.center) to (24);
+		\draw (30) to (34.center);
+		\draw (35.center) to (22);
+		\draw (28.center) to (31.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
