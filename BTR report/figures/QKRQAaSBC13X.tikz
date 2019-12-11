@@ -1,41 +1,48 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (1) at (0.25, -5.5) {};
-		\node [style=none] (2) at (1.25, -3) {};
-		\node [style=none] (4) at (1.25, 0) {};
-		\node [style=none] (11) at (1.25, 0.75) {};
-		\node [style=BrownSpider] (20) at (1.25, 0) {};
+		\node [style=none] (2) at (1.75, -3) {};
+		\node [style=none] (4) at (1.75, 0) {};
+		\node [style=none] (11) at (1.75, 0.75) {};
+		\node [style=BrownSpider] (20) at (1.75, 0) {};
 		\node [style=BrownSpider] (21) at (-2.75, -2.1) {};
-		\node [style=Rsmall brown box] (26) at (-2.75, -1.5) {8};
-		\node [style=Rsmall brown box] (27) at (1.25, 0.75) {8};
-		\node [style=none] (28) at (1.25, 2.5) {};
+		\node [style=Rsmall brown box] (27) at (1.75, 0.75) {8};
+		\node [style=none] (28) at (1.75, 2.5) {};
 		\node [style=WhiteSpider] (30) at (-1, 1) {};
 		\node [style=WhiteSpider] (32) at (-2.75, -0.75) {};
-		\node [style=WhiteSpider] (33) at (1.25, 1.5) {};
-		\node [style=none] (34) at (-1.25, 2.75) {};
-		\node [style=none] (35) at (-0.25, 5) {};
-		\node [style=GraySpider] (37) at (1.25, 1.5) {};
+		\node [style=WhiteSpider] (33) at (1.75, 1.5) {};
+		\node [style=none] (34) at (-1.25, 2.5) {};
+		\node [style=none] (35) at (-0.5, 5) {};
+		\node [style=GraySpider] (37) at (1.75, 1.5) {};
 		\node [style=GraySpider] (38) at (-2.75, -0.75) {};
-		\node [style=none] (40) at (-1, 3.25) {};
-		\node [style=none] (41) at (-0.25, 3.75) {};
-		\node [style=none] (42) at (1.25, 4.75) {};
+		\node [style=none] (40) at (-1.25, 3.25) {};
+		\node [style=none] (41) at (-0.5, 3.75) {};
+		\node [style=none] (42) at (1.75, 5) {};
 		\node [style=none] (45) at (-2.75, -0.75) {};
-		\node [style=none] (46) at (-4, 0.25) {};
-		\node [style=none] (47) at (-5.25, -0.75) {};
-		\node [style=none] (48) at (-5.25, -3.25) {};
+		\node [style=none] (46) at (-3.75, 0.25) {};
+		\node [style=none] (47) at (-4.75, -0.75) {};
+		\node [style=none] (48) at (-4.75, -3.25) {};
 		\node [style=none] (51) at (-2.75, -4) {};
-		\node [style=none] (54) at (-0.5, 3.25) {};
+		\node [style=none] (54) at (-0.75, 3.25) {};
 		\node [style=none] (55) at (-0.75, -5.5) {};
-		\node [style=WhiteSpider] (56) at (-0.5, 2.75) {};
+		\node [style=WhiteSpider] (56) at (-0.75, 2.75) {};
 		\node [style=WIDESTATERIGHT] (59) at (-0.75, -5.75) {\rotatebox{90}{$\Phi_1$}};
 		\node [style=none] (63) at (-1.5, -5.5) {};
 		\node [style=none] (64) at (0.25, -4.5) {};
-		\node [style=none] (65) at (0.75, -3.75) {};
+		\node [style=none] (65) at (1, -3.75) {};
 		\node [style=none] (66) at (0.25, -5.5) {};
 		\node [style=none] (67) at (-1.5, -5.5) {};
 		\node [style=none] (68) at (-2.75, -4) {};
 		\node [style=none] (69) at (-2.1, -4.75) {};
-		\node [style=asym box] (70) at (-0.5, 3.75) {\reflectbox{$\Phi_2$}};
+		\node [style=asym box] (70) at (-0.75, 3.75) {\reflectbox{$\Phi_2$}};
+		\node [style=Rflctsmall brown box] (71) at (-2.75, -1.5) {8};
+		\node [style=none] (72) at (1.25, 5) {};
+		\node [style=none] (73) at (1.25, -7.5) {};
+		\node [style=none] (74) at (-2.25, 5) {};
+		\node [style=none] (75) at (-2.25, -7.5) {};
+		\node [style=none] (76) at (-3.175, -7.25) {\small Alice};
+		\node [style=none] (77) at (-1.5, -7.25) {\small Eve};
+		\node [style=none] (78) at (2, -7.25) {\small Bob};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (4.center) to (2.center);
@@ -59,5 +66,7 @@
 		\draw [style=WIRE] (64.center) to (66.center);
 		\draw [style=WIRE, bend right=45] (67.center) to (69.center);
 		\draw [style=WIRE, bend left=45] (69.center) to (68.center);
+		\draw [style=new edge style 0] (72.center) to (73.center);
+		\draw [style=new edge style 0] (74.center) to (75.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

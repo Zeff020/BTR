@@ -13,7 +13,6 @@
 		\node [style=none] (23) at (0.5, 2.25) {};
 		\node [style=WhiteSpider] (24) at (0.5, 2.25) {};
 		\node [style=none] (25) at (0.5, 2.75) {};
-		\node [style=Rsmall brown box] (26) at (-2, -1.5) {8};
 		\node [style=Rsmall brown box] (27) at (2.5, -0.75) {8};
 		\node [style=none] (28) at (2.5, 1) {};
 		\node [style=WhiteSpider] (30) at (-1, 0) {};
@@ -51,6 +50,7 @@
 		\node [style=none] (66) at (0.25, -1.075) {};
 		\node [style=none] (67) at (0.25, -5.75) {};
 		\node [style=none] (68) at (-3, -5.75) {};
+		\node [style=Rflctsmall brown box] (69) at (-2, -1.5) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left=15, looseness=0.75] (3.center) to (1.center);

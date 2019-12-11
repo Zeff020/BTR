@@ -1,7 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=BrownSpider] (21) at (0, 0.9) {};
-		\node [style=Rsmall brown box] (26) at (0, 1.5) {8};
 		\node [style=none] (51) at (0, -2.75) {};
 		\node [style=WHITESPIDER] (52) at (0, 0) {};
 		\node [style=GRAYSPIDER] (53) at (0, -1.75) {};
@@ -28,6 +27,7 @@
 		\node [style=none] (82) at (5.5, -1.75) {};
 		\node [style=none] (83) at (6.25, 0) {};
 		\node [style=none] (84) at (6.25, -1.75) {};
+		\node [style=Rflctsmall brown box] (85) at (0, 1.5) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (51.center) to (21);

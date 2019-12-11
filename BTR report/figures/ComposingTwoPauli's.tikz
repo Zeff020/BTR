@@ -15,6 +15,7 @@
 		\node [style=none] (14) at (2.75, 1) {n};
 		\node [style=none] (15) at (2.75, 2) {m};
 		\node [style=none] (18) at (0, -4) {};
+		\node [style=StateMidRed] (19) at (0, -3.75) {\rotatebox{-45}{g}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left] (1) to (6.center);

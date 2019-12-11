@@ -13,7 +13,6 @@
 		\node [style=none] (23) at (0, 2) {};
 		\node [style=WhiteSpider] (24) at (0, 2) {};
 		\node [style=none] (25) at (0, 2.5) {};
-		\node [style=Rsmall brown box] (26) at (-3, -3) {8};
 		\node [style=Rsmall brown box] (27) at (2.75, 0) {8};
 		\node [style=none] (28) at (2.75, 1.75) {};
 		\node [style=WhiteSpider] (30) at (-2, -1.25) {};
@@ -43,6 +42,7 @@
 		\node [style=none] (57) at (-1.75, -6.75) {\small Eve};
 		\node [style=none] (58) at (3, -6.75) {\small Bob};
 		\node [style=asym box] (59) at (-0.25, 3) {\reflectbox{$\Phi_2$}};
+		\node [style=Rflctsmall brown box] (60) at (-3, -3) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (4.center) to (2.center);

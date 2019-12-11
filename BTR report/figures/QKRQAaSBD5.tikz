@@ -23,7 +23,7 @@
 		\node [style=none] (27) at (3, 2.75) {};
 		\node [style=StateMidGray] (28) at (3, 3) {\rotatebox{-45}{n}};
 		\node [style=StateMid] (29) at (5.25, 3) {\rotatebox{-45}{m}};
-		\node [style=Rsmall box] (30) at (0, 4) {8};
+		\node [style=Rflctsmall box] (30) at (0, 4) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left] (1) to (6.center);
@@ -33,7 +33,7 @@
 		\draw [style=WIRE] (2) to (3);
 		\draw [style=WIRE] (3) to (4);
 		\draw [style=WIRE] (4) to (13.center);
-		\draw (18.center) to (0);
+		\draw [in=90, out=-90] (18.center) to (0);
 		\draw [style=new edge style 0] (20.center) to (17.center);
 		\draw [style=new edge style 0] (19.center) to (16.center);
 		\draw [style=WIRE, bend left=330] (3) to (24.center);

@@ -17,9 +17,9 @@
 		\node [style=none] (27) at (3, 2.75) {};
 		\node [style=WHITESPIDER] (30) at (0, 2) {};
 		\node [style=GRAYSPIDER] (31) at (0, 0) {};
-		\node [style=Rsmall box] (32) at (0, 4) {8};
 		\node [style=WhiteSpider] (33) at (5.25, 2.75) {};
 		\node [style=GraySpider] (34) at (3, 2.75) {};
+		\node [style=Rflctsmall box] (35) at (0, 4) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left] (1) to (6.center);

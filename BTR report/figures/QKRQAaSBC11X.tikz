@@ -10,7 +10,6 @@
 		\node [style=none] (23) at (-0.25, 2.75) {};
 		\node [style=WhiteSpider] (24) at (-0.25, 2.75) {};
 		\node [style=none] (25) at (-0.25, 3.25) {};
-		\node [style=Rsmall brown box] (26) at (-2.75, -1.5) {8};
 		\node [style=Rsmall brown box] (27) at (2.5, 0.75) {8};
 		\node [style=none] (28) at (2.5, 2.5) {};
 		\node [style=WhiteSpider] (30) at (-1, 1) {};
@@ -41,6 +40,7 @@
 		\node [style=none] (62) at (-0.75, -3.5) {};
 		\node [style=none] (63) at (1, -6.5) {};
 		\node [style=asym box] (64) at (-0.75, 3.75) {\reflectbox{$\Phi_2$}};
+		\node [style=Rflctsmall brown box] (65) at (-2.75, -1.5) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (11.center) to (4.center);

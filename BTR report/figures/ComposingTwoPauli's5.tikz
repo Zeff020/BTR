@@ -16,6 +16,7 @@
 		\node [style=none] (21) at (3.25, -2) {};
 		\node [style=none] (22) at (3.25, 0.75) {};
 		\node [style=WHITESPIDER] (23) at (1.5, -1) {};
+		\node [style=StateMidRed] (24) at (0, -3.75) {\rotatebox{-45}{g}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend right=15] (2) to (8.center);

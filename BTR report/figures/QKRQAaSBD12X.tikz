@@ -42,8 +42,6 @@
 		\node [style=WhiteSpider] (65) at (0, 2) {};
 		\node [style=STATEMID] (66) at (4.5, -4.75) {\rotatebox{-45}{l}};
 		\node [style=STATEMID] (67) at (-1.5, -5.25) {\rotatebox{-45}{l}};
-		\node [style=RedSpider] (68) at (-2.75, -2.25) {};
-		\node [style=Rsmall box] (69) at (-2.75, -1.5) {8};
 		\node [style=Rsmall box] (70) at (2.25, -0.25) {8};
 		\node [style=STATEMIDGRAY] (72) at (4.5, -3) {\rotatebox{-45}{p}};
 		\node [style=STATEMIDGRAY] (73) at (-1.25, -3.75) {\rotatebox{-45}{p}};
@@ -53,9 +51,11 @@
 		\node [style=none] (77) at (4.5, -5) {};
 		\node [style=RedSpider] (78) at (2.25, -1) {};
 		\node [style=asym box] (79) at (0, 3.25) {\reflectbox{$\Phi_2$}};
+		\node [style=RedSpider] (80) at (-2.75, -2.25) {};
+		\node [style=Rflctsmall box] (81) at (-2.75, -1.5) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=WIRE, bend right=15] (3.center) to (1.center);
+		\draw [style=WIRE, bend left=15] (3.center) to (1.center);
 		\draw [style=WIRE] (4.center) to (2.center);
 		\draw (5.center) to (12.center);
 		\draw (11.center) to (4.center);
@@ -77,11 +77,11 @@
 		\draw (5.center) to (12.center);
 		\draw (62.center) to (61.center);
 		\draw (63.center) to (60.center);
-		\draw [style=WIRE] (68) to (51.center);
-		\draw (45.center) to (68);
 		\draw [style=WIRE, bend left=15] (53) to (74.center);
 		\draw [style=WIRE, bend left=15] (52) to (75.center);
 		\draw [style=WIRE, bend right=15] (76.center) to (54);
 		\draw [style=WIRE, bend left=15] (55) to (77.center);
+		\draw [style=WIRE] (80) to (51.center);
+		\draw (45.center) to (80);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -28,9 +28,9 @@
 		\node [style=none] (43) at (0.75, -4.75) {};
 		\node [style=none] (44) at (-1, -6.5) {};
 		\node [style=none] (45) at (-2.75, -4.75) {};
-		\node [style=Rsmall brown box] (46) at (-2.75, -4) {8};
 		\node [style=BrownSpider] (47) at (-2.75, -4.75) {};
-		\node [style=GraySpider] (48) at (-2.75, -2.5) {};
+		\node [style=GraySpider] (48) at (-2.75, -3.25) {};
+		\node [style=Rflctsmall brown box] (49) at (-2.75, -4) {8};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend left=15] (3.center) to (1.center);

@@ -1,15 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=BrownSpider] (1) at (0, 0.5) {};
-		\node [style=none] (2) at (0, 1.5) {};
-		\node [style=none] (3) at (0, -1.5) {};
-		\node [style=none] (4) at (0, -0.5) {};
-		\node [style=none] (5) at (0, -0.5) {};
-		\node [style=BlueSpider] (6) at (0, -0.5) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=none] (3) at (0, -1) {};
+		\node [style=none] (4) at (0, 0) {};
+		\node [style=none] (5) at (0, 0) {};
+		\node [style=BlueSpider] (6) at (0, 0) {};
+		\node [style=StateMidBlue] (7) at (0, -0.75) {\rotatebox{-45}{g}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (2.center) to (1);
-		\draw [style=WIRE] (1) to (5.center);
 		\draw (6) to (3.center);
+		\draw [style=WIRE] (2.center) to (6);
 	\end{pgfonlayer}
 \end{tikzpicture}
