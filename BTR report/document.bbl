@@ -1,4 +1,12 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{abnamro}
+Abn amro investeert in quantumtechnologie, 2019.
+
+\bibitem{Buding2015}
+Andor Buding.
+\newblock {Race Against Time: Securing our Future Data with Quantum
+  Encryption}, 2015.
 
 \bibitem{Coecke2017}
 Bob Coecke and Aleks Kissinger.
@@ -26,11 +34,23 @@ Daan Leermakers and Boris {\v{S}}kori{\'{c}}.
 \newblock {Quantum Alice and Silent Bob}.
 \newblock pages 1--13, 2019.
 
+\bibitem{cryptoeprint:2019:875}
+Daan Leermakers and Boris Skoric.
+\newblock Quantum alice and silent bob: Qubit-based quantum key recycling with
+  almost no classical communication.
+\newblock Cryptology ePrint Archive, Report 2019/875, 2019.
+\newblock \url{https://eprint.iacr.org/2019/875}.
+
+\bibitem{Lindblad1999}
+G{\"o}ran Lindblad.
+\newblock A general no-cloning theorem.
+\newblock {\em Letters in Mathematical Physics}, 47(2):189--196, Jan 1999.
+
 \bibitem{Markoff2011}
 John Markoff.
 \newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}, 2011.
 
-\bibitem{nielsen2011}
+\bibitem{Nielsen2011}
 Michael~a. Nielsen and Isaac~L. Chuang.
 \newblock {\em {Quantum Computation and Quantum Information: 10th Anniversary
   Edition}}.
@@ -45,5 +65,16 @@ Mehdi Saeedi and Igor Markov.
 C.~E. Shannon.
 \newblock {Communication Theory of Secrecy Systems}.
 \newblock {\em Bell System Technical Journal}, 1949.
+
+\bibitem{Shor2000}
+Peter~W. Shor and John Preskill.
+\newblock {Simple proof of security of the BB84 quantum key distribution
+  protocol}.
+\newblock {\em Physical Review Letters}, 2000.
+
+\bibitem{WeisnerConjugateCoding}
+Stephen~J. Weisner.
+\newblock Conjugate coding.
+\newblock {\em ACM SIGACT News}, 15(3):78--88, 1983.
 
 \end{thebibliography}

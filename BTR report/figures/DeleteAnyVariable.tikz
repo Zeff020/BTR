@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateMid] (0) at (0, -0.5) {\rotatebox{-45}{j}};
+		\node [style=WhiteSpider] (1) at (0, 0.5) {};
+		\node [style=none] (2) at (0, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.5, 1) {};
+		\node [style=none] (1) at (-0.5, 1) {};
+		\node [style=none] (2) at (-0.5, 0) {};
+		\node [style=none] (3) at (0.5, 0) {};
+		\node [style=none] (4) at (0, -1) {};
+		\node [style=none] (5) at (0, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center) to (1.center);
+		\draw (3.center) to (0.center);
+		\draw [in=0, out=-90] (3.center) to (5.center);
+		\draw [in=-90, out=-180] (5.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

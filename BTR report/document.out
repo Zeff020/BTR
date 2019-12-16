@@ -1,39 +1,44 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Preliminaries}{}% 2
+\BOOKMARK [1][-]{section.2}{Diagrammatic Preliminaries}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{From Dirac to Diagrams}{section.2}% 3
 \BOOKMARK [3][-]{subsubsection.2.1.1}{States, Effects, and Hermitian Operations}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Wires}{subsection.2.1}% 5
-\BOOKMARK [3][-]{subsubsection.2.1.3}{Maps}{subsection.2.1}% 6
-\BOOKMARK [3][-]{subsubsection.2.1.4}{Spiders}{subsection.2.1}% 7
-\BOOKMARK [3][-]{subsubsection.2.1.5}{Phase Spiders}{subsection.2.1}% 8
-\BOOKMARK [3][-]{subsubsection.2.1.6}{Colors and Bases}{subsection.2.1}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.7}{Doubling}{subsection.2.1}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.8}{Discarding}{subsection.2.1}% 11
-\BOOKMARK [3][-]{subsubsection.2.1.9}{Entanglement}{subsection.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.2}{Advanced diagrammatic concepts}{section.2}% 13
-\BOOKMARK [3][-]{subsubsection.2.2.1}{The yanking equations}{subsection.2.2}% 14
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Basis and phase translations on the Bloch sphere}{subsection.2.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Encoding and Decoding}{subsection.2.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.4}{Complementary spiders}{subsection.2.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.5}{The xor map}{subsection.2.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.6}{The essential uniqueness of purification}{subsection.2.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.2.7}{The k-k' commute rule}{subsection.2.2}% 20
-\BOOKMARK [1][-]{section.3}{Protocols}{}% 21
-\BOOKMARK [2][-]{subsection.3.1}{One Time Pad}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Diagrammatic Representation}{subsection.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.2}{Quantum One Time Pad}{section.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Diagrammatic Representation}{subsection.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.3}{Quantum Teleportation}{section.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagrammatic Representation}{subsection.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.4}{Quantum Key Distribution}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.5}{Quantum Key Recycling}{section.3}% 29
-\BOOKMARK [1][-]{section.4}{Equivalences}{}% 30
-\BOOKMARK [2][-]{subsection.4.1}{QOTP and Quantum Teleportation}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.2}{QKD Prepare and Measure and QKD EPR}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.3}{Quantum Alice and Silent Bob Equivalences}{section.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Masking the qubit payload with public randomness}{subsection.4.3}% 34
-\BOOKMARK [3][-]{subsubsection.4.3.2}{EPR version of the protocol}{subsection.4.3}% 35
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Adding a random permutation}{subsection.4.3}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Adding random Pauli transforms}{subsection.4.3}% 37
-\BOOKMARK [1][-]{appendix.A}{Keywords}{}% 38
-\BOOKMARK [1][-]{appendix.B}{Eight state encryption map in Dirac notation}{}% 39
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Tensor Product}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Wires}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Maps}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.5}{Spiders}{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.6}{Phase Spiders}{subsection.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.7}{Colors and Bases}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.8}{Doubling}{subsection.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.9}{Discarding}{subsection.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.10}{Entanglement}{subsection.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.2}{Advanced diagrammatic concepts}{section.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.1}{The yanking equations}{subsection.2.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Basis and phase translations on the Bloch sphere}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Encoding and Decoding}{subsection.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Complementary spiders}{subsection.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.5}{The xor map}{subsection.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.6}{The essential uniqueness of purification}{subsection.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.7}{The k-k' commute rule}{subsection.2.2}% 21
+\BOOKMARK [1][-]{section.3}{Protocols}{}% 22
+\BOOKMARK [2][-]{subsection.3.1}{One Time Pad}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Diagrammatic Representation}{subsection.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.2}{Quantum One Time Pad}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Diagrammatic Representation}{subsection.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.3}{Quantum Teleportation}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagrammatic Representation}{subsection.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.4}{Quantum Key Distribution}{section.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Diagrammatic Representation}{subsection.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.5}{Quantum Key Recycling}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Practical Implementation}{subsection.3.5}% 32
+\BOOKMARK [1][-]{section.4}{Equivalences}{}% 33
+\BOOKMARK [2][-]{subsection.4.1}{QOTP and Quantum Teleportation}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.2}{QKD Prepare and Measure and QKD EPR}{section.4}% 35
+\BOOKMARK [2][-]{subsection.4.3}{Quantum Alice and Silent Bob Equivalences}{section.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Masking the qubit payload with public randomness}{subsection.4.3}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.2}{EPR version of the protocol}{subsection.4.3}% 38
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Adding a random permutation}{subsection.4.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Adding random Pauli transforms}{subsection.4.3}% 40
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 41
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 42
+\BOOKMARK [1][-]{appendix.A}{Keywords}{}% 43
+\BOOKMARK [1][-]{appendix.B}{Eight state encryption map in Dirac notation}{}% 44

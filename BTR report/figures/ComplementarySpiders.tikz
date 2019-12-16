@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=GraySpider] (0) at (0, -0.5) {};
 		\node [style=WhiteSpider] (1) at (0, 0.5) {};
-		\node [style=none] (2) at (0, -1) {};
-		\node [style=none] (3) at (0, 1) {};
+		\node [style=none] (2) at (0, -1.25) {};
+		\node [style=none] (3) at (0, 1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (1) to (0);
