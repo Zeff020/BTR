@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-0.5, 1) {};
+		\node [style=none] (4) at (-0.5, -1.5) {};
+		\node [style=EffectRight] (7) at (-2.5, 2.5) {\small $\phi_0$};
+		\node [style=EffectRight] (8) at (-0.5, 2.5) {\small $\phi_1$};
+		\node [style=EffectRight] (9) at (2, 2.5) {\small $\phi_n$};
+		\node [style=none] (13) at (-0.5, 2.75) {};
+		\node [style=none] (14) at (-2.5, 1) {};
+		\node [style=none] (15) at (2, 1) {};
+		\node [style=none] (16) at (-2.5, 2.75) {};
+		\node [style=none] (17) at (2, 2.75) {};
+		\node [style=none] (18) at (0.275, 0.75) {};
+		\node [style=none] (19) at (1.25, 0.75) {};
+		\node [style=none] (20) at (0.25, 2.5) {};
+		\node [style=none] (21) at (1.5, 2.5) {};
+		\node [style=none] (22) at (-0.5, -1) {};
+		\node [style=none] (26) at (-0.5, -3) {};
+		\node [style=none] (27) at (-2.5, -1) {};
+		\node [style=none] (28) at (2, -1) {};
+		\node [style=none] (29) at (-2.5, -3) {};
+		\node [style=none] (30) at (2, -3) {};
+		\node [style=none] (31) at (0.275, -0.75) {};
+		\node [style=none] (32) at (1.25, -0.75) {};
+		\node [style=none] (33) at (0.25, -2.75) {};
+		\node [style=none] (34) at (1.5, -2.75) {};
+		\node [style=StateRight] (35) at (2, -2.75) {\rotatebox{90}{$\psi_n$}};
+		\node [style=StateRight] (36) at (-0.5, -2.75) {\rotatebox{90}{$\psi_1$}};
+		\node [style=StateRight] (37) at (-2.5, -2.75) {\rotatebox{90}{$\psi_0$}};
+		\node [style=StateMid] (38) at (-2.5, 1.25) {\small \rotatebox{-45}{$j_0$}};
+		\node [style=StateMid] (39) at (-0.5, 1.25) {\small \rotatebox{-45}{$j_1$}};
+		\node [style=StateMid] (40) at (2, 1.25) {\small \rotatebox{-45}{$j_n$}};
+		\node [style=EffectMid] (41) at (-2.5, -1.25) {\rotatebox{135}{$i_0$}};
+		\node [style=EffectMid] (42) at (-0.5, -1.25) {\rotatebox{135}{$i_1$}};
+		\node [style=EffectMid] (43) at (2, -1.25) {\rotatebox{135}{$i_n$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (14.center) to (16.center);
+		\draw (13.center) to (3.center);
+		\draw (15.center) to (17.center);
+		\draw [style=new edge style 0] (18.center) to (19.center);
+		\draw [style=new edge style 0] (20.center) to (21.center);
+		\draw (27.center) to (29.center);
+		\draw (26.center) to (22.center);
+		\draw (28.center) to (30.center);
+		\draw [style=new edge style 0] (31.center) to (32.center);
+		\draw [style=new edge style 0] (33.center) to (34.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

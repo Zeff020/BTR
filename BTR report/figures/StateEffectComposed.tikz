@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=StateRight] (0) at (0.05, 1) {\rotatebox{90}{$\psi$}};
-		\node [style=EffectRight] (1) at (-0.05, -1) {{\rotatebox{0}{$\psi$}}};
+		\node [style=EffectRight] (1) at (-0.05, -1) {{\rotatebox{0}{$\phi$}}};
 		\node [style=none] (2) at (-0.05, -1.75) {};
 		\node [style=none] (3) at (0.05, 1.75) {};
 		\node [style=none] (4) at (-0.05, -0.75) {};

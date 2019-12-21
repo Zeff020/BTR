@@ -1,6 +1,5 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (4) at (-5, -0.175) {$\sum\limits_{j}$};
 		\node [style=none] (7) at (-3, 2.5) {};
 		\node [style=none] (8) at (-3, -2.5) {};
 		\node [style=none] (9) at (-3, 1) {};
@@ -19,13 +18,13 @@
 		\node [style=none] (35) at (1, -2) {};
 		\node [style=none] (36) at (-0.5, 3) {\small $n$ outputs};
 		\node [style=none] (37) at (-0.5, -3) {\small $m$ inputs};
-		\node [style=none] (38) at (-4, 0.2) {$e^{i\alpha_j}$};
-		\node [style=EffectMid] (39) at (-3, -1) {\rotatebox{135}{j}};
-		\node [style=EffectMid] (40) at (-1, -1) {\rotatebox{135}{j}};
-		\node [style=EffectMid] (41) at (2, -1) {\rotatebox{135}{j}};
-		\node [style=StateMid] (42) at (-3, 1) {\rotatebox{-45}{j}};
-		\node [style=StateMid] (43) at (-1, 1) {\rotatebox{-45}{j}};
-		\node [style=StateMid] (44) at (2, 1) {\rotatebox{-45}{j}};
+		\node [style=none] (38) at (-4, 0.2) {$e^{i\alpha}$};
+		\node [style=EffectMid] (39) at (-3, -1) {\rotatebox{135}{1}};
+		\node [style=EffectMid] (40) at (-1, -1) {\rotatebox{135}{1}};
+		\node [style=EffectMid] (41) at (2, -1) {\rotatebox{135}{1}};
+		\node [style=StateMid] (42) at (-3, 1) {\rotatebox{-45}{1}};
+		\node [style=StateMid] (43) at (-1, 1) {\rotatebox{-45}{1}};
+		\node [style=StateMid] (44) at (2, 1) {\rotatebox{-45}{1}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (7.center) to (9.center);

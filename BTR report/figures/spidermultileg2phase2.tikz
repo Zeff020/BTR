@@ -26,8 +26,8 @@
 		\node [style=none] (23) at (1.75, 1.5) {};
 		\node [style=none] (24) at (0.25, 2) {\small $n$ outputs};
 		\node [style=none] (25) at (0.25, -2.25) {\small $m$ inputs};
-		\node [style=none] (26) at (2.5, -0.5) {$e^{i\beta_i}$};
-		\node [style=none] (27) at (-2.25, 0.5) {$e^{i\alpha_i}$};
+		\node [style=none] (26) at (2.5, -0.5) {$e^{i\beta_j}$};
+		\node [style=none] (27) at (-2.25, 0.5) {$e^{i\alpha_j}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [bend left] (0) to (7.center);

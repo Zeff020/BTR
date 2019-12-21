@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (9) at (0, 1.25) {};
+		\node [style=none] (10) at (0, -1.25) {};
+		\node [style=none] (11) at (0.75, -1) {\tiny $\mathcal{D}(\mathcal{H})$};
+		\node [style=none] (12) at (0.75, 1) {\tiny $\mathcal{D}(\mathcal{H})$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (9.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

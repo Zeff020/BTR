@@ -14,7 +14,7 @@
 		\node [style=none] (11) at (0.5, 1) {};
 		\node [style=none] (12) at (0, -1.75) {\small $m$ inputs};
 		\node [style=none] (13) at (0, 1.5) {\small $n$ outputs};
-		\node [style=none] (14) at (-2, 0) {$e^{i(\alpha_i+\beta_i)}$};
+		\node [style=none] (14) at (-2, 0) {$e^{i(\alpha_j+\beta_j)}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [bend left] (0) to (7.center);

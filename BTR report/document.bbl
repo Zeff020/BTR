@@ -29,6 +29,12 @@ Aleks Kissinger, Sean Tull, and Bas Westerbaan.
 \newblock {Picture-perfect Quantum Key Distribution}.
 \newblock 2017.
 
+\bibitem{Knill1997}
+Emanuel Knill and Raymond Laflamme.
+\newblock {Theory of quantum error-correcting codes}.
+\newblock {\em Physical Review A - Atomic, Molecular, and Optical Physics},
+  1997.
+
 \bibitem{Leermakers2019}
 Daan Leermakers and Boris {\v{S}}kori{\'{c}}.
 \newblock {Quantum Alice and Silent Bob}.
@@ -49,6 +55,12 @@ G{\"o}ran Lindblad.
 \bibitem{Markoff2011}
 John Markoff.
 \newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}, 2011.
+
+\bibitem{Morsch2008}
+Oliver Morsch.
+\newblock {\em {Quantum Bits and Quantum Secrets: How Quantum Physics is
+  revolutionizing Codes and Computers}}.
+\newblock John Wiley {\&} Sons, Berlin, 2008.
 
 \bibitem{Nielsen2011}
 Michael~a. Nielsen and Isaac~L. Chuang.

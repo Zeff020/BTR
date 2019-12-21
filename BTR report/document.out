@@ -29,16 +29,16 @@
 \BOOKMARK [2][-]{subsection.3.4}{Quantum Key Distribution}{section.3}% 29
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Diagrammatic Representation}{subsection.3.4}% 30
 \BOOKMARK [2][-]{subsection.3.5}{Quantum Key Recycling}{section.3}% 31
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Practical Implementation}{subsection.3.5}% 32
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Diagrammatic Representation}{subsection.3.5}% 32
 \BOOKMARK [1][-]{section.4}{Equivalences}{}% 33
 \BOOKMARK [2][-]{subsection.4.1}{QOTP and Quantum Teleportation}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{QKD Prepare and Measure and QKD EPR}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.3}{Quantum Alice and Silent Bob Equivalences}{section.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Masking the qubit payload with public randomness}{subsection.4.3}% 37
-\BOOKMARK [3][-]{subsubsection.4.3.2}{EPR version of the protocol}{subsection.4.3}% 38
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Adding a random permutation}{subsection.4.3}% 39
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Adding random Pauli transforms}{subsection.4.3}% 40
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 41
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 42
-\BOOKMARK [1][-]{appendix.A}{Keywords}{}% 43
-\BOOKMARK [1][-]{appendix.B}{Eight state encryption map in Dirac notation}{}% 44
+\BOOKMARK [2][-]{subsection.4.2}{Quantum Alice and Silent Bob Equivalences}{section.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Masking the qubit payload with public randomness}{subsection.4.2}% 36
+\BOOKMARK [3][-]{subsubsection.4.2.2}{EPR version of the protocol}{subsection.4.2}% 37
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Adding a random permutation}{subsection.4.2}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Adding random Pauli transforms}{subsection.4.2}% 39
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 40
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 41
+\BOOKMARK [1][-]{appendix.A}{Keywords}{}% 42
+\BOOKMARK [1][-]{appendix.B}{Bell matrices}{}% 43
+\BOOKMARK [1][-]{appendix.C}{Eight state encryption map in Dirac notation}{}% 44

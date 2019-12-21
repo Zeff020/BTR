@@ -8,8 +8,8 @@
 		\node [style=none] (5) at (1.75, 3.5) {};
 		\node [style=none] (6) at (-2, 3) {};
 		\node [style=none] (7) at (4, 3) {};
-		\node [style=none] (8) at (-1.25, 3.5) {\tiny Bob};
-		\node [style=none] (9) at (-1.25, 2.5) {\tiny Alice};
+		\node [style=none] (8) at (-1.25, 3.5) {\small Bob};
+		\node [style=none] (9) at (-1.25, 2.5) {\small Alice};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [bend left] (3.center) to (2);

@@ -1,0 +1,5 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (10) at (0, 0) {};
+	\end{pgfonlayer}
+\end{tikzpicture}
