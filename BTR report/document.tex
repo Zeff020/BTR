@@ -153,6 +153,22 @@ The $\phi$ thus gets "bent around" along with the wire such that we get back to 
 
 Intuitively, wires can be seen as information carriers. Every wire has an associated \textbf{system type}, the space of the information that it carries. In the context of this report, the system types are generally Hilbert spaces. In section \ref{doubling} we will also allow tensor products of Hilbert spaces to be the system types.
 
+\subsubsection{The yanking equations}
+\label{section:yankingequations}
+
+In \cite{Coecke2017} the authors introduce a couple of equations for bending around wires called the \textbf{yanking equations}. One of them will be used later on in this report, so it will be introduced here.
+
+\begin{equation}
+\label{equation:yankingequation}
+\tikzfig{YankingEquations1} = \tikzfig{wire}
+\end{equation}
+
+We can easily check that this is true by decomposing the wires to triangles as follows.
+
+\begin{equation}
+\tikzfig{YankingEquations1} \equaltext{\ref{equation:wiredecomposed}} \sum\limits_{ij} \tikzfig{YankingEquations2} \equaltext{\ref{equation:measure}} \sum\limits_{ij} \delta_{ij} \tikzfig{YankingEquations3} = \sum\limits_{i} \tikzfig{wiretriangles1} \equaltext{\ref{equation:wiredecomposed}} \tikzfig{wire}
+\end{equation}
+
 \subsubsection{Maps}
 \label{maps}
 
@@ -209,7 +225,7 @@ By applying arbitrary in- and outputs we can see how the \textbf{Kronecker delta
 \end{equation}
 
 Spiders with single in- or outputs also exist. A spider with a single output creates a 
-\textbf{random classical variable}.
+\textbf{random classical bit}.
 
 \begin{equation}
 \label{equation:spideroneoutput}
@@ -219,6 +235,7 @@ Spiders with single in- or outputs also exist. A spider with a single output cre
 And a spider with a single input \textbf{deletes} any classical variable $j$ $\in$ $\{0,1\}$.
 
 \begin{equation}
+\label{equation:deleteanyvariable}
  \tikzfig{DeleteAnyVariable} \equaltext{(\ref{equation:spidermultilegdecomposed})} \tikzfig{DeleteAnyVariable2} \equaltext{(\ref{equation:measure})}  \bra{0}\ket{j} + \bra{1}\ket{j} = 1
 \end{equation}
 
@@ -252,14 +269,14 @@ We can also have spiders without any inputs or outputs. These turn out to just g
 \tikzfig{spidermultilegphase} \equiv \tikzfig{spidermultilegdecomposedphase} = \tikzfig{spidermultilegdecomposedphase0} + \tikzfig{spidermultilegdecomposedphase1}
 \end{equation}
 
-When two phase spiders meet, they fuse like normal spiders and their phases add:
+When two phase spiders meet, they fuse like normal spiders and their phases add.
 \begin{equation}
 \label{equation:phasespiderfusion}
-	\tikzfig{spidermultileg2phase} \equaltext{(\ref{phasespider})} \sum\limits_{j} \tikzfig{spidermultileg2phase2} \equaltext{(\ref{equation:spiderfusion})} \sum\limits_{j} \tikzfig{spidermultileg11phase0} \equaltext{(\ref{phasespider})} \tikzfig{spidermultileg11phase}
+	\tikzfig{spidermultileg2phase} \equaltext{(\ref{phasespider})} \sum\limits_{jk} \tikzfig{spidermultileg2phase2} \equaltext{(\ref{equation:spiderfusion})} \sum\limits_{j} \tikzfig{spidermultileg11phase0} \equaltext{(\ref{phasespider})} \tikzfig{spidermultileg11phase}
 \end{equation}
-\textit{With j the indices of the triangles that make up the spiders}
+\textit{With j and k the indices of the triangles that constitute the spiders}
 
-Furthermore, note that since complex phases get flipped in conjugate transformations, the conjugate of a phase spider is that same spider with an inverted phase:
+Furthermore, note that since complex phases get flipped in conjugate transformations, the conjugate of a phase spider is that same spider with an inverted phase.
 
 \begin{equation}
 \label{equation:conjugatespider}
@@ -269,7 +286,7 @@ Furthermore, note that since complex phases get flipped in conjugate transformat
 \subsubsection{Colors and Bases}
 \label{coloursandbases}
 
-In the diagrammatic notation, the \textbf{color} of an object such as a spider or a triangle determines its basis. For now, we will define two orthonormal \textbf{bases}, the Z and X bases. Later on, as more bases will be necessary they will be introduced accordingly. The Z basis has white diagrammatic elements and for the X basis they are gray. The following is an example of how to translate between bases in this notation:
+In the diagrammatic notation, the \textbf{color} of an object such as a spider or a triangle determines its basis. For now, we will define two orthonormal \textbf{bases}, the Z and X bases. Later on, as more bases will be necessary they will be introduced accordingly. The Z basis has white diagrammatic elements and for the X basis they are gray. The following is an example of how to translate between bases in this notation.
 
 \begin{equation}
 \label{equation:gray0}
@@ -281,7 +298,7 @@ In the diagrammatic notation, the \textbf{color} of an object such as a spider o
 \tikzfig{gray1} =\frac{1}{\sqrt{2}}( \tikzfig{white0} - \tikzfig{white1})
 \end{equation}
 
-This equation is of course entirely analogous to its Dirac notation counterpart, with $\ket{0}_x$ and $\ket{1}_x$ being the orthonormal basis states in the X basis and $\ket{0}$ and $\ket{1}$ the orthonormal basis states in the Z basis:
+This equation is of course entirely analogous to its Dirac notation counterpart, with $\ket{0}_x$ and $\ket{1}_x$ being the orthonormal basis states in the X basis and $\ket{0}$ and $\ket{1}$ the orthonormal basis states in the Z basis.
 
 \begin{equation}
 \ket{0}_x = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
@@ -293,129 +310,12 @@ This equation is of course entirely analogous to its Dirac notation counterpart,
 
 All of the rules derived up to this point count also for the gray basis, or for any basis with two orthonormal basis vectors for that matter. We can also have gray spiders for example, with the same set of rules as the white spiders. With that being said, for the cases where two diagrammatic components of different bases meet we have to develop new rules, which we will do in due course. 
 
-Some diagrammatic components get no color, such as maps. What a map actually does to some input state is independent of the basis that it was originally defined in. Of course, we could alter equation (\ref{equation:introducemap}) to have gray triangles rather than white, but this would also imply a change in $r_ij$ which would preserve the result of the mapping, independent of the choice of input basis. The same goes for triangles that are not basis vectors, and thus the ones that are on their side. They can represent arbitrary vectors in their respective Hilbert spaces, and can generally be described as superpositions in various bases. There is no obvious preference for which basis to then describe this arbitrary vector in.
+Some diagrammatic components get no color, such as maps. What a map actually does to some input state is independent of the basis that it was originally defined in. Of course, we could alter equation (\ref{equation:introducemap}) to have gray triangles rather than white, but this would also imply a change in $r_{ij}$ from that same equation which would preserve the result of the mapping, independent of the choice of input basis. The same goes for triangles that are not basis vectors, and thus the ones that are on their side. They can represent arbitrary vectors in their respective Hilbert spaces, and can generally be described as superpositions in various bases. There is no obvious preference for which basis to then describe this arbitrary vector in.
 
-\subsubsection{Doubling}
-\label{doubling}
-
-\textbf{Doubling} is the operation of horizontally composing the conjugate version of a diagram with itself. We already defined previously that having multiple components in the same diagram can be interpreted as the tensor product over those components. Therefore, doubling a diagram is equivalent in Dirac notation to taking the tensor product with its conjugate diagram. In the usual case, where the system type of a single wire is a Hilbert space ($\mathcal{H}$), the doubled wire has the set of density matrices on that Hilbert space as system type:
-
-\begin{equation}
-\mathcal{H} \otimes \mathcal{H} \cong \mathcal{D}(\mathcal{H}) \Leftrightarrow \tikzfig{twowires} \cong \tikzfig{twowires2}
-\end{equation}
-\textit{Where $\mathcal{D}(\mathcal{H})$ is the set of density matrices on $\mathcal{H}$.}
-
-Doubled maps and and states represent \textbf{pure} maps and states and single maps and states represent their \textbf{mixed} counterparts. Remember that pure states are those that can be described by a single bra or ket, and can be any superposition of orthonormal basis states. A mixed state, on the other hand, is a statistical ensemble of pure states described by a classical probability distribution over those pure states. The most intuitive interpretation, and how it will mostly be used in this report, is that single diagrammatic components are used in the classical domain whereas doubled components are used in the quantum domain. A doubled state, for example, is a quantum state while a single state represents classical information, potentially on a quantum state. Single wires then carry this classical information and doubled wires carry quantum information.
-
-Doubling in diagrammatic notation is nothing more than placing a second conjugate diagram
-next to the original diagram. In doubled diagrams lines are drawn thick, a doubled state is thus
-represented as follows:
-
-\begin{equation}
-	\label{equation:doubledstate}
-	\tikzfig{DoubleStateDecomposed} \equiv \tikzfig{DoubleStateDecomposed1}
-\end{equation}
-\textit{The notation of a state with a hat, such as $\hat{\psi}$, means that that state is pure.}
-
-Taking this further apart, we can define an arbitrary \textbf{density matrix} as follows:
-
-\begin{equation}
-	\label{equation:densitymatrix}
-	 \sum\limits_{ij} \rho_{ij} \tikzfig{wiretrianglenosum} \tikzfig{wiretrianglenosumj} \equiv \tikzfig{DensityState}
-\end{equation}
-
-Note that in te case of doubled states, effects, or maps with multiple in- or outputs we need to make sure that the single wires converge correctly:
-
-\begin{equation}
-\label{equation:conjugatemaps}
-\tikzfig{conjugatemaps} \equiv \tikzfig{doublemap}
-\end{equation}
-\textit{The notation of a map with a hat, such as $\hat{f}$, means that that map is pure.}
-
-Doubled spiders among themselves follow the same rules as normal spiders. That is, they follow the fusion rule from equation \ref{equation:spiderfusion}. However, when a single and double spider meet, they fuse to form one single spider, a so called bastard spider. In diagrams:
-
-\begin{equation}
-\label{equation:bastardspiderfusion}
-	\tikzfig{BastardSpiderFusion} = \tikzfig{BastardSpiderFusion2}
-\end{equation}
-
-Which follows from the fact that doubled spiders are two single spiders that each fuse according to equation (\ref{equation:spiderfusion}).
-\subsubsection{Discarding}
-\label{discarding}
-
-\textbf{Discarding} is the process of removing part of a diagram from the whole, or removing the whole diagram altogether. For doubled diagrams it is defined as follows:
-
-\begin{equation}
-\label{equation:discarding}
-\tikzfig{Discarding} \equiv \tikzfig{thickwhiteieffect} \equaltext{(\ref{equation:doubledstate})} \tikzfig{thinwirediscardingdecomposed} 
-\equaltext{(\ref{equation:bentaroundwire})}
- \tikzfig{discardingsinglewires} \equaltext{(\ref{equation:bentaroundwire})} \sum\limits_{i}\ket{i}\bra{i}
-\end{equation}
-
-It is trivial to see that applying discarding to any arbitrary (normalized) state always results in the number 1. In fact, discarding a state or map is equivalent to taking its \textbf{trace}. As an example, we discard an arbitrary normalized density matrix, $\rho$:
-
-\begin{equation}
-\label{equation:discardingstate}
-\begin{split}
-\tikzfig{discardingdensitymatrx} \equaltext{(\ref{equation:densitymatrix})} \tikzfig{discradingdensitymatrixsinglewires} \equaltext{(\ref{equation:bentaroundwiresinandoutputs})} \sum\limits_{ij} \rho_{ij} \bra{j}\ket{i} \\ = \sum\limits_{ii} \rho_{ii} = Tr(\rho) = 1
-\end{split}
-\end{equation}
-
-Discarding is not a pure map. It connects the two counterparts of a doubled state by a single wire. This allows for discarding to be used to purify any arbitrary state or map. For the case of a map $\Phi$, \textbf{purification} is as follows:
-
-\begin{equation}
-\label{equation:Purification}
-\tikzfig{doublemapnotpure} = \tikzfig{doublemapdiscardingoneout} \equaltext{(\ref{equation:conjugatemaps})} \tikzfig{conjugatemapsdiscardingoneout}
-\end{equation}
-
-Note that purification is not only a diagrammatic result, but that it is a commonly used fact in quantum information theory. In general, purification refers to the fact that any mixed state is equivalent to a pure state in a higher dimensional Hilbert space of which we trace a part away. This is essentially also what happens in equation (\ref{equation:Purification}). A full proof of this statement can be found in \cite{Nielsen2011}, page 110.
-
-Taking the conjugate of the discarding map is actually the preparation of the \textbf{fully mixed state} up to some constant:
-
-\begin{equation}
-	\label{equation:FullyMixed}
-	\tikzfig{FullyMixed} \equiv \sum\limits_{i=0} \tikzfig{Encoding3} \equaltext{\ref{equation:doubledstate}} \tikzfig{thinwirediscardingdecomposed2}  \equaltext{\ref{equation:bentaroundwire}} \tikzfig{discardingsinglewires4} \approx \sum\limits_{i} \frac{1}{2} \ket{i} \bra{i}
-\end{equation}
-
-\subsubsection{Entanglement}
-\label{entanglement}
-Pure \textbf{entangled states} are those states that are not horizontally separable: 
-
-\begin{equation}
-\tikzfig{WideStateTwoOutputs} \neq \tikzfig{TwoStates}
-\end{equation}
-
-Since horizontally composed states form the tensor product of those states diagrammatically, this definition is in line with theory, where entangled states are defined as those states that can not be written as the tensor product of two states \cite{Nielsen2011}. 
-
-An example of such a state is the following:
-
-\begin{equation}
-\tikzfig{DoubleCup} \equaltext{(\ref{equation:bentaroundwire})} \sum\limits_{i} \tikzfig{DoubleCupSeperate} \equaltext{(\ref{equation:state})} \ket{00} + \ket{11}
-\end{equation}
-
-Although it may seem like this state separates since it is made up of two triangles, it does not. Both triangles are correlated through the same index. Indeed, if the indices were different for each of the triangles this would not be an entangled state.
-
-\subsection{Advanced diagrammatic concepts}
-
-\subsubsection{The yanking equations}
-\label{section:yankingequations}
-
-In \cite{Coecke2017} the authors introduce a couple of equations for bending around wires called the \textbf{yanking equations}. One of them will be used later on in this report, so it will be introduced here:
-
-\begin{equation}
-	\label{equation:yankingequation}
-	\tikzfig{YankingEquations1} = \tikzfig{wire}
-\end{equation}
-
-We can easily check that this is true by decomposing the wires to triangles as follows:
-
-\begin{equation}
-	\tikzfig{YankingEquations1} \equaltext{\ref{equation:wiredecomposed}} \sum\limits_{ij} \tikzfig{YankingEquations2} \equaltext{\ref{equation:measure}} \sum\limits_{ij} \delta_{ij} \tikzfig{YankingEquations3} = \sum\limits_{i} \tikzfig{wiretriangles1} \equaltext{\ref{equation:wiredecomposed}} \tikzfig{wire}
-\end{equation}
 
 \subsubsection{Basis and phase translations on the Bloch sphere}
 \label{section:basisandphasetranslations}
-In section \ref{coloursandbases} we already saw how to translate between different bases diagrammatically. The approach was to translate Dirac bra's and kets directly to the appropriate triangles. Using phase spiders, we can employ a more purely diagrammatic method. This stems from the fact that applying a phase to a state corresponds to a rotation on the \textbf{Bloch sphere}. Let's see where a spider without a phase lies on the Bloch sphere:
+In section \ref{coloursandbases} we saw how to translate between different bases diagrammatically. The approach was to translate Dirac bra's and kets directly to the appropriate triangles. Using phase spiders, we can employ a more purely diagrammatic method. This stems from the fact that applying a phase to a state corresponds to a rotation on the \textbf{Bloch sphere}. Let's see where a spider without a phase lies on the Bloch sphere.
 
 \begin{equation}
 \tikzfig{spideroneoutput} \equaltext{\ref{equation:spideroneoutput}} \tikzfig{wiretriangle} = \tikzfig{white0} + \tikzfig{white1} \approx \frac{1}{\sqrt{2}}(\tikzfig{white0} + \tikzfig{white1}) \equaltext{\ref{equation:gray0}} \tikzfig{gray0}
@@ -423,7 +323,7 @@ In section \ref{coloursandbases} we already saw how to translate between differe
 
 On the Bloch sphere in equation \ref{equation:blochsphere} we indeed see that the phaseless white spider is on the same location as the gray state 0.
 
-For a white spider with a phase of $\pi$ we get the following:
+For a white spider with a phase of $\pi$ we get the following.
 
 \begin{equation}
 \tikzfig{spideroneoutputpiphase} \equaltext{\ref{equation:spideroneoutput}} \sum\limits_{i} e^{i\alpha_i}\tikzfig{wiretrianglenosum} = e^{0}\tikzfig{white0} + e^{i\pi}\tikzfig{white1} \approx \frac{1}{\sqrt{2}}(\tikzfig{white0} - \tikzfig{white1}) \equaltext{\ref{equation:gray1}} \tikzfig{gray1}
@@ -435,15 +335,15 @@ The gray spiders and white basis have a similar relationship and these are inclu
 
 \label{basisandphasetranslations}
 \begin{center}
-\begin{equation}
-\label{equation:blochsphere}
-\begin{blochsphere}[radius=5 cm,tilt=10,rotation=0.01, opacity=0]
+	\begin{equation}
+	\label{equation:blochsphere}
+	\begin{blochsphere}[radius=5 cm,tilt=10,rotation=0.01, opacity=0]
 	\centering
 	%\drawBallGrid[style={opacity=0.3}]{30}{30}
-
+	
 	\drawGreatCircle[]{90}{90}{0}
 	\drawGreatCircle[style=dashed]{0}{0}{0}
-
+	
 	\labelLatLon{up}{90}{0};
 	\drawStateLatLon[tilt=0.1]{up}{0}{0}
 	%\labelLatLon{down}{-90}{90};
@@ -479,13 +379,139 @@ The gray spiders and white basis have a similar relationship and these are inclu
 	\node [style=StateMidGray] (0) at (-8.2,0.3cm) {\rotatebox{-45}{1}};
 	\node [style=WhiteSpider] (0) at (-6.1,-0.2cm) {$\pi$};
 	
-\end{blochsphere}
-\end{equation}
+	\end{blochsphere}
+	\end{equation}
 \end{center}
+
+\subsubsection{The xor map}
+
+\label{xorgate}
+
+The \textbf{Exclusive OR (xor) map} takes two inputs and gives an output of 0 when the inputs are the same and 1 when they are different. Mathematically, if we take $x, y \in \{0,1\} $ as inputs the output of the xor map is $(x + y)~mod~2$, or more commonly written as $x \oplus y$. We could just define a diagrammatic map and give it this property. However, there is another way of creating the xor map diagrammatically which only uses spiders. This has the advantage of allowing us to use spider rules to move xor maps around in diagrams.
+
+If we enter two outputs of a certain basis into a spider that is of another basis orthonormal to the inputs this gives the xor map. To see how this works, let's use a gray spider and apply white test in- and outputs. First, recall that:
+
+\begin{equation}
+\label{equation:xorproof}
+\tikzfig{XORProof1} \equaltext{\ref{equation:measure}} \bra{0}_x\ket{i} =  1/\sqrt{2} ~~~~~~~~~~~~~~~~~ \tikzfig{XORProof2} \equaltext{\ref{equation:measure}} \bra{1}_x\ket{i} = (-1)^i/\sqrt{2}
+\end{equation}
+
+Now applying the test in- and outputs to the proposed xor map \cite{Coecke2017}:
+
+\begin{equation}
+\label{equation:xormap}
+\tikzfig{XORTestInAndOutputs} \equaltext{\ref{equation:spidermultilegdecomposed}} \tikzfig{XORTestInAndOutputs1} + \tikzfig{XORTestInAndOutPuts2} \equaltext{\ref{equation:xorproof}} \frac{1}{\sqrt{2}} * \frac{1}{2}(1+(-1)^{i+j+k})
+\end{equation}
+
+This equation results in 0 whenever the sum $i+j+k$ is uneven and 1/$\sqrt{2}$ when it is even. Now $i+j+k$ is only even whenever $i \oplus j = k$. This thus, up to a factor of $\sqrt{2}$, gives the xor map.
+
+
+\subsubsection{Doubling}
+\label{doubling}
+
+\textbf{Doubling} is the operation of horizontally composing the conjugate version of a diagram with itself. We already defined previously that having multiple components in the same diagram can be interpreted as the tensor product over those components. Therefore, doubling a diagram is equivalent in Dirac notation to taking the tensor product with its conjugate diagram. In the usual case, where the system type of a single wire is a Hilbert space ($\mathcal{H}$), the doubled wire has the set of density matrices on that Hilbert space as system type.
+
+\begin{equation}
+\mathcal{H} \otimes \mathcal{H} \cong \mathcal{D}(\mathcal{H}) \Leftrightarrow \tikzfig{twowires} \cong \tikzfig{twowires2}
+\end{equation}
+\textit{The $\cong$ denotes an isomorphism between the left and right hand sides. This is not an exact equality, but rather states that although the elements of the objects on both sides may be different, the structures of the objects themselves are the same. Intuitively they are the same object after one were to simply rename the elements of either one of the two. For all intents and purposes of this report we can assume $\cong$ to refer to equality. Furthermore $\mathcal{D}(\mathcal{H})$ is the set of density matrices on $\mathcal{H}$ and the letters next to the wires represent their system types.}
+
+Doubled maps and and states represent \textbf{pure} maps and states and single maps and states represent their \textbf{mixed} counterparts. Remember that pure states are those that can be described by a single bra or ket, and can be any superposition of orthonormal basis states. A mixed state, on the other hand, is a statistical ensemble of pure states described by a classical probability distribution over those pure states. The most intuitive interpretation, and how it will mostly be used in this report, is that single diagrammatic components are used in the classical domain whereas doubled components are used in the quantum domain. A doubled state, for example, represents the preparation of a quantum state while a single state represents the preparation of classical information on a quantum state. Single wires then carry this classical information and doubled wires carry quantum information. This means that classical information is represented in terms of a Hilbert space and thus also in an associated basis. In other words, a single wire carries classical information on a bit encoded into a certain basis, rather than just a classical bit. To some extent this is intuitive. Say we measured a qubit in a certain basis and received some classical information. This classical information does not tell us much about the qubit if we do not know in what basis it was measured in in the first place.
+
+Doubling in diagrammatic notation is nothing more than placing a second conjugate diagram
+next to the original diagram. In doubled diagrams lines are drawn thick, a doubled state is thus
+represented as follows.
+
+\begin{equation}
+	\label{equation:doubledstate}
+	\tikzfig{DoubleStateDecomposed} \equiv \tikzfig{DoubleStateDecomposed1}
+\end{equation}
+\textit{The notation of a state with a hat, such as $\hat{\psi}$, means that that state is pure.}
+
+Taking this further apart, we can define an arbitrary \textbf{density matrix} as follows.
+
+\begin{equation}
+	\label{equation:densitymatrix}
+	 \sum\limits_{ij} \rho_{ij} \tikzfig{wiretrianglenosum} \tikzfig{wiretrianglenosumj} \equiv \tikzfig{DensityState}
+\end{equation}
+
+Note that in te case of doubled states, effects, or maps with multiple in- or outputs we need to make sure that the single wires are grouped correctly.
+
+\begin{equation}
+\label{equation:conjugatemaps}
+\tikzfig{conjugatemaps} \equiv \tikzfig{doublemap}
+\end{equation}
+\textit{The notation of a map with a hat, such as $\hat{f}$, means that that map is pure.}
+
+Doubled spiders among themselves follow the same rules as normal spiders. That is, they follow the fusion rule from equation \ref{equation:spiderfusion}. However, when a single and double spider meet, they fuse to form one single and thin spider, a so called bastard spider.
+
+\begin{equation}
+\label{equation:bastardspiderfusion}
+	\tikzfig{BastardSpiderFusion} = \tikzfig{BastardSpiderFusion2}
+\end{equation}
+
+Which follows from the fact that doubled spiders are two single spiders that each fuse according to equation (\ref{equation:spiderfusion}).
+\subsubsection{Discarding}
+\label{discarding}
+
+\textbf{Discarding} is the process of removing part of a diagram from the whole, or removing the whole diagram altogether. It is the quantum equivalent of deleting for classical diagrams. Discarding is defined as follows.
+
+\begin{equation}
+\label{equation:discarding}
+\tikzfig{Discarding} \equiv \tikzfig{thickwhiteieffect} \equaltext{(\ref{equation:doubledstate})} \tikzfig{thinwirediscardingdecomposed} 
+\equaltext{(\ref{equation:bentaroundwire})}
+ \tikzfig{discardingsinglewires} \equaltext{(\ref{equation:bentaroundwire})} \sum\limits_{i}\bra{i}\otimes\bra{i}
+\end{equation}
+
+It is trivial to see that applying discarding to any arbitrary (normalized) state always results in the number 1. In fact, discarding a state or map is equivalent to taking its \textbf{trace}. As an example, we discard an arbitrary normalized density matrix, $\rho$.
+
+\begin{equation}
+\label{equation:discardingstate}
+\begin{split}
+\tikzfig{discardingdensitymatrx} \equaltext{(\ref{equation:densitymatrix})} \tikzfig{discradingdensitymatrixsinglewires} \equaltext{(\ref{equation:bentaroundwiresinandoutputs})} \sum\limits_{ij} \rho_{ij} \bra{j}\ket{i} \\ = \sum\limits_{ii} \rho_{ii} = Tr(\rho) = 1
+\end{split}
+\end{equation}
+
+Discarding is not a pure map. It connects the two counterparts of a doubled state by a single wire. This allows for discarding to be used to purify any arbitrary state or map. For the case of a map $\Phi$, \textbf{purification} is as follows.
+
+\begin{equation}
+\label{equation:Purification}
+\tikzfig{doublemapnotpure} = \tikzfig{doublemapdiscardingoneout} \equaltext{(\ref{equation:conjugatemaps})} \tikzfig{conjugatemapsdiscardingoneout}
+\end{equation}
+
+Note that purification is not only a diagrammatic result, but that it is a commonly used phenomenon in quantum information theory. In general, purification refers to the fact that any mixed state is equivalent to a pure state in a higher dimensional Hilbert space of which we trace a part away. In other words, every mixed state can be viewed as some pure state with part of its Hilbert space traced away.\footnote{ A full proof of this statement can be found in \cite{Nielsen2011}, page 110.} This is essentially also what we see happen in equation (\ref{equation:Purification}). $\Phi$ is some (potentially mixed) quantum map and it is equal to $\hat{f}$ with one output traced away. If we rewrite this $\hat{f}$ and its discarded output in terms of single components we receive the right hand side, which we see is indeed not completely pure; it cannot be written as a diagram with its conjugate next to it.
+
+Taking the conjugate of the discarding map is actually the preparation of the \textbf{fully mixed state} up to some constant.
+
+\begin{equation}
+	\label{equation:FullyMixed}
+	\tikzfig{FullyMixed} \equiv \sum\limits_{i=0} \tikzfig{Encoding3} \equaltext{\ref{equation:doubledstate}} \tikzfig{thinwirediscardingdecomposed2}  \equaltext{\ref{equation:bentaroundwire}} \tikzfig{discardingsinglewires4} \approx \sum\limits_{i} \frac{1}{2} \ket{i} \otimes \ket{i}
+\end{equation}
+
+\subsubsection{Entanglement}
+\label{entanglement}
+Pure \textbf{entangled states} are those states that are not horizontally separable.
+
+\begin{equation}
+\tikzfig{WideStateTwoOutputs} \neq \tikzfig{TwoStates}
+\end{equation}
+
+Since horizontally composed states form the tensor product of those states diagrammatically, this definition is in line with theory, where entangled states are defined as those states that can not be written as the tensor product of two states \cite{Nielsen2011}. An example of such a state is the following.
+
+\begin{equation}
+\tikzfig{DoubleCup} \equaltext{(\ref{equation:bentaroundwire})} \sum\limits_{i} \tikzfig{DoubleCupSeperate} \equaltext{(\ref{equation:state})} \ket{00} + \ket{11}
+\end{equation}
+
+Although it may seem like this state separates since it is made up of two triangles, it does not. Both triangles are correlated through the same index. Indeed, if the indices were different for each of the triangles this would not be an entangled state.
+
+\subsection{Advanced diagrammatic concepts}
+
 \subsubsection{Encoding and Decoding}
 \label{encodingdecoding}
 
-Diagrammatically, the \textbf{encoding map} is a single spider with one doubled wire as output and one single wire as input. The color of the spider is the basis in which the classical bit gets encoded. For example, encoding classical information $p$ on a diagonal density matrix $\rho$ into a quantum state in the white basis with indices $i \in \{0,1\}^n$:
+To pass from classical information to quantum information a process called \textbf{encoding} is employed. Encoding puts the information from some classical bit into a quantum system, a qubit. There exist various physical systems that can be used for the realization of qubits. Later, in section \ref{QuantumKeyDistribution} for example, we will see how a photon can be used as a qubit. After we are done with it, we need a way to extract the quantum information stored in this qubit back into classical information. This process is the inverse of encoding and has been given its own name, decoding. 
+
+Diagrammatically, the encoding map is a single spider with one doubled wire as output and one single wire as input. The color of the spider is the basis in which the classical bit gets encoded. For example, encoding classical information $p$ on a diagonal density matrix $\rho = \sum\limits_i p_i \ket{i}\bra{i}$ into a quantum state in the white basis with indices $i \in \{0,1\}^n$.
 
 \begin{equation}
 	\label{equation:Encoding}
@@ -499,48 +525,29 @@ Phases get lost when decoding quantum states to classical states. We can rely on
 
 \begin{equation}
 \label{eq:20}
-\tikzfig{decodingphase} \equaltext{\ref{equation:conjugatespider}} \tikzfig{spidertwophases} \equaltext{\ref{phasespider}} \tikzfig{spidertwophaseswrittenout} \equaltext{\ref{equation:phasespiderfusion}} \tikzfig{spideronephasefromtwo} \equaltext{\ref{equation:phasespiderfusion}} \tikzfig{spideronephasefromtwoinspider} =
+\tikzfig{decodingphase} \equaltext{\ref{equation:conjugatespider}} \tikzfig{spidertwophases} \equaltext{\ref{phasespider}} \sum\limits_{jk} \tikzfig{spidertwophaseswrittenout} \equaltext{\ref{equation:phasespiderfusion}}
+\sum\limits_{j} \tikzfig{spideronephasefromtwo} \equaltext{\ref{equation:phasespiderfusion}} \tikzfig{spideronephasefromtwoinspider} =
 \tikzfig{uniformprobstate}
 \end{equation}
+\textit{With j and k the indices of the triangles that constitute the spiders.}
 
 \subsubsection{Complementary spiders}
 \label{complementarity}
-Alice encoding a classical state into a qubit in a certain basis and then Bob measuring that qubit in a \textbf{complementary} basis results in Bob receiving a random bit:
 
+Two bases are said to be \textbf{complementary} if encoding in one and decoding in the other always gives a random measurement result. The two previously introduced bases X and Z are complementary. Alice encoding a classical state into a qubit in either one of these bases and then Bob measuring that qubit in a the other basis results in Bob receiving a random bit.
 
 \begin{equation}
 	\label{equation:Complementarity}
 	\tikzfig{ComplementarySpiders} = \frac{1}{2} \tikzfig{ComplementarySpiders2} ~~~~~~~~~~~ \tikzfig{ComplementarySpiders3} = \frac{1}{2} \tikzfig{ComplementarySpiders4} 
 \end{equation}
+\textit{Where the spider with a single output denotes the preparation of a random bit by equation (\ref{equation:spideroneoutput}) and the spider with a single input denotes the deletion of the incoming state by equation (\ref{equation:deleteanyvariable})}
 
-On the contrary, whenever Alice and Bob do respectively encode and measure in the same basis, they achieve successful communication:
+On the contrary, whenever Alice and Bob do respectively encode and measure in the same basis, they achieve successful communication.
 
 \begin{equation}
 	\label{equation:ComplementarityPositive}
 	\tikzfig{ComplementarySpiders5} = \tikzfig{ComplementarySpiders6} = \tikzfig{wire}
 \end{equation}
-
-\subsubsection{The xor map}
-
-\label{xorgate}
-
-The \textbf{Exclusive OR (xor) map} takes two inputs and gives an output of 0 when the inputs are the same and 1 when they are different. Mathematically, if we take $x, y \in \{0,1\} $ as inputs the output of the xor map is $(x + y)~mod~2$. We could just define a diagrammatic map and give it this property. However, there is another way of creating the xor map diagrammatically which only uses spiders. This has the advantage of allowing us to use spider rules to move xor maps around in diagrams.
-
-If we enter two outputs of a certain basis into a spider that is of another basis orthonormal to the inputs this gives the xor map. To see how this works, let's use a gray spider and apply white test in- and outputs. First, recall that:
-
-\begin{equation}
-\label{equation:xorproof}
-	\tikzfig{XORProof1} \equaltext{\ref{equation:measure}} \bra{0}_x\ket{i} =  1/\sqrt{2} ~~~~~~~~~~~~~~~~~ \tikzfig{XORProof2} \equaltext{\ref{equation:measure}} \bra{1}_x\ket{i} = (-1)^i/\sqrt{2}
-\end{equation}
-
-Now applying the test in- and outputs to the proposed xor map \cite{Coecke2017}:
-
-\begin{equation}
-	\label{equation:xormap}
-	\tikzfig{XORTestInAndOutputs} \equaltext{\ref{equation:spidermultilegdecomposed}} \tikzfig{XORTestInAndOutputs1} + \tikzfig{XORTestInAndOutPuts2} \equaltext{\ref{equation:xorproof}} \frac{1}{\sqrt{2}} * \frac{1}{2}(1+(-1)^{i+j+k})
-\end{equation}
-
-This equation results in 0 whenever the sum $i+j+k$ is uneven and 1/$\sqrt{2}$ when it is even. Now $i+j+k$ is only even whenever $i \oplus j = k$. This thus, up to a factor of $\sqrt{2}$, gives the xor map.
 
 \subsubsection{The essential uniqueness of purification}
 \label{section:essentialuniqueness}
@@ -571,7 +578,7 @@ In this report we will on multiple occasions want to move certain phase spiders 
 \tikzfig{kkcommuterule} = \tikzfig{kkcommuterule1}
 \end{equation}
 
-This rule shows us how we can move phase spiders of a different color with either a $\pi$ or no phase past one another.
+This rule shows us how we can move X and Z phase spiders of a different color with either a $\pi$ or no phase past one another. Note that it is important that the spiders are in the X and Z bases, and that this rule doesn't hold for just any two bases.
 
 \section{Protocols}
 \label{section:protocols}
@@ -582,7 +589,7 @@ The classical One Time Pad (OTP) is perhaps the oldest and most well known crypt
 
 Alice and Bob start with a uniformly random key $k \in \{0,1\}^n$. Alice wants to send some message $m \in \{0,1\}^n$ to Bob. She encrypts $m$ using the key $k$ by means of an xor map, generating ciphertext $x^n = m \oplus k$.\footnote{In different realizations of the OTP, Alice has different methods of encrypting her message. With that being said, applying an xor map to the key and the message is one of the most common versions.} After this step, she sends $x$ to Bob who applies $k$ again to $x$ to receive $m$ since $k \oplus x = m$. The assumption on the eavesdropper (Eve) in this scheme is that she doesn't know $k$ and can intercept $x$. With that being said, if $k$ was truly uniformly random, $x$ is so too, leaving Eve with a random variable even after a successful interception. The main drawback of this scheme is the fact that the key has to be the same size as the message and that this key can only safely be used once.
 
-\subsubsection{Diagrammatic Representation}
+\subsubsection{Diagrammatic Representation of the One Time Pad}
 
 The OTP relies on classical communication channels and xor maps. Since we can represent both of these diagrammatically we can draw out the fully classical OTP protocol by means of diagrams. Recall from section \ref{spiders} that the following state generates a random bit:
 
@@ -647,36 +654,50 @@ What Eve thus learns in this situation is only the ciphertext, $x$. This was als
 
 \subsection{Quantum One Time Pad}
 \label{QOTP}
-In the Quantum One Time Pad (QOTP) Alice and Bob share a uniformly random key $ \alpha \in \{0,1,2,3\}^n$ and want to communicate some quantum state, $\rho$. Alice first transforms $\rho$ by applying to it a random Pauli map, $\sigma_\alpha$. After she has prepared this state she sends it to Bob over a quantum channel. He can then apply the Hermitian adjoint of this random Pauli resulting in the original $\rho$ sent by Alice. This step exploits the unitary property of the Pauli maps. Eve, who doesn't know $\alpha$, can observe the state sent from Alice to Bob. However, since she does not know $\alpha$, from her perspective this is the fully mixed state. Mathematically, this can be seen as follows:
+In the Quantum One Time Pad (QOTP) Alice and Bob share a uniformly random key $ \alpha \in \{0,1,2,3\}^n$ and want to communicate some quantum state, $\rho$. Alice first transforms $\rho$ by applying to it some Pauli map, $\sigma_\alpha$, which are written out for all $\alpha$ in appendix \ref{appendix:BellMaps}. After she has prepared this state she sends it to Bob over a quantum channel. He can then apply the Hermitian adjoint of this Pauli resulting in the original $\rho$ sent by Alice. This step exploits the unitary property of the Pauli maps. Eve, who doesn't know $\alpha$, can observe the state sent from Alice to Bob. However, since she does not know $\alpha$, from her perspective this is the fully mixed state. Mathematically, encrypting any qubit state by two random (but the same) Pauli's results in the identity matrix.
 
 \begin{equation}
 	\label{equation:OTPsecurity}
 	\rho' = \sum\limits_{\alpha = 0}^3 \frac{1}{4} \sigma_\alpha \rho \sigma_\alpha^\dagger = \frac{1}{2}\mathbb{I}
 \end{equation}
+\textit{Where $\mathbb{I}$ refers to the two by two identity matrix.}
 
-In principle, the QOTP is similar to the OTP. By means of encrypting a piece of information with a random key which is unknown to Eve but shared by Alice and Bob the latter can achieve secure communication. As a communication protocol, QOTP is not very efficient. Alice and Bob need use two bits as a key per qubit of communicated information.
+In principle, the QOTP is similar to the OTP. By means of encrypting a piece of information with a random key which is unknown to Eve but shared by Alice and Bob the latter can achieve secure communication. As a communication protocol, QOTP is interesting since it allows for the transmission of a continuum object by a 2-bit key. In other words, any state vector on the entire Bloch sphere can be communicated as a qubit by two bits of classical information. In the classical OTP, on the other hand, one bit is used as a key to communicate each bit of classical information.
 
-\subsubsection{Diagrammatic Representation}
+\subsubsection{Diagrammatic Representation of the Quantum One Time Pad}
 \label{DiagramRepresentationQOTP}
 In the diagrammatic formalism we can construct a set of maps that have the same property as the Pauli maps in equation \ref{equation:OTPsecurity}, the Bell maps. These are defined in terms of the Pauli matrices as follows \cite{Coecke2017}:
 
 \begin{equation}
+\label{equation:bellsigmas}
 	\sigma_0 = B_0 ~~~ \sigma_1 = B_1 ~~~ \sigma_2 = iB_3 ~~~ \sigma_3 = B_2 
 \end{equation}
 \textit{In appendix \ref{appendix:BellMaps}, these Bell matrices are written out. Note that since they have the same properties as Pauli matrices we use them interchangeably throughout the report.}
 
-In order to form diagrams for these Bell maps we have to understand them a little bit better. One of their properties is that they can be constructed from rotations on the Bloch sphere around the z and x axes \cite{DJORDJEVIC2012227}, also known as bitflips around these axes. In fact, the maps that apply bitflips are themselves actually Pauli maps, and thus Bell maps. It was chosen to give them their own notation such that they more explicitly represent their behavior. X refers to a bitflip around the x axis and Z refers to a bitflip on the z axis. For random $u, w \in \{0,1\}$ and $\alpha \in \{0,1,2,3\}$ dependent on $u$ and $w$ we can write this mathematically as follows:
+The Bell maps have the interesting property that we need just two of them to create all four. For random $u, w \in \{0,1\}$ and $\alpha \in \{0,1,2,3\}$ dependent on $u$ and $w$ we can write this mathematically as follows.
 
 \begin{equation}
 \label{randombell}
-	Z^uX^w = B_{uw} = B_\alpha ~(\text{where}\ \alpha = u + 2w)
+	B_2^uB_1^w = B_\alpha ~(\text{where}\ \alpha = u + 2w)
 \end{equation}
-\textit{Where $Z$ and $X$ denote the maps that do a bitflip in the z and x bases respectively. Note that $Z = \sigma_3$ and $X = \sigma_1$.}
 
-We thus see that applying these two bitflips randomly is equivalent to applying a random Bell map. Let's see if we can construct these smaller constituents, $Z^u$ and $X^w$, diagrammatically. Starting with $X^w$, remember that a bitflip in the x basis corresponds to a $180\degree$ rotation around the z axis on the Bloch sphere. Therefore we need to find a diagrammatic map that either rotates the Bloch sphere around its z axis by $\pi$ radians ($X^1$) or not ($X^0$). Since a single spider without a phase is the identity and the z basis is represented by the color white diagrammatically, we can use the white phaseless spider for the case where we don't flip the bit or rotate around the z axis. Let's send the 0 state through in the gray (x) basis to test if this map behaves as expected:
+We thus see that applying these two Bell maps randomly is equivalent to applying a random Bell map in general. In order to form diagrams for these Bell maps we have to understand them a little bit better. One of their properties is that they correspond to rotations on the Bloch sphere around the z and x axes \cite{DJORDJEVIC2012227}, also known as bitflips around these axes. $B_1^1$ refers to a bitflip in the x basis and a $\pi$ rad rotation around z axis whereas $B_2^1$ refers to a bitflip on the z basis and a $\pi$ rad rotation in the x axis. Diagrammatically, we can represent these rotations on the Bloch sphere by means of phase spiders.
+
+\begin{equation}
+	B_1^1 \Leftrightarrow \tikzfig{x1} ~~~~~~~~~~~ B_2^1 \Leftrightarrow \tikzfig{z1}
+\end{equation}
+
+The maps $B_1^0$ and $B_2^0$ should be entirely trivial. Any map to the power of 0 is the identity map. With that being said, it is still good to write them out diagrammatically since we will see that we have the freedom to make a slight distinction between them that will turn out to be useful later.
+
+\begin{equation}
+	B_1^0 \leftrightarrow \tikzfig{x0} = \tikzfig{WIRE} = \tikzfig{z0} \Leftrightarrow B_2^0
+\end{equation}
+
+Let's send the 0 state through in the gray (x) basis to test if the $B_1^0$ map behaves as expected.
 
 \begin{equation}
 	\label{equation:nobitflip}
+	B^0_1\ket{0}_x \Leftrightarrow
 	\tikzfig{NoBitFlipOnGray0(1)} \equaltext{\ref{equation:gray0}} \frac{1}{2}\tikzfig{NoBitFlipOnGray0(2)} +  \frac{1}{2}\tikzfig{NoBitFlipOnGray0(3)} 
 	\equaltext{\ref{equation:spideroneoutput}}
 	\frac{1}{2}
@@ -685,13 +706,14 @@ We thus see that applying these two bitflips randomly is equivalent to applying 
 	\frac{1}{2}
 	\tikzfig{NoBitFlipOnGray0(5)} 
 	\equaltext{\ref{equation:blochsphere}}
-	\tikzfig{NoBitFlipOnGray0(6)}
+	\tikzfig{NoBitFlipOnGray0(6)} \Leftrightarrow \ket{0}_x 
 \end{equation}
 
-This map does seem to behave appropriately. We see that whenever we send a gray 0 through, we get a gray 0 as output. Following similar logic, we could also use the white spider with a $\pi$ phase to make a rotation around the z axis, and thus a bitflip in the x basis. Let's test if this works too:
+This map does seem to behave appropriately. We see that whenever we send a gray 0 through, we get a gray 0 as output. Let's test if the $B_1^1$ works as expected too.
 
 \begin{equation}
 \label{equation:bitflip}
+B^1_1\ket{0}_x \Leftrightarrow
 \tikzfig{BitFlipOnGray0(1)} \equaltext{\ref{equation:gray1}} \frac{1}{2}\tikzfig{BitFlipOnGray0(2)} + \frac{1}{2}\tikzfig{BitFlipOnGray0(3)} 
 \equaltext{\ref{equation:spideroneoutput}}
 \frac{1}{2}
@@ -700,11 +722,10 @@ This map does seem to behave appropriately. We see that whenever we send a gray 
 \frac{1}{2}
 \tikzfig{BitFlipOnGray0(5)} 
 \equaltext{\ref{equation:blochsphere}}
-\tikzfig{BitFlipOnGray0(6)}
+\tikzfig{BitFlipOnGray0(6)} \Leftrightarrow \ket{1}_x
 \end{equation}
 
-These maps do exhibit the correct properties. Indeed, whenever we send a gray 1 through we also get the expected results. It seems that we have formed the $X^0$ and $X^1$ maps. While we will not go through the full math here, the $Z^0$ and $Z^1$ maps follow very similar logic and also behave as expected. Perhaps unsurprisingly, the former is a gray phaseless spider whereas the latter is a gray spider with a phase $\pi$.
-
+These maps do exhibit the correct properties. Indeed, whenever we send a gray 1 through we also get the expected results. It seems that we have formed the $B_1^0$ and $B_1^1$ maps successfully. While we will not go through the full math here, the tests $B_2^0$ and $B_2^1$ maps follow very similar logic and also behave as expected.
 
 Now that we have created our four constituent maps we are in principle ready to make any Bell map of choice. However, we do not want to make a choice, we want to select a random Bell matrix. We still need to find a diagrammatic method to generate a random $u$ and $w$ on which our choice of Bell map depends. Recall that generating a random bit is the following diagram: 
 
@@ -712,24 +733,24 @@ Now that we have created our four constituent maps we are in principle ready to 
 	\tikzfig{spideroneoutput} \equaltext{\ref{equation:spideroneoutput}} \tikzfig{wiretriangle}
 \end{equation}
 
-We could encode this random classical bit into a qubit as follows:
+We could encode this random classical bit into a qubit as follows.
 
 \begin{equation}
 	\label{eq:7}
 	\tikzfig{encodingrandombit} \equaltext{\ref{equation:spideroneoutput}} \sum\limits_{i} \tikzfig{encodingrandombit2} \equaltext{\ref{equation:Encoding}} \sum\limits_{i} \tikzfig{IMID}
 \end{equation}
 
-The previous two equations are entirely analogous for the gray (x) basis.\footnote{In fact, we can make an even stronger statement about the diagrams in equation \ref{eq:7}: They are actually equal to the analogous diagrams in the gray basis. Note that the rightmost diagram is the adjoint of discarding, which can be interpreted as preparing the fully mixed state, up to a number. Since this state is independent of the basis, these diagrams of white basis are equal to the analogous diagrams in the gray basis.}
+We can use this qubit to control whether or not we apply a Bell map. It represents the encoded versions of u and w. The previous two equations are entirely analogous for the gray (x) basis.\footnote{In fact, we can make an even stronger statement about the diagrams in equation \ref{eq:7}: They are actually equal to the analogous diagrams in the gray basis. Note that the rightmost diagram is the adjoint of discarding, which can be interpreted as preparing the fully mixed state, up to a number. Since this state is independent of the basis, these diagrams of white basis are equal to the analogous diagrams in the gray basis.}
 
 We now have the necessary ingredients to make a map that applies a random bitflip or not in x and another map that makes a random bitflip or not in z. The results are as follows:
 
 \begin{equation}
 	\label{equation:twodiagrammaticpauli's}
-	X^w ~~  \Leftrightarrow ~~ \tikzfig{RandomXBitFlipX} ~~~~~~~~~~~~~~~~~~~~~~~~ Z^u ~~ \Leftrightarrow ~~ \tikzfig{RandomZBitFlipX}
+	\text{for random w: }B_1^w ~~  \Leftrightarrow ~~ \tikzfig{RandomXBitFlipX} ~~~~~~~~~~~~~~~~~~~~~~~~ \text{for random u: } B_2^u ~~ \Leftrightarrow ~~ \tikzfig{RandomZBitFlipX}
 \end{equation}
-\textit{Where the gray spider in the $X^w$ map determines the random choice of $w$ and the white spider in $Z^u$ determines the random choice of $u$.}
+\textit{Where the gray spider in the $B_1^w$ map determines the random choice of $w$ and the white spider in $B_2^u$ determines the random choice of $u$. Note that the letters next to the spiders are only for didactic purposes and do not represent anything physical.}
 
-Let's confirm that the diagrammatic version of $X^w$ does indeed behave as expected:
+Let's confirm that the diagrammatic version of $B_1^w$ does indeed behave as expected:
 
 \begin{equation}
 	\label{equation:RandomXBitFlipProof}
@@ -744,14 +765,15 @@ Let's confirm that the diagrammatic version of $X^w$ does indeed behave as expec
 	\tikzfig{RandomXBitFlipProof(8)} 
 \end{equation}
 
-So depending on whether the random bit was a 0 or a 1, we get the map from equation \ref{equation:nobitflip} ($X^0$) or the map from equation \ref{equation:bitflip} ($X^1$), which is what we needed. Again, this derivation is analogous for the map $Z^u$. We have thus successfully made the constituents to our Bell maps. The random Bell map itself is then as follows:
+So depending on whether the random bit was a 0 or a 1, we get the map from equation \ref{equation:nobitflip} ($B_1^0$) or the map from equation \ref{equation:bitflip} ($B_1^1$), which is what we needed. Again, this derivation is analogous for the map $B_2^u$. We have thus successfully made the constituents to our Bell maps. The random Bell map itself is then as follows:
 
 \begin{equation}
 	\label{equation:BellMap}
-	B_\alpha \equaltext{\ref{randombell}} Z^uX^w \Leftrightarrow \tikzfig{BellMapX}
+	\text{for random $\alpha$ and thus random u and w: }
+	B_\alpha \equaltext{\ref{randombell}} B_2^uB_1^w \Leftrightarrow \tikzfig{BellMapX}
 \end{equation}
 
-To make a diagrammatic version of QOTP we need to compose the Hermitian adjoint of this Bell map to its input. The bottom Bell map can then be seen as Alice encrypting her state and the top Bell map can be seen as Bob decrypting this state. We also need to make sure that Alice and Bob make the same choice in $\alpha$ and thus use the same Bell map. This can be done by connecting the outputs of the spiders that generate the random numbers to the Bell maps of both Alice and Bob. Furthermore, whereas in the previously described protocol a state $\rho$ is communicated as an example, here we can be more general. We allow the state that Alice wants to communicate to Bob to be any state in any basis. This is represented by a dotted line at the bottom of the diagram. Finally, we need to introduce Eve. She goes in between the Pauli's of Alice and Bob. She can be interpreted as an eavesdropper, but also more generally as the environment. In this sense, Eve could thus also just be a source of noise. She gets the map $\Phi$ that takes as input the state sent by Alice, and outputs one state that she keeps and another that is sent to Bob. In all, this makes QOTP to be the following diagram:
+To make a diagrammatic version of QOTP we need to compose the Hermitian adjoint of this Bell map to its input. The bottom Bell map can then be seen as Alice encrypting her state and the top Bell map can be seen as Bob decrypting this state. We also need to make sure that Alice and Bob make the same choice in $\alpha$ and thus use the same Bell map. This can be done by connecting the outputs of the spiders that generate the random numbers to the Bell maps of both Alice and Bob. Furthermore, whereas in the previously described protocol a state $\rho$ is communicated as an example, here we can be more general. We allow the state that Alice wants to communicate to Bob to be any state in any basis. This is represented by a dotted line at the bottom of the diagram. Finally, we need to introduce Eve. She goes in between the Bell maps of Alice and Bob. She can be interpreted as an eavesdropper, but also more generally as the environment. In this sense, Eve could thus also just be a source of noise. She gets the map $\Phi$ that takes as input the state sent by Alice, and outputs one state that she keeps and another that is sent to Bob. In all, this makes QOTP to be the following diagram:
 
 \begin{equation}
 \tikzfig{QOTPEveX}
@@ -806,20 +828,14 @@ Using equation (\ref{equation:RandomStateFullyMixed}) we can prove that whenever
 		\equaltext{\ref{equation:bastardspiderfusion}} \tikzfig{AliceWithBell(3)} \equaltext{\ref{equation:Complementarity}} \frac{1}{2}~ \tikzfig{AliceWithBell(4)} \equaltext{\ref{equation:RandomStateFullyMixed}} \frac{1}{2}~ \tikzfig{AliceWithBell(5)}
 \end{equation}
 
-This might give some intuition for what Eve would receive after Alice has encrypted her state. However, in the full protocol, Alice can not just discard her random $u$ and $w$. Somehow she has to communicate them with Bob. Remember from equation (\ref{equation:QOTPEve}) that the diagram of QOTP as a communication protocol and Eve with the ability to intercept the quantum state but not $u$ or $w$ is as follows:
-
-\begin{equation}
-	\tikzfig{QOTPEveX}
-\end{equation}
-
-Let's see what happens when we look at this situation from Eve's perspective and thus trace out (discard) Bob's channel.
+This might give some intuition for what Eve would receive after Alice has encrypted her state. However, in the full protocol, Alice can not just discard her random $u$ and $w$. Somehow she has to communicate them with Bob. Remember from equation (\ref{equation:QOTPEve}) the diagram of QOTP as a communication protocol and Eve with the ability to intercept the quantum state but not $u$ or $w$. Let's see what happens when we look at this situation from Eve's perspective and thus trace away (discard) Bob's channel.
 
 \begin{equation}
 	\label{equation:QOTPEveEvePerspective}
 	\tikzfig{QOTPEveEvePerspective(1)X}
 \end{equation}
 
-We could now use some of the rules that we have developed so far to propagate the discarding map further down. However, we could also realize that from Eve's perspective there is no difference between Bob applying two Pauli's to his qubit and then discarding it, and Bob discarding his state even before applying these Pauli maps. Therefore, we can write: 
+We could now use some of the rules that we have developed so far to propagate the discarding map further down. However, we could also realize that from Eve's perspective there is no difference between Bob applying random Bell maps to his qubit and then discarding it, and Bob discarding his state even before applying these Bell maps. Therefore, we can write: 
 
 \begin{equation}
 (\ref{equation:QOTPEveEvePerspective}) = 
@@ -839,7 +855,7 @@ The name of this protocol might lead one to think that it includes the teleporta
 
 Quantum teleportation carries some similarity to QOTP. In both protocols, Alice and Bob communicate two classical bits of information in order to communicate one qubit. Also, in both cases, Bob applies a Bell map. These similarities might give some intuition for the equivalence of these protocols. In the end of this section we will see this equivalence diagrammatically.
 
-\subsubsection{Diagrammatic Representation}
+\subsubsection{Diagrammatic Representation of Quantum Teleportation}
 
 The only component of this protocol that we have not worked out diagrammatically yet is the Bell measurement. We know that the Bell measurement is the adjoint of the Bell state. Therefore it suffices to create the Bell states and take their adjoints to make the corresponding Bell measurements.
 
@@ -847,7 +863,7 @@ Our approach to making these Bell states is by taking them apart and constructin
 
 1. The Hadamard gate puts the first qubit in superposition: $\ket{00} \Rightarrow \frac{(\ket{0} + \ket{1})\ket{0}}{\sqrt{2}}$
 
-2. The CNOT negates the second qubit if the first is $\ket{1}$: $\frac{(\ket{0} + \ket{1})\ket{0}}{\sqrt{2}} \Rightarrow \frac{(\ket{00} + \ket{11})}{\sqrt{2}}$
+2. The CNOT negates the second qubit if the first is $\ket{1}$: $\frac{(\ket{0} + \ket{1})\ket{0}}{\sqrt{2}} \Rightarrow \frac{\ket{00} + \ket{11}}{\sqrt{2}}$
 
 The result is thus indeed one of the Bell states, namely $B_0$.
 
@@ -899,7 +915,7 @@ Let's again apply the state $\ket{00}$ to test the functionality of this Bell st
 	\end{split}
 \end{equation}
 
-The result is thus indeed the expected Bell state, $B_0$. Note that whereas usually the constants in the Bell states are $1/\sqrt{2}$ here they are $1/2$ since the final state is doubled.
+The result is thus indeed the expected Bell state, $B_0$. Note that whereas usually the constants in the Bell states are $1/\sqrt{2}$ here they are $1/2$ since the final states are doubled.
 
 Let's choose the entangled state of \ref{entanglement} for state $\rho_{23}$. We can then compose the Bell measurement that Alice applies on the left of this entangled state and the Bell map that Bob applies to the right. Alice also inputs $\rho_1$ to the Bell measurement. Using a similar approach to the one we took in \ref{DiagramRepresentationQOTP}, we can generalize this to say that this state can in fact be any quantum state. Again, we can represent this by a dotted line which enters the diagram where $\rho_1$ would go. Finally, we need to make sure to connect the outputs of Alice's Bell measurement to Bob's Bell map. The protocol for teleportation then becomes: 
  
@@ -912,7 +928,7 @@ It is redundant to see what happens when we introduce an Eve or to show that thi
 
 \begin{equation}
 \label{equation:QOTPQuantumTeleportationEquivalence}
-\tikzfig{QOTPNoEveNoLineX} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QOTPNoEveNoLine(1)}~~~~~ \Leftrightarrow ~~~~~\tikzfig{QuantumTeleportationNoLine}
+\tikzfig{QOTPNoEveNoLineX} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QOTPNoEveNoLine(1)}~~~ = ~~~\tikzfig{QuantumTeleportationNoLine}
 \end{equation}
  
 \subsection{Quantum Key Distribution}
@@ -925,7 +941,7 @@ BB84 encoding uses an ubiquitous resource as information carrier, light. The con
 
 In the BB84 protocol, Alice uses this method to encode a random bitstring $k \in \{0,1\}^n $ into a series of qubits to be sent to Bob. She randomly chooses a set of bases to encode them in as well,  $b_A \in \{R, D\}^n$. This creates n qubit states with each $k_i$ encoded as a photon of a certain polarization in basis $b_i$. The set of qubit states, and thus the photons, that this results in are denoted as $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{k_i}^{b_i}} $. She sends this $\ket{\Psi}$ to Bob who measures in a random basis $b_B \in \{R, D\}^n$. On a public channel, Bob sends $b_B$ back to Alice who compares it with $b_A$. Alice then tells Bob where he measured in the correct basis, or for what $i$: ${b_A}_i = {b_B}_i$. If there would be no noise in the (quantum) communication channels and no Eve who disturbs the communication Bob should now have the $k_i$ for all the qubits that he measured in the correct basis. Alice and Bob should then have some shared secret key consistent of the bitstring $k_i ~\text{where} ~b_A^i = b_B^i$. In the case where we do allow Eve to intercept the signal, Alice and Bob should execute one more step to test whether their shared key is really secure. For this step, Alice and Bob can use the fact that any attempt by Eve to measure the communicated quantum states disturbs them. Bob can send part of his result to Alice, who can compare it to the string she originally encoded. If these are the same, it is likely there was no Eve. If they are different, they can be sure that there was some Eve that somehow interfered with the quantum channel, either by attempting to intercept the qubits or by introducing noise. Finally, if Alice and Bob did achieve successful key exchange, they can safely use their $k$ as future key for One Time Pad encryption (OTP).
 
-\subsubsection{Diagrammatic Representation}
+\subsubsection{Diagrammatic Representation of Quantum Key Distribution}
 QKD is the only protocol that has been diagrammatically (somewhat) thoroughly discussed in literature \cite{Kissinger2017}. Therefore, we will not go over the full security proof here. This section is meant to get the reader to understand the diagrammatic version of QKD, such that we can use it later on in the context of equivalences.
 
  To write it out diagrammatically we need to generalize it to a protocol that is not dependent on the physical realization of the qubits. We therefore say that Alice and Bob have the choice to encode their qubit in any two mutually unbiased bases, which we choose to be the z and x bases. Not considering Eve, if Alice and Bob then measure in the same basis, their quantum state is sent through just fine:
@@ -986,14 +1002,14 @@ In words: Eve's channel has no connection to Alice and Bob's and she thus learns
 
 The part of QKR in which Alice and Bob actually communicate a quantum state is very similar to the previously discussed protocols QKD and QOTP. The main differences between them are in the classical processing part and the encoding of the quantum states. This new method of encoding will be introduced soon. For now, we can assume Alice and Bob to use BB84 encoding. In the QKR protocol introduced in \cite{Leermakers2019}, Alice and Bob both share knowledge beforehand about some set of bases $b \in \mathcal{B}^n$  and some one-time pad $j \in \{0,1\}^n$. Before Alice encodes her message $M \in \{0,1\}^m$ into a quantum state to be sent to Bob, she applies some error-correcting code $M \rightarrow E(M) \in \{0,1\}^n$ to it and xor's $E(M)$ with $j$ to produce the payload $x \in \{0,1\}^n$. The error-correcting code allows Bob to determine and correct errors that may arise as a result of a noisy communication channel in the received payload at the cost of added redundancy \cite{Knill1997}. The one-time pad is used to mask the message. After the payload is ready Alice prepares $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{x_i}^{b_i}}$ and sends it to Bob. Bob, since he has the same set of bases should get the correct measurement result, $x$. Since he also knows $j$ he can xor $x$ and $j$ to receive M, the message from Alice. In the case where there is no Eve detected he can use the same k and b to safely send a new payload back to Alice, who can then send one back to Bob, and so forth. However, if one of the two detects Eve's interference, both parties have to decide on a new key, which they can generate from previously uncompromised transmissions. Eve is allowed to attempt a measurement of the qubits transmitted between Alice and Bob, $\ket{\Psi}$. However, even if she would measure all of the qubits correctly, she only receives $x$. She would have to xor $x$ with $j$ to receive the message M but she does not know $j$.
 
-Recently, it was proposed to use eight-state encoding in QKR protocols \cite{DeVries2016}. This method of encoding quantum states does not rely on the two mutually unbiased bases that we have seen up to this point, it essentially encodes bits into four different non mutually unbiased bases. Allowing each basis two states then results in the characteristic total of eight different states, hence the name of this encryption. The rest of the protocol then proceeds as before. In the paper in which this was originally brought forward \cite{DeVries2016}, the authors suggest to place each of these states at equidistant locations on the Bloch sphere, corresponding to the eight corners of a cube if it were placed perfectly inside of the Bloch sphere. One of the bases is defined as having a 0 state $\ket{\psi_{0}}$ at $(1,1,1)^T$/$\sqrt{3}$ and a 1 state $\ket{\psi_{1}}$ at $(-1,-1,-1)^T$/$\sqrt{3}$. The others are defined as two Pauli transforms with respect to this basis, giving the following eight states:
+Recently, it was proposed to use eight-state encoding in QKR protocols \cite{DeVries2016}. This method of encoding quantum states does not rely on the two mutually unbiased bases that we have seen up to this point, it essentially encodes bits into four different non mutually unbiased bases. Allowing each basis two states then results in the characteristic total of eight different states, hence the name of this encryption. The rest of the protocol then proceeds as before. In the paper in which this was originally brought forward \cite{DeVries2016}, the authors suggest to place each of these states at equidistant locations on the Bloch sphere, corresponding to the eight corners of a cube if it were placed perfectly inside of the Bloch sphere. One of the bases is defined as having a 0 state $\ket{\psi_{0}}$ at $(1,1,1)^T$/$\sqrt{3}$ and a 1 state $\ket{\psi_{1}}$ at $(-1,-1,-1)^T$/$\sqrt{3}$. The others are defined as two Pauli transforms with respect to this basis, giving the following eight states. Remembering the relationships between the Pauli and Bell transforms from equation (\ref{equation:bellsigmas}) we can write this mathematically as follows.
 
 \begin{equation}
 	\label{equation:EightStatePaulis}
-	\ket{\psi_{uwg}} \equiv X^w Z^u\ket{\psi_{g}}~where~ u,~ w,~ g~ \in~ \{0,1\}
+	\ket{\psi_{uwg}} \equiv B_1^w B_2^u\ket{\psi_{g}}~where~ u,~ w,~ g~ \in~ \{0,1\}
 \end{equation}
 
-More compactly, we can define $E_{uw} \equiv X^u Z^u$ and have $E_{uw}$ be our encryption operator. This gives rise to the representation of these eight states as given in figure \ref{fig:eightstatecube}.
+More compactly, we can define $E_{uw} \equiv B_1^w B_2^u$ and have $E_{uw}$ be our encryption operator. This gives rise to the representation of these eight states as given in figure \ref{fig:eightstatecube}.
 
 \begin{center}
 \begin{figure}
@@ -1005,8 +1021,8 @@ More compactly, we can define $E_{uw} \equiv X^u Z^u$ and have $E_{uw}$ be our e
 \end{figure}
 \end{center}
 
-\subsubsection{Diagrammatic Representation}
-We need to introduce some new diagrammatic notation for eight state encoding. After all, we need to move from a system of two bases to one of four. With that being said, a large part of it should be rather intuitive since we have essentially seen most of it already. The quantum one time pad is actually an eight state encryption protocol. The main difference is that in the protocol introduced for QKR, the eight states are distributed differently over the Bloch sphere. Diagrammatically, we can exploit the similarities by borrowing the notation that was previously introduced for the Pauli's in the QOTP. According to equation (\ref{equation:EightStatePaulis}), we only need to define the properties of one of the bases of eight state encoding and get the others for free by applying Pauli's to the states of this original basis. We choose the color red for this new basis. The red basis has the following two basis states: $E_{00}\ket{\psi_{0}} = \mathbb{I}\ket{\psi_{0}} = \ket{\psi_{000}}$ and $E_{00}\ket{\psi_{1}} = \mathbb{I}\ket{\psi_{1}} = \ket{\psi_{001}}$. We should first define triangles that represent classical information on these states, similarly to how we have classical triangles for the gray and white bases. We use the color red for this as well. This gives us the following diagrammatic components for the preparation of a state and the effect in this basis:
+\subsubsection{Diagrammatic Representation of Quantum Key Recycling}
+We need to introduce some new diagrammatic notation for eight state encoding. After all, we need to move from a system of two bases to one of four. With that being said, a large part of it should be rather intuitive since we have essentially seen most of it already. The quantum one time pad is actually an eight state encryption protocol. The main difference is that in the protocol introduced for QKR, the eight states are distributed differently over the Bloch sphere. Diagrammatically, we can exploit the similarities by borrowing the notation that was previously introduced for the Bell maps in the QOTP. According to equation (\ref{equation:EightStatePaulis}), we only need to define the properties of one of the bases of eight state encoding and get the others for free by applying Bell maps to the states of this original basis. We choose the color red for this new basis. The red basis has the following two basis states: $E_{00}\ket{\psi_{0}} = \mathbb{I}\ket{\psi_{0}} = \ket{\psi_{000}}$ and $E_{00}\ket{\psi_{1}} = \mathbb{I}\ket{\psi_{1}} = \ket{\psi_{001}}$. We should first define triangles that represent classical information on these states, similarly to how we have classical triangles for the gray and white bases. We use the color red for this as well. This gives us the following diagrammatic components for the preparation of a state and the effect in this basis:
 
 \begin{equation}
 	\ket{\psi_{00g}} \equiv \tikzfig{RedStatePrep} ~~~~~~ \bra{\psi_{00g}} \equiv \tikzfig{RedEffect}
@@ -1028,7 +1044,7 @@ Finally, we need to define a spider that encodes these $\ket{\psi_{000}}$ and $\
 
 By a combination of equations (\ref{equation:RedMeasureAndEffect}) and (\ref{equation:RedSpiderPrepareAndMeasure}) it is trivial to check that the red spider follows the spider rules as they are given in section \ref{spiders}. On the other hand, we have to tread carefully regarding its interaction with differently colored spiders, since we cannot exploit mutual unbiasedness.
 
-We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Pauli's diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our cipherstates by applying these Pauli's to the recently defined new basis states $\ket{\psi_{00g}}$. Defining a new color for each of the bases, we could thus encode all of our eight different cipherstates as follows:
+We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Bell mapss diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our cipherstates by applying these Bell maps to the recently defined new basis states $\ket{\psi_{00g}}$. Defining a new color for each of the bases, we could thus encode all of our eight different cipherstates as follows:
 
 \begin{equation}
 	\label{equation:EightStateEncodingInFull}
@@ -1072,7 +1088,7 @@ Let's first see what our QKR protocol looks like in this new notation:
 \end{equation}
 \textit{Note that whenever there are multiple brown components in a diagram, this means that those components can be any color as long as they are the same.}
 
-Alice and Bob respectively encode and measure in the same basis. Eve controls some map $\Phi$ and receives one of its outputs. We do not include the one-time pad $j$ or any of the other classical pre- and postprocessing here since we do not need it for this security proof. With this all set up we are in principle ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Pauli's consistent of the gray and white spiders that we have seen before, we will extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Pauli's, which are a valid member of eight state encoding.
+Alice and Bob respectively encode and measure in the same basis. Eve controls some map $\Phi$ and receives one of its outputs. We do not include the one-time pad $j$ or any of the other classical pre- and postprocessing here since we do not need it for this security proof. With this all set up we are in principle ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Bell maps consistent of the gray and white spiders that we have seen before, we will extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Bell maps, which are a valid member of eight state encoding.
 
 Putting in the property that the quantum channels and maps exhibit no noise according to Alice and Bob is equivalent to saying that Eve goes undetected whenever Alice and Bob measure in the same basis. Since Eve represents the environment this can also be interpreted as the quantum channels being noiseless. We have already briefly discussed the security proof of Kissinger and Westerbaan in section \ref{QuantumKeyDistribution}, where we made the same statement for Alice and Bob using the gray and white bases in equation (\ref{QKDProofSetup}). Noting that brown represents the set of four colors introduced in equation (\ref{equation:brownspiderset}), we can implement this statement for our four new bases as follows:
 
@@ -1139,28 +1155,28 @@ The strategy is to add something separated from the diagram in equation (\ref{eq
 	\tikzfig{QKRSeperationProof2X}
 \end{equation}
 
-Now, we need some method to attach the separated part to the diagram temporarily such that we can move V through. It turns out that eight state encoding gives us a map that can do exactly this: the random Pauli's. Equation (\ref{equation:AliceWithBell}) already showed how a random Pauli can separate two parts of a diagram. We place it between the two diagrams in equation (\ref{equation:vwithpauli}):
+Now, we need some method to attach the separated part to the diagram temporarily such that we can move V through. It turns out that eight state encoding gives us a map that can do exactly this: the random Bell maps. Equation (\ref{equation:AliceWithBell}) already showed how a random Bell map can separate two parts of a diagram. We place it between the two diagrams in equation (\ref{equation:vwithpauli}):
 
 \begin{equation}
 \label{equation:movevthrough}
 (\ref{equation:vwithpauli}) \equaltext{(\ref{equation:AliceWithBell})} \tikzfig{QKRSeperationProof3X} \equaltext{(\ref{equation:vrules})} \tikzfig{QKRSeperationProof4X}
 \end{equation}
 
-What we need now is some way to pass V through these Pauli's and the surrounding encoding and decoding maps. Let's have a closer look at just the encoding map and the subsequent random Pauli by applying some test state $g$ to it:
+What we need now is some way to pass V through these Bell maps and the surrounding encoding and decoding maps. Let's have a closer look at just the encoding map and the subsequent random Bell map by applying some test state $g$ to it:
 
 \begin{equation}
 	\label{equation:RedSpiderRandomPauli}
 	\tikzfig{QKRSeperationProof5X}
 \end{equation}
 
-So what we have here is a random Pauli, precomposed by any of the four encoding maps and a test state of the same basis. Since each of the four bases are just Pauli's with respect to one another, combining the encoding and random Pauli maps actually selects one of the four bases to encode in at random. More explicitly, remember by equation (\ref{equation:EightStatePaulis}) that each of the cipherstates can be created by two Pauli's and the $\ket{\psi_g}$ basis states ($\ket{\psi_{uwg}} = X^w Z^u\ket{\psi_{g}}$). Then applying a random Pauli ($X^n Z^m~where~n~and~m~are~random$) to any of the cipherstates gives the following:
+So what we have here is a random Bell map, precomposed by any of the four encoding maps and a test state of the same basis. Since each of the four bases are just Bell maps with respect to one another, combining the encoding and random Bell maps actually selects one of the four bases to encode in at random. More explicitly, remember by equation (\ref{equation:EightStatePaulis}) that each of the cipherstates can be created by two Bell maps and the $\ket{\psi_g}$ basis states ($\ket{\psi_{uwg}} = B_1^w B_2^u\ket{\psi_{g}}$). Then applying a random Bell map ($B_1^n B_2^m~where~n~and~m~are~random$) to any of the cipherstates gives the following:
 
 \begin{equation}
 \label{equation:EncodingInRandomCipherstate}
-X^nZ^mX^uZ^w\ket{\psi_{g}} = X^lZ^p\ket{\psi_{g}} \equaltext{\ref{equation:EightStatePaulis}} \ket{\psi_{lpg}} ~(\text{where}~ l \equiv n \oplus u ~\text{and}~ p \equiv m \oplus w)
+B_1^nB_2^mB_1^uB_2^w\ket{\psi_{g}} = B_1^lB_2^p\ket{\psi_{g}} \equaltext{\ref{equation:EightStatePaulis}} \ket{\psi_{lpg}} ~(\text{where}~ l \equiv n \oplus u ~\text{and}~ p \equiv m \oplus w)
 \end{equation}
 
-Which, by randomness of $l$ and $p$, is a cipherstate encoded into a random one of the bases. Encoding a state into a cipherstate with a certain basis and then applying a random Pauli is thus equivalent to encoding this cipherstate into a random basis. We can find this diagrammatically too. Remember that equation (\ref{equation:EightStateEncodingInFull}) tells us how we can encode in any basis by applying two Pauli's with respect to a state in the red basis diagrammatically. The brown spider and state from equation (\ref{equation:RedSpiderRandomPauli}) can thus be replaced by a red spider and state, followed by two Pauli's. Looking just at this encoding part and the random Pauli's that follow immediately after we thus get:
+Which, by randomness of $l$ and $p$, is a cipherstate encoded into a random one of the bases. Encoding a state into a cipherstate with a certain basis and then applying a random Bell map is thus equivalent to encoding this cipherstate into a random basis. We can find this diagrammatically too. Remember that equation (\ref{equation:EightStateEncodingInFull}) tells us how we can encode in any basis by applying two Bell maps with respect to a state in the red basis diagrammatically. The brown spider and state from equation (\ref{equation:RedSpiderRandomPauli}) can thus be replaced by a red spider and state, followed by two Bell maps. Looking just at this encoding part and the random maps that follow immediately after we thus get:
 
 \begin{equation}
 	\label{equation:composingtwopaulis} (\ref{equation:RedSpiderRandomPauli}) \equaltext{(\ref{equation:EightStateEncodingInFull}),(\ref{equation:EightStateEncodingInFullBrown})}
@@ -1168,7 +1184,7 @@ Which, by randomness of $l$ and $p$, is a cipherstate encoded into a random one 
 \end{equation}
 \textit{Note that the letters next to the spiders have no physical significance, and are only there to help visualize which spider refers to which random variable.}
 
-The only ingredient that we are missing is some way to move Pauli's past one another. Mathematically, the fact that we can do this is evident from the anticommutative property of Pauli's. Anticommutativity implies that any two Pauli's $\sigma_i$ and $\sigma_j$ satisfy $\sigma_i\sigma_j = - \sigma_j\sigma_i$. Diagrammatically we can commute Pauli's using the $k-k'$ commute rule from section \ref{section:kkcommute} as follows:
+The only ingredient that we are missing is some way to move Bell maps past one another. Mathematically, the fact that we can do this is evident from the anticommutative property of Pauli's. Anticommutativity implies that any two Pauli's $\sigma_i$ and $\sigma_j$ satisfy $\sigma_i\sigma_j = - \sigma_j\sigma_i$. Of course, this rule then also holds for the Bell maps. Diagrammatically we can commute Bell maps using the $k-k'$ commute rule from section \ref{section:kkcommute} as follows:
 
 \begin{equation}
 \label{equation:commutingpaulis}
@@ -1204,7 +1220,7 @@ Which is a cipherstate $g$ encoded into a random basis by equation (\ref{equatio
 	 \frac{1}{4}\tikzfig{STATEMIDBLUE}	
 \end{equation}
 
-And thus we see that the encoding and subsequent Pauli's in equation (\ref{equation:RedSpiderRandomPauli}) actually encode some input state $g$ into a random one of the four bases. Also note that since $g$ was a brown triangle, this result is independent of the basis of the input state. Encoding into a certain basis and then applying a random Pauli thus has the same effect as applying a random one of the basis spiders. We can put this result into the relevant parts of equation (\ref{equation:movevthrough}) as follows:
+And thus we see that the encoding and subsequent Bell maps in equation (\ref{equation:RedSpiderRandomPauli}) actually encode some input state $g$ into a random one of the four bases. Also note that since $g$ was a brown triangle, this result is independent of the basis of the input state. Encoding into a certain basis and then applying a random Bell map thus has the same effect as applying a random one of the basis spiders. We can put this result into the relevant parts of equation (\ref{equation:movevthrough}) as follows:
 
 \begin{equation}
 	\label{equation:QKRSeperationProof}
@@ -1478,28 +1494,28 @@ And so we see that the protocol from this section is equivalent to the protocol 
 
 \subsubsection{Adding random Pauli transforms}
 
-In the final equivalent step, the authors propose that Alice and Bob both publicly decide on the same random Pauli to apply to their own qubit states before measuring. Afterwards they again forget about their particular choice of Pauli. Diagrammatically, this looks as follows: 
+In the final equivalent step, the authors propose that Alice and Bob both publicly decide on the same random Pauli to apply to their own qubit states before measuring. Afterwards they again forget about their particular choice of Pauli. Remembering the equivalence between the Pauli's and the Bell maps from equation (\ref{equation:bellsigmas}), this looks as follows.
 
 \begin{equation}
 \label{equation:QKRQAaSBD1}
 \tikzfig{QKRQAaSBD1X}
 \end{equation}
 
-The difference between this protocol and the EPR protocol introduced in section \ref{section:eprqkr} are the two single spiders in the middle which represent the classical random variables that determine the Pauli's which are applied to both Alice and Bob's states. Information on the particular choice of Pauli's also goes to Eve by the thin lines originating from these two single spiders. Let's isolate the Pauli that Alice gets and her measurement and eight state encryption maps:
+The difference between this protocol and the EPR protocol introduced in section \ref{section:eprqkr} are the two single spiders in the middle which represent the classical random variables that determine the Bell maps which are applied to both Alice and Bob's states. Information on the particular choice of Bell maps also goes to Eve by the thin lines originating from these two single spiders. Let's isolate the Bell map that Alice gets and her measurement and eight state encryption maps:
 
 \begin{equation}
 	\label{equation:QKRPauli's}
 	\tikzfig{QKRPauli's1X} \Rightarrow \tikzfig{QKRPauli's2X} \equaltext{\ref{equation:spidermultilegdecomposed}} \sum\limits_{nm} \tikzfig{QKRPauli's3}  \equaltext{\ref{equation:spidermultilegdecomposed}} \sum\limits_{nm} \tikzfig{QKRPauli's4}
 \end{equation}
 
-We do not consider the two triangles that go to Bob for now. These simply determine the Pauli's that he applies to his qubit state. All we need to know is that they are the same as Alice's. Furthermore we can take the brown decoding spider of Alice further apart according to equation (\ref{equation:EightStateEncodingInFull}). This equation shows how all the cipherstates can be encoded by a red spider and two Pauli's. Since decoding is the adjoint of decoding, we can decode in any of the four bases by first applying two Pauli's followed by a red spider. To then return back to the classical z basis we need to also exchange the brown eight state encryption box for a red one:
+We do not consider the two triangles that go to Bob for now. These simply determine the Bell maps that he applies to his qubit state. All we need to know is that they are the same as Alice's. Furthermore we can take the brown decoding spider of Alice further apart according to equation (\ref{equation:EightStateEncodingInFull}). This equation shows how all the cipherstates can be encoded by a red spider and two Bell maps. Since decoding is the adjoint of decoding, we can decode in any of the four bases by first applying two Bell maps followed by a red spider. To then return back to the classical z basis we need to also exchange the brown eight state encryption box for a red one:
 
 \begin{equation}
 	\label{equation:QKRQAaSBD3}
 	(\ref{equation:QKRPauli's}) \equaltext{\ref{equation:EightStateEncodingInFull}} \sum\limits_{nm}\tikzfig{QKRQAaSBD3}
 \end{equation}
 
-This equation is very similar to equation (\ref{equation:composingtwopaulis}). In fact, for equation (\ref{equation:composingtwopaulis}) we showed that encoding in a certain basis and then applying a random Pauli results in encoding in a random basis. Here we will show that applying a random Pauli and then decoding in a certain basis results in decoding in a random basis:
+This equation is very similar to equation (\ref{equation:composingtwopaulis}). In fact, for equation (\ref{equation:composingtwopaulis}) we showed that encoding in a certain basis and then applying a random Bell map results in encoding in a random basis. Here we will show that applying a random Bell map and then decoding in a certain basis results in decoding in a random basis:
 
 \begin{equation}
 \label{equation:QKRQAaSBD4}
@@ -1639,7 +1655,7 @@ The aim of this research was largely divided up into two parts. The first was to
 
 \hyperref[section:yankingequations]{Yanking equations, page 10}
 
-\section{Bell matrices}
+\section{Bell and Pauli matrices}
 \label{appendix:BellMaps}
 
 
@@ -1647,24 +1663,24 @@ The Bell maps are represented by the following matrices:
 
 \begin{equation}
 \begin{aligned}
-B_0 = 
+B_0 = \sigma_0 = 
 \begin{pmatrix}
 1 & 0 \\
 0 & 1
 \end{pmatrix}  % top-left
-~~~~&~~~~ B_1 = 
+~~~~&~~~~ B_1 = \sigma_1
 \begin{pmatrix}
 0 & 1 \\
 1 & 0
 \end{pmatrix}% top-right
 % Want to start a new line here...
 \\\\
-B_2 = 
+B_2 = \sigma_3
 \begin{pmatrix}
 1 & 0 \\
 0 & -1
 \end{pmatrix}  % bottom-left
-~~~~&~~~~  B_3 = 
+~~~~&~~~~  B_3 = i\sigma_2
 \begin{pmatrix}
 0 & -1 \\
 1 & 0
