@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{gensymb}
 \usepackage{hyperref}
+\usepackage{xcolor}
 \usepackage{physics}
 \usepackage{geometry}
 \usepackage{blochsphere}
@@ -36,9 +37,9 @@
 
 The field of Quantum cryptography is concerned with the exploitation of the laws of quantum mechanics in order to derive secure methods of communication. In this field, classical cryptographic primitives are interwoven with quantum physics in order to make protocols for tasks such as sending a message securely in the presence of an adversary. Perhaps the first person to realize that there was something to be gained from using quantum mechanics for cryptography was Stephen Wiesner, at the time a professor at Colombia University in New York. His seminal paper, titled "Conjugate Coding", was originally rejected for publication by the IEEE Information Theory. According to some historical accounts it was too far ahead of its time \cite{Morsch2008}. After all, it was the first paper that described the encoding of information into quantum states and even provided two examples of its potential applications. It wasn't until a decade later that this paper was published by SIGACT news \cite{WeisnerConjugateCoding}. In hindsight, IEEE Information Theory likely regretted their choice for not publishing this article; quantum cryptography quickly grew into a large field, both in- and outside of academia. Within academia, this has resulted in a zoo of cryptographic protocols and schemes, many of them with large bodies of research towards their optimization and security proofs. Outside of academia, large international companies such as ABN AMRO and Atos have picked up on some of these protocols, and are working on their practical implementations \cite{abnamro,Buding2015}.
 
-The protocol that the Dutch bank is aiming to realize is Quantum Key Distribution (QKD). The aim of this protocol is a secure key exchange between two parties, Alice and Bob. This is achieved when, after the protocol, Alice and Bob are the only parties to share some secret key $k$. The security of this protocol relies on the fact that the measurement of a quantum state disturbs it \cite{Lindblad1999}, and that any eavesdropper will therefore always introduce some anomaly in the communicated quantum state. Bennett and Brassard were the first to develop a secure QKD protocol in 1984. A couple of years earlier, the same authors together with Breidbart had already developed another quantum cryptographic protocol, Quantum Key Recycling (QKR). QKR is also a protocol with the aim of achieving secure key exchange between two parties. From a quantum mechanical perspective, it relies on the same principles as QKD. The main differences are in the classical domain. In QKR, Alice and Bob can achieve communication in less steps compared to QKD. In recent work \cite{Leermakers2019}, classical communication between Bob and Alice was even minimized to just one bit. 
+The protocol that the Dutch bank is aiming to realize is Quantum Key Distribution (QKD). The aim of this protocol is a secure key exchange between two parties, Alice and Bob. This is achieved when, after the protocol, Alice and Bob are the only parties to share some secret key $k$. The security of this protocol relies on the fact that the measurement of a quantum state disturbs it \cite{Lindblad1999}, and that any eavesdropper will therefore always introduce some anomaly in the communicated quantum state. Bennett and Brassard were the first to develop a secure QKD protocol in 1984. A couple of years earlier, the same authors together with Breidbart had already developed another quantum cryptographic protocol, Quantum Key Recycling (QKR). QKR is also a protocol with the aim of achieving secure key exchange between two parties. From a quantum mechanical perspective, it relies on the same principles as QKD. The main differences are in the classical domain. In QKR, Alice and Bob can achieve communication in less steps compared to QKD. In recent work \cite{cryptoeprint:2019:875}, classical communication between Bob and Alice was even minimized to just one bit. 
 
-An important property of any quantum cryptographic protocol is its equivalence to other protocols. There are multiple ways in which these equivalences can be exploited, for example to prove security. Shor and Preskill employ this method in a publication \cite{Shor2000} where they prove security for one protocol that is security-wise equivalent to another, indirectly proving that the latter is secure as well. In a more recent paper \cite{Leermakers2019} Leermakers and Skori\v{c} implement the same trick. They go from their original protocol to one that has a more straightforward security proof in a series of four steps that each preserve security-wise equivalence original. 
+An important property of any quantum cryptographic protocol is its equivalence to other protocols. There are multiple ways in which these equivalences can be exploited, for example to prove security. Shor and Preskill employ this method in a publication \cite{Shor2000} where they prove security for one protocol that is security-wise equivalent to another, indirectly proving that the latter is secure as well. In a more recent paper \cite{cryptoeprint:2019:875} Leermakers and $\check{\textrm{S}}$kori\v{c} implement the same trick. They go from their original protocol to one that has a more straightforward security proof in a series of four steps that each preserve security-wise equivalence original. 
 
 Quantum cryptographic protocols and their respective equivalences are usually given in the formalism of Hilbert spaces. Although experienced quantum physicists will have no problem understanding protocols in this formalism, it fails to expose many of the features of quantum theory in a clear and intuitive way, especially those features that involve the interaction of multiple systems across time and space. Of course, in particle physics Feynman diagrams were introduced to show the interactions of elementary particles across time and space. In the field of quantum computing this problem is remedied by quantum circuits, which provide a model for visualizing a set of qubits as registers to which a sequence of quantum gates can be applied. Although this method may be satisfactory for quantum computing, it is rather limited in its capabilities and does not provide a good tool for the visualization of quantum mechanical processes in other fields such as quantum cryptography. Coecke and Kissinger \cite{Coecke2017} propose a new - strictly diagrammatic - formalism for quantum theory in general with the aim of addressing this problem. Their diagrammatic notation includes all of the functionality of quantum circuits, and is moreover well suited for visualizing a much wider range of quantum mechanical processes.
 
@@ -740,7 +741,7 @@ We could encode this random classical bit into a qubit as follows.
 	\tikzfig{encodingrandombit} \equaltext{\ref{equation:spideroneoutput}} \sum\limits_{i} \tikzfig{encodingrandombit2} \equaltext{\ref{equation:Encoding}} \sum\limits_{i} \tikzfig{IMID}
 \end{equation}
 
-We can use this qubit to control whether or not we apply a Bell map. It represents the encoded versions of u and w. The previous two equations are entirely analogous for the gray (x) basis.\footnote{In fact, we can make an even stronger statement about the diagrams in equation \ref{eq:7}: They are actually equal to the analogous diagrams in the gray basis. Note that the rightmost diagram is the adjoint of discarding, which can be interpreted as preparing the fully mixed state, up to a number. Since this state is independent of the basis, these diagrams of white basis are equal to the analogous diagrams in the gray basis.}
+We can use this qubit to control whether or not we apply a Bell map. It represents the encoded version of u. The previous two equations are entirely analogous for the gray (x) basis.\footnote{In fact, we can make an even stronger statement about the diagrams in equation \ref{eq:7}: They are actually equal to the analogous diagrams in the gray basis. Note that the rightmost diagram is the adjoint of discarding, which can be interpreted as preparing the fully mixed state, up to a number. Since this state is independent of the basis, these diagrams of white basis are equal to the analogous diagrams in the gray basis.}
 
 We now have the necessary ingredients to make a map that applies a random bitflip or not in x and another map that makes a random bitflip or not in z. The results are as follows:
 
@@ -979,7 +980,7 @@ This puts heavy constraints on Eve. Realistically, she could measure in differen
 	\tikzfig{EveNewMapX}
 \end{equation}
 
-This is exactly how Kissinger et al. approach this problem in \cite{Kissinger2017}. To prove security for noiseless communication channels they go on to claim that for Eve's intervention to remain undetected whenever Alice and Bob's measurement results are the same, from their perspective Eve's channel must exhibit the following property:
+This is exactly how Kissinger et al. approach this problem in \cite{Kissinger2017}. They go on to prove security for the noiseless case; the case in which Alice and Bob detect no disturbance in the transmitted qubits. Since Eve represents the environment, and is therefore the cause of any potential noise, we can implement this statement diagrammatically as follows:
 
 \begin{equation}
 	\label{QKDProofSetup}
@@ -988,7 +989,7 @@ This is exactly how Kissinger et al. approach this problem in \cite{Kissinger201
 
 Tracing away Eve's output implements the statement that we look at the protocol from Alice and Bob's perspective. The fact that this is then equal to a single wire is representative of Alice and Bob seeing no noise. At various points throughout the rest of the report we will refer to the combination of these statements and equation (\ref{QKDProofSetup}) simply as 'the noiseless case'.
 
-From here on Kissinger et al. in \cite{Kissinger2017} include an extensive (fully diagrammatic) security proof which finally reaches the conclusion that for any $\Phi$ that satisfies \ref{QKDProofSetup} and mutually unbiased bases x and z we have:
+From here on Kissinger et al. in \cite{Kissinger2017} include an extensive (fully diagrammatic) security proof which finally reaches the conclusion that for any $\Phi$ that satisfies \ref{QKDProofSetup} and mutually unbiased bases x and z there exists some $\rho$ such that:
 
 \begin{equation}
 \tikzfig{EveNewMapX} = \tikzfig{SmallRho}  ~~~ \tikzfig{thickWIRE}
@@ -997,10 +998,12 @@ From here on Kissinger et al. in \cite{Kissinger2017} include an extensive (full
 In words: Eve's channel has no connection to Alice and Bob's and she thus learns nothing about the state Alice sent to Bob.
 
 
-\subsection{Quantum Key Recycling}
+\subsection{Quantum Key Recycling with Eight State Encoding}
 \label{section:qkr}
 
-The part of QKR in which Alice and Bob actually communicate a quantum state is very similar to the previously discussed protocols QKD and QOTP. The main differences between them are in the classical processing part and the encoding of the quantum states. This new method of encoding will be introduced soon. For now, we can assume Alice and Bob to use BB84 encoding. In the QKR protocol introduced in \cite{Leermakers2019}, Alice and Bob both share knowledge beforehand about some set of bases $b \in \mathcal{B}^n$  and some one-time pad $j \in \{0,1\}^n$. Before Alice encodes her message $M \in \{0,1\}^m$ into a quantum state to be sent to Bob, she applies some error-correcting code $M \rightarrow E(M) \in \{0,1\}^n$ to it and xor's $E(M)$ with $j$ to produce the payload $x \in \{0,1\}^n$. The error-correcting code allows Bob to determine and correct errors that may arise as a result of a noisy communication channel in the received payload at the cost of added redundancy \cite{Knill1997}. The one-time pad is used to mask the message. After the payload is ready Alice prepares $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{x_i}^{b_i}}$ and sends it to Bob. Bob, since he has the same set of bases should get the correct measurement result, $x$. Since he also knows $j$ he can xor $x$ and $j$ to receive M, the message from Alice. In the case where there is no Eve detected he can use the same k and b to safely send a new payload back to Alice, who can then send one back to Bob, and so forth. However, if one of the two detects Eve's interference, both parties have to decide on a new key, which they can generate from previously uncompromised transmissions. Eve is allowed to attempt a measurement of the qubits transmitted between Alice and Bob, $\ket{\Psi}$. However, even if she would measure all of the qubits correctly, she only receives $x$. She would have to xor $x$ with $j$ to receive the message M but she does not know $j$.
+The part of QKR in which Alice and Bob actually communicate a quantum state is very similar to the previously discussed protocols QKD and QOTP. The main differences between them are in the classical processing part and the encoding of the quantum states. This new method of encoding will be introduced soon. For now, we can assume Alice and Bob to use BB84 encoding. 
+
+In the QKR protocol introduced in \cite{cryptoeprint:2019:875}, Alice and Bob both share knowledge beforehand about a set of bases $b \in \mathcal{B}^n$  and some one-time pad $j \in \{0,1\}^n$. Before Alice encodes her message $M \in \{0,1\}^m$ into a quantum state to be sent to Bob, she applies an error-correcting code $M \rightarrow E(M) \in \{0,1\}^n$ to it and xor's $E(M)$ with $j$ to produce the payload $x \in \{0,1\}^n$. The error-correcting code allows Bob to determine and correct errors that may arise as a result of a noisy communication channel in the received payload at the cost of added redundancy \cite{Knill1997}. The one-time pad is used to mask the message. After the payload is ready Alice prepares $\ket{\Psi} = \bigotimes_{i=1}^n \ket{\psi_{x_i}^{b_i}}$ and sends it to Bob. Bob, since he has the same set of bases should get the correct measurement result, $x$. Since he also knows $j$ he can xor $x$ and $j$ to receive M, the message from Alice. In the case where there is no Eve detected he can use the same k and b to safely send a new payload back to Alice, who can then send one back to Bob, and so forth. However, if one of the two detects Eve's interference, both parties have to decide on a new key, which they can generate from previously uncompromised transmissions. Eve is allowed to attempt a measurement of the qubits transmitted between Alice and Bob, $\ket{\Psi}$. However, even if she would measure all of the qubits correctly, she only receives $x$. She would have to xor $x$ with $j$ to receive the message M but she does not know $j$.
 
 Recently, it was proposed to use eight-state encoding in QKR protocols \cite{DeVries2016}. This method of encoding quantum states does not rely on the two mutually unbiased bases that we have seen up to this point, it essentially encodes bits into four different non mutually unbiased bases. Allowing each basis two states then results in the characteristic total of eight different states, hence the name of this encryption. The rest of the protocol then proceeds as before. In the paper in which this was originally brought forward \cite{DeVries2016}, the authors suggest to place each of these states at equidistant locations on the Bloch sphere, corresponding to the eight corners of a cube if it were placed perfectly inside of the Bloch sphere. One of the bases is defined as having a 0 state $\ket{\psi_{0}}$ at $(1,1,1)^T$/$\sqrt{3}$ and a 1 state $\ket{\psi_{1}}$ at $(-1,-1,-1)^T$/$\sqrt{3}$. The others are defined as two Pauli transforms with respect to this basis, giving the following eight states. Remembering the relationships between the Pauli and Bell transforms from equation (\ref{equation:bellsigmas}) we can write this mathematically as follows.
 
@@ -1025,6 +1028,7 @@ More compactly, we can define $E_{uw} \equiv B_1^w B_2^u$ and have $E_{uw}$ be o
 We need to introduce some new diagrammatic notation for eight state encoding. After all, we need to move from a system of two bases to one of four. With that being said, a large part of it should be rather intuitive since we have essentially seen most of it already. The quantum one time pad is actually an eight state encryption protocol. The main difference is that in the protocol introduced for QKR, the eight states are distributed differently over the Bloch sphere. Diagrammatically, we can exploit the similarities by borrowing the notation that was previously introduced for the Bell maps in the QOTP. According to equation (\ref{equation:EightStatePaulis}), we only need to define the properties of one of the bases of eight state encoding and get the others for free by applying Bell maps to the states of this original basis. We choose the color red for this new basis. The red basis has the following two basis states: $E_{00}\ket{\psi_{0}} = \mathbb{I}\ket{\psi_{0}} = \ket{\psi_{000}}$ and $E_{00}\ket{\psi_{1}} = \mathbb{I}\ket{\psi_{1}} = \ket{\psi_{001}}$. We should first define triangles that represent classical information on these states, similarly to how we have classical triangles for the gray and white bases. We use the color red for this as well. This gives us the following diagrammatic components for the preparation of a state and the effect in this basis:
 
 \begin{equation}
+	\label{equation:newbases}
 	\ket{\psi_{00g}} \equiv \tikzfig{RedStatePrep} ~~~~~~ \bra{\psi_{00g}} \equiv \tikzfig{RedEffect}
 \end{equation}
 
@@ -1044,11 +1048,11 @@ Finally, we need to define a spider that encodes these $\ket{\psi_{000}}$ and $\
 
 By a combination of equations (\ref{equation:RedMeasureAndEffect}) and (\ref{equation:RedSpiderPrepareAndMeasure}) it is trivial to check that the red spider follows the spider rules as they are given in section \ref{spiders}. On the other hand, we have to tread carefully regarding its interaction with differently colored spiders, since we cannot exploit mutual unbiasedness.
 
-We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Bell mapss diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our cipherstates by applying these Bell maps to the recently defined new basis states $\ket{\psi_{00g}}$. Defining a new color for each of the bases, we could thus encode all of our eight different cipherstates as follows:
+We are now in principle ready to employ eight state encoding as it was proposed in \cite{DeVries2016} diagrammatically. Equation (\ref{equation:BellMap}) tells us how we can make Bell mapss diagrammatically, and equation (\ref{equation:EightStatePaulis}) tells us that we can create all of our cipherstates by applying these Bell maps to the new basis states $\ket{\psi_{00g}}$ from equation (\ref{equation:newbases}). Defining a new color for each of the bases, we could thus encode all of our eight different cipherstates as follows:
 
 \begin{equation}
 	\label{equation:EightStateEncodingInFull}
-	E_{uw}\ket{\psi_{00g}} \Leftrightarrow\tikzfig{EightStateEncodingInFullX} \equiv 
+	E_{uw}\ket{\psi_{00g}} = \tikzfig{EightStateEncodingInFullX} \equiv 
 	\begin{cases}
 	\tikzfig{STATEMIDRED} & \text{if} ~\{u,w\} = \{0,0\} \\
 	\tikzfig{STATEMIDPINK} & \text{if} ~\{u,w\} = \{0,1\} \\
@@ -1088,7 +1092,7 @@ Let's first see what our QKR protocol looks like in this new notation:
 \end{equation}
 \textit{Note that whenever there are multiple brown components in a diagram, this means that those components can be any color as long as they are the same.}
 
-Alice and Bob respectively encode and measure in the same basis. Eve controls some map $\Phi$ and receives one of its outputs. We do not include the one-time pad $j$ or any of the other classical pre- and postprocessing here since we do not need it for this security proof. With this all set up we are in principle ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Bell maps consistent of the gray and white spiders that we have seen before, we will extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Bell maps, which are a valid member of eight state encoding.
+Alice and Bob respectively encode and measure in the same basis. Eve controls some map $\Phi$ and receives one of its outputs. We do not include the one-time pad $j$ or any of the other classical pre- and postprocessing here since we do not need it for this security proof. With this all set up we are in principle ready to develop a security proof for noiseless QKR, purely diagrammatically. Our security proof is very similar to the one proposed by Kissinger and Westerbaan in literature \cite{Kissinger2017}, where they prove security of four state QKD relying largely on the mutual unbiasedness of the gray and white bases. Although we do bring this mutual unbiasedness indirectly into our security proof as well by incorporating the Bell maps which consist of the gray and white spiders that we have seen before, we will extend this proof to also incorporate our four new non-mutually unbiased bases. As we will see, we will rely on gray and white spiders only through the use of these Bell maps, which are used in eight state encoding anyway.
 
 Putting in the property that the quantum channels and maps exhibit no noise according to Alice and Bob is equivalent to saying that Eve goes undetected whenever Alice and Bob measure in the same basis. Since Eve represents the environment this can also be interpreted as the quantum channels being noiseless. We have already briefly discussed the security proof of Kissinger and Westerbaan in section \ref{QuantumKeyDistribution}, where we made the same statement for Alice and Bob using the gray and white bases in equation (\ref{QKDProofSetup}). Noting that brown represents the set of four colors introduced in equation (\ref{equation:brownspiderset}), we can implement this statement for our four new bases as follows:
 
@@ -1098,7 +1102,7 @@ Putting in the property that the quantum channels and maps exhibit no noise acco
 \tikzfig{wire}
 \end{equation}
 
-With this as a starting point we can pre- and postcompose measurement maps as follows:
+With this as a starting point we can pre- and postcompose decoding and encoding maps respectively as follows:
 
 \begin{equation}
 	\label{equation:QKDSetupRed}
@@ -1113,34 +1117,34 @@ Now we can purify the brown spiders in equation (\ref{equation:QKDSetupRed}) by 
 \end{equation}
 \textit{Where $\hat{\psi}$ can be any normalized pure state.}
 
-By applying the essential uniqueness of purification from section \ref{section:essentialuniqueness} to equation \ref{equation:QKRProof4} we receive equation (\ref{equation:PurifiedQKR}). Note that since we discarded multiple outputs in equation (\ref{equation:QKRProof4}) we also have to apply the unitary U over multiple outputs:
+By applying the essential uniqueness of purification (the theorem introduced in section \ref{section:essentialuniqueness}) to equation \ref{equation:QKRProof4} we receive equation (\ref{equation:PurifiedQKR}). Note that since we discarded multiple outputs in equation (\ref{equation:QKRProof4}) we also have to apply the unitary U over multiple outputs.
 
 \begin{equation}
 	\label{equation:PurifiedQKR}
 	\tikzfig{QKRProof6X} = \tikzfig{QKRProof7X}
 \end{equation}
 
-Deleting the second and fourth output of the LHS of equation (\ref{equation:PurifiedQKR}) gives the following:
+Deleting the first and third outputs of the LHS of equation (\ref{equation:PurifiedQKR}) gives the following.
 
 \begin{equation}
-	\tikzfig{QKRProof6AX} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QKRProof6BX}
+	\tikzfig{QKRProof6AX} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QKRProof6BX} \equaltext{(\ref{equation:boringspider})} \tikzfig{QKRProof6BXA}
 \end{equation}
 
-Doing the same to the RHS of equation (\ref{equation:PurifiedQKR}):
+Doing the same to the RHS of equation (\ref{equation:PurifiedQKR}).
 
 \begin{equation}
 	\label{equation:passingvonthrough}
-	 \tikzfig{QKRProof6BX} = \tikzfig{QKRProof9X}
+	 \tikzfig{QKRProof6BXA} = \tikzfig{QKRProof9X}
 \end{equation}
 
-Note that this holds for spiders of all colors of equation (\ref{equation:coloredspiders}). The following is thus also true for spiders of all these colors:
+Note that this holds for spiders of all colors of equation (\ref{equation:coloredspiders}). The following is thus also true for spiders of all these colors.
 
 \begin{equation}
 \label{equation:vrules}
 	\tikzfig{QKRProof10X} \equaltext{(\ref{equation:passingvonthrough}), \ref{equation:spiderfusion}} \tikzfig{QKRProof11X} ~~~~~~~~~~~~~~~~~~ \tikzfig{QKRProof12X} \equaltext{(\ref{equation:passingvonthrough}), \ref{equation:spiderfusion}} \tikzfig{QKRProof13X}
 \end{equation}
 
-We can use this equation (\ref{equation:vrules}) to show that V separates. Since V is just the undoubled version of $\Phi$ this then also implies that $\Phi$ separates, which is what we wanted to achieve. Starting with V itself:
+We can use this equation (\ref{equation:vrules}) to show that V separates. That is, the map itself splits up and leaves no connection between Eve's output and Alice and Bob's in- and outputs. Since V is just the undoubled version of $\Phi$ this then also implies that $\Phi$ separates in a similar fashion, which is what we wanted to achieve. Starting with V itself:
 
 \begin{equation}
 	\label{equation:v}
@@ -1239,7 +1243,7 @@ By undoubling the wire and using equation (\ref{equation:vrules}) we can then mo
 \end{aligned}
 \end{equation}
 
-Finally, applying this to the larger picture:
+Finally, applying this to the larger picture.
 
 \begin{equation}
 	\label{equation:vpassingthrough}
@@ -1247,7 +1251,7 @@ Finally, applying this to the larger picture:
 	\tikzfig{QKRSeperationProof4X} \equaltext{(\ref{equation:passingvthroughpauli})} \frac{1}{D}~ \tikzfig{QKRSeperationProof12X} \equaltext{(\ref{equation:AliceWithBell})}	\frac{1}{D}~ \tikzfig{QKRSeperationProof13X} \equaltext{\ref{equation:spiderfusion}} \frac{1}{D}~ \tikzfig{QKRSeperationProof14X}
 \end{equation}
 
-And thus we see that V separates. Hence, under the condition that Alice and Bob measure and encode in the same four bases from equation (\ref{equation:brownspiderset}), $\Phi$ separates. In diagrams:
+And thus we see that V splits up such that Alice's input is connected to Bob's output directly, and that Eve's output is completely separated from this. Hence, under the condition that Alice and Bob measure and encode in the same four bases from equation (\ref{equation:brownspiderset}) and see no disturbance or noise, $\Phi$ separates. In diagrams this as written as there existing some $\rho$ such that $\Phi$ separates as follows.
 
 \begin{equation}
 \label{equation:QKRSeparates}
@@ -1262,17 +1266,17 @@ And thus we see that V separates. Hence, under the condition that Alice and Bob 
 The equivalence of QOTP and quantum teleportation is rather trivial. In fact, we already saw this equivalence back in equation (\ref{equation:QOTPQuantumTeleportationEquivalence}):
 
 \begin{equation}
-\tikzfig{QOTPNoEveNoLineX} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QOTPNoEveNoLine(1)}~~~~~ \Leftrightarrow ~~~~~\tikzfig{QuantumTeleportationNoLine}
+\tikzfig{QOTPNoEveNoLineXWithText} \equaltext{\ref{equation:spiderfusion}} \tikzfig{QOTPNoEveNoLine(1)}~~~~~ = \tikzfig{QuantumTeleportationNoLineWithText}
 \end{equation}
 
 This is a strikingly simple equivalence. Bending the U-shaped curve in the quantum teleportation protocol such that it becomes a straight line already does the trick. In a sense, quantum teleportation could thus be seen as the EPR variant of the QOTP. 
 
 Due to their equivalence, whatever we can prove with the one diagram we can state as fact for the other without needing to prove it. This can be very convenient in security proofs.
 
-\subsection{Quantum Alice and Silent Bob Equivalences}
+\subsection{Protocol equivalences from the paper "Quantum Alice and Silent Bob" \cite{cryptoeprint:2019:875}}
 
 \label{section:QAaSBEequivalences}
-In a recent article \cite{Leermakers2019}, Skori$\check{\textrm{c}}$ and Leermakers propose a scheme for QKR that includes no classical communication from Alice to Bob and only one bit from Bob to Alice. To prove its security, the authors modify the proposed protocol to one that is better suited for this in a series of steps that preserve security-wise equivalence to the original. In this section, we will have a look at these equivalences diagrammatically using the eight state encoding QKR protocol from equation (\ref{equation:QKRGeneral}) as starting point:
+In a recent article \cite{cryptoeprint:2019:875}, $\check{\textrm{S}}$korić and Leermakers propose a scheme for QKR that includes no classical communication from Alice to Bob and only one bit from Bob to Alice. To prove its security, the authors modify the proposed protocol to one that is better suited for this in a series of steps that preserve security-wise equivalence to the original. In this section, we will have a look at these equivalences diagrammatically using the eight state encoding QKR protocol from equation (\ref{equation:QKRGeneral}) as starting point:
 
 \begin{equation}
 \label{equation:QKRGeneral}
@@ -1282,7 +1286,7 @@ In a recent article \cite{Leermakers2019}, Skori$\check{\textrm{c}}$ and Leermak
 
 \subsubsection{Masking the qubit payload with public randomness}
 \label{section:maskingqubitpubrand}
-In the first equivalent protocol Alice and Bob both apply the same bitstring $a \in \{0,1\}^n$ in the classical domain, before encoding and after decoding respectively. $a$ is public, implying that Eve also learns it. The rest of the protocol remains the same. To implement this diagrammatically, we give Eve another map with respect to (\ref{equation:EveNewMap}) to represent her doing classical post processing. In this map, she uses her knowledge on $a$ and what she learned from intercepting the quantum state from Alice to Bob.
+In the first equivalent protocol Alice and Bob both xor the same bitstring $a \in \{0,1\}^n$ in the classical domain with their payload and measurement result respectively. $a$ is public, implying that Eve also learns it. The rest of the protocol remains the same. To implement this diagrammatically, we give Eve another map with respect to (\ref{equation:EveNewMap}) to represent her doing classical post processing. In this map, she uses her knowledge on $a$ and what she learned from intercepting the quantum state from Alice to Bob.
 
 We need to create one more set of maps before we can implement this diagrammatically. Since we haven't fully worked out all of the properties of the colored spiders yet, it is more convenient to not use them whenever the protocol doesn't tell us to. Therefore, we propose a map that translates between the white and colored bases. This allows us to do all of the classical processing in terms of white and gray spiders which is necessary if we want to use, for example, mutual unbiasedness (\ref{complementarity}) or the xor map (\ref{xorgate}). The map that translates between the white and red bases is the following:
 
@@ -1293,7 +1297,7 @@ We need to create one more set of maps before we can implement this diagrammatic
 \ket{\psi_{00g}} \mapsto \ket{g}_z
 \end{equation}
 
-This map is worked out in Dirac notation in appendix \ref{appendix:EightStateEncryptionMapDirac}. The other three colors then also have the respective boxes:
+The other three colors then also have the respective boxes:
 
 \begin{equation}
 \label{equation:EightStateSpiderGreen}
@@ -1325,7 +1329,19 @@ We call these maps the eight state encryption maps. Again, the brown box is the 
 	\tikzfig{REightStateSpiderBrown} \equiv \{ ~\tikzfig{REightStateSpider}, ~\tikzfig{REightStateSpiderGreen}, ~\tikzfig{REightStateSpiderOrange}, ~\tikzfig{REightStateSpiderBlue}\}
 \end{equation}
 
-Including this map, and the fact that Alice and Bob both xor with a public variable $a$ in their classical domain, we have the following diagram:
+The maps on the LHS of equation (\ref{brownbox}) can be summarized in Dirac notation as $G_{uw}$. 
+
+\begin{equation}
+G_{uw} \equiv \ket{0}_z\bra{\psi_{uw0}} + \ket{1}_z\bra{\psi_{uw1}}
+\end{equation}
+
+And the maps on the RHS are then of course summarized as the Hermitian adjoint of $G_{uw}$, $G_{uw}^\dagger$.
+
+\begin{equation}
+G_{uw}^\dagger \equiv \ket{\psi_{uw0}}\bra{0}_z + \ket{\psi_{uw1}}\bra{1}_z
+\end{equation}
+
+Including these maps, and the fact that Alice and Bob both xor with a public variable $a$ in their classical domain, we have the following diagram:
 
 \begin{equation}
 	\label{equation:QKRQAaSBA1}
@@ -1554,7 +1570,7 @@ Each of these protocols occur with probability $\frac{1}{4}$. We also know that 
 % Talk about aims, were they achieved? Good conclusion paragraph. Combining summary with talk about aims, should I do this?
 
 
-After reading up to this point, the novelty of this research may not be self-evident. After all, we did not develop any new protocols or gave higher security bounds on existing protocols. Be that as it may, these are not the kind of things that should be expected of the diagrammatic method as of yet. The novelty of this work comes from the fact that it provides diagrammatic realizations of protocols and security proofs that have never been worked out in this fashion before. We took preexisting work and gave it a place in the context of the diagrammatic method for quantum cryptography. As of now it is not yet the task of the diagrammatic method to develop novel protocols or provide higher security bounds. Before we could do any of that, we should first see whether and how we can work up to the current state of the art. Only when and if we reach that point, we can attempt to use this method to actually bring the field of quantum cryptography further. This work provides a foundation to reach this point. Kissinger and Westerbaan built this foundation for quantum key distribution in \cite{Kissinger2017} and in this work we did the same for quantum key recycling with eight state encoding.
+After reading up to this point, the novelty of this research may not be self-evident. After all, we did not develop any new protocols or give higher security bounds on existing protocols. Be that as it may, these are not the kind of things that should be expected of the diagrammatic method as of yet. The novelty of this work comes from the fact that it provides diagrammatic realizations of protocols and security proofs that have never been worked out in this fashion before. We took preexisting work and gave it a place in the context of the diagrammatic method for quantum cryptography. As of now it is not yet the task of the diagrammatic method to develop novel protocols or provide higher security bounds. Before we could do any of that, we should first see whether and how we can work up to the current state of the art. Only when and if we reach that point, we can attempt to use this method to actually bring the field of quantum cryptography further. This work provides a foundation to reach this point. Kissinger and Westerbaan built this foundation for quantum key distribution in \cite{Kissinger2017} and in this work we did the same for quantum key recycling with eight state encoding.
 
 With that being said, maybe it is not even the role of the diagrammatic method to eventually provide new protocols or bounds on security proofs. Coecke and Kissinger - in their first book on this method - propose it to be fully independent as an alternative to Dirac notation. Their book is aimed at giving a first introduction into quantum mechanics, where new topics are introduced along with the notation and no knowledge of Dirac notation is assumed. Since this works well, the notation allows for a satisfactory representation of the introductory concepts of quantum mechanics. The question then arises of whether it also allows for the representation of more advanced quantum mechanical topics, in particular in the field of quantum cryptography. In this report, we take it a bit further than in the book of Coecke and Kissinger. We use the diagrammatic method to make security proofs and analyze some recent papers' equivalences. We do at no point, however, assume that Eve introduces noise since whenever we would do this, we would introduce more advanced equations for which we have not worked out the diagrammatic notation yet. Kissinger and Westerbaan in \cite{Kissinger2017} do not shy away from combining the notation with such equations in their security proof for QKD with noise. With that being said, their approach is a bit clumsy since they remove the need for diagrams by using these equations. Their security proof by itself is also not state of the art, and is mostly relevant since it is the first security proof for QKD that is conducted mostly with the diagrammatic notation. Therefore the question remains for as to whether this notation should really be used for tasks such as making rigorous security proofs or the development of new and improved protocols. So far it does not seem like it. With that being said, it is a relatively new method - Coecke and Kissinger released their book in 2017 \cite{Coecke2017} - so it may in the future take up more responsibility. What we can say about it as of now is that it is a good notation for intuitively displaying protocols and a very useful method for visualizing their equivalences. The equivalence between the QOTP and quantum teleportation, for example, is not that straightforward just from reading the text, but is strikingly simple diagrammatically. 
 
@@ -1565,7 +1581,7 @@ This work leaves open plenty of opportunities for future research. As a direct f
 \section{Conclusion}
 
 % Summary
-The aim of this research was largely divided up into two parts. The first was to introduce the reader to the diagrammatic method. Therefore, chapter \ref{section:preliminaries} functions as a sort of crash course to the diagrammatic notation. Whether this satisfied this aim or not is up to the reader to decide. Secondly, this research aimed to place this notation into the relevant quantum cryptographic context. To this end, we worked out four protocols and their security diagrammatically, and also used the notation to represent a series of equivalences. In particular for quantum key recycling we developed new notation for eight state encoding, a concept that was recently introduced by Skoric and De Vries \cite{DeVries2016}. Furthermore we gave a security proof for eight state QKR in a similar fashion to how it was done for QKD in \cite{Kissinger2017}. The equivalences that we worked out diagrammatically come from another publication \cite{Leermakers2019}. In this research, the authors provide a series of security-wise equivalent steps, allowing them to prove security of one protocol indirectly by proving the security of another. We went through each of these steps diagrammatically, which allowed for both their formal proof and an intuitive understanding of these equivalences. With all of this taken into account, it can be said that this second aim - to build upon the novel notation and use it to add relevant research to the field of quantum cryptography - was successfully achieved. This work does leave open significant questions about the role of the diagrammatic method in the field of quantum cryptography, though. In future work, a noisy version of QKR could be developed. In the larger context, the notation would benefit from being implemented in more protocols and their respective security proofs.
+The aim of this research was largely divided up into two parts. The first was to introduce the reader to the diagrammatic method in a concise manner. Therefore, chapter \ref{section:preliminaries} functions as a sort of handbook to the diagrammatic notation for a reader familiar with undergraduate level quantum mechanics. Whether this satisfied this aim or not is up to the reader to decide. Secondly, this research aimed to place this notation into the relevant quantum cryptographic context. To this end, we worked out four protocols and their security diagrammatically, and also used the notation to represent a series of equivalences. In particular for quantum key recycling we developed new notation for eight state encoding, a concept that was recently introduced by $\check{\textrm{S}}$korić and De Vries \cite{DeVries2016}. Furthermore we gave a security proof for eight state QKR in a similar fashion to how it was done for QKD in \cite{Kissinger2017}. The equivalences that we worked out diagrammatically come from another publication \cite{cryptoeprint:2019:875}. In this research, the authors provide a series of security-wise equivalent steps, allowing them to prove security of one protocol indirectly by proving the security of another. We went through each of these steps diagrammatically, which allowed for both their formal proof and an intuitive understanding of these equivalences. With all of this taken into account, it can be said that this second aim - to build upon the novel notation and use it to add relevant research to the field of quantum cryptography - was successfully achieved. This work does leave open significant questions about the role of the diagrammatic method in the field of quantum cryptography, though. In future work, a noisy version of QKR could be developed. In the larger context, the notation would benefit from being implemented in more protocols and their respective security proofs.
 
 %In general, this self-contained work brings the reader in an intuitive manner from undergraduate level quantum mechanics to understanding some recent articles on quantum cryptography from a diagrammatic perspective. Therefore, it could form a compelling argument for researchers in the field of quantum cryptography to use this notation for their own research. 
 

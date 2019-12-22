@@ -28,11 +28,11 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Diagrammatic Representation of Quantum Teleportation}{subsection.3.3}% 28
 \BOOKMARK [2][-]{subsection.3.4}{Quantum Key Distribution}{section.3}% 29
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Diagrammatic Representation of Quantum Key Distribution}{subsection.3.4}% 30
-\BOOKMARK [2][-]{subsection.3.5}{Quantum Key Recycling}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.5}{Quantum Key Recycling with Eight State Encoding}{section.3}% 31
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Diagrammatic Representation of Quantum Key Recycling}{subsection.3.5}% 32
 \BOOKMARK [1][-]{section.4}{Equivalences}{}% 33
 \BOOKMARK [2][-]{subsection.4.1}{QOTP and Quantum Teleportation}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Quantum Alice and Silent Bob Equivalences}{section.4}% 35
+\BOOKMARK [2][-]{subsection.4.2}{Protocol equivalences from the paper "Quantum Alice and Silent Bob" cryptoeprint:2019:875}{section.4}% 35
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Masking the qubit payload with public randomness}{subsection.4.2}% 36
 \BOOKMARK [3][-]{subsubsection.4.2.2}{EPR version of the protocol}{subsection.4.2}% 37
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Adding a random permutation}{subsection.4.2}% 38

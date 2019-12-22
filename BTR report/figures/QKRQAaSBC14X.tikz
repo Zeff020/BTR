@@ -8,7 +8,7 @@
 		\node [style=BrownSpider] (21) at (-2.75, -2.1) {};
 		\node [style=Rsmall brown box] (27) at (2.25, 0.75) {8};
 		\node [style=none] (28) at (2.25, 2.5) {};
-		\node [style=WhiteSpider] (30) at (-1, 1) {};
+		\node [style=WhiteSpider] (30) at (-1.25, 0) {};
 		\node [style=WhiteSpider] (32) at (-2.75, -0.75) {};
 		\node [style=WhiteSpider] (33) at (2.25, 1.5) {};
 		\node [style=none] (34) at (-1.5, 2.25) {};
@@ -43,8 +43,8 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw (11.center) to (4.center);
 		\draw (28.center) to (27);
-		\draw [bend right=15, looseness=0.75] (32) to (30);
-		\draw [bend right=15] (33) to (30);
+		\draw (32) to (30);
+		\draw (33) to (30);
 		\draw [bend left=45] (30) to (34.center);
 		\draw [bend right=15, looseness=1.25] (34.center) to (40.center);
 		\draw (35.center) to (41.center);

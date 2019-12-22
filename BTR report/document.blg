@@ -8,48 +8,46 @@ Repeated entry---line 110 of file library.bib
  :                     ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in abnamro
-Warning--empty journal in Kissinger2017
-Warning--empty journal in Leermakers2019
 Warning--empty publisher in Nielsen2011
-You've used 17 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            604 strings with 6263 characters,
-and the built_in function-call counts, 4399 in all, are:
-= -- 421
-> -- 176
-< -- 2
-+ -- 71
-- -- 53
-* -- 231
-:= -- 749
-add.period$ -- 49
-call.type$ -- 17
-change.case$ -- 74
+            599 strings with 6154 characters,
+and the built_in function-call counts, 4037 in all, are:
+= -- 382
+> -- 163
+< -- 1
++ -- 66
+- -- 49
+* -- 209
+:= -- 688
+add.period$ -- 45
+call.type$ -- 16
+change.case$ -- 69
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 188
-empty$ -- 382
-format.name$ -- 53
-if$ -- 933
+cite$ -- 18
+duplicate$ -- 169
+empty$ -- 360
+format.name$ -- 49
+if$ -- 858
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 16
-newline$ -- 85
-num.names$ -- 34
-pop$ -- 108
+int.to.str$ -- 16
+missing$ -- 14
+newline$ -- 79
+num.names$ -- 32
+pop$ -- 104
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 56
 quote$ -- 0
-skip$ -- 146
+skip$ -- 133
 stack$ -- 0
-substring$ -- 181
-swap$ -- 31
-text.length$ -- 2
+substring$ -- 157
+swap$ -- 27
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
-warning$ -- 4
-while$ -- 41
-width$ -- 19
-write$ -- 172
+type$ -- 58
+warning$ -- 2
+while$ -- 36
+width$ -- 18
+write$ -- 161
 (There was 1 error message)

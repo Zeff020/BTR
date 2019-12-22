@@ -26,19 +26,13 @@ Ivan Djordjevic.
 
 \bibitem{Kissinger2017}
 Aleks Kissinger, Sean Tull, and Bas Westerbaan.
-\newblock {Picture-perfect Quantum Key Distribution}.
-\newblock 2017.
+\newblock {Picture-perfect Quantum Key Distribution}, 2017.
 
 \bibitem{Knill1997}
 Emanuel Knill and Raymond Laflamme.
 \newblock {Theory of quantum error-correcting codes}.
 \newblock {\em Physical Review A - Atomic, Molecular, and Optical Physics},
   1997.
-
-\bibitem{Leermakers2019}
-Daan Leermakers and Boris {\v{S}}kori{\'{c}}.
-\newblock {Quantum Alice and Silent Bob}.
-\newblock pages 1--13, 2019.
 
 \bibitem{cryptoeprint:2019:875}
 Daan Leermakers and Boris Skoric.

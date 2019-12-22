@@ -15,7 +15,7 @@
 		\node [style=none] (25) at (0.5, 2.75) {};
 		\node [style=Rsmall brown box] (27) at (2.5, -0.75) {8};
 		\node [style=none] (28) at (2.5, 1) {};
-		\node [style=WhiteSpider] (30) at (-1, 0) {};
+		\node [style=WhiteSpider] (30) at (-0.75, -0.5) {};
 		\node [style=none] (31) at (2.25, -5.75) {};
 		\node [style=WhiteSpider] (32) at (-2, -0.75) {};
 		\node [style=WhiteSpider] (33) at (2.5, 0) {};
@@ -60,8 +60,8 @@
 		\draw [style=WIRE] (3.center) to (23.center);
 		\draw (25.center) to (24);
 		\draw (28.center) to (27);
-		\draw [bend right=15, looseness=0.75] (32) to (30);
-		\draw [bend right=15] (33) to (30);
+		\draw (32) to (30);
+		\draw [bend left=360] (33) to (30);
 		\draw [bend left=45] (30) to (34.center);
 		\draw [bend right, looseness=0.25] (34.center) to (40.center);
 		\draw (35.center) to (41.center);

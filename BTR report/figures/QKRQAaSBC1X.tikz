@@ -11,11 +11,11 @@
 		\node [style=BrownSpider] (20) at (4.25, 0) {};
 		\node [style=BrownSpider] (21) at (-3, -1.6) {};
 		\node [style=none] (23) at (-0.25, 2.75) {};
-		\node [style=WhiteSpider] (24) at (-0.25, 2.75) {};
+		\node [style=WhiteSpider] (24) at (3.5, -0.25) {};
 		\node [style=none] (25) at (-0.25, 3.25) {};
 		\node [style=Rsmall brown box] (27) at (4.25, 0.75) {8};
 		\node [style=none] (28) at (4.25, 2.5) {};
-		\node [style=WhiteSpider] (30) at (-1.5, 0.5) {};
+		\node [style=WhiteSpider] (30) at (-1.25, 0.25) {};
 		\node [style=none] (31) at (0.75, -4.5) {};
 		\node [style=WhiteSpider] (32) at (-3, -0.25) {};
 		\node [style=WhiteSpider] (33) at (4.25, 1.5) {};
@@ -53,10 +53,10 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw (5.center) to (12.center);
 		\draw (11.center) to (4.center);
-		\draw (25.center) to (24);
+		\draw [bend right=15] (25.center) to (24);
 		\draw (28.center) to (27);
-		\draw [bend right=15, looseness=0.75] (32) to (30);
-		\draw [bend right=15] (33) to (30);
+		\draw (32) to (30);
+		\draw (33) to (30);
 		\draw [bend left=15] (30) to (34.center);
 		\draw [bend right] (34.center) to (40.center);
 		\draw (35.center) to (41.center);
