@@ -3,7 +3,12 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: document.aux
 The style file: plain.bst
 Database file #1: library.bib
-Repeated entry---line 110 of file library.bib
+I was expecting a `,' or a `}'---line 6 of file library.bib
+ : 
+ : note={\url{https://www.nytimes.com/2011/07/26/science/26code.html}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 112 of file library.bib
  : @article{DeVries2016
  :                     ,
 I'm skipping whatever remains of this entry
@@ -11,34 +16,34 @@ Warning--to sort, need author or key in abnamro
 Warning--empty publisher in Nielsen2011
 You've used 16 entries,
             2118 wiz_defined-function locations,
-            599 strings with 6154 characters,
-and the built_in function-call counts, 4037 in all, are:
-= -- 382
+            602 strings with 6334 characters,
+and the built_in function-call counts, 4073 in all, are:
+= -- 392
 > -- 163
 < -- 1
 + -- 66
 - -- 49
-* -- 209
-:= -- 688
-add.period$ -- 45
+* -- 211
+:= -- 702
+add.period$ -- 49
 call.type$ -- 16
 change.case$ -- 69
 chr.to.int$ -- 0
 cite$ -- 18
-duplicate$ -- 169
-empty$ -- 360
+duplicate$ -- 172
+empty$ -- 355
 format.name$ -- 49
-if$ -- 858
+if$ -- 863
 int.to.chr$ -- 0
 int.to.str$ -- 16
-missing$ -- 14
-newline$ -- 79
+missing$ -- 15
+newline$ -- 83
 num.names$ -- 32
-pop$ -- 104
+pop$ -- 98
 preamble$ -- 1
 purify$ -- 56
 quote$ -- 0
-skip$ -- 133
+skip$ -- 129
 stack$ -- 0
 substring$ -- 157
 swap$ -- 27
@@ -49,5 +54,5 @@ type$ -- 58
 warning$ -- 2
 while$ -- 36
 width$ -- 18
-write$ -- 161
-(There was 1 error message)
+write$ -- 169
+(There were 2 error messages)

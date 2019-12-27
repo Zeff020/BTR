@@ -2,6 +2,8 @@
 
 \bibitem{abnamro}
 Abn amro investeert in quantumtechnologie, 2019.
+\newblock
+  \url{https://www.abnamro.com/nl/newsroom/nieuws/2019/abn-amro-investeert-in-quantumtechnologie.html}.
 
 \bibitem{Buding2015}
 Andor Buding.
@@ -26,7 +28,9 @@ Ivan Djordjevic.
 
 \bibitem{Kissinger2017}
 Aleks Kissinger, Sean Tull, and Bas Westerbaan.
-\newblock {Picture-perfect Quantum Key Distribution}, 2017.
+\newblock {Picture-perfect Quantum Key Distribution}.
+\newblock Cryptology ePrint Archive, Report 2017/1704, 2017.
+\newblock \url{http://arxiv.org/abs/1704.08668}.
 
 \bibitem{Knill1997}
 Emanuel Knill and Raymond Laflamme.
@@ -48,7 +52,8 @@ G{\"o}ran Lindblad.
 
 \bibitem{Markoff2011}
 John Markoff.
-\newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}, 2011.
+\newblock {Codebook Shows an Encryption Form Dates Back to Telegraphs}.
+\newblock {\em The New York Times}, 2011.
 
 \bibitem{Morsch2008}
 Oliver Morsch.

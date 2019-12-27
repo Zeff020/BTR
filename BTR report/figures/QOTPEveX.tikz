@@ -53,5 +53,6 @@
 		\draw [style=WIRE] (39.center) to (38.center);
 		\draw [style=new edge style 0] (44.center) to (41.center);
 		\draw [style=new edge style 0] (43.center) to (42.center);
+		\draw [style=DOTTED] (2.center) to (26.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
