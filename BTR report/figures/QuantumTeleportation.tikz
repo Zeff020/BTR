@@ -27,6 +27,9 @@
 		\node [style=none] (25) at (0.25, 4.25) {Bob};
 		\node [style=none] (26) at (-1.4, 4.25) {Alice};
 		\node [style=none] (27) at (-2, -3) {};
+		\node [style=none] (28) at (-2.5, -2) {\small $\rho_1$};
+		\node [style=none] (29) at (-1.25, -2) {\small $\rho_2$};
+		\node [style=none] (30) at (1.25, -2) {\small $\rho_3$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE, bend right=90, looseness=1.25] (0.center) to (1.center);

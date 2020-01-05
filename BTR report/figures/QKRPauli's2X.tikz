@@ -18,6 +18,8 @@
 		\node [style=none] (67) at (0, 3) {};
 		\node [style=none] (68) at (0, -3.5) {};
 		\node [style=Rflctsmall brown box] (69) at (0, 1.5) {8};
+		\node [style=GraySpider] (70) at (1.5, -1.25) {};
+		\node [style=WhiteSpider] (71) at (1.75, -2.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (51.center) to (21);
@@ -34,5 +36,7 @@
 		\draw [style=new edge style 0] (59.center) to (63.center);
 		\draw [style=new edge style 0] (67.center) to (60.center);
 		\draw [style=DOTTED] (51.center) to (68.center);
+		\draw (57) to (70);
+		\draw (56) to (71);
 	\end{pgfonlayer}
 \end{tikzpicture}

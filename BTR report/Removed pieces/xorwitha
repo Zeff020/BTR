@@ -1,0 +1,21 @@
+Then we can pre and postcompose another xor with $a$ on both sides of equation (\ref{equation:QKRQAaSBA1DiscardingEve1}).
+
+\begin{equation}\\
+\label{equation:QKRQAaSBA1DiscardingEve3}
+\tikzfig{QKRQAaSBA1DiscardingEve3X} = ~~ \tikzfig{longwire1X} ~
+\Leftrightarrow
+\tikzfig{QKRQAaSBA1DiscardingEve4X} = ~~ \tikzfig{longwire2X}
+\end{equation}
+
+According to the diagrammatic rules for mutual unbiasedness given in equation (\ref{equation:Complementarity}) this separates $a$ on both sides of equation (\ref{equation:QKRQAaSBA1DiscardingEve1}).
+
+\begin{equation}
+\label{QKRQAaSBA1DiscardingEve5}
+\tikzfig{QKRQAaSBA1DiscardingEve5X} = ~~ \tikzfig{longwire3X}
+\end{equation}
+
+Which is equivalent to the same diagrams without a random $a$.
+
+\begin{equation}
+\tikzfig{QKRQAaSBA1DiscardingEve6X} = ~~ \tikzfig{longwire4} ~~ \equaltext{\ref{equation:boringspider}} ~~ \tikzfig{longwire}
+\end{equation}

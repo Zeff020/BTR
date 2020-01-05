@@ -5,10 +5,23 @@ Abn amro investeert in quantumtechnologie, 2019.
 \newblock
   \url{https://www.abnamro.com/nl/newsroom/nieuws/2019/abn-amro-investeert-in-quantumtechnologie.html}.
 
+\bibitem{BB84}
+C.~H. Bennett and G.~Brassard.
+\newblock Quantum cryptography: Public key distribution and coin tossing.
+\newblock In {\em Proceedings of IEEE International Conference on Computers,
+  Systems and Signal Processing}, volume 175, 1984.
+
+\bibitem{Broadbent2016}
+Anne Broadbent and Christian Schaffner.
+\newblock Quantum cryptography beyond quantum key distribution.
+\newblock {\em Designs, Codes and Cryptography}, 78(1):351--382, Jan 2016.
+
 \bibitem{Buding2015}
 Andor Buding.
 \newblock {Race Against Time: Securing our Future Data with Quantum
   Encryption}, 2015.
+\newblock
+  \url{https://atos.net/en/blog/race-time-securing-future-data-quantum-encryption}.
 
 \bibitem{Coecke2017}
 Bob Coecke and Aleks Kissinger.
@@ -18,13 +31,18 @@ Bob Coecke and Aleks Kissinger.
 \bibitem{DeVries2016}
 Manon de~Vries and Boris Skoric.
 \newblock {Quantum Key Recycling with Eight-State Encoding}.
-\newblock {\em Cryptology ePrint Archive}, 2016.
+\newblock {\em Cryptology ePrint Archive, Report 2016/1122}, 2016.
 
 \bibitem{DJORDJEVIC2012227}
 Ivan Djordjevic.
 \newblock Chapter 7 - quantum error correction.
 \newblock In Ivan Djordjevic, editor, {\em Quantum Information Processing and
   Quantum Error Correction}, pages 227 -- 276. Academic Press, Oxford, 2012.
+
+\bibitem{esparrago1988kanban}
+Romeo~A Esparrago~Jr.
+\newblock Kanban.
+\newblock {\em Production and Inventory Management Journal}, 29(1):6, 1988.
 
 \bibitem{Kissinger2017}
 Aleks Kissinger, Sean Tull, and Bas Westerbaan.
@@ -66,6 +84,11 @@ Michael~a. Nielsen and Isaac~L. Chuang.
 \newblock {\em {Quantum Computation and Quantum Information: 10th Anniversary
   Edition}}.
 \newblock 2011.
+
+\bibitem{piolat2005cognitive}
+Annie Piolat, Thierry Olive, and Ronald~T Kellogg.
+\newblock Cognitive effort during note taking.
+\newblock {\em Applied cognitive psychology}, 19(3):291--312, 2005.
 
 \bibitem{articleCNOT}
 Mehdi Saeedi and Igor Markov.
