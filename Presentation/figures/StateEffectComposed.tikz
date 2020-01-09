@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateRight] (0) at (0.05, 1) {\rotatebox{90}{$\psi$}};
+		\node [style=EffectRight] (1) at (-0.05, -1) {{\rotatebox{0}{$\phi$}}};
+		\node [style=none] (2) at (-0.05, -1.75) {};
+		\node [style=none] (3) at (0.05, 1.75) {};
+		\node [style=none] (4) at (-0.05, -0.75) {};
+		\node [style=none] (5) at (0.05, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+		\draw (0) to (3.center);
+		\draw (3.center) to (5.center);
+		\draw (4.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

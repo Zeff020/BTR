@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, 1.5) {};
+		\node [style=none] (3) at (0, -1.5) {};
+		\node [style=none] (8) at (1, 1.5) {};
+		\node [style=GraySpider] (9) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (8.center) to (9);
+		\draw (2.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

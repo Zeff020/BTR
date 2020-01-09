@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (0.5, 0.5) {};
+		\node [style=GraySpider] (1) at (-0.5, -0.5) {};
+		\node [style=none] (2) at (0.5, 1) {};
+		\node [style=none] (3) at (-0.5, -1) {};
+		\node [style=none] (4) at (0, 1) {};
+		\node [style=none] (5) at (0, -1.5) {};
+		\node [style=none] (6) at (-0.625, -1.25) {\tiny Alice};
+		\node [style=none] (7) at (0.55, -1.25) {\tiny Bob};
+		\node [style=none] (8) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center) to (0);
+		\draw (1) to (3.center);
+		\draw [style=new edge style 0] (4.center) to (5.center);
+		\draw [style=WIRE, bend left] (0) to (8.center);
+		\draw [style=WIRE, bend right] (8.center) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

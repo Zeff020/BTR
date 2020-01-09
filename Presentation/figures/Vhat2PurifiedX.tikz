@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ASYM BOX] (0) at (0, 0) {\reflectbox{$\hat{V}_2$}};
+		\node [style=none] (1) at (0, -1.5) {};
+		\node [style=none] (2) at (-0.5, 0) {};
+		\node [style=none] (3) at (1, 0) {};
+		\node [style=none] (4) at (0.75, 1.5) {};
+		\node [style=none] (5) at (-0.5, 1) {};
+		\node [style=none] (6) at (0.75, 0) {};
+		\node [style=none] (7) at (-0.5, 1) {};
+		\node [style=none] (8) at (-0.5, 1) {};
+		\node [style=none] (9) at (-1, 1) {};
+		\node [style=none] (10) at (0, 1) {};
+		\node [style=none] (11) at (-0.75, 1.25) {};
+		\node [style=none] (12) at (-0.25, 1.25) {};
+		\node [style=none] (13) at (-0.6, 1.5) {};
+		\node [style=none] (14) at (-0.6, 1.5) {};
+		\node [style=none] (15) at (-0.4, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (4.center) to (6.center);
+		\draw [style=WIRE] (14.center) to (15.center);
+		\draw [style=WIRE] (11.center) to (12.center);
+		\draw [style=WIRE] (9.center) to (10.center);
+		\draw [style=WIRE] (8.center) to (2.center);
+		\draw [style=WIRE] (0) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

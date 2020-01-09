@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (0, 0) {};
+		\node [style=none] (3) at (0, 1) {};
+		\node [style=WhiteSpider] (4) at (0, 0) {};
+		\node [style=none] (6) at (0, -1.5) {};
+		\node [style=StateMid] (7) at (0, -1) {\rotatebox{-45}{i}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (4) to (3.center);
+		\draw (4) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

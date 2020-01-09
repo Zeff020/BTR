@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.8, 2.25) {};
+		\node [style=none] (1) at (0.8, -1.75) {};
+		\node [style=BrownSpider] (2) at (0.8, -0.75) {};
+		\node [style=medium box] (3) at (-1.2, 0.5) {U};
+		\node [style=StateMid] (4) at (-1.625, -1.25) {\rotatebox{-45}{$\psi$}};
+		\node [style=none] (5) at (-1.95, 0.5) {};
+		\node [style=none] (6) at (-1.875, 1) {};
+		\node [style=none] (7) at (-1.2, 1) {};
+		\node [style=none] (8) at (-0.7, 1) {};
+		\node [style=none] (9) at (-0.45, 0.5) {};
+		\node [style=none] (10) at (-1.375, -1.75) {};
+		\node [style=none] (11) at (-1.925, 1) {};
+		\node [style=none] (12) at (-1.7, -1.75) {};
+		\node [style=none] (13) at (-0.5, 2.25) {};
+		\node [style=none] (14) at (-1.25, 2.25) {};
+		\node [style=none] (15) at (-2, 2.25) {};
+		\node [style=none] (16) at (-0.5, 1) {};
+		\node [style=none] (17) at (-1.25, 1) {};
+		\node [style=none] (18) at (-2, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [bend left=45, looseness=1.25] (2) to (8.center);
+		\draw [bend left=15] (7.center) to (10.center);
+		\draw [bend right=15] (11.center) to (12.center);
+		\draw (15.center) to (18.center);
+		\draw (14.center) to (17.center);
+		\draw (13.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

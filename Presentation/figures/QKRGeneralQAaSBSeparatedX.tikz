@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-0.75, 0) {};
+		\node [style=none] (2) at (0.75, 0) {};
+		\node [style=none] (3) at (-0.75, 2) {};
+		\node [style=none] (4) at (0.75, 2) {};
+		\node [style=none] (5) at (0.75, -1.25) {};
+		\node [style=STATERIGHT] (22) at (-0.75, 0) {\rotatebox{90}{$\rho$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (1.center);
+		\draw [style=WIRE] (4.center) to (2.center);
+		\draw [style=WIRE] (2.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, -1) {};
+		\node [style=none] (1) at (-1, 1) {};
+		\node [style=none] (2) at (1, 1) {};
+		\node [style=none] (3) at (1, -1) {};
+		\node [style=WHITESPIDER] (4) at (-1, 0) {};
+		\node [style=GRAYSPIDER] (5) at (1, 0) {};
+		\node [style=none] (8) at (1, -1.25) {};
+		\node [style=none] (9) at (-1, -1.25) {};
+		\node [style=STATEMID] (10) at (-1, -1) {\rotatebox{-45}{$i$}};
+		\node [style=STATEMID] (11) at (1, -1) {\rotatebox{-45}{$j$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (4) to (5);
+		\draw [style=WIRE] (2.center) to (8.center);
+		\draw [style=WIRE] (1.center) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

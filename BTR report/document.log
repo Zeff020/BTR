@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  5 JAN 2020 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  6 JAN 2020 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -893,20 +893,20 @@ File: pgflibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -938,20 +938,20 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \celsius on input line 28.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 28.
+LaTeX Info: Redefining \celsius on input line 27.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 27.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 28.
-Package gensymb Info: Using \Omega for \ohm on input line 28.
+LaTeX Info: Redefining \ohm on input line 27.
+Package gensymb Info: Using \Omega for \ohm on input line 27.
 
 Package gensymb Warning: Not defining \micro.
 
 \AtBeginShipoutBox=\box87
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 27.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -960,9 +960,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./document.out) (./document.out)
 \@outlinefile=\write4
@@ -977,15 +977,15 @@ LaTeX Info: Redefining \nameref on input line 28.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(90.3375pt, 433.62001pt, 90.3375pt)
+* v-part:(T,H,B)=(90.3375pt, 614.295pt, 90.3375pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
+* \textwidth=433.62001pt
+* \textheight=614.295pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=-18.9325pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1003,12 +1003,12 @@ LaTeX Info: Redefining \nameref on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1020,31 +1020,31 @@ arning (ext4): destination with the same identifier (name{page.1}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 
+l.76 
       [1] [2] (./figures/state.tikz) (./figures/effect.tikz)
-(./figures/operationssummary.tikz) [3] (./figures/state.tikz)
-(./figures/wiretrianglenosum.tikz) (./figures/StateEffectComposed.tikz)
+(./figures/operationssummary.tikz) (./figures/state.tikz)
+(./figures/wiretrianglenosum.tikz) [3] (./figures/StateEffectComposed.tikz)
 (./figures/HorizontallyComposingPsi.tikz)
-(./figures/HorizontallyComposingEffectPsi.tikz) (./figures/wire.tikz) [4]
+(./figures/HorizontallyComposingEffectPsi.tikz) (./figures/wire.tikz)
 (./figures/wire.tikz) (./figures/wiretriangles.tikz)
-(./figures/StateEffectMeasure.tikz) (./figures/wiretriangles2.tikz)
+(./figures/StateEffectMeasure.tikz) (./figures/wiretriangles2.tikz) [4]
 (./figures/discardingsinglewires2.tikz)
 (./figures/thinwirediscardingdecomposed.tikz)
 (./figures/discardingsinglewires3.tikz)
 (./figures/thinwirediscardingdecomposed1.tikz)
 (./figures/StateEffectMeasure.tikz) (./figures/YankingEquations1.tikz)
-(./figures/wire.tikz) [5] (./figures/YankingEquations1.tikz)
+(./figures/wire.tikz) (./figures/YankingEquations1.tikz)
 (./figures/YankingEquations2.tikz) (./figures/YankingEquations3.tikz)
 (./figures/wiretriangles1.tikz) (./figures/wire.tikz) (./figures/map.tikz)
-(./figures/map.tikz) (./figures/mapdecomposition.tikz)
+(./figures/map.tikz) (./figures/mapdecomposition.tikz) [5]
 (./figures/mapincontext.tikz) (./figures/mapmultipleinandoutputs.tikz)
-(./figures/mapmultipleinandoutputsdecomposed.tikz) [6] (./figures/spider.tikz)
+(./figures/mapmultipleinandoutputsdecomposed.tikz) (./figures/spider.tikz)
 (./figures/wiretriangles.tikz) (./figures/wire.tikz)
 (./figures/spidermultileg.tikz) (./figures/spidermultilegdecomposed.tikz)
-(./figures/spidermultileginandoutputs.tikz)
+[6] (./figures/spidermultileginandoutputs.tikz)
 (./figures/spidermultilegdecomposedinandoutputs.tikz)
 (./figures/spidermultileginandoutputs.tikz)
-(./figures/spidermultilegdecomposedinandoutputs.tikz) [7]
+(./figures/spidermultilegdecomposedinandoutputs.tikz)
 (./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
 (./figures/DeleteAnyVariable.tikz) (./figures/DeleteAnyVariable2.tikz)
 (./figures/spidermultileg2.tikz) (./figures/spidermultileg1.1.tikz)
@@ -1052,15 +1052,15 @@ l.75
 (./figures/singlespider4.tikz) (./figures/spidermultilegphase.tikz)
 (./figures/spidermultilegdecomposedphase.tikz)
 (./figures/spidermultilegdecomposedphase0.tikz)
-(./figures/spidermultilegdecomposedphase1.tikz)
+(./figures/spidermultilegdecomposedphase1.tikz) [7]
 (./figures/spidermultileg2phase.tikz) (./figures/spidermultileg2phase2.tikz)
 (./figures/spidermultileg11phase01.tikz) (./figures/spidermultileg11phase0.tikz
 ) (./figures/spidermultileg11phase.tikz) (./figures/spidermultileg2phase.tikz)
 (./figures/spidermultileg2phase2.tikz) (./figures/spidermultileg11phase01.tikz)
 (./figures/spidermultileg11phase0.tikz) (./figures/spidermultileg11phase.tikz)
-[8] (./figures/ConjugateSpider.tikz) (./figures/ConjugateSpider1.tikz)
+(./figures/ConjugateSpider.tikz) (./figures/ConjugateSpider1.tikz)
 (./figures/gray0.tikz) (./figures/white0.tikz) (./figures/white1.tikz)
-(./figures/gray1.tikz) (./figures/white0.tikz) (./figures/white1.tikz) [9]
+(./figures/gray1.tikz) (./figures/white0.tikz) (./figures/white1.tikz) [8]
 (./figures/spideroneoutput.tikz) (./figures/wiretriangle.tikz)
 (./figures/white0.tikz) (./figures/white1.tikz) (./figures/white0.tikz)
 (./figures/white1.tikz) (./figures/gray0.tikz)
@@ -2243,78 +2243,77 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
- [10] (./figures/XORProof1.tikz)
+ [9] (./figures/XORProof1.tikz)
 (./figures/XORProof2.tikz) (./figures/XORTestInAndOutputs.tikz)
 (./figures/XORTestInAndOutputs1.tikz) (./figures/XORTestInAndOutputs2.tikz)
-[11] (./figures/twowires.tikz) (./figures/twowires2.tikz)
+[10] (./figures/twowires.tikz) (./figures/twowires2.tikz)
 (./figures/DoubleStateDecomposed.tikz) (./figures/DoubleStateDecomposed1.tikz)
-[12] (./figures/wiretrianglenosum.tikz) (./figures/wiretrianglenosumj.tikz)
-(./figures/DensityState.tikz) (./figures/conjugatemaps.tikz)
+(./figures/wiretrianglenosum.tikz) (./figures/wiretrianglenosumj.tikz)
+(./figures/DensityState.tikz) [11] (./figures/conjugatemaps.tikz)
 (./figures/doublemap.tikz) (./figures/BastardSpiderFusion.tikz)
 (./figures/BastardSpiderFusion2.tikz) (./figures/Discarding.tikz)
 (./figures/thickwhiteieffect.tikz) (./figures/thinwirediscardingdecomposed.tikz
-) (./figures/discardingsinglewires.tikz) [13]
+) (./figures/discardingsinglewires.tikz) (./figures/discardingdensitymatrx.tikz
+) (./figures/discradingdensitymatrixsinglewires.tikz)
 (./figures/discardingdensitymatrx.tikz)
-(./figures/discradingdensitymatrixsinglewires.tikz)
-(./figures/discardingdensitymatrx.tikz)
-(./figures/discradingdensitymatrixsinglewires.tikz)
+(./figures/discradingdensitymatrixsinglewires.tikz) [12]
 (./figures/doublemapnotpure.tikz) (./figures/doublemapdiscardingoneout.tikz)
 (./figures/conjugatemapsdiscardingoneout.tikz) (./figures/FullyMixed.tikz)
 (./figures/Encoding3.tikz) (./figures/thinwirediscardingdecomposed2.tikz)
 (./figures/discardingsinglewires4.tikz) (./figures/WideStateTwoOutputs.tikz)
 (./figures/TwoStates.tikz) (./figures/DoubleCup.tikz)
-(./figures/DoubleCupSeperate.tikz) [14] (./figures/Encoding.tikz)
+(./figures/DoubleCupSeperate.tikz) [13] (./figures/Encoding.tikz)
 (./figures/EncodingA.tikz) (./figures/EncodingB.tikz) (./figures/Encoding2.tikz
 ) (./figures/Encoding3.tikz) (./figures/DensityState.tikz)
 (./figures/decodingphase.tikz) (./figures/spidertwophases.tikz)
 (./figures/spidertwophaseswrittenout.tikz)
 (./figures/spideronephasefromtwo.tikz)
 (./figures/spideronephasefromtwoinspider.tikz) (./figures/uniformprobstate.tikz
-) [15] (./figures/ComplementarySpiders.tikz)
-(./figures/ComplementarySpiders2.tikz) (./figures/ComplementarySpiders3.tikz)
-(./figures/ComplementarySpiders4.tikz) (./figures/ComplementarySpiders5.tikz)
-(./figures/ComplementarySpiders6.tikz) (./figures/wire.tikz)
-(./figures/Vhat1PurifiedX.tikz) (./figures/Vhat2PurifiedX.tikz)
-(./figures/VunpurifiedX.tikz) (./figures/V2unpurifiedX.tikz)
+) (./figures/ComplementarySpiders.tikz) (./figures/ComplementarySpiders2.tikz)
+(./figures/ComplementarySpiders3.tikz) (./figures/ComplementarySpiders4.tikz)
+(./figures/ComplementarySpiders5.tikz) (./figures/ComplementarySpiders6.tikz)
+(./figures/wire.tikz) [14] (./figures/Vhat1PurifiedX.tikz)
+(./figures/Vhat2PurifiedX.tikz) (./figures/VunpurifiedX.tikz)
+(./figures/V2unpurifiedX.tikz)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
+(hyperref)                removing `math shift' on input line 628.
 
-(./figures/kkcommuterule.tikz) (./figures/kkcommuterule1.tikz) [16]
-(./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz) [17]
-(./figures/OTPProof2.tikz) (./figures/OTPProof3.tikz) (./figures/OTPProof2.tikz
-) (./figures/OTPProof4.tikz) (./figures/OTPProof5.tikz)
-(./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz) (./figures/OTPProof8.tikz
-) [18] (./figures/OTPProof9.tikz) (./figures/OTPProof9A.tikz)
-(./figures/OTPProof10.tikz) (./figures/OTPProof10A.tikz)
-(./figures/OTPProof11.tikz) (./figures/OTPProof12.tikz)
+(./figures/kkcommuterule.tikz) (./figures/kkcommuterule1.tikz) [15]
+(./figures/spideroneoutput.tikz) (./figures/OTPProof1.tikz)
+(./figures/OTPProof2.tikz) (./figures/OTPProof3.tikz) [16]
+(./figures/OTPProof2.tikz) (./figures/OTPProof4.tikz) (./figures/OTPProof5.tikz
+) (./figures/OTPProof6.tikz) (./figures/OTPProof7.tikz)
+(./figures/OTPProof8.tikz) (./figures/OTPProof9.tikz) [17]
 (./figures/OTPProof9A.tikz) (./figures/OTPProof10.tikz)
 (./figures/OTPProof10A.tikz) (./figures/OTPProof11.tikz)
-(./figures/OTPProof12.tikz) [19] (./figures/OTPProof12.tikz)
-(./figures/OTPProof13.tikz) [20] (./figures/x1.tikz) (./figures/z1.tikz)
-(./figures/x0.tikz) (./figures/thickWIRE.tikz) (./figures/z0.tikz) [21]
-(./figures/NoBitflipOnGray0(1).tikz) (./figures/NoBitflipOnGray0(2).tikz)
-(./figures/NoBitflipOnGray0(3).tikz) (./figures/NoBitflipOnGray0(4).tikz)
-(./figures/NoBitflipOnGray0(5).tikz) (./figures/NoBitflipOnGray0(6).tikz)
-(./figures/BitflipOnGray0(1).tikz) (./figures/BitflipOnGray0(2).tikz)
-(./figures/BitflipOnGray0(3).tikz) (./figures/BitflipOnGray0(4).tikz)
-(./figures/BitflipOnGray0(5).tikz) (./figures/BitflipOnGray0(6).tikz)
-(./figures/spideroneoutput.tikz) (./figures/wiretriangleu.tikz)
-(./figures/encodingrandombit.tikz) (./figures/encodingrandombit2u.tikz)
-(./figures/IMIDu.tikz) (./figures/RandomXBitFlipX.tikz)
-(./figures/RandomZBitFlipX.tikz) [22] (./figures/RandomXBitFlipX.tikz)
-(./figures/RandomXBitFlipProof(1)X.tikz)
+(./figures/OTPProof12.tikz) (./figures/OTPProof9A.tikz)
+(./figures/OTPProof10.tikz) (./figures/OTPProof10A.tikz)
+(./figures/OTPProof11.tikz) (./figures/OTPProof12.tikz)
+(./figures/OTPProof12.tikz) (./figures/OTPProof13.tikz) [18] (./figures/x1.tikz
+) (./figures/z1.tikz) (./figures/x0.tikz) (./figures/thickWIRE.tikz)
+(./figures/z0.tikz) (./figures/NoBitflipOnGray0(1).tikz)
+(./figures/NoBitflipOnGray0(2).tikz) (./figures/NoBitflipOnGray0(3).tikz)
+(./figures/NoBitflipOnGray0(4).tikz) (./figures/NoBitflipOnGray0(5).tikz)
+(./figures/NoBitflipOnGray0(6).tikz) [19] (./figures/BitflipOnGray0(1).tikz)
+(./figures/BitflipOnGray0(2).tikz) (./figures/BitflipOnGray0(3).tikz)
+(./figures/BitflipOnGray0(4).tikz) (./figures/BitflipOnGray0(5).tikz)
+(./figures/BitflipOnGray0(6).tikz) (./figures/spideroneoutput.tikz)
+(./figures/wiretriangleu.tikz) (./figures/encodingrandombit.tikz)
+(./figures/encodingrandombit2u.tikz) (./figures/IMIDu.tikz)
+(./figures/RandomXBitFlipX.tikz) (./figures/RandomZBitFlipX.tikz)
+(./figures/RandomXBitFlipX.tikz) (./figures/RandomXBitFlipProof(1)X.tikz)
 (./figures/RandomXBitFlipProof(2)X.tikz)
 (./figures/RandomXBitFlipProof(3)X.tikz)
 (./figures/RandomXBitFlipProof(4)X.tikz)
 (./figures/RandomXBitFlipProof(5)X.tikz)
 (./figures/RandomXBitFlipProof(6)X.tikz) (./figures/RandomXBitFlipProof(7).tikz
-) (./figures/RandomXBitFlipProof(8).tikz) (./figures/BellMapX.tikz)
-(./figures/QOTPEveX.tikz) [23] (./figures/QOTPNoEveX.tikz)
+) (./figures/RandomXBitFlipProof(8).tikz) [20] (./figures/BellMapX.tikz)
+(./figures/QOTPEveX.tikz) [21] (./figures/QOTPNoEveX.tikz)
 (./figures/QOTPNoEveFinalX.tikz) (./figures/QOTPNoEveX.tikz)
 (./figures/QOTPNoEveProof(1)X.tikz) (./figures/QOTPNoEveProof(2)X.tikz)
 (./figures/QOTPNoEveProof(3)X.tikz) (./figures/QOTPNoEveProof(4)X.tikz)
@@ -2325,37 +2324,38 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (./figures/QOTPNoEveProof(3)X.tikz) (./figures/QOTPNoEveProof(4)X.tikz)
 (./figures/QOTPNoEveProof(5)X.tikz) (./figures/QOTPNoEveProof(6)X.tikz)
 (./figures/QOTPNoEveProof(7)X.tikz) (./figures/QOTPNoEveProof(8)X.tikz)
-(./figures/QOTPNoEveFinalX.tikz) [24] (./figures/encodingrandombit.tikz)
+(./figures/QOTPNoEveFinalX.tikz) [22] (./figures/encodingrandombit.tikz)
 (./figures/FullyMixed.tikz) (./figures/encodingrandombitgray.tikz)
 (./figures/AliceWithBellX.tikz) (./figures/AliceWithBell(1)X.tikz)
 (./figures/AliceWithBell(2A)X.tikz) (./figures/AliceWithBell(2)X.tikz)
 (./figures/AliceWithBell(3).tikz) (./figures/AliceWithBell(4).tikz)
-(./figures/AliceWithBell(5).tikz) [25] (./figures/QOTPEveXDiscarding.tikz)
+(./figures/AliceWithBell(5).tikz) (./figures/QOTPEveXDiscarding.tikz)
 (./figures/QOTPEveEvePerspective(1)X.tikz)
 (./figures/QOTPEveEvePerspective(2)X.tikz)
 (./figures/QOTPEveEvePerspective(3)X.tikz)
 (./figures/QOTPEveEvePerspective(4)X.tikz)
-(./figures/QOTPEveEvePerspective(4)X2.tikz) [26] (./figures/BellState(1).tikz)
-[27] (./figures/CNOT.tikz) (./figures/CNOTWithTestInput.tikz)
-(./figures/CNOTWithTestInput(1).tikz) (./figures/BellState.tikz)
-(./figures/BellStateTestInput.tikz) (./figures/BellStateTestInput(1).tikz)
-(./figures/BellStateTestInput(2).tikz) (./figures/BellStateTestInput(3).tikz)
-(./figures/BellStateTestInput(4).tikz) (./figures/BellStateTestInput(6).tikz)
-(./figures/BellStateTestInput(5).tikz) (./figures/BellStateTestInput(7).tikz)
-(./figures/BellStateTestInput(8).tikz) (./figures/BellStateTestInput(10).tikz)
-(./figures/BellStateTestInput(9).tikz) (./figures/BellStateTestInput(11).tikz)
-(./figures/BellStateTestInput(12).tikz) (./figures/BellStateTestInput.tikz)
+(./figures/QOTPEveEvePerspective(4)X2.tikz) [23] [24]
+(./figures/BellState(1).tikz) (./figures/CNOT.tikz)
+(./figures/CNOTWithTestInput.tikz) (./figures/CNOTWithTestInput(1).tikz)
+(./figures/BellState.tikz) (./figures/BellStateTestInput.tikz)
 (./figures/BellStateTestInput(1).tikz) (./figures/BellStateTestInput(2).tikz)
 (./figures/BellStateTestInput(3).tikz) (./figures/BellStateTestInput(4).tikz)
 (./figures/BellStateTestInput(6).tikz) (./figures/BellStateTestInput(5).tikz)
 (./figures/BellStateTestInput(7).tikz) (./figures/BellStateTestInput(8).tikz)
 (./figures/BellStateTestInput(10).tikz) (./figures/BellStateTestInput(9).tikz)
 (./figures/BellStateTestInput(11).tikz) (./figures/BellStateTestInput(12).tikz)
-(./figures/QuantumTeleportation.tikz) [28] (./figures/QOTPNoEveNoLineX.tikz)
+(./figures/BellStateTestInput.tikz) (./figures/BellStateTestInput(1).tikz)
+(./figures/BellStateTestInput(2).tikz) (./figures/BellStateTestInput(3).tikz)
+(./figures/BellStateTestInput(4).tikz) (./figures/BellStateTestInput(6).tikz)
+(./figures/BellStateTestInput(5).tikz) (./figures/BellStateTestInput(7).tikz)
+(./figures/BellStateTestInput(8).tikz) (./figures/BellStateTestInput(10).tikz)
+(./figures/BellStateTestInput(9).tikz) (./figures/BellStateTestInput(11).tikz)
+(./figures/BellStateTestInput(12).tikz) [25]
+(./figures/QuantumTeleportation.tikz) (./figures/QOTPNoEveNoLineX.tikz)
 (./figures/QOTPNoEveNoLine(1).tikz) (./figures/QuantumTeleportationNoLine.tikz)
-[29] (./figures/QKDSameBasis.tikz) (./figures/wireab.tikz)
+[26] (./figures/QKDSameBasis.tikz) (./figures/wireab.tikz)
 (./figures/QKDSameBasis2.tikz) (./figures/wireab.tikz)
-(./figures/QKDDifferentBasis.tikz) (./figures/QKDDifferentBasis2.tikz) [30]
+(./figures/QKDDifferentBasis.tikz) (./figures/QKDDifferentBasis2.tikz) [27]
 (./figures/QKDSameBasisEveNoFuckUpX.tikz)
 (./figures/QKDSameBasisEveNoFuckUp2X.tikz)
 (./figures/QKDSameBasisEveFucksupX.tikz)
@@ -2363,53 +2363,49 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (./figures/QKDProofSetup1X.tikz) (./figures/wire.tikz)
 (./figures/QKDProofSetup2X.tikz) (./figures/wire.tikz)
 (./figures/EveNewMapX.tikz) (./figures/SmallRho.tikz) (./figures/thickWIRE.tikz
-) [31]
-<Eightstatecube.png, id=1174, 159.7167pt x 121.6545pt>
+) [28]
+<Eightstatecube.png, id=1161, 159.7167pt x 121.6545pt>
 File: Eightstatecube.png Graphic file (type png)
 <use Eightstatecube.png>
 Package pdftex.def Info: Eightstatecube.png  used on input line 1090.
-(pdftex.def)             Requested size: 215.0023pt x 163.77724pt.
- [32] (./figures/RedStatePrep.tikz) (./figures/RedEffect.tikz)
+(pdftex.def)             Requested size: 216.81pt x 165.15462pt.
+ [29] (./figures/RedStatePrep.tikz) (./figures/RedEffect.tikz)
 (./figures/PrepAndMeasureRed.tikz) (./figures/spidermultilegred.tikz)
-(./figures/spidermultilegdecomposedred.tikz) [33 <./Eightstatecube.png>]
+(./figures/spidermultilegdecomposedred.tikz)
 (./figures/EightStateEncodingInFullX.tikz) (./figures/STATEMIDRED.tikz)
 (./figures/STATEMIDPINK.tikz) (./figures/STATEMIDGREEN.tikz)
-(./figures/STATEMIDBLUE.tikz) (./figures/RedEncoding.tikz)
-(./figures/YellowEncoding.tikz) (./figures/GreenEncoding.tikz)
-(./figures/BlueEncoding.tikz) (./figures/BrownSpider.tikz)
-(./figures/RedSpider.tikz) (./figures/GreenSpider.tikz)
-(./figures/OrangeSpider.tikz) (./figures/BlueSpider.tikz)
-(./figures/STATEMIDBROWN.tikz) [34] (./figures/QKRGeneralX.tikz)
-(./figures/QKRProofSetupX.tikz) (./figures/wire.tikz)
-(./figures/QKRProofSetupGreenX.tikz) (./figures/wire.tikz)
-(./figures/QKRProofSetupYellowX.tikz) (./figures/wire.tikz)
+(./figures/STATEMIDBLUE.tikz) [30 <./Eightstatecube.png>]
+(./figures/RedEncoding.tikz) (./figures/YellowEncoding.tikz)
+(./figures/GreenEncoding.tikz) (./figures/BlueEncoding.tikz)
+(./figures/BrownSpider.tikz) (./figures/RedSpider.tikz)
+(./figures/GreenSpider.tikz) (./figures/OrangeSpider.tikz)
+(./figures/BlueSpider.tikz) (./figures/STATEMIDBROWN.tikz)
+(./figures/QKRGeneralX.tikz) [31] (./figures/QKRProofSetupX.tikz)
+(./figures/wire.tikz) (./figures/QKRProofSetupGreenX.tikz) (./figures/wire.tikz
+) (./figures/QKRProofSetupYellowX.tikz) (./figures/wire.tikz)
 (./figures/QKRProofSetupBlueX.tikz) (./figures/wire.tikz)
 (./figures/QAaSBProofSetupReal1X.tikz) (./figures/wire.tikz)
-(./figures/QKDProof1X.tikz) (./figures/QKDProof2.tikz) [35]
+(./figures/QKDProof1X.tikz) (./figures/QKDProof2.tikz)
 (./figures/QKRProof4X.tikz) (./figures/QKRProof4AX.tikz)
 (./figures/QKRProof5X.tikz) (./figures/QKRProof6X.tikz)
-(./figures/QKRProof7X.tikz) (./figures/QKRProof6AX.tikz)
+(./figures/QKRProof7X.tikz) [32] (./figures/QKRProof6AX.tikz)
 (./figures/QKRProof6BX.tikz) (./figures/QKRProof6BXA.tikz)
 (./figures/QKRProof6BXA.tikz) (./figures/QKRProof9X.tikz)
 (./figures/QKRProof10X.tikz) (./figures/QKRProof11X.tikz)
-(./figures/QKRProof12X.tikz) (./figures/QKRProof13X.tikz) [36]
+(./figures/QKRProof12X.tikz) (./figures/QKRProof13X.tikz)
 (./figures/QKRSeperationProof1X.tikz) (./figures/QKRSeperationProof2X.tikz)
 (./figures/QKRSeperationProof3X.tikz) (./figures/QKRSeperationProof4X.tikz)
-(./figures/QKRSeperationProof5X.tikz) [37] (./figures/ComposingTwoPauli's.tikz)
-(./figures/CommutingPauli's.tikz) (./figures/CommutingPauli's1.tikz)
-(./figures/commutingPauli's3.tikz) (./figures/CommutingPauli's4.tikz) [38]
+[33] (./figures/QKRSeperationProof5X.tikz) (./figures/ComposingTwoPauli's.tikz)
+[34] (./figures/CommutingPauli's.tikz) (./figures/CommutingPauli's1.tikz)
+(./figures/commutingPauli's3.tikz) (./figures/CommutingPauli's4.tikz)
 (./figures/ComposingTwoPauli's2.tikz) (./figures/ComposingTwoPauli's3.tikz)
 (./figures/ComposingTwoPauli's4.tikz) (./figures/ComposingTwoPauli's5.tikz)
-Overfull \hbox (0.225pt too wide) detected at line 1277
-[][]\OT1/cmr/m/n/10 ([]121[]) [] [] [] [] [] [] [] [] [] [] [] []
- []
-
 (./figures/ComposingTwoPauli's6.tikz) (./figures/STATEMIDRED.tikz)
 (./figures/STATEMIDGREEN.tikz) (./figures/STATEMIDPINK.tikz)
 (./figures/STATEMIDBLUE.tikz) (./figures/QKRSeperationProof8X.tikz)
 (./figures/QKRSeperationProof9AXA.tikz) (./figures/QKRSeperationProof9BXA.tikz)
 (./figures/QKRSeperationProof9CXA.tikz) (./figures/QKRSeperationProof9DXA.tikz)
-[39] (./figures/QKRSeperationProof9AX.tikz)
+[35] (./figures/QKRSeperationProof9AX.tikz)
 (./figures/QKRSeperationProof9BX.tikz) (./figures/QKRSeperationProof9CX.tikz)
 (./figures/QKRSeperationProof9DX.tikz) (./figures/QKRSeperationProof9BAX.tikz)
 (./figures/QKRSeperationProof9BBX.tikz) (./figures/QKRSeperationProof9BCX.tikz)
@@ -2419,14 +2415,14 @@ Overfull \hbox (0.225pt too wide) detected at line 1277
 (./figures/QKRSeperationProof4X.tikz) (./figures/QKRSeperationProof12X.tikz)
 (./figures/QKRSeperationProof13X.tikz) (./figures/QKRSeperationProof14X.tikz)
 (./figures/QKRSeperationProof15X.tikz) (./figures/QKRSeperationProof16X.tikz)
-[40] (./figures/QOTPNoEveNoLineXWithText.tikz)
+[36] (./figures/QOTPNoEveNoLineXWithText.tikz)
 (./figures/QOTPNoEveNoLine(1).tikz)
 (./figures/QuantumTeleportationNoLineWithText.tikz)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 1351.
 
-(./figures/QKRGeneralX.tikz) [41] (./figures/EightStateSpider.tikz)
+(./figures/QKRGeneralX.tikz) [37] (./figures/EightStateSpider.tikz)
 (./figures/REightStateSpider.tikz) (./figures/EightStateSpiderGreen.tikz)
 (./figures/REightStateSpiderGreen.tikz) (./figures/EightStateSpiderOrange.tikz)
 (./figures/REightStateSpiderOrange.tikz) (./figures/EightStateSpiderBlue.tikz)
@@ -2436,64 +2432,64 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (./figures/REightStateSpiderBrown.tikz) (./figures/REightStateSpider.tikz)
 (./figures/REightStateSpiderGreen.tikz) (./figures/REightStateSpiderOrange.tikz
 ) (./figures/REightStateSpiderBlue.tikz) (./figures/UnitarySmllBrownBox.tikz)
-(./figures/wire.tikz) [42] (./figures/QKRQAaSBA1X.tikz)
+(./figures/wire.tikz) (./figures/QKRQAaSBA1X.tikz) [38]
 (./figures/QKRQAaSBA1DiscardingEveX.tikz) (./figures/longwire.tikz)
 (./figures/QKRQAaSBA1DiscardingEve1X.tikz)
-(./figures/QKRQAaSBA1DiscardingEve2X.tikz) [43] (./figures/longwire.tikz)
+(./figures/QKRQAaSBA1DiscardingEve2X.tikz) [39] (./figures/longwire.tikz)
 (./figures/longwirewitha.tikz) (./figures/longwirewitha2.tikz)
 (./figures/longwirewitha3.tikz) (./figures/QKRQAaSBA1DiscardingEve2XB.tikz)
 (./figures/longwirewitha4.tikz) (./figures/QKRQAaSBA1DiscardingEve6X.tikz)
-(./figures/longwire.tikz) [44] (./figures/QKRQAaSBA1DiscardingEve8X.tikz)
+(./figures/longwire.tikz) [40] (./figures/QKRQAaSBA1DiscardingEve8X.tikz)
 (./figures/longwire5.tikz) (./figures/QKRQAaSBA1DiscardingEve9X.tikz)
 (./figures/wire.tikz) (./figures/QKRGeneralQAaSBNoMeasuringX.tikz)
 (./figures/QKRGeneralQAaSBSeparatedX.tikz)
-(./figures/QKRQAaSBA1NoDottedLineX.tikz) (./figures/QKRQAaSBA2X.tikz) [45]
+(./figures/QKRQAaSBA1NoDottedLineX.tikz) (./figures/QKRQAaSBA2X.tikz)
 (./figures/QKRQAaSBA3X.tikz) (./figures/QKRQAaSBA4X.tikz)
 (./figures/QKRQAaSBA5X.tikz) (./figures/QKRQAaSBA6X.tikz)
-(./figures/QKRQAaSBA7X.tikz) (./figures/QKRQAaSBA8X.tikz) [46]
+(./figures/QKRQAaSBA7X.tikz) (./figures/QKRQAaSBA8X.tikz) [41]
 (./figures/QKRQAaSBA1NoDottedLineX.tikz) (./figures/QKRQAaSBB2X.tikz)
-(./figures/QKRQAaSBB3X.tikz) (./figures/QKRQAaSBB4DottedLineX.tikz)
-(./figures/QKRQAaSBB4DottedLineX.tikz) (./figures/QKRQAaSBA1X.tikz) [47]
-(./figures/QKRQAaSBC1X.tikz) [48] (./figures/QKRQAaSBC1XA.tikz)
+(./figures/QKRQAaSBB3X.tikz) (./figures/QKRQAaSBB4DottedLineX.tikz) [42]
+(./figures/QKRQAaSBB4DottedLineX.tikz) (./figures/QKRQAaSBA1X.tikz)
+(./figures/QKRQAaSBC1X.tikz) [43] (./figures/QKRQAaSBC1XA.tikz)
 (./figures/QKRQAaSBC6X.tikz) (./figures/QKRQAaSBC7.tikz)
-(./figures/QKRQAaSBC8.tikz) (./figures/QKRQAaSBC9.tikz)
+(./figures/QKRQAaSBC8.tikz) [44] (./figures/QKRQAaSBC9.tikz)
 (./figures/QKRQAaSBC10.tikz) (./figures/QKRQAaSBC11X.tikz)
-(./figures/QKRQAaSBC12X.tikz) [49] (./figures/QKRQAaSBC12AX.tikz)
-(./figures/QKRQAaSBC13X.tikz) (./figures/QKRQAaSBC13XA.tikz)
-(./figures/QKRQAaSBC14X.tikz) (./figures/QKRQAaSBB3X.tikz) [50]
-(./figures/QKRQAaSBD1X.tikz) [51] (./figures/QKRPauli's1X.tikz)
+(./figures/QKRQAaSBC12X.tikz) (./figures/QKRQAaSBC12AX.tikz)
+(./figures/QKRQAaSBC13X.tikz) [45] (./figures/QKRQAaSBC13XA.tikz)
+(./figures/QKRQAaSBC14X.tikz) (./figures/QKRQAaSBB3X.tikz)
+(./figures/QKRQAaSBD1X.tikz) [46] (./figures/QKRPauli's1X.tikz)
 (./figures/QKRPauli's2X.tikz) (./figures/QKRPauli's3.tikz)
 (./figures/QKRPauli's4.tikz)
-Overfull \hbox (11.07896pt too wide) detected at line 1607
+Overfull \hbox (7.46358pt too wide) detected at line 1607
 [][][] \OMS/cmsy/m/n/10 ) [] [] [] [] [] [] []
  []
 
-(./figures/QKRQAaSBD3.tikz) (./figures/QKRQAaSBD4.tikz)
+(./figures/QKRQAaSBD3.tikz) [47] (./figures/QKRQAaSBD4.tikz)
 (./figures/QKRQAaSBD5.tikz) (./figures/QKRQAaSBD6.tikz)
-Overfull \hbox (13.75032pt too wide) detected at line 1621
+Overfull \hbox (10.13493pt too wide) detected at line 1621
 [][]\OT1/cmr/m/n/10 ([]162[]) [] [] [] [] [] [] [] [] []
  []
 
-[52] (./figures/QKRQAaSBD7.tikz) (./figures/QKRQAaSBD8.tikz)
+(./figures/QKRQAaSBD7.tikz) (./figures/QKRQAaSBD8.tikz) [48]
 (./figures/QKRQAaSBD12X.tikz) (./figures/QKRQAaSBDResultRX.tikz)
 (./figures/QKRQAaSBDResultGX.tikz) (./figures/QKRQAaSBDResultOX.tikz)
-(./figures/QKRQAaSBDResultBX.tikz) [53] [54] (./figures/explicitgraywire.tikz)
-(./figures/explicitwhitewire.tikz) [55] [56] [57] (./document.bbl [58])
-[59] [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1830.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1830.
+(./figures/QKRQAaSBDResultBX.tikz) [49] (./figures/explicitgraywire.tikz)
+(./figures/explicitwhitewire.tikz) [50] [51] [52] (./document.bbl [53])
+[54] [55]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1834.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1834.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1830.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1830.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1834.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1834.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 65C236D9CA3DD0A8FC3D5BBF449939DC;3746.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1830.
+(rerunfilecheck)             Checksum: 2276D42C832C93903696DA8E163A2FA9;3746.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1834.
  ) 
 Here is how much of TeX's memory you used:
- 36990 strings out of 492167
- 748805 string characters out of 6125373
- 960172 words of memory out of 5000000
+ 36985 strings out of 492167
+ 748770 string characters out of 6125373
+ 949374 words of memory out of 5000000
  39294 multiletter control sequences out of 15000+600000
  543808 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2524,10 +2520,10 @@ type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (61 pages, 704606 bytes).
+Output written on document.pdf (56 pages, 704061 bytes).
 PDF statistics:
- 1915 PDF objects out of 2073 (max. 8388607)
- 1180 compressed objects within 12 object streams
- 304 named destinations out of 1000 (max. 500000)
+ 1893 PDF objects out of 2073 (max. 8388607)
+ 1163 compressed objects within 12 object streams
+ 299 named destinations out of 1000 (max. 500000)
  504 words of extra memory for PDF output out of 10000 (max. 10000000)
 

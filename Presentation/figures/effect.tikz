@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (0, -1) {};
+		\node [style=EffectRight] (2) at (0, 0) {\rotatebox{0}{$\phi$}};
+		\node [style=none] (3) at (0, 0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

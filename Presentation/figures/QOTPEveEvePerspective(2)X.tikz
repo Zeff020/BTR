@@ -1,0 +1,61 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=GraySpider] (0) at (3.875, 1.25) {};
+		\node [style=WHITESPIDER] (1) at (0.05, -2.25) {};
+		\node [style=none] (2) at (0.05, -3) {};
+		\node [style=none] (3) at (0.05, -1.25) {};
+		\node [style=none] (6) at (0.05, -3) {};
+		\node [style=none] (7) at (0.05, 0.5) {};
+		\node [style=GRAYSPIDER] (8) at (0.05, -1.25) {};
+		\node [style=WhiteSpider] (9) at (2.175, 1.25) {};
+		\node [style=none] (13) at (0.55, 1.75) {};
+		\node [style=none] (14) at (0.55, -0.25) {};
+		\node [style=none] (18) at (0.05, -2) {};
+		\node [style=ASYM BOX] (23) at (0.05, 0.1) {$\Phi$};
+		\node [style=none] (24) at (-0.7, 0.25) {};
+		\node [style=none] (25) at (-0.7, 1.75) {};
+		\node [style=none] (26) at (1.175, 1.775) {};
+		\node [style=none] (27) at (-0.075, 1.775) {};
+		\node [style=none] (28) at (0.925, 2.025) {};
+		\node [style=none] (29) at (0.175, 2.025) {};
+		\node [style=none] (30) at (0.675, 2.275) {};
+		\node [style=none] (31) at (0.425, 2.275) {};
+		\node [style=none] (32) at (0.55, 1.775) {};
+		\node [style=none] (33) at (2.8, 1.775) {};
+		\node [style=none] (34) at (1.55, 1.775) {};
+		\node [style=none] (35) at (2.55, 2.025) {};
+		\node [style=none] (36) at (1.8, 2.025) {};
+		\node [style=none] (37) at (2.3, 2.275) {};
+		\node [style=none] (38) at (2.05, 2.275) {};
+		\node [style=none] (39) at (2.175, 1.775) {};
+		\node [style=none] (40) at (3.875, 1.75) {};
+		\node [style=none] (41) at (4.5, 1.775) {};
+		\node [style=none] (42) at (3.25, 1.775) {};
+		\node [style=none] (43) at (4.25, 2.025) {};
+		\node [style=none] (44) at (3.5, 2.025) {};
+		\node [style=none] (45) at (4, 2.275) {};
+		\node [style=none] (46) at (3.75, 2.275) {};
+		\node [style=none] (47) at (3.875, 1.775) {};
+		\node [style=none] (48) at (0.05, -3.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE, bend right=45] (1) to (0);
+		\draw [style=WIRE] (3.center) to (2.center);
+		\draw [style=WIRE] (7.center) to (6.center);
+		\draw [style=WIRE, bend right=45] (8) to (9);
+		\draw [style=WIRE] (14.center) to (13.center);
+		\draw [style=WIRE] (24.center) to (25.center);
+		\draw [style=WIRE] (26.center) to (27.center);
+		\draw [style=WIRE] (28.center) to (29.center);
+		\draw [style=WIRE] (30.center) to (31.center);
+		\draw [style=WIRE] (33.center) to (34.center);
+		\draw [style=WIRE] (35.center) to (36.center);
+		\draw [style=WIRE] (37.center) to (38.center);
+		\draw [style=WIRE] (9) to (39.center);
+		\draw [style=WIRE] (41.center) to (42.center);
+		\draw [style=WIRE] (43.center) to (44.center);
+		\draw [style=WIRE] (45.center) to (46.center);
+		\draw [style=WIRE] (47.center) to (0);
+		\draw [style=DOTTED] (6.center) to (48.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

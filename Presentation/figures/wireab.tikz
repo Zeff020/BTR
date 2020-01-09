@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.75, 1) {};
+		\node [style=none] (1) at (-0.75, -1) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=none] (3) at (0, -1.5) {};
+		\node [style=none] (4) at (-0.65, -1.25) {\tiny Alice};
+		\node [style=none] (5) at (0.525, -1.25) {\tiny Bob};
+		\node [style=none] (6) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=new edge style 0] (2.center) to (3.center);
+		\draw [bend left] (0.center) to (6.center);
+		\draw [bend right] (6.center) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

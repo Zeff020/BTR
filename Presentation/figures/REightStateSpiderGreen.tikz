@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (0, -0.5) {};
+		\node [style=none] (2) at (0, 0.5) {};
+		\node [style=Rsmall green box] (3) at (0, 0) {8};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

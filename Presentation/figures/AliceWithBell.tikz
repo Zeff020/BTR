@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=GraySpider] (0) at (-1, -0.75) {};
+		\node [style=WHITESPIDER] (1) at (0, 0.25) {};
+		\node [style=none] (2) at (0, -1.75) {};
+		\node [style=none] (3) at (0, 1.25) {};
+		\node [style=GraySpider] (4) at (-1, -1.75) {};
+		\node [style=GraySpider] (5) at (-1, -1.75) {};
+		\node [style=none] (6) at (0, 0.25) {};
+		\node [style=none] (7) at (0, 2.25) {};
+		\node [style=GRAYSPIDER] (8) at (0, 1.25) {};
+		\node [style=WhiteSpider] (9) at (-1.75, 0.25) {};
+		\node [style=WhiteSpider] (10) at (-1.75, -0.75) {};
+		\node [style=none] (11) at (0, -2.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE, bend right=45] (1) to (0);
+		\draw [style=WIRE] (3.center) to (2.center);
+		\draw (0) to (5);
+		\draw [style=WIRE] (7.center) to (6.center);
+		\draw [style=WIRE, bend right=45] (8) to (9);
+		\draw (9) to (10);
+		\draw [style=DOTTED] (2.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

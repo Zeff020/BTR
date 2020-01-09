@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateMid] (1) at (-0.75, -0.5) {\rotatebox{-45}{\small $x$}};
+		\node [style=none] (3) at (-1, -1) {};
+		\node [style=none] (6) at (-0.25, 0.75) {};
+		\node [style=asym box] (12) at (-0.25, 1.25) {\small $\Phi$};
+		\node [style=none] (13) at (0, 1.75) {};
+		\node [style=none] (19) at (-0.75, 2.75) {};
+		\node [style=none] (20) at (-0.75, 1.25) {};
+		\node [style=none] (22) at (0.75, 3) {};
+		\node [style=WhiteSpider] (23) at (0.75, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (19.center) to (20.center);
+		\draw [bend right=15] (22.center) to (13.center);
+		\draw [bend left=15] (6.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

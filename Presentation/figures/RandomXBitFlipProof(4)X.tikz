@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WHITESPIDER] (1) at (0, 1) {};
+		\node [style=none] (2) at (0, -1) {};
+		\node [style=none] (3) at (0, 2) {};
+		\node [style=none] (5) at (1, -0.5) {};
+		\node [style=none] (6) at (1, 0) {};
+		\node [style=STATEMIDGRAY] (7) at (1, 0) {\rotatebox{-45}{1}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (2.center);
+		\draw [style=WIRE, bend left=45] (1) to (6.center);
+		\draw [style=WIRE] (5.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

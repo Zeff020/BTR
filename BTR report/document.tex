@@ -9,10 +9,9 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{physics}
-\usepackage{geometry}
+\usepackage[margin=1.25in]{geometry}
 \usepackage{blochsphere}
 \newcommand{\equaltext}[1]{\ensuremath{\stackrel{\text{#1}}{=}}}
-
 
 \input{computation.tikzdefs}
 \input{computation.tikzstyles}
@@ -21,7 +20,7 @@
 
 %opening
 \title{An Introduction to a Novel Diagrammatic Notation for Quantum Mechanics and its Applications to Some Quantum Cryptographic Protocols}
-\author{Zef Wolffs}
+\author{Zef Rembrandt Maria Wolffs}
 
 %Exploring a novel diagrammatic method: An introduction and its potential applications to some quantum cryptographic protocols
 
@@ -29,19 +28,19 @@
 
 \begin{titlepage}
 	\begin{center}
-		\vspace*{1cm}
+		\vspace*{1.0cm}
 		
-		\textbf{An Introduction to a Novel Diagrammatic Notation for Quantum Mechanics and its Applications to Some Quantum Cryptographic Protocols}
+		\textbf{\large An Introduction to a Novel Diagrammatic Notation for Quantum Mechanics and its Applications to Some Quantum Cryptographic Protocols}
 		
 		\vspace{1.5cm}
 		
-		\textbf{Zef Wolffs}
+		\textbf{Zef Rembrandt Maria Wolffs}
 		
 		\vfill
 		
 		External Research Supervisor: Dr. Boris $\check{\textrm{S}}$korić
 		
-		Internal Thesis Advisor: Dr. Jacco de Vries
+		Internal Thesis Advisor: Dr. Jacco Andreas de Vries
 		
 		\vspace{1.0cm}
 		
@@ -169,7 +168,7 @@ To exemplify the wire's behavior, we compose test in- and outputs.
 \label{equation:measure}
 \tikzfig{StateEffectMeasure} \equaltext{(\ref{equation:wiredecomposed})}  \tikzfig{wiretriangles2} \equiv \sum_{i}\bra{\phi}\ket{i}\bra{i}\ket{\psi} = \bra{\phi}\ket{\psi}
 \end{equation}
-
+\newpage
 Furthermore, we can also bend around wires.
 
 \begin{equation}
@@ -189,7 +188,7 @@ The $\phi$ thus gets 'bent around' along with the wire such that we get back to 
 
 Intuitively, wires can be seen as information carriers. Every wire has an associated \textbf{system type}, the space of the information that it carries. In the context of this report, the system types are generally Hilbert spaces. In section \ref{doubling} we will also allow tensor products of Hilbert spaces to be the system types.
 
-\subsubsection{The yanking equations}
+\subsubsection{The Yanking Equations}
 \label{section:yankingequations}
 
 In \cite{Coecke2017} the authors introduce a couple of equations for bending around wires called the \textbf{yanking equations}. One of them will be used later on in this report, so it will be introduced here.
@@ -220,7 +219,7 @@ We can find the equivalent form in Dirac notation as follows.
 \label{equation:introducemap}
 \tikzfig{map} \equiv \tikzfig{mapdecomposition} \equaltext{(\ref{equation:state})(\ref{equation:effect})} \sum_{ij}r_{ij}\ket{j}\bra{i}
 \end{equation}
-
+\newpage
 In the context of a bra and a ket, we can translate the diagrammatic linear map to Dirac notation as such.
 
 \begin{equation}
@@ -251,7 +250,7 @@ In the case where there are multiple in- and outputs it forces all to be the sam
 \label{equation:spidermultilegdecomposed}
 \tikzfig{spidermultileg} \equiv \tikzfig{spidermultilegdecomposed}
 \end{equation}
-
+\newpage
 By applying arbitrary in- and outputs we can see how the \textbf{Kronecker delta} arises from Dirac notation. The following example is for two two inputs and two outputs but the same principle extends to an arbitrary number of in- and outputs.
 
 \begin{equation}
@@ -355,7 +354,7 @@ All of the rules derived up to this point count also for the gray basis, or for 
 Some diagrammatic components get no particular color, such as maps. What a map actually does to some input state is independent of the basis that it was originally defined in. Of course, we could alter the map from equation (\ref{equation:introducemap}) to have gray triangles rather than white, but this would also imply a change in $r_{ij}$ from that same equation such that the mapping would be preserved, independent of the choice of input basis. The same goes for triangles that are not basis vectors, and thus the ones that are on their side. They can represent arbitrary vectors in their respective Hilbert spaces, and can generally be described as superpositions in various bases. There is no obvious preference for which basis to then describe this arbitrary vector in.
 
 
-\subsubsection{Basis and phase translations on the Bloch sphere}
+\subsubsection{Basis and Phase Translations on the Bloch Sphere}
 \label{section:basisandphasetranslations}
 In the previous section we saw how to translate between different bases diagrammatically. The approach was to translate Dirac bra's and kets directly to the appropriate triangles. Using phase spiders, we can employ a more purely diagrammatic method. This stems from the fact that applying a phase to a state corresponds to a rotation on the \textbf{Bloch sphere}. Let's see where a spider without a phase lies on the Bloch sphere.
 
@@ -428,7 +427,7 @@ The gray spiders and white basis have a similar relationship and these are inclu
 \textit{Where the gray triangles with a 0 and 1 are respectively at the positive and negative ends of the x axis on the Bloch sphere.}
 
 
-\subsubsection{The xor map}
+\subsubsection{The xor Map}
 
 \label{xorgate}
 
@@ -481,7 +480,7 @@ We can define an arbitrary \textbf{density matrix} as follows.
 	\label{equation:densitymatrix}
 	 \sum\limits_{ij} \rho_{ij} \tikzfig{wiretrianglenosum} \tikzfig{wiretrianglenosumj} \equiv \tikzfig{DensityState}
 \end{equation}
-
+\newpage
 Remember that in Dirac notation, an arbitrary density matrix $\rho$ is mathematically structured as an operator. 
 
 \begin{equation}
@@ -561,7 +560,7 @@ Since horizontally composed states form the tensor product of those states diagr
 
 Although it may seem like this state separates since it is made up of two triangles, it does not. Both triangles are correlated through the same index. Indeed, if the indices were different for each of the triangles this would not be an entangled state.
 
-\subsection{Advanced diagrammatic concepts}
+\subsection{Advanced Diagrammatic Concepts}
 
 \subsubsection{Encoding and Decoding}
 \label{encodingdecoding}
@@ -588,7 +587,7 @@ Phases get lost when decoding quantum states to classical states. We can rely on
 \end{equation}
 \textit{With j and k the indices of the triangles that constitute the left- and rightmost spiders in the third diagram respectively.}
 
-\subsubsection{Complementary spiders}
+\subsubsection{Complementary Spiders}
 \label{complementarity}
 
 Two bases are said to be \textbf{complementary} if encoding in one and decoding in the other always gives a random output. The two previously introduced bases X and Z are complementary. Encoding a classical state into a qubit in either one of these bases and then measuring that qubit in the other basis results in a random bit.
@@ -605,8 +604,8 @@ On the contrary, encoding and measuring in the same basis results in the input b
 	\label{equation:ComplementarityPositive}
 	\tikzfig{ComplementarySpiders5} = \tikzfig{ComplementarySpiders6} = \tikzfig{wire}
 \end{equation}
-
-\subsubsection{The essential uniqueness of purification}
+\newpage
+\subsubsection{The Essential Uniqueness of Purification}
 \label{section:essentialuniqueness}
 
 The \textbf{essential uniqueness of purification} is a theorem that states the following: Given two pure maps $\hat{V}_1$ and $\hat{V}_2$ that satisfy $V_1$, $V_2$: $\mathcal{H}$ $\rightarrow$ $\mathcal{L}$ $\otimes$ $\mathcal{K}$ and:
@@ -626,7 +625,7 @@ Intuitively, this theorem states that if $\hat{V}_1$ and $\hat{V}_2$ are similar
 
 Note that whereas here $\hat{V}_1$ and $\hat{V}_2$ both have one discarded output, this theorem scales for maps with an arbitrary number of outputs. In other words, $\mathcal{L}$ could be the Hilbert space of an arbitrarily large composite system.
 
-\subsubsection{The $k-k'$ commute rule}
+\subsubsection{The $k-k'$ Commute Rule}
 \label{section:kkcommute}
 In this report we will on multiple occasions want to move certain phase spiders past one another. This does, however, require some more advanced diagrammatic derivations that are too extensive for the scope of this report. Therefore we show the result here, and refer to the relevant literature. In \cite{Coecke2017} on page 771, Coecke and Kissinger introduce the \textbf{$k-k'$ commute rule} and give the full diagrammatic derivation to arrive to this rule. As we will later see, this rule is the main ingredient for pushing diagrammatic Pauli maps past one another. It states that for $k, k' \in \{0, \pi\}$: 
 
@@ -675,7 +674,7 @@ To check that this is indeed a viable communication protocol we want equation (\
 \label{equation:OTPProof3}
 \tikzfig{OTPProof3}
 \end{equation}
-
+\newpage
 This happens up to a constant factor.
 
 \begin{equation}
@@ -695,7 +694,7 @@ Of course, we want Eve to learn nothing about the message $m$. To see the situat
 	\label{equation:OTPProof9}
 	\tikzfig{OTPProof9}
 \end{equation}
-
+\newpage
 Using the translations between triangles and spiders from equation (\ref{equation:blochsphere}) and some spider fusion (\ref{equation:spiderfusion}) brings us to:
 
 \begin{equation}
@@ -849,6 +848,7 @@ To make a diagrammatic version of the QOTP we need to compose the Hermitian adjo
 \label{equation:QOTPEve}
 \end{equation}
 
+\newpage 
 Let us first consider what would happen if there was no noise, and thus no Eve, in the quantum communication channels. Diagrammatically, this looks as follows.
 
 \begin{equation}
@@ -1029,7 +1029,7 @@ However, due to the fact that the bases are mutually unbiased we get the followi
 \end{equation}
 
 These are the cases that Alice and Bob decide to not use upon discussing their choice of bases later in the protocol.
-
+\newpage
 Now if we limit Eve's interference to only a measurement in either the z or x bases she will have a 50\% chance of measuring in the correct basis. In the case where Alice and Bob both use the x basis Eve can thus measure correctly.
 
 \begin{equation}
@@ -1193,7 +1193,7 @@ By applying the essential uniqueness of purification (the theorem introduced in 
 	\label{equation:PurifiedQKR}
 	\tikzfig{QKRProof6X} = \tikzfig{QKRProof7X}
 \end{equation}
-
+\newpage
 Deleting the first and third outputs of the LHS of equation (\ref{equation:PurifiedQKR}) gives the following.
 
 \begin{equation}
@@ -1348,7 +1348,7 @@ This is a strikingly simple equivalence. Bending the U-shaped curve in the quant
 
 Due to their equivalence, whatever we can prove for the one diagram we can state as fact for the other without needing to prove it. This can be very convenient in security proofs.
 
-\subsection{Protocol equivalences from the paper "Quantum Alice and Silent Bob" \cite{cryptoeprint:2019:875}}
+\subsection{Protocol Equivalences From the Paper "Quantum Alice and Silent Bob" \cite{cryptoeprint:2019:875}}
 
 \label{section:QAaSBEequivalences}
 In a recent article \cite{cryptoeprint:2019:875}, $\check{\textrm{S}}$korić and Leermakers propose a scheme for QKR that includes no classical communication from Alice to Bob and only one bit from Bob to Alice. To prove its security, the authors modify the proposed protocol to one that is better suited for this in a series of steps that preserve security-wise equivalence to the original. In this section, we will have a look at these equivalences diagrammatically using the eight state encoding QKR protocol from equation (\ref{equation:QKRGeneral}) as starting point which we have proven secure in the noiseless case in section \ref{section:qkr}.
@@ -1359,7 +1359,7 @@ In a recent article \cite{cryptoeprint:2019:875}, $\check{\textrm{S}}$korić and
 \end{equation}
 
 
-\subsubsection{Masking the qubit payload with public randomness}
+\subsubsection{Masking the Qubit Payload with Public Randomness}
 \label{section:maskingqubitpubrand}
 In the first equivalent protocol Alice and Bob both xor the same bitstring $a \in \{0,1\}^n$ in the classical domain with their payload and measurement result respectively. $a$ is public, implying that Eve also learns it. The rest of the protocol remains the same. To implement this diagrammatically, we give Eve another map with respect to (\ref{equation:EveNewMap}) to represent her doing classical post processing. In this map, she uses her knowledge on $a$ and what she learned from intercepting the quantum state from Alice to Bob. We could also include this map later on. However, since we have to include it anyway we may as well do it here already, such that we can avoid to introduce it along with the more complicated equivalences that are to follow.
 
@@ -1475,7 +1475,7 @@ Finally, postcomposing a brown eight state encryption map, precomposing its adjo
 \end{equation}
 
 
-This equation we have already seen, it is the starting point for the security proof of eight state encoding QKR, equation (\ref{equation:QKDSetupRed}).
+This equation we have already seen, it is the starting point for the security proof of eight state encoding QKR, equation (\ref{equation:QKDSetupRed}). Therefore we get that:
 
 %\footnote{There is of course a minor difference: In (\ref{equation:QKDSetupRed}) Eve has the map $\Phi$ and here Eve has the map $\Phi_1$. This is insignificant however. $\Phi_1$ was only introduced to distinguish between Eve's quantum map and Eve's classical map. We can just say that $\Phi$ = $\Phi_1$ without loss of generality since Eve's quantum map can be any (multitude of) unspecified operation(s) in both cases.} Therefore, we could just follow all the steps which we followed in section \ref{section:qkr} and get as a result that $\Phi_1$ separates as follows.
 
@@ -1500,7 +1500,7 @@ In a series of steps following rules which we have seen before we can show that 
 
 So we see that even though Eve gets $a$ and some quantum state, she is not attached to Alice and Bob's communication channel. Alice and Bob on the other hand achieve uninterrupted communication. This is what we would intuitively expect for the noiseless case. 
 
-\subsubsection{EPR version of the protocol}
+\subsubsection{EPR Version of the Protocol}
 
 \label{section:eprqkr}
 The second equivalent protocol is an EPR version of the original. We have already seen a diagrammatic implementation of an EPR protocol in section \ref{subsection:QuantumTeleportation}, the diagram for quantum teleportation. The characteristic difference between an EPR version of a protocol and a normal version is that in the former Alice and Bob share some entangled qubit. In quantum teleportation this is the Bell state $B_0$, given by the doubled wire shaped like a cup in equation (\ref{equation:quantumteleportation}).
@@ -1513,7 +1513,7 @@ Diagrammatically, it is rather trivial to go from the protocol introduced in the
 	\tikzfig{QKRQAaSBA1NoDottedLineX} \equaltext{(\ref{equation:yankingequation})} \tikzfig{QKRQAaSBB2X}
 	\end{aligned}
 \end{equation}
-
+\newline
 Subsequently pulling her encoding, xor, and encryption operations through:
 
 \begin{equation}
@@ -1532,7 +1532,7 @@ Which is indeed the EPR version of the protocol in equation (\ref{equation:QKRQA
 
 Of course, if these protocols are equivalent, then by security-wise equivalence of (\ref{equation:QKRQAaSBA1}) and (\ref{equation:QKRGeneral}) we also have security-wise equivalence of the EPR version introduced in this section, (\ref{equation:EPRQKR}), and (\ref{equation:QKRGeneral}), the protocol that was the starting point of all these equivalences. 
 
-\subsubsection{Adding a random permutation}
+\subsubsection{Adding a Random Permutation}
 
 In the next equivalent step, the authors propose that Alice and Bob both publicly decide on the same random permutation ($\pi$) to apply to their own set of qubit states before measuring, and forget it right after. Eve, however, can remember this permutation. Diagrammatically, this looks as follows.
 
@@ -1590,7 +1590,7 @@ To show that this protocol is equivalent to the protocols from the previous sect
 
 And so we see that the protocol from this section is equivalent to the protocol of the previous section, equation (\ref{equation:EPRQKR}), and therefore indirectly also to (\ref{equation:QKRGeneral}), the starting point of this series of equivalences.
 
-\subsubsection{Adding random Pauli transforms}
+\subsubsection{Adding Random Pauli Transforms}
 
 In the final equivalent step, the authors propose that Alice and Bob both publicly decide on the same random Pauli to apply to their own qubit states before measuring. Afterwards they again forget about their particular choice of Pauli. Remembering the equivalence between the Pauli's and the Bell maps from equation (\ref{equation:bellsigmas}) and how to construct Bell maps from equation (\ref{equation:BellMap}), this looks as follows.
 
@@ -1675,11 +1675,11 @@ The aim of this research was largely divided up into two parts. The first was to
 
 %In general, this self-contained work brings the reader in an intuitive manner from undergraduate level quantum mechanics to understanding some recent articles on quantum cryptography from a diagrammatic perspective. Therefore, it could form a compelling argument for researchers in the field of quantum cryptography to use this notation for their own research. 
 
-\section{Critical reflection}
+\section{Critical Reflection}
 \label{section:criticalreflection}
-I am generally very satisfied with the project. These are a couple of thoughts which I will keep in mind for future projects.
+I am generally very satisfied with the project. This section contains a couple of thoughts which I will keep in mind for future projects.
 
-\subsection{Organization of tasks}
+\subsection{Organization of Tasks}
 
 At the start of the project I had many ideas about how to organize the project and optimize the time I had for communication with my supervisors. One of them, for example, was to use a Kanban board \cite{esparrago1988kanban} that my supervisors could access as well to organize tasks. This Kanban board was useful in the beginning of the project when I was defining the scope and assessing what needed to be done. However, after a couple of weeks I found myself looking at the board only rarely. Although I did not get any feedback on this, I do not think my supervisors measured my progress by the Kanban board either. I forced myself to keep using it for a while but decided to stop doing this completely after a couple of weeks. I noticed that after I stopped using it I naturally went into a cycle of making progress for a few weeks and writing for a week or two after I reached some milestone. At the end of each cycle, writing about it would finish that part of the work such that I could put it to the side and clear my mind to think about what task to take on next. This method of organizing tasks is mainly different from the use of a Kanban board in that there is no predefined sequence of tasks to follow; each task is made up only after the previous one is finished. I enjoyed working like this more and I think it also increased productivity.
 
@@ -1687,13 +1687,15 @@ At the start of the project I had many ideas about how to organize the project a
 
 %I don't think many people particularly enjoy receiving criticism on their work, myself included. With that being said, I try to be open to it so that I can learn how to deal with it and get used to it through exposure. In this project I asked for criticism on various occasions, for example when I asked my supervisors to read parts of my texts, or when I doubted if a certain approach to solving a problem was the correct one. Of course, on many occasions I did make mistakes, and received the appropriate critique. Almost all of the time the criticism was on things that were just plain wrong, or could clearly have been done better. These cases were easy to accept after the mistake was understood. In other cases, where there was no direct mistake or the mistake was not understood by me, it was a bit more difficult to just accept the criticism. In the cases where I didn't understand the mistake I tried to ask for further explanation. In the cases where there was no direct mistake, but rather a stylistic suggestion for example, I mostly relied on the expertise and experience of my supervisors, and just implemented the suggestion. I think this was the correct thing to do. Although I only remember it happening very few times, it mostly turned out later that the supervisor's suggestions were the better choice in the long run.
 
-\subsection{Listening while taking up information}
+\subsection{Listening While Taking up Information}
 \label{section:listeninginfo}
 Listening while taking up information was probably the most difficult aspect of the practical work of the thesis. I had many interesting and educative conversations with my supervisors and others who were doing research in the same field - something I actually did not expect to happen due to the limited amount of available time that academics tend to have. In the beginning, I used to write down as much as I could during these conversations such that afterwards I would be able to recall the points and actually implement them in the thesis. However, I noticed that these conversations actually became more fruitful after I stopped writing down so much because that gave me more time to both listen and think about a response or follow-up question.\footnote{Research actually suggests \cite{piolat2005cognitive} that listening while taking notes requires similar levels of cognitive effort as playing a game of chess or translating a piece of text.} The downside of this was that I would sometimes forget points that were made during the conversation. In the end, I chose to write down very little, but would try to write down a keyword for each main discussed point. Although this worked quite well, I would still sometimes forget some details and I think the conversations still suffered from it a little. There are of course other options, such as recording these conversations. However, I cannot expect everyone to be comfortable with this, and this would probably also not be completely appropriate in more informal settings such as during lunch. I still do not know the optimal way to tackle this problem but I think that writing down just the main points while listening very closely is a good compromise. In the future I may also try to take some time right after each conversation, when memory of it is still fresh, to write down a summary of what was discussed.
 
-\subsection{Putting things in perspective}
+\subsection{Putting Things in Perspective}
 
 Sometimes I have trouble putting things in perspective. This is something that I was actually not aware of before the project, but was told to me closer towards the end by my research supervisor. After receiving this feedback I reread some parts with this in mind and I think I understand were this comes from. Firstly, I could have explicitly taken some more time to develop an understanding of the context but I chose to focus more on my own research and the papers that were directly relevant to it. Secondly, I think that experience in the field helps to place a work like this in the larger context. This experience gives a better view of what has come before, what research is being done currently, and what the likely paths are for the future. I did not have this experience, but of course did have people around me who were much more experienced in the field, and who did possess knowledge of the larger context. For example, my research supervisor and his PhD student have multiple articles on QKR, one of the main subjects of this thesis. With them, I often discussed how this work could be put in the relevant perspective. I think what went wrong here relates to the previous section, \ref{section:listeninginfo}. Although we did talk much about how specific parts of this work could be put in perspective, it is not what I thought I should take away from these conversations. What I did try to write down and memorize during these conversations were usually more technical and tangible points since these were the kinds of things that I could put directly into words and diagrams after such a conversation. In the future I would approach this differently. I think the solution that I proposed before in \ref{section:listeninginfo} - to write a small summary after each conversation - would work well, provided I write about what was discussed about the larger context as well.
+
+\newpage
 
 \bibliographystyle{plain}
 \bibliography{library}
@@ -1705,83 +1707,83 @@ Sometimes I have trouble putting things in perspective. This is something that I
 \label{Keywords}
 
 
-~~~~\hyperref[coloursandbases]{Base, page 7}
+~~~~\hyperref[coloursandbases]{Base, page 8}
 
 \hyperref[section:basisandphasetranslations]{Bloch sphere, page 10}
 
-\hyperref[braandket]{Bra, page 2}
+\hyperref[braandket]{Bra, page 3}
 
-\hyperref[coloursandbases]{Color, page 7}
+\hyperref[coloursandbases]{Color, page 8}
 
-\hyperref[complementarity]{Complementarity, page 11}
+\hyperref[complementarity]{Complementarity, page 14}
 
-\hyperref[encodingdecoding]{Decoding, page 11}
+\hyperref[encodingdecoding]{Decoding, page 14}
 
-\hyperref[spiders]{Deleting, page 6}
+\hyperref[spiders]{Deleting, page 7}
 
-\hyperref[doubling]{Density matrix, page 8}
+\hyperref[doubling]{Density matrix, page 11}
 
-\hyperref[discarding]{Discarding, page 9}
+\hyperref[discarding]{Discarding, page 2}
 
-\hyperref[doubling]{Doubling, page 7}
+\hyperref[doubling]{Doubling, page 10}
 
-\hyperref[braandket]{Effect, page 2}
+\hyperref[braandket]{Effect, page 3}
 
-\hyperref[encodingdecoding]{Encoding, page 11}
+\hyperref[encodingdecoding]{Encoding, page 13}
 
-\hyperref[entanglement]{Entangled state, page 9}
+\hyperref[entanglement]{Entangled state, page 13}
 
-\hyperref[section:essentialuniqueness]{Essential uniqueness of purification, page 12}
+\hyperref[section:essentialuniqueness]{Essential uniqueness of purification, page 15}
 
-\hyperref[discarding]{Fully mixed state, page 9}
+\hyperref[discarding]{Fully mixed state, page 13}
 
 \hyperref[braandket]{Hermitian Adjoint, page 3}
 
 \hyperref[braandket]{Hermitian Conjugate, page 3}
 
-\hyperref[identity]{Identity, page 3}
+\hyperref[identity]{Identity, page 4}
 
-\hyperref[section:kkcommute]{$k-k'$ commute rule, page 13}
+\hyperref[section:kkcommute]{$k-k'$ commute rule, page 15}
 
-\hyperref[braandket]{Ket, page 2}
+\hyperref[braandket]{Ket, page 3}
 
-\hyperref[spiders]{Kronecker delta, page 5}
+\hyperref[spiders]{Kronecker delta, page 7}
 
-\hyperref[maps]{Linear map, page 4}
+\hyperref[maps]{Linear map, page 5}
 
 \hyperref[maps]{Map, page 5}
 
-\hyperref[doubling]{Mixed state, page 8}
+\hyperref[doubling]{Mixed state, page 11}
 
-\hyperref[phasespiders]{Phase, page 6}
+\hyperref[phasespiders]{Phase, page 7}
 
-\hyperref[phasespiders]{Phase spider, page 6}
+\hyperref[phasespiders]{Phase spider, page 7}
 
-\hyperref[discarding]{Purification, page 9}
+\hyperref[discarding]{Purification, page 13}
 
-\hyperref[doubling]{Purity, page 8}
+\hyperref[doubling]{Purity, page 11}
 
-\hyperref[spiders]{Random variable, page 6}
+\hyperref[spiders]{Random variable, page 9}
 
-\hyperref[spiders]{Spider, page 5}
+\hyperref[spiders]{Spider, page 6}
 
-\hyperref[braandket]{State, page 2}
+\hyperref[braandket]{State, page 3}
 
-\hyperref[identity]{System type, page 4}
+\hyperref[identity]{System type, page 5}
 
-\hyperref[section:tensorproduct]{Tensor product, page 3}
+\hyperref[section:tensorproduct]{Tensor product, page 4}
 
-\hyperref[discarding]{Trace, page 9}
+\hyperref[discarding]{Trace, page 12}
 
 \hyperref[braandket]{Transpose, page 3}
 
-\hyperref[identity]{Wire, page 3}
+\hyperref[identity]{Wire, page 4}
 
-\hyperref[xorgate]{Xor map, page 12}
+\hyperref[xorgate]{xor map, page 10}
 
-\hyperref[section:yankingequations]{Yanking equations, page 10}
+\hyperref[section:yankingequations]{Yanking equations, page 5}
 
-\section{Bell and Pauli matrices}
+\section{Bell and Pauli Matrices}
 \label{appendix:BellMaps}
 
 
@@ -1814,7 +1816,7 @@ B_2 = \sigma_3 =
 \end{aligned}
 \end{equation}
 
-\section{Bell states}
+\section{Bell States}
 \label{appendix:bellstates}
 The four Bell states are denoted as follows in Dirac notation.
 
@@ -1826,5 +1828,7 @@ The four Bell states are denoted as follows in Dirac notation.
 \ket{B_3} = \frac{1}{\sqrt{2}}(\ket{01} - \ket{10})
 \end{split}
 \end{equation}
+
+\textit{Wordcount: 15956}
 
 \end{document}

@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=RedSpider] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, -1.25) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=REDSPIDER] (3) at (0, 0) {};
+		\node [style=none] (4) at (1.25, 0.75) {};
+		\node [style=none] (5) at (0.75, 0.75) {};
+		\node [style=none] (6) at (1.75, 0.75) {};
+		\node [style=none] (7) at (1, 1) {};
+		\node [style=none] (8) at (1.5, 1) {};
+		\node [style=none] (9) at (1.15, 1.25) {};
+		\node [style=none] (10) at (1.35, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (2.center) to (1.center);
+		\draw [style=WIRE] (9.center) to (10.center);
+		\draw [style=WIRE] (7.center) to (8.center);
+		\draw [style=WIRE] (5.center) to (6.center);
+		\draw [style=WIRE, bend right=15] (3) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

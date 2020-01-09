@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (1.25, -0.75) {};
+		\node [style=StateMid] (1) at (-1, -1.25) {\rotatebox{-45}{m}};
+		\node [style=GraySpider] (2) at (0, 0.5) {};
+		\node [style=none] (3) at (-1, -1.5) {};
+		\node [style=GraySpider] (10) at (0, 0.5) {};
+		\node [style=none] (11) at (1.5, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (3.center) to (2);
+		\draw (2) to (10);
+		\draw (11.center) to (10);
+		\draw [style=WIRE] (10) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}

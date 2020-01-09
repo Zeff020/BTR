@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateMidGray] (0) at (0, 0) {\rotatebox{-45}{1}};
+		\node [style=none] (1) at (0, -0.5) {};
+		\node [style=none] (2) at (0, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=270, out=90] (1.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

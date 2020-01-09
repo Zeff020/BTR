@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateRight] (0) at (0.05, -0.75) {};
+		\node [style=EffectRight] (2) at (-0.05, 0.75) {};
+		\node [style=none] (3) at (0, 0.75) {$\phi$};
+		\node [style=none] (4) at (0, -0.75) {$\psi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

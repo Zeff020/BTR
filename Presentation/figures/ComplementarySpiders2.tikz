@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=GraySpider] (0) at (0, -0.5) {};
+		\node [style=WhiteSpider] (1) at (0, 0.5) {};
+		\node [style=none] (2) at (0, -1.25) {};
+		\node [style=none] (3) at (0, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0) to (2.center);
+		\draw (3.center) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

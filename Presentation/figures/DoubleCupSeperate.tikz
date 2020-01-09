@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=STATEMID] (0) at (-1, -0.5) {\rotatebox{-45}{$i$}};
+		\node [style=STATEMID] (1) at (1, -0.5) {\rotatebox{-45}{$i$}};
+		\node [style=none] (2) at (1, 0.5) {};
+		\node [style=none] (3) at (-1, 0.5) {};
+		\node [style=none] (4) at (-1, -1) {};
+		\node [style=none] (5) at (1, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (4.center);
+		\draw [style=WIRE, in=90, out=-90] (2.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

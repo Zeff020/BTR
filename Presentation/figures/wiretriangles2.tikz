@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-1, 0) {$\sum\limits_{i}$};
+		\node [style=none] (7) at (0, 2.5) {};
+		\node [style=none] (8) at (0, -2.5) {};
+		\node [style=none] (9) at (0, 1) {};
+		\node [style=none] (10) at (0, -1) {};
+		\node [style=StateMid] (14) at (0, 1.25) {\rotatebox{-45}{i}};
+		\node [style=EffectMid] (15) at (0, -1.25) {\rotatebox{135}{i}};
+		\node [style=StateRight] (16) at (-0.025, -2.25) {};
+		\node [style=EffectRight] (17) at (-0.125, 2.25) {};
+		\node [style=none] (18) at (-0.075, 2.25) {$\phi$};
+		\node [style=none] (19) at (-0.075, -2.25) {$\psi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (7.center) to (9.center);
+		\draw (8.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

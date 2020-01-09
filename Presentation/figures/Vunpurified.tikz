@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=asym box] (0) at (0, 0) {\reflectbox{$V_1$}};
+		\node [style=none] (1) at (-0.75, 0) {};
+		\node [style=none] (2) at (0.75, 0) {};
+		\node [style=none] (3) at (0.75, 2) {};
+		\node [style=none] (4) at (-0.75, 2) {};
+		\node [style=none] (5) at (0, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (2.center);
+		\draw (4.center) to (1.center);
+		\draw (0) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

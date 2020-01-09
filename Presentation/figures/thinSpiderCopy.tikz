@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, 0) {};
+		\node [style=none] (3) at (0, 0) {};
+		\node [style=none] (5) at (0, -1.25) {};
+		\node [style=none] (8) at (1, 1) {};
+		\node [style=none] (9) at (-1, 1) {};
+		\node [style=StateRight] (10) at (0, -1) {\rotatebox{90}{$\psi$}};
+		\node [style=WhiteSpider] (11) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (5.center);
+		\draw [bend right=45] (9.center) to (3.center);
+		\draw [bend right=45] (3.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

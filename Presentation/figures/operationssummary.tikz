@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=StateLeft] (0) at (-2, -2) {\rotatebox{180}{$\psi$}};
+		\node [style=StateRight] (1) at (2, -2.1) {\rotatebox{90}{$\psi$}};
+		\node [style=EffectRight] (2) at (2, 2.025) {\rotatebox{0}{$\psi$}};
+		\node [style=EffectLeft] (5) at (-2, 2) {\rotatebox{270}{$\psi$}};
+		\node [style=none] (10) at (1.5, 2.75) {};
+		\node [style=none] (11) at (-1.5, 2.75) {};
+		\node [style=none] (14) at (-1.5, 1.5) {};
+		\node [style=none] (15) at (1.5, 1.5) {};
+		\node [style=none] (16) at (1.5, -1.5) {};
+		\node [style=none] (17) at (-1.5, -1.5) {};
+		\node [style=none] (18) at (-1.5, -3) {};
+		\node [style=none] (19) at (1.5, -3) {};
+		\node [style=none] (20) at (-2.75, -1.5) {};
+		\node [style=none] (21) at (-2.75, 1.5) {};
+		\node [style=none] (22) at (2.75, -1.5) {};
+		\node [style=none] (23) at (2.75, 1.5) {};
+		\node [style=none] (24) at (0, 3.5) {\tiny conjugate};
+		\node [style=none] (25) at (0, -3.8) {\tiny $\rotatebox{180}{conjugate}$};
+		\node [style=none] (26) at (3.5, 0) {\tiny $\rotatebox{270}{adjoint}$};
+		\node [style=none] (27) at (-3.5, 0) {\tiny $\rotatebox{90}{adjoint}$};
+		\node [style=none] (29) at (0, 1.25) {\tiny transpose};
+		\node [style=none] (30) at (2, -2.25) {};
+		\node [style=none] (31) at (2, 2.25) {};
+		\node [style=none] (32) at (-2, 2.25) {};
+		\node [style=none] (33) at (-2, -2.25) {};
+		\node [style=none] (34) at (-2, -1) {};
+		\node [style=none] (35) at (-2, 1) {};
+		\node [style=none] (36) at (2, 1) {};
+		\node [style=none] (37) at (2, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=blue dir, bend right] (10.center) to (11.center);
+		\draw [style=blue dir, in=510, out=-330] (11.center) to (10.center);
+		\draw [style=blue dir, bend right] (18.center) to (19.center);
+		\draw [style=blue dir, bend right=330] (19.center) to (18.center);
+		\draw [style=blue dir, bend left] (20.center) to (21.center);
+		\draw [style=blue dir, bend left=330] (21.center) to (20.center);
+		\draw [style=blue dir, bend right] (22.center) to (23.center);
+		\draw [style=blue dir, bend right=330] (23.center) to (22.center);
+		\draw [style=blue dir] (15.center) to (17.center);
+		\draw [style=blue dir] (17.center) to (15.center);
+		\draw [style=blue dir] (16.center) to (14.center);
+		\draw [style=blue dir] (14.center) to (16.center);
+		\draw (32.center) to (35.center);
+		\draw (33.center) to (34.center);
+		\draw (30.center) to (37.center);
+		\draw (31.center) to (36.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

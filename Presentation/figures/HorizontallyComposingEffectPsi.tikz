@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0.9, 0.5) {};
+		\node [style=none] (3) at (-0.875, 0.5) {};
+		\node [style=none] (4) at (-0.875, -0.75) {};
+		\node [style=none] (5) at (0.9, -0.75) {};
+		\node [style=EffectRight] (6) at (0.9, 0.25) {$\phi$};
+		\node [style=EffectRight] (7) at (-0.875, 0.25) {$\phi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (4.center);
+		\draw (2.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WHITESPIDER] (1) at (0, 0.25) {};
+		\node [style=none] (2) at (0, -1.75) {};
+		\node [style=none] (3) at (0, 1.25) {};
+		\node [style=none] (6) at (0, 0.25) {};
+		\node [style=none] (7) at (0, 2.25) {};
+		\node [style=GRAYSPIDER] (8) at (0, 1.25) {};
+		\node [style=none] (12) at (3.25, 0.25) {};
+		\node [style=none] (13) at (2, 0.25) {};
+		\node [style=none] (14) at (3, -0.25) {};
+		\node [style=none] (15) at (2.25, -0.25) {};
+		\node [style=none] (16) at (2.75, -0.75) {};
+		\node [style=none] (17) at (2.5, -0.75) {};
+		\node [style=none] (18) at (1.625, -0.75) {};
+		\node [style=none] (19) at (0.375, -0.75) {};
+		\node [style=none] (20) at (1.375, -1.25) {};
+		\node [style=none] (21) at (0.625, -1.25) {};
+		\node [style=none] (22) at (1.125, -1.75) {};
+		\node [style=none] (23) at (0.875, -1.75) {};
+		\node [style=none] (24) at (1, -0.75) {};
+		\node [style=none] (25) at (2.625, 0.25) {};
+		\node [style=none] (11) at (0, -2.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (2.center);
+		\draw [style=WIRE] (7.center) to (6.center);
+		\draw [style=WIRE] (12.center) to (13.center);
+		\draw [style=WIRE] (14.center) to (15.center);
+		\draw [style=WIRE] (16.center) to (17.center);
+		\draw [style=WIRE] (18.center) to (19.center);
+		\draw [style=WIRE] (20.center) to (21.center);
+		\draw [style=WIRE] (22.center) to (23.center);
+		\draw [style=WIRE, bend right=330] (8) to (25.center);
+		\draw [style=WIRE, bend right=315, looseness=1.25] (6.center) to (24.center);
+		\draw [style=DOTTED] (2.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

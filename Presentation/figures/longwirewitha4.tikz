@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 3) {};
+		\node [style=none] (1) at (0, -3) {};
+		\node [style=WhiteSpider] (2) at (1.25, -2.5) {};
+		\node [style=none] (3) at (1.75, -2.5) {$a$};
+		\node [style=GraySpider] (4) at (0, 2) {};
+		\node [style=GraySpider] (5) at (0, -2) {};
+		\node [style=none] (6) at (-0.75, 1.5) {};
+		\node [style=none] (7) at (0.75, 1.5) {};
+		\node [style=none] (8) at (0.75, -1.5) {};
+		\node [style=none] (9) at (-0.75, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [bend left=60, looseness=0.75] (4) to (2);
+		\draw [bend right=15] (5) to (2);
+		\draw [style=new edge style 0] (7.center) to (8.center);
+		\draw [style=new edge style 0] (9.center) to (8.center);
+		\draw [style=new edge style 0] (9.center) to (6.center);
+		\draw [style=new edge style 0] (6.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

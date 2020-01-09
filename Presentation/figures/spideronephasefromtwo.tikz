@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (1) at (0, 0) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=none] (3) at (1.5, 0.125) {\small$~e^{i(\alpha_j-\alpha_j)}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ASYM BOX] (0) at (0, 0) {$\Phi$};
+		\node [style=none] (1) at (0.5, 0) {};
+		\node [style=none] (2) at (-0.5, 0) {};
+		\node [style=none] (3) at (0.5, 1.25) {};
+		\node [style=none] (4) at (-0.5, 1.25) {};
+		\node [style=none] (5) at (-0.5, -1.25) {};
+		\node [style=WhiteSpider] (9) at (-0.5, 1.25) {};
+		\node [style=WhiteSpider] (10) at (-0.5, -1.25) {};
+		\node [style=none] (11) at (-0.5, 2) {};
+		\node [style=none] (12) at (-0.5, -2) {};
+		\node [style=none] (13) at (0, 1.25) {};
+		\node [style=none] (14) at (1, 1.25) {};
+		\node [style=none] (15) at (0.25, 1.5) {};
+		\node [style=none] (16) at (0.75, 1.5) {};
+		\node [style=none] (17) at (0.4, 1.75) {};
+		\node [style=none] (18) at (0.4, 1.75) {};
+		\node [style=none] (19) at (0.6, 1.75) {};
+		\node [style=GraySpider] (20) at (-0.5, 1.25) {};
+		\node [style=GraySpider] (21) at (-0.5, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (1.center);
+		\draw [style=WIRE] (4.center) to (2.center);
+		\draw [style=WIRE] (2.center) to (5.center);
+		\draw (11.center) to (9);
+		\draw (10) to (12.center);
+		\draw [style=WIRE] (18.center) to (19.center);
+		\draw [style=WIRE] (15.center) to (16.center);
+		\draw [style=WIRE] (13.center) to (14.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, -0.5) {};
+		\node [style=none] (23) at (0, -1.5) {};
+		\node [style=none] (24) at (0, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (24.center) to (2.center);
+		\draw [style=DOTTED] (2.center) to (23.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

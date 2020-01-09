@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, -1) {};
+		\node [style=none] (1) at (-1, -2) {};
+		\node [style=none] (3) at (-0.5, 2) {};
+		\node [style=BrownSpider] (5) at (0, -1) {};
+		\node [style=asym box] (9) at (0, 0.5) {\reflectbox{V}};
+		\node [style=none] (14) at (1.1, -2) {};
+		\node [style=none] (15) at (0.35, 0.5) {};
+		\node [style=none] (16) at (0.35, 2) {};
+		\node [style=none] (17) at (-0.5, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (5) to (14.center);
+		\draw [bend right] (5) to (1.center);
+		\draw (15.center) to (16.center);
+		\draw (3.center) to (17.center);
+		\draw (9) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.75, 1.5) {};
+		\node [style=none] (1) at (0.25, -1.5) {};
+		\node [style=ASYM BOX] (2) at (0.25, 0) {\reflectbox{$\Phi$}};
+		\node [style=none] (3) at (-0.5, 1.5) {};
+		\node [style=none] (4) at (-0.5, 0) {};
+		\node [style=none] (5) at (0.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (3.center) to (4.center);
+		\draw [style=WIRE] (0.center) to (5.center);
+		\draw [style=WIRE] (2) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

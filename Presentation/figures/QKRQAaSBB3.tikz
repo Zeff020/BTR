@@ -1,0 +1,68 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=ASYM BOX] (0) at (0, -0.5) {\reflectbox{$\Phi_1$}};
+		\node [style=none] (1) at (0.5, -0.5) {};
+		\node [style=none] (2) at (-0.5, -0.5) {};
+		\node [style=none] (3) at (1, 0.75) {};
+		\node [style=none] (4) at (-0.5, 0.75) {};
+		\node [style=none] (5) at (-0.5, -2.5) {};
+		\node [style=none] (11) at (-0.5, 1.5) {};
+		\node [style=none] (12) at (-0.5, -2.5) {};
+		\node [style=BrownSpider] (20) at (-0.5, 0.75) {};
+		\node [style=BrownSpider] (21) at (-3, -3.6) {};
+		\node [style=none] (23) at (1, 3.5) {};
+		\node [style=WhiteSpider] (24) at (1, 3.5) {};
+		\node [style=none] (25) at (1, 4) {};
+		\node [style=Rsmall brown box] (26) at (-3, -3) {8};
+		\node [style=Rsmall brown box] (27) at (-0.5, 1.5) {8};
+		\node [style=none] (28) at (-0.5, 3.25) {};
+		\node [style=WhiteSpider] (30) at (-2.5, -0.75) {};
+		\node [style=none] (31) at (-0.5, -4.25) {};
+		\node [style=WhiteSpider] (32) at (-3, -2.25) {};
+		\node [style=WhiteSpider] (33) at (-0.5, 2.25) {};
+		\node [style=none] (34) at (-0.25, 3) {};
+		\node [style=none] (35) at (0.75, 5.75) {};
+		\node [style=GraySpider] (37) at (-0.5, 2.25) {};
+		\node [style=GraySpider] (38) at (-3, -2.25) {};
+		\node [style=asym box conjugate] (39) at (0.5, 4.5) {$\Phi_2$};
+		\node [style=none] (40) at (0.25, 4) {};
+		\node [style=none] (41) at (0.75, 4.5) {};
+		\node [style=none] (42) at (-1, 4.25) {};
+		\node [style=none] (43) at (-1.75, 5.75) {};
+		\node [style=none] (45) at (-3, -2.25) {};
+		\node [style=none] (46) at (-4.25, -1.25) {};
+		\node [style=none] (47) at (-5.5, -2.25) {};
+		\node [style=none] (48) at (-5.5, -4.75) {};
+		\node [style=none] (49) at (-0.5, -4.25) {};
+		\node [style=none] (50) at (-1.75, -5.25) {};
+		\node [style=none] (51) at (-3, -4.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE, bend right] (3.center) to (1.center);
+		\draw [style=WIRE] (4.center) to (2.center);
+		\draw [style=WIRE] (2.center) to (5.center);
+		\draw (5.center) to (12.center);
+		\draw (11.center) to (4.center);
+		\draw [style=WIRE, bend right, looseness=0.75] (3.center) to (23.center);
+		\draw (25.center) to (24);
+		\draw (28.center) to (27);
+		\draw [bend right=15, looseness=0.75] (32) to (30);
+		\draw [bend right=15] (33) to (30);
+		\draw [bend left=45] (30) to (34.center);
+		\draw [bend right] (34.center) to (40.center);
+		\draw (35.center) to (41.center);
+		\draw [bend right] (28.center) to (42.center);
+		\draw [bend left] (42.center) to (43.center);
+		\draw [bend right=45] (45.center) to (46.center);
+		\draw [bend left=315] (46.center) to (47.center);
+		\draw (47.center) to (48.center);
+		\draw [bend left=45] (49.center) to (50.center);
+		\draw [bend right=315] (50.center) to (51.center);
+		\draw [style=WIRE, bend right=45] (51.center) to (50.center);
+		\draw [style=WIRE, bend left=45] (49.center) to (50.center);
+		\draw [style=WIRE] (12.center) to (49.center);
+		\draw [style=WIRE] (51.center) to (21);
+		\draw (45.center) to (21);
+		\draw (5.center) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

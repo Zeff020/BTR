@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-0.5, 1.5) {};
+		\node [style=none] (1) at (-0.5, -1.5) {};
+		\node [style=none] (3) at (0.5, 1.5) {};
+		\node [style=none] (4) at (0.5, 0) {};
+		\node [style=STATERIGHT] (5) at (0.5, 0) {\rotatebox{90}{$\rho$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (0.center) to (1.center);
+		\draw [style=WIRE] (3.center) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

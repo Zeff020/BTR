@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (1) at (0, 0) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=WhiteSpider] (3) at (-0.5, -1) {};
+		\node [style=none] (4) at (0.5, -1) {};
+		\node [style=none] (5) at (-1.5, -1) {\small$e^{-i\alpha_j}$};
+		\node [style=WhiteSpider] (6) at (0.5, -1) {};
+		\node [style=none] (7) at (1.5, -1) {\small$e^{i\alpha_k}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (2.center);
+		\draw [in=210, out=90] (3) to (1);
+		\draw [bend left] (1) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

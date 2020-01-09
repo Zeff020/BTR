@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=STATERIGHT] (0) at (0, -0.5) {\rotatebox{90}{\scriptsize $\hat{\psi}$}};
+		\node [style=none] (1) at (0, -1) {};
+		\node [style=none] (2) at (0, 0.5) {};
+		\node [style=none] (3) at (0.75, 0.5) {{\tiny$\mathcal{D}(\mathcal{H})$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=WIRE] (1.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

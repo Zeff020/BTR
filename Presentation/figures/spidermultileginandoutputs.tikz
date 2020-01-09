@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=WhiteSpider] (0) at (0, 0) {};
+		\node [style=none] (1) at (-1, 1) {};
+		\node [style=none] (3) at (1, 1) {};
+		\node [style=none] (4) at (-1, -1.25) {};
+		\node [style=none] (6) at (1, -1.25) {};
+		\node [style=none] (7) at (-1, 1) {};
+		\node [style=none] (13) at (-1, -1.75) {};
+		\node [style=none] (14) at (1, -1.75) {};
+		\node [style=none] (15) at (1, 1.5) {};
+		\node [style=none] (16) at (-1, 1.5) {};
+		\node [style=none] (17) at (1, 1) {};
+		\node [style=StateMid] (18) at (-1, -1.5) {\rotatebox{-45}{$l$}};
+		\node [style=StateMid] (19) at (1, -1.5) {\rotatebox{-45}{$m$}};
+		\node [style=EffectMid] (20) at (-1, 1.25) {};
+		\node [style=EffectMid] (21) at (1, 1.25) {\rotatebox{135}{$k$}};
+		\node [style=EffectMid] (24) at (-1, 1.25) {};
+		\node [style=EffectMid] (25) at (-1, 1.25) {\rotatebox{135}{$j$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (0) to (7.center);
+		\draw [bend right] (0) to (3.center);
+		\draw [bend right] (0) to (4.center);
+		\draw [bend left] (0) to (6.center);
+		\draw (15.center) to (17.center);
+		\draw (14.center) to (6.center);
+		\draw (13.center) to (4.center);
+		\draw (16.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
