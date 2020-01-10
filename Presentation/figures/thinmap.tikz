@@ -2,8 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=asym box] (0) at (0, 0) {\reflectbox{$f$}};
 		\node [style=none] (1) at (0, 1) {};
-		\node [style=none] (2) at (0, -1.25) {};
-		\node [style=stateright] (4) at (0, -1.5) {\rotatebox{90}{$\hat{\psi}$}};
+		\node [style=none] (2) at (0, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (1.center) to (0);

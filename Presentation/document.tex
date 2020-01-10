@@ -143,37 +143,104 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{The Diagrammatic Notation}
-	\begin{itemize}
-		\item Preparing a \textbf{classical bit} $\psi$ and \textbf{qubit} $\hat{\psi}$:
-		\begin{equation}
-		\tikzfig{state} ~~~~~~~~~ \tikzfig{thickSTATE}
-		\end{equation}
-		\item Applying a \textbf{classical map} $f$ and \textbf{quantum map} $\hat{f}$ to these states respectively:
-		\begin{equation}
-		\tikzfig{thinmap} ~~~~~~~~~ \tikzfig{thickMAP}
-		\end{equation}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{The Diagrammatic Notation}
-	\begin{itemize}
-		\item \textbf{Spiders} copy states.
-			\begin{equation}
-			\tikzfig{thinSpiderCopy} = \tikzfig{thinSpiderCopy2} ~~~~~~ \tikzfig{SpiderCopy} = \tikzfig{SpiderCopy2}
-			\end{equation}
-		\item Whenever they have no input they create a random bit.
-		\begin{equation}
-		\tikzfig{Spideroneoutput} 
-		\end{equation}
-	\end{itemize}
+	\frametitle{The Dagrammatic Notation}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+			\item Proposed by Coecke and Kissinger in 2017, in \textit{Picturing Quantum Processes} \cite{Coecke2017}. 
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			
+		\end{column}
+	\end{columns}
+	 \begin{textblock*}{6cm}(6cm,2.2cm)
+	 	\tikzfig{ExampleDiagram}
+	 \end{textblock*}
 \end{frame}
 
 \section{The Classical One Time Pad}
 
 \begin{frame}
 	\frametitle{The Classical One Time Pad}
+	~~~~~~~~~~~~~Ideal situation:  ~~~~~~~~~~~~~~~~~ Real situation:
+	\begin{equation}
+	\tikzfig{BeamerOTP1} ~~~~~~~~~~~~~~~~~~~ \tikzfig{BeamerOTP2}
+ 	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Classical One Time Pad}
+	\begin{itemize}
+	\item The OTP solution: xor with secret random variable k
+	\vspace{0.5cm}
+	\end{itemize}
+\begin{equation}
+	\tikzfig{BeamerOTP3} = \tikzfig{BeamerOTP4} %= \tikzfig{BeamerOTP5}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Classical One Time Pad}
+	\begin{itemize}
+	\item If Eve does not interfere, can Alice and Bob still communicate?
+	\end{itemize}
+\begin{equation}
+	\begin{split}
+	\tikzfig{BeamerOTP6} = \tikzfig{BeamerOTP6A} = \tikzfig{BeamerOTP7} \\ = \tikzfig{BeamerOTP8} = \tikzfig{BeamerOTP9} \approx \tikzfig{BeamerOTP10}
+	\end{split} 
+\end{equation}
+\end{frame}
+
+\section{The Quantum One Time Pad}
+
+\begin{frame}
+	\frametitle{The Quantum One Time Pad}
+	The Quantum One Time Pad ~~~~~~~ The Classical One Time Pad
+	\begin{equation}
+	\tikzfig{BeamerQOTP} ~~~~~~~~~~~~ \tikzfig{BeamerQOTPA}
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Quantum One Time Pad}
+	The Quantum One Time Pad ~~~~~~~ The Classical One Time Pad
+	\begin{equation}
+	\tikzfig{BeamerQOTPDotted} ~~~~~~~~~~~~ \tikzfig{BeamerQOTPADotted}
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Equivalence: Quantum Teleportation}
+	\begin{equation}
+	\tikzfig{QuantumTeleportation0}
+	\end{equation}
+\end{frame}
+\subsection{Equivalence: Quantum Teleportation}
+
+\begin{frame}
+	\frametitle{Equivalence: Quantum Teleportation}
+	\begin{equation}
+	\tikzfig{QuantumTeleportation}
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Equivalence: Quantum Teleportation}
+~	Quantum Teleportation ~~~ The Quantum One Time Pad
+	\begin{equation}
+	\tikzfig{QuantumTeleportationNoLine1} = \tikzfig{BeamerQOTP1} = \tikzfig{BeamerQOTP2}
+	\end{equation}
+\end{frame}
+
+\section{Quantum Key Recycling}
+\begin{frame}
+	\frametitle{Quantum Key Recycling}
+\end{frame}
+
+\section{Discussion and Conclusions}
+\begin{frame}
+	\frametitle{Discussion}
 \end{frame}
 
 \begin{frame}

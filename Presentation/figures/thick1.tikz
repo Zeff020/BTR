@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (1) at (0, 1) {};
+		\node [style=none] (1) at (0, 0.5) {};
 		\node [style=none] (2) at (0, -1) {};
-		\node [style=ASYM BOX] (3) at (0, 0) {\reflectbox{$\hat{f}$}};
+		\node [style=STATERIGHT] (3) at (0, -0.5) {\rotatebox{90}{1}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (1.center) to (2.center);

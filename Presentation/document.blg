@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: library.bib
 Warning--empty year in Glaser
 Warning--empty journal in Vos
-You've used 5 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            527 strings with 4539 characters,
-and the built_in function-call counts, 1207 in all, are:
-= -- 110
-> -- 62
+            535 strings with 4686 characters,
+and the built_in function-call counts, 1462 in all, are:
+= -- 133
+> -- 75
 < -- 0
-+ -- 25
-- -- 20
-* -- 68
-:= -- 232
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 25
++ -- 30
+- -- 24
+* -- 81
+:= -- 277
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 50
-empty$ -- 86
-format.name$ -- 20
-if$ -- 233
+cite$ -- 8
+duplicate$ -- 62
+empty$ -- 108
+format.name$ -- 24
+if$ -- 287
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 28
-num.names$ -- 10
-pop$ -- 29
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 37
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 24
 quote$ -- 0
-skip$ -- 34
+skip$ -- 41
 stack$ -- 0
-substring$ -- 25
-swap$ -- 4
+substring$ -- 30
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
+type$ -- 22
 warning$ -- 2
-while$ -- 10
-width$ -- 6
-write$ -- 50
+while$ -- 12
+width$ -- 7
+write$ -- 61
 (There were 2 warnings)

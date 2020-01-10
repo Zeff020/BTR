@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-1.25, 0.5) {};
+		\node [style=none] (6) at (-0.25, -1) {};
+		\node [style=none] (7) at (-0.25, 6) {};
+		\node [style=none] (8) at (3.55, -0.75) {\small Bob};
+		\node [style=none] (9) at (-1.15, -0.75) {\small Alice};
+		\node [style=none] (10) at (1, 2.25) {};
+		\node [style=none] (11) at (-0.25, 1.5) {};
+		\node [style=asym box] (12) at (1, 2.5) {$\Phi$};
+		\node [style=none] (15) at (1.5, 2.75) {};
+		\node [style=none] (16) at (2.55, 4.25) {};
+		\node [style=none] (17) at (3.55, 5.75) {};
+		\node [style=none] (18) at (2.8, -1) {};
+		\node [style=none] (19) at (2.8, 6) {};
+		\node [style=none] (20) at (0.5, -0.75) {Eve};
+		\node [style=none] (21) at (0.5, 2.75) {};
+		\node [style=none] (22) at (0.5, 5.75) {};
+		\node [style=StateRight] (23) at (-1.2, 0.5) {\rotatebox{90}{m}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=new edge style 0] (6.center) to (7.center);
+		\draw [bend left] (3.center) to (11.center);
+		\draw [bend right, looseness=0.75] (11.center) to (10.center);
+		\draw [bend left] (15.center) to (16.center);
+		\draw [bend right] (16.center) to (17.center);
+		\draw [style=new edge style 0] (18.center) to (19.center);
+		\draw (22.center) to (21.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

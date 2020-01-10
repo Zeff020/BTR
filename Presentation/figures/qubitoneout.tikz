@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (0, 1) {};
-		\node [style=none] (1) at (0, -1) {};
+		\node [style=WHITESPIDER] (0) at (0, -0.5) {};
+		\node [style=none] (1) at (0, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=WIRE] (0.center) to (1.center);
+		\draw [style=WIRE] (1.center) to (0);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,0 +1,34 @@
+\begin{frame}
+	\frametitle{The Diagrammatic Notation}
+	\begin{itemize}
+		\item Preparing a \textbf{classical bit} $\psi$ and \textbf{qubit} $\hat{\psi}$:
+		\begin{equation}
+		\tikzfig{state} ~~~~~~~~~ \tikzfig{thickSTATE}
+		\end{equation}
+		\item Applying a \textbf{classical map} $f$ and \textbf{quantum map} $\hat{f}$ to these states respectively:
+		\begin{equation}
+		\tikzfig{thinmap} ~~~~~~~~~ \tikzfig{thickMAP}
+		\end{equation}
+		\item \textbf{Spiders} copy states.
+		\begin{equation}
+		\tikzfig{thinSpiderCopy} = \tikzfig{thinSpiderCopy2} ~~~~~~ \tikzfig{SpiderCopy} = \tikzfig{SpiderCopy2}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Diagrammatic Notation}
+	\begin{itemize}
+		\item Spiders with a single output create a \textbf{random bit or qubit}.
+		\begin{equation}
+		\tikzfig{Spideroneoutput} = \frac{1}{\sqrt{2}}~\tikzfig{thin0} + \frac{1}{\sqrt{2}}~\tikzfig{thin1} ~~~~~  \tikzfig{qubitoneout} = \frac{1}{2} \tikzfig{thick0} + \frac{1}{2} \tikzfig{thick1}
+		\end{equation}
+		\item Differently colored components represent a different \textbf{basis}.
+		\begin{equation}
+		\tikzfig{grayspider} = \frac{1}{\sqrt{2}} \tikzfig{gray0} + \frac{1}{\sqrt{2}} \tikzfig{gray1} 
+		\end{equation}
+		\item 
+	\end{itemize}
+\end{frame}
+
+Since it is the main subject of this thesis I will introduce the diagrammatic method briefly here. Components with thick lines are used in the quantum domain while components with thin lines are used in the classical domain. This triangle represents the preparation of a classical bit while this one represents the preparation of a quantum state, a qubit. Applying a map to these quantum and classical states respectively goes as follows. Then we also have classical and quantum spiders. Spiders copy states. Furthermore, without an input, they represent the creation of a random classical variable when it is thin or quantum variable when it is thick. Note that the different bases in this notation correspond to different colors. Components that are white are in the z basis and gray components, such as this spider here, are in the x basis. There are all kinds of underlying rules to these things which I will not go over now due to time constraints. . 

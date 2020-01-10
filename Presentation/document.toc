@@ -2,4 +2,8 @@
 \beamer@subsectionintoc {1}{1}{Quantum Information}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Quantum Cryptography}{5}{0}{1}
 \beamer@subsectionintoc {1}{3}{The Diagrammatic Notation}{6}{0}{1}
-\beamer@sectionintoc {2}{The Classical One Time Pad}{9}{0}{2}
+\beamer@sectionintoc {2}{The Classical One Time Pad}{8}{0}{2}
+\beamer@sectionintoc {3}{The Quantum One Time Pad}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Equivalence: Quantum Teleportation}{14}{0}{3}
+\beamer@sectionintoc {4}{Quantum Key Recycling}{16}{0}{4}
+\beamer@sectionintoc {5}{Discussion and Conclusions}{17}{0}{5}

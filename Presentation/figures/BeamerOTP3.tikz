@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-1.25, 0.5) {};
+		\node [style=none] (9) at (-1.15, -2) {\small Alice};
+		\node [style=none] (10) at (1, 2.25) {};
+		\node [style=none] (11) at (-0.25, 1.5) {};
+		\node [style=asym box] (12) at (1, 2.5) {$\Phi$};
+		\node [style=none] (15) at (1.5, 2.75) {};
+		\node [style=none] (16) at (2.55, 4.25) {};
+		\node [style=none] (17) at (3.55, 5.75) {};
+		\node [style=none] (21) at (0.5, 2.75) {};
+		\node [style=none] (22) at (0.5, 5.75) {};
+		\node [style=GraySpider] (24) at (3.025, 4.5) {};
+		\node [style=GraySpider] (25) at (-0.75, 1.25) {};
+		\node [style=none] (28) at (-0.3, -2.25) {};
+		\node [style=none] (29) at (-0.3, 6) {};
+		\node [style=none] (30) at (3.5, -2) {\small Bob};
+		\node [style=none] (32) at (2.75, -2.25) {};
+		\node [style=none] (33) at (2.75, 6) {};
+		\node [style=none] (34) at (0.45, -2) {Eve};
+		\node [style=none] (36) at (3.25, 0) {};
+		\node [style=StateRight] (37) at (-1.2, 0.5) {\rotatebox{90}{m}};
+		\node [style=WhiteSpider] (38) at (3.25, 0) {};
+		\node [style=StateRight] (39) at (3.275, -0.775) {\rotatebox{90}{k}};
+		\node [style=none] (40) at (3.25, -1.25) {};
+		\node [style=none] (41) at (-2.25, 1.5) {$\sum\limits_{k}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (3.center) to (11.center);
+		\draw [bend right, looseness=0.75] (11.center) to (10.center);
+		\draw [bend left] (15.center) to (16.center);
+		\draw [bend right] (16.center) to (17.center);
+		\draw (22.center) to (21.center);
+		\draw [style=new edge style 0] (28.center) to (29.center);
+		\draw [style=new edge style 0] (32.center) to (33.center);
+		\draw [bend left=15] (24) to (36.center);
+		\draw [bend left=15] (38) to (25);
+		\draw (38) to (40.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

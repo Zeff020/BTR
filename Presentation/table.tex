@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tikzit}
+\usepackage{amsmath}
+
+\input{computation.tikzdefs}
+\input{computation.tikzstyles}
+\begin{document}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+ & Classical & Quantum & Example \\ \hline
+Identity & \tikzfig{wire} & \tikzfig{thickWIRE} & \\ \hline
+Bit & \tikzfig{state} & & \\ \hline
+Qubit &  & \tikzfig{thickSTATE} &\\ \hline
+Map & \tikzfig{thinmap} & \tikzfig{thickMAP} & \\ \hline
+Random variable & \tikzfig{spideroneoutput} & \tikzfig{qubitoneout}  & $\tikzfig{Spideroneoutput} = \sum\limits_i \tikzfig{thini} = ~\tikzfig{thin0} + ~\tikzfig{thin1}$ \\ \hline
+Copy & \tikzfig{thinSpiderCopyA} & \tikzfig{SpiderCopy} & \tikzfig{thinSpiderCopy} = \tikzfig{thinSpiderCopy2}\\ \hline
+Exclusive or (XOR) & \tikzfig{grayxor2}  & \tikzfig{ThickXor} & \tikzfig{grayxor} = \tikzfig{statel} with $l = \begin{cases} 0, ~\text{when} ~j=k \\ 1, ~\text{when}~ j \neq k
+\end{cases}$ \\ \hline
+&&& \\ \hline
+\end{tabular}
+\end{center}
+
+\end{document}

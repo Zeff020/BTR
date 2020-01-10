@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-1.25, 0.75) {};
+		\node [style=none] (6) at (0, -0.75) {};
+		\node [style=none] (7) at (0, 3.5) {};
+		\node [style=none] (8) at (1, -0.5) {\small Bob};
+		\node [style=none] (9) at (-1, -0.5) {\small Alice};
+		\node [style=none] (10) at (1.25, 3.5) {};
+		\node [style=none] (11) at (0, 2.25) {};
+		\node [style=StateRight] (12) at (-1.25, 0.75) {\rotatebox{90}{m}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=new edge style 0] (6.center) to (7.center);
+		\draw [bend left] (3.center) to (11.center);
+		\draw [bend right, looseness=0.75] (11.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
