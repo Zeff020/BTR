@@ -18,6 +18,11 @@
 		\node [style=none] (27) at (-0.4, 1.5) {};
 		\node [style=none] (28) at (-0.4, 1.5) {};
 		\node [style=none] (29) at (-0.6, 1.5) {};
+		\node [style=none] (30) at (-1.75, -2.5) {};
+		\node [style=none] (31) at (1.75, -2.5) {};
+		\node [style=none] (32) at (-1.75, 1.75) {};
+		\node [style=none] (33) at (-2.25, -0.5) {\rotatebox{90}{time}};
+		\node [style=none] (34) at (0, -3) {Space};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=WIRE] (3.center) to (1.center);
@@ -28,5 +33,7 @@
 		\draw [style=WIRE] (25.center) to (26.center);
 		\draw [style=WIRE] (23.center) to (24.center);
 		\draw [style=WIRE] (0) to (21);
+		\draw [style=blue dir] (30.center) to (32.center);
+		\draw [style=blue dir] (30.center) to (31.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
