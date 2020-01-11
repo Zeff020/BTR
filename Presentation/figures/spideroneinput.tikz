@@ -1,6 +1,5 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=StateRight] (0) at (0, -0.5) {\rotatebox{90}{$i$}};
 		\node [style=WhiteSpider] (1) at (0, 0.5) {};
 		\node [style=none] (2) at (0, -0.75) {};
 	\end{pgfonlayer}

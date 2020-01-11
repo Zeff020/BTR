@@ -4,8 +4,8 @@
 		\node [style=none] (1) at (0, 1) {};
 		\node [style=none] (2) at (1, -1.25) {};
 		\node [style=none] (3) at (-1, -1.25) {};
-		\node [style=StateRight] (4) at (-1, -1) {\rotatebox{90}{j}};
-		\node [style=StateRight] (5) at (1, -1) {\rotatebox{90}{k}};
+		\node [style=StateRight] (4) at (-1, -1) {\rotatebox{90}{$i$}};
+		\node [style=StateRight] (5) at (1, -1) {\rotatebox{90}{$j$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (1.center) to (0);

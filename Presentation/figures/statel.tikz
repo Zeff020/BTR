@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (2) at (0, 1) {};
 		\node [style=none] (3) at (0, 1) {};
-		\node [style=StateRight] (4) at (0, 0) {\rotatebox{90}{l}};
+		\node [style=StateRight] (4) at (0, 0) {\rotatebox{90}{$k$}};
 		\node [style=none] (5) at (0, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

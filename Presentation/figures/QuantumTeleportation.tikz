@@ -70,9 +70,5 @@
 		\draw [style=DOTTEDBLUE] (37.center) to (38.center);
 		\draw [style=DOTTEDBLUE] (37.center) to (40.center);
 		\draw [style=DOTTEDBLUE] (40.center) to (39.center);
-		\draw [style=DOTTEDRED] (43.center) to (42.center);
-		\draw [style=DOTTEDRED] (42.center) to (41.center);
-		\draw [style=DOTTEDRED] (44.center) to (41.center);
-		\draw [style=DOTTEDRED] (44.center) to (43.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

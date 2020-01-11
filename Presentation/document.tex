@@ -32,6 +32,7 @@
 		\item Quantum Information
 		\item Quantum Cryptography
 		\item The Diagrammatic Notation
+		\item The Aim
 	\end{itemize}
 
 \item The Classical One Time Pad
@@ -159,8 +160,47 @@
 	 \end{textblock*}
 \end{frame}
 
-\section{The Classical One Time Pad}
+\begin{frame}
+	\frametitle{The Diagrammatic Notation}
+	\begin{itemize}
+		\item Example: mutual unbiasedness
+		\begin{itemize}
+			\item Measuring and encoding in the same basis results in the identity
+			\begin{equation}
+			\label{equation:ComplementarityPositive}
+			\tikzfig{ComplementarySpiders5} = \tikzfig{ComplementarySpiders6} = \tikzfig{wire}
+			\end{equation}
+			\item But measuring and encoding in a different basis results in nothing being sent through
+			\begin{equation}
+			\label{equation:Complementarity}
+			\tikzfig{ComplementarySpiders} = \frac{1}{2} \tikzfig{ComplementarySpiders2} ~~~~~~~~~~~ \tikzfig{ComplementarySpiders3} = \frac{1}{2} \tikzfig{ComplementarySpiders4} 
+			\end{equation}
+		\end{itemize}
+	\end{itemize}
 
+\end{frame}
+
+\subsection{Aim}
+
+\begin{frame}
+	\frametitle{The Aim}
+	\begin{itemize}
+		\item Taking into account the rising popularity of quantum cryptography and the fact that its current notation is insufficient for describing it intuitively we recognize the usefulness of the diagrammatic notation and therefore want to give it a place in the field of quantum cryptography by...
+		\vspace{0.6cm}
+		\begin{enumerate}
+			\item Writing a short handbook-style introduction to this notation for physicists reluctant to read the entire book \textit{Picturing Quantum Processes \cite{Coecke2017}.}
+			\vspace{0.6cm}
+			\item Constructing some recent quantum cryptographic developments and protocols in this new notation.
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\section{The Classical One Time Pad}
+\begin{frame}
+	\centering 
+	\Huge
+	\usebeamercolor[fg]{frametitle}{The Classical One Time Pad}
+\end{frame}
 \begin{frame}
 	\frametitle{The Classical One Time Pad}
 	~~~~~~~~~~~~~Ideal situation:  ~~~~~~~~~~~~~~~~~ Real situation:
@@ -193,7 +233,11 @@
 \end{frame}
 
 \section{The Quantum One Time Pad}
-
+\begin{frame}
+	\centering 
+	\Huge
+	\usebeamercolor[fg]{frametitle}{The Quantum One Time Pad}
+\end{frame}
 \begin{frame}
 	\frametitle{The Quantum One Time Pad}
 	The Quantum One Time Pad ~~~~~~~ The Classical One Time Pad
@@ -210,13 +254,14 @@
 	\end{equation}
 \end{frame}
 
+\subsection{Equivalence: Quantum Teleportation}
+
 \begin{frame}
 	\frametitle{Equivalence: Quantum Teleportation}
 	\begin{equation}
 	\tikzfig{QuantumTeleportation0}
 	\end{equation}
 \end{frame}
-\subsection{Equivalence: Quantum Teleportation}
 
 \begin{frame}
 	\frametitle{Equivalence: Quantum Teleportation}
@@ -232,17 +277,105 @@
 	\tikzfig{QuantumTeleportationNoLine1} = \tikzfig{BeamerQOTP1} = \tikzfig{BeamerQOTP2}
 	\end{equation}
 \end{frame}
-
+\begin{frame}
+	\centering 
+	\Huge
+	\usebeamercolor[fg]{frametitle}{Quantum Key Recycling}
+\end{frame}
 \section{Quantum Key Recycling}
 \begin{frame}
 	\frametitle{Quantum Key Recycling}
+	\begin{equation}
+	\tikzfig{QKRGeneralX}
+	\end{equation}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Quantum Key Recycling}
+	\begin{itemize}
+		\item Security proof for quantum key recycling in the noiseless case, the starting point:
+		\vspace{0.5cm}
+	\end{itemize}
+	\begin{equation}
+		\tikzfig{BeamerQKR} = \tikzfig{BeamerQKR1} 
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Quantum Key Recycling}
+	\begin{itemize}
+		\item With a lot of steps in between, the end result becomes:
+		\vspace{0.5cm}
+	\end{itemize}
+	\begin{equation}
+	\tikzfig{BeamerQKR2}
+	\end{equation}
+		\begin{itemize}
+		\item In words: Eve's part of the diagram separates entirely from Alice and Bob's communication channel!
+	\end{itemize}
+\end{frame}
+\begin{frame}
+	\centering 
+	\Huge
+	\usebeamercolor[fg]{frametitle}{Discussion and Conclusions}
+\end{frame}
 \section{Discussion and Conclusions}
 \begin{frame}
-	\frametitle{Discussion}
+	\frametitle{Discussion and Conclusions}
+	\begin{itemize}
+		\item What novel things did we achieve in this thesis?\pause
+		\begin{itemize}
+			\item Wrote the first short \textbf{handbook-style introduction} to the diagrammatic notation\pause
+			\item Developed the \textbf{classical One Time Pad} diagrammatically and showed that it both works and is secure\pause
+			\item Developed the \textbf{quantum One Time Pad} diagrammatically and showed that it both works and is secure\pause
+			\item Showed that \textbf{Quantum Teleportation} is equivalent to the quantum One Time Pad, and therefore also works and is secure\pause
+			\item Developed \textbf{Quantum Key Recycling} diagrammatically, included a fully fledged security proof and worked out equivalences from a recent paper 
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Discussion and Conclusions}
+	\begin{itemize}
+		\item Did this achieve the aims?\pause
+		\begin{enumerate}
+			\item Writing a short handbook-style introduction to this notation for physicists hesitant to read the entire book \textit{Picturing Quantum Processes \cite{Coecke2017}.}\pause \newline
+			\textcolor{orange}{\textbf{Maybe, up to the reader to decide.}}\pause
+			\vspace{0.8cm}
+			\item Constructing some recent quantum cryptographic developments and protocols in this new notation.\pause \newline
+			\textcolor{green}{\textbf{Yes!}}
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Discussion and Conclusions}
+	\begin{itemize}
+	\item Novelty of this research?
+	\item Role of diagrammatic notation?
+	\item More technical: Classical communication channels in a basis?
+	\begin{equation}
+		\tikzfig{explicitgraywire} ~~~~~~~~~~~~~~ \tikzfig{explicitwhitewire}
+	\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Discussion and Conclusions}
+	\begin{itemize}
+		\item In future research it would be interesting to...
+		\begin{itemize}
+			\item Develop a full security proof for Quantum Key Recycling with noise
+			\item Generally work out more protocols and equivalences in this notation
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+		\centering 
+		\Huge
+		\usebeamercolor[fg]{frametitle}{Questions?}
+\end{frame}
 \begin{frame}
 	\frametitle{References}
 

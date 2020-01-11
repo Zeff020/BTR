@@ -15,10 +15,13 @@ Bit & \tikzfig{state} & & \\ \hline
 Qubit &  & \tikzfig{thickSTATE} &\\ \hline
 Map & \tikzfig{thinmap} & \tikzfig{thickMAP} & \\ \hline
 Random variable & \tikzfig{spideroneoutput} & \tikzfig{qubitoneout}  & $\tikzfig{Spideroneoutput} = \sum\limits_i \tikzfig{thini} = ~\tikzfig{thin0} + ~\tikzfig{thin1}$ \\ \hline
+Deleting input & \tikzfig{spideroneinput} & & $\tikzfig{DeleteAnyVariable} = 1$ \\ \hline
+Discarding (tracing) input & & \tikzfig{Discarding} & $\tikzfig{discardingdensitymatrx} = 1$ \\ \hline
 Copy & \tikzfig{thinSpiderCopyA} & \tikzfig{SpiderCopy} & \tikzfig{thinSpiderCopy} = \tikzfig{thinSpiderCopy2}\\ \hline
-Exclusive or (XOR) & \tikzfig{grayxor2}  & \tikzfig{ThickXor} & \tikzfig{grayxor} = \tikzfig{statel} with $l = \begin{cases} 0, ~\text{when} ~j=k \\ 1, ~\text{when}~ j \neq k
+Exclusive or (XOR) & \tikzfig{grayxor2}  & \tikzfig{ThickXor} & \tikzfig{grayxor} = \tikzfig{statel} with $k = \begin{cases} 0, ~\text{when} ~i=j \\ 1, ~\text{when}~ i \neq j
 \end{cases}$ \\ \hline
-&&& \\ \hline
+Encoding in Z basis &&\tikzfig{EncodingNoInput}& \tikzfig{Encoding} = \tikzfig{DensityState} \\ \hline
+Encoding in X basis &&\tikzfig{EncodingNoInputGray}& \tikzfig{EncodingGray} = \tikzfig{DensityState2} \\ \hline
 \end{tabular}
 \end{center}
 

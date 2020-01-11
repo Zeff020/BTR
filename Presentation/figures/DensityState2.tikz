@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=STATERIGHT] (0) at (0, -0.625) {\rotatebox{90}{$\rho_{1}$}};
+		\node [style=STATERIGHT] (0) at (0, -0.625) {\rotatebox{90}{$\rho_{2}$}};
 		\node [style=none] (1) at (0, 0.625) {};
 		\node [style=none] (2) at (0, -1.125) {};
 	\end{pgfonlayer}

@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (-0.25, 0) {};
+		\node [style=none] (4) at (2.5, 3) {};
+		\node [style=none] (5) at (-2.5, -2.75) {};
+		\node [style=none] (12) at (-2.5, -2.75) {};
+		\node [style=none] (22) at (2.5, -4) {Bob};
+		\node [style=none] (23) at (-0.8, -4) {Eve};
+		\node [style=none] (24) at (-2.375, -4) {Alice};
+		\node [style=none] (25) at (-0.25, 0) {};
+		\node [style=none] (26) at (1.75, 3) {};
+		\node [style=none] (27) at (1.75, -4.25) {};
+		\node [style=none] (28) at (-1.5, 3) {};
+		\node [style=none] (29) at (-1.5, -4.25) {};
+		\node [style=StateRight] (32) at (-2.5, -2.75) {\rotatebox{90}{m}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=new edge style 0] (26.center) to (27.center);
+		\draw [style=new edge style 0] (28.center) to (29.center);
+		\draw [bend left] (4.center) to (25.center);
+		\draw [bend right] (25.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

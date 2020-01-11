@@ -5,11 +5,11 @@
 		\node [style=none] (5) at (-1, -0.25) {};
 		\node [style=none] (8) at (1, 1) {};
 		\node [style=none] (9) at (-1, 1) {};
-		\node [style=StateRight] (10) at (-1, 0) {\rotatebox{90}{$\psi$}};
+		\node [style=StateRight] (10) at (-1, 0) {\rotatebox{90}{$i$}};
 		\node [style=none] (11) at (1, 1) {};
 		\node [style=none] (12) at (1, 1) {};
 		\node [style=none] (13) at (1, -0.25) {};
-		\node [style=StateRight] (14) at (1, 0) {\rotatebox{90}{$\psi$}};
+		\node [style=StateRight] (14) at (1, 0) {\rotatebox{90}{$i$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (3.center) to (5.center);
