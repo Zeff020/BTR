@@ -8,27 +8,28 @@ Bob Coecke and Aleks Kissinger.
 \bibitem{Cunche2011}
 Mathieu Cunche.
 \newblock {{\`{A}} l'attaque des codes secrets}.
-\newblock {\em Interstices}, 2011.
+\newblock {\em Interstices.info}, 2011.
 
 \bibitem{Glaser}
 Randi Glaser.
 \newblock {Food Web Examples}.
-\newblock {\em Blendspace}.
+\newblock {\em Blendspace.com, n.d.}
 
-\bibitem{Mishra2019}
-Nimish Mishra.
-\newblock {Understanding the Basics of Quantum Computation}.
-\newblock {\em Towards Data Science}, 2019.
+\bibitem{Leermakers2019}
+Daan Leermakers and Boris {\v{S}}kori{\'{c}}.
+\newblock {Quantum Alice and Silent Bob}.
+\newblock https://eprint.iacr.org/2019/875, 2019.
 
 \bibitem{Pomorski2018}
 Krysztof Pomorski, Panagiotis Giounanlis, Elena Blokhina, and Robert
   Staszewski.
 \newblock {From Quantum Hardware to Quantum AI}.
-\newblock {\em University College Dublin}, 2018.
+\newblock {\em University College Dublin, Dublin}, 2018.
 
 \bibitem{Vos}
 Kimberley Vos, H.~Wilschut, and R.~Timmermans.
 \newblock Limits on lorentz violation in neutral-kaon decay.
-\newblock 08 2013.
+\newblock {\em Proceedings of the Sixth Meeting on CPT and Lorentz Symmetry},
+  2013.
 
 \end{thebibliography}

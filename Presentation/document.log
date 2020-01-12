@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  11 JAN 2020 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.14)  12 JAN 2020 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,20 +1205,20 @@ Dictionary: translator-theorem-dictionary, Language: English
 /pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 58.
+ut line 54.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1228,73 +1228,57 @@ thkerncmss.
 ] [3
 
 ]
-<ClassicalBit.png, id=296, 18.7902pt x 62.634pt>
+<ClassicalBit.png, id=286, 18.7902pt x 62.634pt>
 File: ClassicalBit.png Graphic file (type png)
 <use ClassicalBit.png>
-Package pdftex.def Info: ClassicalBit.png  used on input line 103.
+Package pdftex.def Info: ClassicalBit.png  used on input line 99.
 (pdftex.def)             Requested size: 14.22723pt x 47.4236pt.
-<QuantumBit.png, id=298, 80.4606pt x 77.3289pt>
+<QuantumBit.png, id=288, 80.4606pt x 77.3289pt>
 File: QuantumBit.png Graphic file (type png)
 <use QuantumBit.png>
-Package pdftex.def Info: QuantumBit.png  used on input line 103.
+Package pdftex.def Info: QuantumBit.png  used on input line 99.
 (pdftex.def)             Requested size: 71.13188pt x 68.3694pt.
-<MeasureInZ.png, id=300, 194.4063pt x 52.5162pt>
-File: MeasureInZ.png Graphic file (type png)
-<use MeasureInZ.png>
-Package pdftex.def Info: MeasureInZ.png  used on input line 103.
-(pdftex.def)             Requested size: 99.58464pt x 26.9023pt.
-<MeasureInX.png, id=301, 194.4063pt x 52.5162pt>
-File: MeasureInX.png Graphic file (type png)
-<use MeasureInX.png>
-Package pdftex.def Info: MeasureInX.png  used on input line 103.
-(pdftex.def)             Requested size: 99.58464pt x 26.9023pt.
  [4
 
- <./ClassicalBit.png> <./QuantumBit.png> <./MeasureInZ.png> <./MeasureInX.png>]
-
+ <./ClassicalBit.png> <./QuantumBit.png>]
 
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 126.
+(textpos)                Alignment may work out wrongly. on input line 122.
 
-<AliceEveBob.png, id=370, 144.54pt x 80.4606pt>
+<AliceEveBob.png, id=350, 144.54pt x 80.4606pt>
 File: AliceEveBob.png Graphic file (type png)
 <use AliceEveBob.png>
-Package pdftex.def Info: AliceEveBob.png  used on input line 126.
+Package pdftex.def Info: AliceEveBob.png  used on input line 122.
 (pdftex.def)             Requested size: 142.26378pt x 79.19707pt.
 [5
 
  <./AliceEveBob.png>]
-<PenguinDiagram.png, id=432, 116.1138pt x 75.1608pt>
+<PenguinDiagram.png, id=410, 116.1138pt x 75.1608pt>
 File: PenguinDiagram.png Graphic file (type png)
 <use PenguinDiagram.png>
-Package pdftex.def Info: PenguinDiagram.png  used on input line 144.
+Package pdftex.def Info: PenguinDiagram.png  used on input line 140.
 (pdftex.def)             Requested size: 170.71652pt x 110.5091pt.
-<FoodWeb.png, id=435, 168.1482pt x 114.6684pt>
+<FoodWeb.png, id=413, 168.1482pt x 114.6684pt>
 File: FoodWeb.png Graphic file (type png)
 <use FoodWeb.png>
-Package pdftex.def Info: FoodWeb.png  used on input line 144.
+Package pdftex.def Info: FoodWeb.png  used on input line 140.
 (pdftex.def)             Requested size: 170.71652pt x 116.42479pt.
  [6
 
  <./PenguinDiagram.png> <./FoodWeb.png>]
 (./figures/QAaSBProofSetupReal1X.tikz) [7
 
-]
-(./figures/ComplementarySpiders5.tikz) (./figures/ComplementarySpiders6.tikz)
-(./figures/wire.tikz) (./figures/ComplementarySpiders.tikz)
-(./figures/ComplementarySpiders2.tikz) (./figures/ComplementarySpiders3.tikz)
-(./figures/ComplementarySpiders4.tikz) [8
+] [8
 
 ] [9
 
-] [10
-
-] (./figures/BeamerOTP1.tikz) (./figures/BeamerOTP2.tikz) [11
+] (./figures/BeamerOTP1.tikz)
+(./figures/BeamerOTP2.tikz) [10
 
 ] (./figures/BeamerOTP3.tikz)
-(./figures/BeamerOTP4.tikz) [12
+(./figures/BeamerOTP4.tikz) [11
 
 ] (./figures/BeamerOTP6.tikz)
 (./figures/BeamerOTP6A.tikz) (./figures/BeamerOTP7.tikz)
@@ -1302,40 +1286,41 @@ Package pdftex.def Info: FoodWeb.png  used on input line 144.
 (./figures/BeamerOTP10.tikz) (./figures/BeamerOTP6.tikz)
 (./figures/BeamerOTP6A.tikz) (./figures/BeamerOTP7.tikz)
 (./figures/BeamerOTP8.tikz) (./figures/BeamerOTP9.tikz)
-(./figures/BeamerOTP10.tikz) [13
+(./figures/BeamerOTP10.tikz) [12
 
-] [14
+] [13
 
 ] (./figures/BeamerQOTP.tikz)
-(./figures/BeamerQOTPA.tikz) [15
+(./figures/BeamerQOTPA.tikz) [14
 
 ] (./figures/BeamerQOTPDotted.tikz)
-(./figures/BeamerQOTPADotted.tikz) [16
+(./figures/BeamerQOTPADotted.tikz) [15
 
 ] (./figures/QuantumTeleportation0.tikz)
+[16
+
+] (./figures/QuantumTeleportationNoLine1.tikz) (./figures/BeamerQOTP1.tikz)
 [17
 
-] (./figures/QuantumTeleportation.tikz) [18
+] [18
 
-]
-(./figures/QuantumTeleportationNoLine1.tikz) (./figures/BeamerQOTP1.tikz)
-[19
-
-] [20
-
-] (./figures/QKRGeneralX.tikz) [21
+] (./figures/QKRGeneralX.tikz) [19
 
 ] (./figures/BeamerQKR.tikz)
-(./figures/BeamerQKR1.tikz) [22
+(./figures/BeamerQKR1.tikz) [20
 
-] (./figures/BeamerQKR2.tikz) [23
+] (./figures/BeamerQKR2.tikz) [21
 
-] [24
+] [22
+
+] [23
+
+]
+[24
 
 ] [25
 
-]
-[26
+] [26
 
 ] [27
 
@@ -1355,21 +1340,17 @@ Package pdftex.def Info: FoodWeb.png  used on input line 144.
 
 ] [35
 
-]
-(./figures/explicitgraywire.tikz) (./figures/explicitwhitewire.tikz) [36
+] [36
 
 ]
+(./document.bbl)
+
+Class beamer Warning: Frame text is shrunk by a factor of 34.31091 percent inst
+ead of 1 percent on input line 350.
+
 [37
 
-] [38
-
-] (./document.bbl)
-Overfull \vbox (90.05109pt too high) detected at line 385
- []
-
-[39
-
- </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+]
 \tf@nav=\write6
 \openout6 = `document.nav'.
 
@@ -1379,22 +1360,22 @@ Overfull \vbox (90.05109pt too high) detected at line 385
 \tf@snm=\write8
 \openout8 = `document.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 387.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: A6CAA3859864CB30A0611447E6B1306A;632.
+(rerunfilecheck)             Checksum: F31875E39626AFA094F655EB46FD6579;632.
  ) 
 Here is how much of TeX's memory you used:
- 35243 strings out of 492167
- 711464 string characters out of 6125373
- 880299 words of memory out of 5000000
- 38854 multiletter control sequences out of 15000+600000
+ 35165 strings out of 492167
+ 709711 string characters out of 6125373
+ 877338 words of memory out of 5000000
+ 38814 multiletter control sequences out of 15000+600000
  546498 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,23n,78p,795b,993s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,23n,78p,795b,955s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
@@ -1405,12 +1386,11 @@ local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/lo
 cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on document.pdf (39 pages, 562761 bytes).
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on document.pdf (37 pages, 508691 bytes).
 PDF statistics:
- 2500 PDF objects out of 2984 (max. 8388607)
- 2366 compressed objects within 24 object streams
- 97 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2293 PDF objects out of 2487 (max. 8388607)
+ 2173 compressed objects within 22 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

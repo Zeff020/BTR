@@ -1,12 +1,15 @@
 \documentclass{article}
 \usepackage{tikzit}
 \usepackage{amsmath}
+\usepackage[margin=0in, tmargin=0.5in]{geometry}
 
 \input{computation.tikzdefs}
 \input{computation.tikzstyles}
 \begin{document}
 
 \begin{center}
+	\large \textbf{~~~~~~~~~~~~~~~~~~~~~~~~Diagrammatic Notation Cheat Sheet} 
+	\newline
 \begin{tabular}{ |c|c|c|c| } 
 \hline
  & Classical & Quantum & Example \\ \hline
@@ -20,8 +23,8 @@ Discarding (tracing) input & & \tikzfig{Discarding} & $\tikzfig{discardingdensit
 Copy & \tikzfig{thinSpiderCopyA} & \tikzfig{SpiderCopy} & \tikzfig{thinSpiderCopy} = \tikzfig{thinSpiderCopy2}\\ \hline
 Exclusive or (XOR) & \tikzfig{grayxor2}  & \tikzfig{ThickXor} & \tikzfig{grayxor} = \tikzfig{statel} with $k = \begin{cases} 0, ~\text{when} ~i=j \\ 1, ~\text{when}~ i \neq j
 \end{cases}$ \\ \hline
-Encoding in Z basis &&\tikzfig{EncodingNoInput}& \tikzfig{Encoding} = \tikzfig{DensityState} \\ \hline
-Encoding in X basis &&\tikzfig{EncodingNoInputGray}& \tikzfig{EncodingGray} = \tikzfig{DensityState2} \\ \hline
+Encoding &\tikzfig{EncodingNoInput}&\tikzfig{EncodingNoInput}& \tikzfig{Encoding} = \tikzfig{DensityState} \\ \hline
+Decoding &\tikzfig{Decoding}&\tikzfig{Decoding}& \tikzfig{DecodingExample} = \tikzfig{statep} \\ \hline
 \end{tabular}
 \end{center}
 

@@ -32,3 +32,25 @@
 \end{frame}
 
 Since it is the main subject of this thesis I will introduce the diagrammatic method briefly here. Components with thick lines are used in the quantum domain while components with thin lines are used in the classical domain. This triangle represents the preparation of a classical bit while this one represents the preparation of a quantum state, a qubit. Applying a map to these quantum and classical states respectively goes as follows. Then we also have classical and quantum spiders. Spiders copy states. Furthermore, without an input, they represent the creation of a random classical variable when it is thin or quantum variable when it is thick. Note that the different bases in this notation correspond to different colors. Components that are white are in the z basis and gray components, such as this spider here, are in the x basis. There are all kinds of underlying rules to these things which I will not go over now due to time constraints. . 
+
+One of these superpositions is half 0 and a half 1. These superpositions lay on the x,y plane and we identify two of them; the + and the - here on the Bloch sphere. They actually also form a two level quantum system on the x axis, and can therefore also store information. We also call the + and the - the 0 and 1 states in the x basis because they are on the x axis. In this logic, the 0 and 1 on the z axis are then called the 0 and 1 states in the z basis. To go from a classical bit to a qubit we say that we ‘encode’ the bit into a certain basis. The fact that one qubit can store information in different bases has one interesting property; mutual unbiasedness. Mutual unbiasedness says that storing information in one basis and measuring it in the other gives a random measurement result, and thus no information is communicated when this happens. For example, I could have a 0 in the z basis, if you measure this in the z basis you get a 0 as output every time but when you would measure it in the x basis you have 50 % chance of getting a 0 and 50 % chance to get a 1.
+
+\begin{frame}
+	\frametitle{The Diagrammatic Notation}
+	\begin{itemize}
+		\item Example: mutual unbiasedness
+		\begin{itemize}
+			\item Measuring and encoding in the same basis results in the identity
+			\begin{equation}
+			\label{equation:ComplementarityPositive}
+			\tikzfig{ComplementarySpiders5} = \tikzfig{ComplementarySpiders6} = \tikzfig{wire}
+			\end{equation}
+			\item But measuring and encoding in a different basis results in nothing being sent through
+			\begin{equation}
+			\label{equation:Complementarity}
+			\tikzfig{ComplementarySpiders} = \frac{1}{2} \tikzfig{ComplementarySpiders2} ~~~~~~~~~~~ \tikzfig{ComplementarySpiders3} = \frac{1}{2} \tikzfig{ComplementarySpiders4} 
+			\end{equation}
+		\end{itemize}
+	\end{itemize}
+
+\end{frame}

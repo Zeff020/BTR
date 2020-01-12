@@ -3,47 +3,50 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: document.aux
 The style file: plain.bst
 Database file #1: library.bib
+I was expecting a `,' or a `}'---line 60 of file library.bib
+ :  title = {{Food Web Examples}}
+ :                               .
+I'm skipping whatever remains of this entry
 Warning--empty year in Glaser
-Warning--empty journal in Vos
 You've used 6 entries,
             2118 wiz_defined-function locations,
-            535 strings with 4686 characters,
-and the built_in function-call counts, 1462 in all, are:
-= -- 133
-> -- 75
+            534 strings with 4802 characters,
+and the built_in function-call counts, 1495 in all, are:
+= -- 135
+> -- 81
 < -- 0
-+ -- 30
-- -- 24
-* -- 81
-:= -- 277
++ -- 32
+- -- 26
+* -- 80
+:= -- 278
 add.period$ -- 18
 call.type$ -- 6
-change.case$ -- 29
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 62
-empty$ -- 108
-format.name$ -- 24
-if$ -- 287
+cite$ -- 7
+duplicate$ -- 59
+empty$ -- 113
+format.name$ -- 26
+if$ -- 298
 int.to.chr$ -- 0
 int.to.str$ -- 6
-missing$ -- 7
+missing$ -- 6
 newline$ -- 33
 num.names$ -- 12
-pop$ -- 37
+pop$ -- 43
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 25
 quote$ -- 0
 skip$ -- 41
 stack$ -- 0
 substring$ -- 30
-swap$ -- 5
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 22
-warning$ -- 2
+warning$ -- 1
 while$ -- 12
 width$ -- 7
 write$ -- 61
-(There were 2 warnings)
+(There was 1 error message)

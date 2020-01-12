@@ -36,23 +36,19 @@
 	\end{itemize}
 
 \item The Classical One Time Pad
-	\begin{itemize}
-		\item Diagrammatic Implementation
-	\end{itemize}
 
 \item The Quantum One Time Pad
 	\begin{itemize}
-		\item Diagrammatic Implementation
-		\item Equivalence: Quantum Teleportation
+		\item Quantum Teleportation and Quantum One Time Pad Equivalence
 	\end{itemize}
 
 \item Quantum Key Recycling
-	\begin{itemize}
-		\item Diagrammatic Implementation
-		\item Equivalences
-	\end{itemize}
 
 \item Discussion and Conclusions
+
+\item Questions
+
+\item References
 
 \end{itemize}
 \end{frame}
@@ -74,7 +70,7 @@
 		\begin{itemize}
 			\item The classical bit vs. the qubit
 			\vspace{2cm}
-			\item Mutual unbiasedness
+			\item Encoding and decoding
 		\end{itemize}
 		\end{column}
 		\begin{column}{0.5\textwidth}  %%<--- here
@@ -88,15 +84,15 @@
 				\begin{textblock*}{5cm}(7.1cm,5cm)
 				\tiny	\textit{Representation of a classical bit (Left) and a qubit (right) \cite{Pomorski2018}.}
 				\end{textblock*}
-				\begin{textblock*}{7cm}(6.2cm,6cm)
-					\includegraphics[width=0.5\textwidth]{MeasureInZ.png}
-				\end{textblock*}
-				\begin{textblock*}{7cm}(6.2cm,7cm)
-				\includegraphics[width=0.5\textwidth]{MeasureInX.png}
-				\end{textblock*}
-				\begin{textblock*}{5cm}(7.2cm,8.1cm)
-				\tiny	\textit{Measuring $\ket{0}_z$ in the Z and X bases \cite{Mishra2019}.}
-				\end{textblock*}
+			%	\begin{textblock*}{7cm}(6.2cm,6cm)
+			%		%\includegraphics[width=0.5\textwidth]{MeasureInZ.png}
+			%	\end{textblock*}
+			%	\begin{textblock*}{7cm}(6.2cm,7cm)
+			%	\includegraphics[width=0.5\textwidth]{MeasureInX.png}
+			%	\end{textblock*}
+			%	\begin{textblock*}{5cm}(7.2cm,8.1cm)
+			%	\tiny	\textit{Measuring $\ket{0}_z$ in the Z and X bases \cite{Mishra2019}.}
+			%	\end{textblock*}
 			\end{center}
 		\end{column}
 	\end{columns}
@@ -158,26 +154,6 @@
 	 \begin{textblock*}{6cm}(8cm,3.9cm)
 	 	\tikzfig{QAaSBProofSetupReal1X}
 	 \end{textblock*}
-\end{frame}
-
-\begin{frame}
-	\frametitle{The Diagrammatic Notation}
-	\begin{itemize}
-		\item Example: mutual unbiasedness
-		\begin{itemize}
-			\item Measuring and encoding in the same basis results in the identity
-			\begin{equation}
-			\label{equation:ComplementarityPositive}
-			\tikzfig{ComplementarySpiders5} = \tikzfig{ComplementarySpiders6} = \tikzfig{wire}
-			\end{equation}
-			\item But measuring and encoding in a different basis results in nothing being sent through
-			\begin{equation}
-			\label{equation:Complementarity}
-			\tikzfig{ComplementarySpiders} = \frac{1}{2} \tikzfig{ComplementarySpiders2} ~~~~~~~~~~~ \tikzfig{ComplementarySpiders3} = \frac{1}{2} \tikzfig{ComplementarySpiders4} 
-			\end{equation}
-		\end{itemize}
-	\end{itemize}
-
 \end{frame}
 
 \subsection{Aim}
@@ -258,21 +234,15 @@
 \subsection{Equivalence: Quantum Teleportation}
 
 \begin{frame}
-	\frametitle{Quantum Teleportation is Equivalent to the Quantum One Time Pad}
+	\frametitle{Quantum Teleportation and Quantum One Time Pad Equivalence}
+	~~~~~~~~~~~~~~~~~~~~~~~~~Quantum Teleportation
 	\begin{equation}
 	\tikzfig{QuantumTeleportation0}
 	\end{equation}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Quantum Teleportation is Equivalent to the Quantum One Time Pad}
-	\begin{equation}
-	\tikzfig{QuantumTeleportation}
-	\end{equation}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Quantum Teleportation is Equivalent to the Quantum One Time Pad}
+	\frametitle{Quantum Teleportation and Quantum One Time Pad Equivalence}
 ~~~~~~~~~	Quantum Teleportation ~~~~ The Quantum One Time Pad
 	\begin{equation}
 	\tikzfig{QuantumTeleportationNoLine1} ~~~~~~=~~~~~~ \tikzfig{BeamerQOTP1} %\tikzfig{BeamerQOTP2}
@@ -330,7 +300,7 @@
 			\item Developed the \textbf{classical One Time Pad} diagrammatically and showed that it both works and is secure\pause
 			\item Developed the \textbf{quantum One Time Pad} diagrammatically and showed that it both works and is secure\pause
 			\item Showed that \textbf{Quantum Teleportation} is equivalent to the quantum One Time Pad, and therefore also works and is secure\pause
-			\item Developed \textbf{Quantum Key Recycling} diagrammatically, included a fully fledged security proof and worked out equivalences from a recent paper 
+			\item Developed \textbf{Quantum Key Recycling} diagrammatically, included a fully fledged security proof and worked out equivalences from a recent paper \cite{Leermakers2019}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -352,12 +322,7 @@
 \begin{frame}
 	\frametitle{Discussion and Conclusions}
 	\begin{itemize}
-	\item Novelty of this research?
 	\item Role of diagrammatic notation?
-	\item More technical: Classical communication channels in a basis?
-	\begin{equation}
-		\tikzfig{explicitgraywire} ~~~~~~~~~~~~~~ \tikzfig{explicitwhitewire}
-	\end{equation}
 	\end{itemize}
 \end{frame}
 
@@ -377,9 +342,9 @@
 		\Huge
 		\usebeamercolor[fg]{frametitle}{Questions?}
 \end{frame}
-\begin{frame}
+\begin{frame}[shrink=1]
 	\frametitle{References}
-
+\setbeamertemplate{bibliography item}[text]
 	\bibliographystyle{plain}
 	\bibliography{library}
 \end{frame}
