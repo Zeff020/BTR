@@ -6,5 +6,5 @@
 \beamer@sectionintoc {2}{The Classical One Time Pad}{9}{0}{2}
 \beamer@sectionintoc {3}{The Quantum One Time Pad}{13}{0}{3}
 \beamer@subsectionintoc {3}{1}{Equivalence: Quantum Teleportation}{16}{0}{3}
-\beamer@sectionintoc {4}{Quantum Key Recycling}{19}{0}{4}
-\beamer@sectionintoc {5}{Discussion and Conclusions}{23}{0}{5}
+\beamer@sectionintoc {4}{Quantum Key Recycling}{18}{0}{4}
+\beamer@sectionintoc {5}{Discussion and Conclusions}{22}{0}{5}
